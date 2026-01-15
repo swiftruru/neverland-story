@@ -1,4 +1,4 @@
-import type { NavItem } from '@types/navigation'
+import type { NavItem } from '@app-types/navigation'
 
 export const NAV_ITEMS: NavItem[] = [
   { id: 'videos', label: '影片', path: '/videos' },
