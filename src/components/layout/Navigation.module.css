@@ -1,0 +1,195 @@
+.nav {
+  background-color: var(--color-bg-paper);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* ===== 漢堡按鈕 ===== */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburgerLine {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== 選單容器 ===== */
+.menuWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menuWrapper.menuOpen {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ===== 背景遮罩 ===== */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menuOpen .overlay {
+  opacity: 1;
+}
+
+/* ===== 選單列表 ===== */
+.navList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: var(--color-bg-paper);
+  padding: 80px var(--spacing-lg) var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.menuOpen .navList {
+  transform: translateX(0);
+}
+
+.navItem {
+  /* 手機版項目樣式 */
+}
+
+.navLink {
+  position: relative;
+  display: block;
+  padding: var(--spacing-md) var(--spacing-md);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.navLink:hover {
+  background-color: var(--color-primary-pale);
+  color: var(--color-primary);
+}
+
+.navLink.active {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  box-shadow: 0 2px 4px rgba(0, 104, 80, 0.3);
+}
+
+/* 活躍連結的小膠帶裝飾 */
+.navLink.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%) rotate(-5deg);
+  width: 24px;
+  height: 10px;
+  background: var(--color-tape-yellow);
+  border-radius: 1px;
+  opacity: 0.9;
+}
+
+/* ===== 桌面版樣式 ===== */
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menuWrapper {
+    position: static;
+    visibility: visible;
+    pointer-events: auto;
+    flex: 1;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .navList {
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    padding: var(--spacing-md) 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    transform: none;
+    box-shadow: none;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .navLink {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+  }
+
+  .navLink:hover {
+    transform: translateY(-1px);
+  }
+
+  /* 桌面版膠帶在頂部 */
+  .navLink.active::before {
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 30px;
+    height: 8px;
+  }
+}

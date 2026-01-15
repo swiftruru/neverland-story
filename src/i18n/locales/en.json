@@ -1,0 +1,96 @@
+{
+  "common": {
+    "language": "Language",
+    "switchLanguage": "Switch Language"
+  },
+  "nav": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "videos": "Videos",
+    "classroom": "Classroom",
+    "contact": "Contact",
+    "books": "Books",
+    "tutoring": "Tutoring",
+    "qa": "Q & A",
+    "courses": "Courses",
+    "gallery": "Gallery",
+    "ferryman": "Success Stories",
+    "apps": "APP Works",
+    "essays": "Essays",
+    "columns": "Columns",
+    "links": "Links",
+    "experience": "Experience"
+  },
+  "home": {
+    "title": "Peter Pan, The Apple-Loving Prince",
+    "subtitle": "iOS App Development Guide",
+    "headshotAlt": "Peter Pan's headshot",
+    "rolesTitle": "About Me",
+    "mainJob": "Main",
+    "mainJobContent": "Author & Apple Fan",
+    "sideJob": "Side",
+    "sideJobContent": "Blogger, Instructor, Tutor, Corporate Trainer, VIBE CODING Coach, Engineer, Consultant, Judge, Freelancer, University iOS SwiftUI / Flutter App Development Lecturer, iOS App Community Instructor"
+  },
+  "pages": {
+    "videos": {
+      "title": "Videos",
+      "description": "iOS development tutorial videos"
+    },
+    "classroom": {
+      "title": "Classroom",
+      "description": "Hands-on courses and exercises"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with Peter Pan"
+    },
+    "books": {
+      "title": "Books",
+      "description": "iOS development publications"
+    },
+    "tutoring": {
+      "title": "Tutoring",
+      "description": "One-on-one teaching services"
+    },
+    "qa": {
+      "title": "Q & A",
+      "description": "Frequently asked questions"
+    },
+    "courses": {
+      "title": "Courses",
+      "description": "Public lectures and workshops"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Event and course photos"
+    },
+    "ferryman": {
+      "title": "Success Stories",
+      "description": "Student success stories"
+    },
+    "apps": {
+      "title": "APP Works",
+      "description": "Student and personal app showcase"
+    },
+    "essays": {
+      "title": "Essays",
+      "description": "Life reflections and thoughts"
+    },
+    "columns": {
+      "title": "Columns",
+      "description": "Magazine articles"
+    },
+    "links": {
+      "title": "Links",
+      "description": "Useful resources"
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Personal resume and experience"
+    },
+    "comingSoon": "Content coming soon..."
+  },
+  "footer": {
+    "copyright": "© {{year}} Peter Pan's iOS App Development. All rights reserved."
+  }
+}

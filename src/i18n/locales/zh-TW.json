@@ -1,0 +1,96 @@
+{
+  "common": {
+    "language": "語言",
+    "switchLanguage": "切換語言"
+  },
+  "nav": {
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "videos": "影片",
+    "classroom": "開發教室",
+    "contact": "聯絡",
+    "books": "著作",
+    "tutoring": "家教",
+    "qa": "Q & A",
+    "courses": "講座課程",
+    "gallery": "相冊",
+    "ferryman": "金牌擺渡人",
+    "apps": "APP 作品",
+    "essays": "散文集",
+    "columns": "雜誌專欄",
+    "links": "相關連結",
+    "experience": "經歷"
+  },
+  "home": {
+    "title": "愛瘋一切為蘋果的彼得潘小王子",
+    "subtitle": "iOS App 程式設計入門",
+    "headshotAlt": "彼得潘老師大頭照",
+    "rolesTitle": "關於我",
+    "mainJob": "正職",
+    "mainJobContent": "作家 & 果粉",
+    "sideJob": "副業",
+    "sideJobContent": "Blog 作家、講師、家教、企業內訓、VIBE CODING 陪跑教練、工程師、顧問、評審、接案、大學的 iOS SwiftUI / Flutter App 開發講師、iOS App 社團講師"
+  },
+  "pages": {
+    "videos": {
+      "title": "影片",
+      "description": "iOS 開發教學影片"
+    },
+    "classroom": {
+      "title": "開發教室",
+      "description": "實作課程與練習"
+    },
+    "contact": {
+      "title": "聯絡",
+      "description": "與彼得潘聯繫"
+    },
+    "books": {
+      "title": "著作",
+      "description": "iOS 開發相關書籍"
+    },
+    "tutoring": {
+      "title": "家教",
+      "description": "一對一教學服務"
+    },
+    "qa": {
+      "title": "Q & A",
+      "description": "常見問題解答"
+    },
+    "courses": {
+      "title": "講座課程",
+      "description": "公開講座與研習課程"
+    },
+    "gallery": {
+      "title": "相冊",
+      "description": "活動與課程照片"
+    },
+    "ferryman": {
+      "title": "金牌擺渡人",
+      "description": "學員成功故事"
+    },
+    "apps": {
+      "title": "APP 作品",
+      "description": "學員與個人作品展示"
+    },
+    "essays": {
+      "title": "散文集",
+      "description": "生活隨筆與心得"
+    },
+    "columns": {
+      "title": "雜誌專欄",
+      "description": "雜誌刊登文章"
+    },
+    "links": {
+      "title": "相關連結",
+      "description": "實用資源連結"
+    },
+    "experience": {
+      "title": "經歷",
+      "description": "個人履歷與經歷"
+    },
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "footer": {
+    "copyright": "© {{year}} 彼得潘的 iOS App 程式設計入門. All rights reserved."
+  }
+}

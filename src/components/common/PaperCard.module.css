@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  background-color: var(--color-bg-paper);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-paper);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+
+  /* 輕微的紙張邊緣效果 */
+  border: 1px solid var(--color-border-light);
+}
+
+.card.hover:hover {
+  transform: translateY(-4px) rotate(0.5deg);
+  box-shadow: var(--shadow-paper-hover);
+}
+
+.content {
+  padding: var(--spacing-xl);
+}
+
+/* ===== 變體：橫線紙 ===== */
+.lined {
+  background-image:
+    repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(200, 195, 185, 0.12) 27px,
+      rgba(200, 195, 185, 0.12) 28px
+    );
+  background-position: 0 20px;
+}
+
+.lined .content {
+  padding-top: calc(var(--spacing-xl) + 8px);
+}
+
+/* ===== 變體：方格紙 ===== */
+.grid {
+  background-image:
+    linear-gradient(rgba(200, 195, 185, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 195, 185, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ===== 紙張摺角效果 ===== */
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent var(--color-bg) transparent;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 var(--radius-sm) 0;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    135deg,
+    transparent 50%,
+    var(--color-bg-paper-dark) 50%
+  );
+  border-radius: 0 0 var(--radius-sm) 0;
+}
