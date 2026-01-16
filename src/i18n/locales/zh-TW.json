@@ -157,6 +157,35 @@
       "description": "Swift 和 Flutter 是目前最熱門的 App 跨平台開發技術。彼得潘將以多年程式設計經驗，以一對一的方式傳授開發 App 的知識，幫助你成為專業的 App 工程師。"
     }
   },
+  "qa": {
+    "mainTitle": "Q & A 常見問題",
+    "subtitle": "學習 iOS App 開發前，你想知道的一切都在這裡",
+    "readMore": "閱讀文章",
+    "iosQA": {
+      "title": "iOS App 開發的十個 Q & A",
+      "description": "關於 iOS App 開發最常被問到的十個問題，一次為你解答"
+    },
+    "preparation": {
+      "title": "學習開發 Swift iOS App 前的準備",
+      "description": "在開始學習之前，你需要準備什麼？從設備到心態的完整指南"
+    },
+    "promises": {
+      "title": "彼得潘 iOS App 開發教學的八個承諾",
+      "description": "彼得潘對每一位學員的承諾，用心教學、真誠分享"
+    },
+    "resources": {
+      "title": "Swift iOS App 學習資源和課程整理",
+      "description": "精選的 Swift iOS App 學習資源，從入門到進階都有"
+    },
+    "puzzles": {
+      "title": "彼得潘的 999 道 SwiftUI / UIKit / Flutter / Jetpack Compose App 謎題",
+      "description": "實戰練習題庫，從做中學，挑戰自我"
+    },
+    "realApp": {
+      "title": "彼得潘的真實 iOS App 畫面功能復刻",
+      "description": "學習復刻真實 App 的 UI 和功能，提升實戰能力"
+    }
+  },
   "floatingContact": {
     "open": "開啟聯絡選項",
     "close": "關閉聯絡選項",

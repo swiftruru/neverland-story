@@ -157,6 +157,35 @@
       "description": "Swift and Flutter are currently the hottest cross-platform App development technologies. With years of programming experience, Peter Pan will teach you App development knowledge one-on-one, helping you become a professional App engineer."
     }
   },
+  "qa": {
+    "mainTitle": "Q & A",
+    "subtitle": "Everything you need to know before learning iOS App development",
+    "readMore": "Read Article",
+    "iosQA": {
+      "title": "10 Q&A About iOS App Development",
+      "description": "The ten most frequently asked questions about iOS App development, answered all at once"
+    },
+    "preparation": {
+      "title": "Preparation Before Learning Swift iOS App Development",
+      "description": "What do you need to prepare before starting to learn? A complete guide from equipment to mindset"
+    },
+    "promises": {
+      "title": "Peter Pan's 8 Promises for iOS App Teaching",
+      "description": "Peter Pan's commitment to every student: teaching with heart, sharing with sincerity"
+    },
+    "resources": {
+      "title": "Swift iOS App Learning Resources & Courses",
+      "description": "Curated Swift iOS App learning resources, from beginner to advanced"
+    },
+    "puzzles": {
+      "title": "Peter Pan's 999 SwiftUI / UIKit / Flutter / Jetpack Compose Puzzles",
+      "description": "Practical exercise library, learn by doing, challenge yourself"
+    },
+    "realApp": {
+      "title": "Peter Pan's Real iOS App UI Recreation",
+      "description": "Learn to recreate real App UIs and features, improve practical skills"
+    }
+  },
   "floatingContact": {
     "open": "Open contact options",
     "close": "Close contact options",
