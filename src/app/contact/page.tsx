@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PaperCard } from '@components/common'
 import styles from './page.module.css'
@@ -55,22 +56,52 @@ function Icon({ name, className }: { name: string; className?: string }) {
           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
         </svg>
       )
+    case 'check':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg>
+      )
     default:
       return null
   }
 }
 
-export default function ContactPage() {
-  const { t } = useTranslation()
+// 複製按鈕組件
+function CopyButton({ text, label, copiedLabel }: { text: string; label: string; copiedLabel: string }) {
+  const [copied, setCopied] = useState(false)
 
-  const handleCopy = async (text: string) => {
+  const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(text)
-      alert(t('pages.contact.copied'))
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
     } catch {
-      alert(t('pages.contact.copyFailed'))
+      // 靜默失敗
     }
   }
+
+  return (
+    <button
+      type="button"
+      className={`${styles.actionButtonSecondary} ${copied ? styles.copied : ''}`}
+      onClick={handleCopy}
+      disabled={copied}
+    >
+      {copied ? (
+        <>
+          <Icon name="check" className={styles.checkIcon} />
+          {copiedLabel}
+        </>
+      ) : (
+        label
+      )}
+    </button>
+  )
+}
+
+export default function ContactPage() {
+  const { t } = useTranslation()
 
   return (
     <div className={styles.contactPage}>
@@ -120,13 +151,11 @@ export default function ContactPage() {
                     </a>
                   )}
                   {contact.copyValue && (
-                    <button
-                      type="button"
-                      className={styles.actionButtonSecondary}
-                      onClick={() => handleCopy(contact.copyValue!)}
-                    >
-                      {t('pages.contact.copy')}
-                    </button>
+                    <CopyButton
+                      text={contact.copyValue}
+                      label={t('pages.contact.copy')}
+                      copiedLabel={t('pages.contact.copied')}
+                    />
                   )}
                 </div>
               </div>

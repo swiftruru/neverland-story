@@ -61,8 +61,7 @@
       "visit": "前往",
       "copy": "複製",
       "sendEmail": "寄信",
-      "copied": "已複製到剪貼簿！",
-      "copyFailed": "複製失敗，請手動複製"
+      "copied": "已複製"
     },
     "books": {
       "title": "著作",

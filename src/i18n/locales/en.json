@@ -61,8 +61,7 @@
       "visit": "Visit",
       "copy": "Copy",
       "sendEmail": "Send",
-      "copied": "Copied to clipboard!",
-      "copyFailed": "Copy failed, please copy manually"
+      "copied": "Copied"
     },
     "books": {
       "title": "Books",

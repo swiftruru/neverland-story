@@ -167,6 +167,19 @@
   background-color: var(--color-primary-pale);
 }
 
+/* 已複製狀態 */
+.actionButtonSecondary.copied {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
+  gap: var(--spacing-xs);
+}
+
+.checkIcon {
+  width: 16px;
+  height: 16px;
+}
+
 @media (min-width: 768px) {
   .title {
     font-size: var(--font-size-3xl);
