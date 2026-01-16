@@ -1,6 +1,7 @@
 import type { NavItem } from '@app-types/navigation'
 
 export const NAV_ITEMS: NavItem[] = [
+  { id: 'home', label: '首頁', path: '/' },
   { id: 'videos', label: '影片', path: '/videos' },
   { id: 'classroom', label: '開發教室', path: '/classroom' },
   { id: 'contact', label: '聯絡', path: '/contact' },
