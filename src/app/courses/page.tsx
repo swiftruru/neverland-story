@@ -62,6 +62,52 @@ const COURSES: Course[] = [
     descriptionKey: 'ntouPython.description',
     image: '/courses/ntou-python.png',
   },
+  {
+    id: 'flutter-cross-platform',
+    titleKey: 'flutterCrossPlatform.title',
+    dateKey: 'flutterCrossPlatform.date',
+    descriptionKey: 'flutterCrossPlatform.description',
+    image: '/courses/flutter-cross-platform.png',
+    url: 'https://flutterapp.mystrikingly.com/',
+  },
+  {
+    id: 'apcs-aiot-camp',
+    titleKey: 'apcsAiotCamp.title',
+    dateKey: 'apcsAiotCamp.date',
+    descriptionKey: 'apcsAiotCamp.description',
+    image: '/courses/apcs-aiot-camp.png',
+    url: 'https://www.chtti.cht.com.tw/general/course_info.jsp?activity_id=599',
+  },
+  {
+    id: 'youth-ios-training',
+    titleKey: 'youthIosTraining.title',
+    dateKey: 'youthIosTraining.date',
+    descriptionKey: 'youthIosTraining.description',
+    image: '/courses/youth-ios-training.png',
+  },
+  {
+    id: 'ntou-swiftui-game',
+    titleKey: 'ntouSwiftuiGame.title',
+    dateKey: 'ntouSwiftuiGame.date',
+    descriptionKey: 'ntouSwiftuiGame.description',
+    image: '/courses/ntou-swiftui-game.png',
+  },
+  {
+    id: 'ios-rest-api',
+    titleKey: 'iosRestApi.title',
+    dateKey: 'iosRestApi.date',
+    descriptionKey: 'iosRestApi.description',
+    image: '/courses/ios-rest-api.png',
+    url: 'https://iosrestapiapp.mystrikingly.com/',
+  },
+  {
+    id: 'first-swiftui-app',
+    titleKey: 'firstSwiftuiApp.title',
+    dateKey: 'firstSwiftuiApp.date',
+    descriptionKey: 'firstSwiftuiApp.description',
+    image: '/courses/first-swiftui-app.png',
+    url: 'https://firstiosswiftuiapp.mystrikingly.com/',
+  },
 ]
 
 // 箭頭圖標

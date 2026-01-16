@@ -192,6 +192,36 @@
       "title": "NTOU Python Programming & Data Processing",
       "date": "2026/2 ~ 2026/6",
       "description": ""
+    },
+    "flutterCrossPlatform": {
+      "title": "Peter Pan's Flutter Cross-Platform App Programming",
+      "date": "2024/11/12 ~ 2025/1/21, Tue 19:00 ~ 22:00",
+      "description": "Learn the latest Flutter cross-platform App development technologies - Dart, Flutter SDK, VS Code. Become a cool Flutter App development wizard and realize your second life in App work, freelancing, or entrepreneurship!"
+    },
+    "apcsAiotCamp": {
+      "title": "APCS Programming & AIoT Smart Applications Summer Camp",
+      "date": "2023/7, CHT Academy",
+      "description": "The first two and a half days focus on APCS courses, building a foundation with the hottest programming language Python. The instructor will use fun interactive teaching to help students gradually understand APCS concepts and practice problem types."
+    },
+    "youthIosTraining": {
+      "title": "Youth Vocational Training iOS App Development",
+      "date": "2023/5 ~ 6, Vocational Training Bureau",
+      "description": ""
+    },
+    "ntouSwiftuiGame": {
+      "title": "NTOU SwiftUI App Game Development",
+      "date": "2023/2 ~ 2023/5",
+      "description": ""
+    },
+    "iosRestApi": {
+      "title": "iOS APP Project - REST API Integration for Social APP",
+      "date": "2022/12/10 ~ 2023/1/14, 10:00 ~ 17:00, TibaMe",
+      "description": "Beginners usually develop small Apps with two or three pages, rarely having experience developing complex Apps. This course will guide students to develop a social App comparable to published Apps, mastering the essential REST API integration skills for iOS App engineers."
+    },
+    "firstSwiftuiApp": {
+      "title": "First Handmade iOS SwiftUI App",
+      "date": "2021/5/23",
+      "description": "Everyone has the talent to create Apps - it's time to unlock it! A hands-on iOS App course for beginners, teaching you to build Apps you love (like a beloved pet App or a sweet relationship App), installed on your own or friends' and family's iPhones to enjoy anytime."
     }
   },
   "qa": {
