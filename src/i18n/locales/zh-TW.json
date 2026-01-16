@@ -157,6 +157,42 @@
       "description": "Swift 和 Flutter 是目前最熱門的 App 跨平台開發技術。彼得潘將以多年程式設計經驗，以一對一的方式傳授開發 App 的知識，幫助你成為專業的 App 工程師。"
     }
   },
+  "courses": {
+    "mainTitle": "講座課程",
+    "subtitle": "從入門到進階，多元化的 App 開發課程，帶你踏入程式設計的世界",
+    "fullList": "完整課程講座清單",
+    "learnMore": "了解更多",
+    "swiftIosApp": {
+      "title": "彼得潘的 Swift iOS App 程式設計入門",
+      "date": "2026/3/12 ~ 2026/5/4，每週一和四 19:00 ~ 22:00",
+      "description": "學習 iOS App 開發的最新技術，Swift，iOS SDK 和 Xcode，成為酷炫的 iOS App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！"
+    },
+    "swiftuiBeginner": {
+      "title": "文組生的 iOS SwiftUI App 程式設計入門",
+      "date": "2026/3/10 ~ 2026/5/26，每週二 19:00 ~ 22:00",
+      "description": "專為文組生量身訂做，從零開始學程式，一步一步慢慢教！只要 12 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！"
+    },
+    "ntouSwiftui": {
+      "title": "海洋大學 SwiftUI iOS App 入門",
+      "date": "2025/9 ~ 2026/1",
+      "description": ""
+    },
+    "flutterIntro": {
+      "title": "Flutter 跨平台 App 程式設計入門",
+      "date": "2026/1，臺灣大學資訊系統訓練班",
+      "description": "學習 Flutter 跨平台 App 開發的最新技術，Dart，Flutter SDK，VS Code，成為酷炫的 Flutter App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！"
+    },
+    "ntouFlutter": {
+      "title": "海洋大學 Flutter App 入門",
+      "date": "2026/2 ~ 2026/6",
+      "description": ""
+    },
+    "ntouPython": {
+      "title": "海洋大學 Python 程式語言與資料處理",
+      "date": "2026/2 ~ 2026/6",
+      "description": ""
+    }
+  },
   "qa": {
     "mainTitle": "Q & A 常見問題",
     "subtitle": "學習 iOS App 開發前，你想知道的一切都在這裡",

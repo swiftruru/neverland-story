@@ -157,6 +157,42 @@
       "description": "Swift and Flutter are currently the hottest cross-platform App development technologies. With years of programming experience, Peter Pan will teach you App development knowledge one-on-one, helping you become a professional App engineer."
     }
   },
+  "courses": {
+    "mainTitle": "Courses & Workshops",
+    "subtitle": "From beginner to advanced, diverse App development courses to guide you into the world of programming",
+    "fullList": "View Full Course List",
+    "learnMore": "Learn More",
+    "swiftIosApp": {
+      "title": "Peter Pan's Swift iOS App Programming",
+      "date": "2026/3/12 ~ 2026/5/4, Mon & Thu 19:00 ~ 22:00",
+      "description": "Learn the latest iOS App development technologies - Swift, iOS SDK, and Xcode. Become a cool iOS App development wizard and realize your second life in App work, freelancing, or entrepreneurship!"
+    },
+    "swiftuiBeginner": {
+      "title": "iOS SwiftUI App Programming for Liberal Arts Students",
+      "date": "2026/3/10 ~ 2026/5/26, Tue 19:00 ~ 22:00",
+      "description": "Tailored for liberal arts students, learn programming from scratch, step by step! In just 12 weeks, one evening per week, you can master the core concepts of programming and become a cool iOS App development wizard!"
+    },
+    "ntouSwiftui": {
+      "title": "NTOU SwiftUI iOS App Introduction",
+      "date": "2025/9 ~ 2026/1",
+      "description": ""
+    },
+    "flutterIntro": {
+      "title": "Flutter Cross-Platform App Programming",
+      "date": "2026/1, NTU Information Systems Training",
+      "description": "Learn the latest Flutter cross-platform App development technologies - Dart, Flutter SDK, VS Code. Become a cool Flutter App development wizard and realize your second life in App work, freelancing, or entrepreneurship!"
+    },
+    "ntouFlutter": {
+      "title": "NTOU Flutter App Introduction",
+      "date": "2026/2 ~ 2026/6",
+      "description": ""
+    },
+    "ntouPython": {
+      "title": "NTOU Python Programming & Data Processing",
+      "date": "2026/2 ~ 2026/6",
+      "description": ""
+    }
+  },
   "qa": {
     "mainTitle": "Q & A",
     "subtitle": "Everything you need to know before learning iOS App development",
