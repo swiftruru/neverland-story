@@ -60,7 +60,11 @@ export function Navigation() {
 
           <ul className={styles.navList}>
             {NAV_ITEMS.map((item) => {
-              const isActive = pathname === item.path
+              // 處理 trailing slash 的情況
+              const normalizedPathname = pathname.endsWith('/') && pathname !== '/'
+                ? pathname.slice(0, -1)
+                : pathname
+              const isActive = normalizedPathname === item.path
               return (
                 <li key={item.id} className={styles.navItem}>
                   <Link
