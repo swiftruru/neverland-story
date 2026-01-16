@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.skeleton {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.image {
+  display: block;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.imageLoaded {
+  opacity: 1;
+}
+
+/* 錯誤佔位 */
+.errorPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  background-color: var(--color-bg-paper-dark);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+}
+
+.errorPlaceholder svg {
+  opacity: 0.5;
+}
+
+/* 可縮放圖片包裝 */
+.zoomableWrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.zoomableImage {
+  transition: transform var(--transition-fast);
+}
+
+.zoomableWrapper:hover .zoomableImage {
+  transform: scale(1.02);
+}
+
+.zoomHint {
+  position: absolute;
+  bottom: var(--spacing-sm);
+  right: var(--spacing-sm);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  color: var(--color-primary);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.zoomableWrapper:hover .zoomHint {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -1,0 +1,178 @@
+.tutoringPage {
+  padding: var(--spacing-xl) 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* 服務列表 */
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 單一服務卡片 */
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 奇數卡片（第1、3...個）：圖片在左 */
+.serviceCard:nth-child(odd) .serviceContent {
+  flex-direction: column;
+}
+
+/* 偶數卡片（第2、4...個）：圖片在右 */
+.serviceCard:nth-child(even) .serviceContent {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .serviceCard:nth-child(odd) .serviceContent {
+    flex-direction: row;
+  }
+
+  .serviceCard:nth-child(even) .serviceContent {
+    flex-direction: row-reverse;
+  }
+}
+
+.serviceContent {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .serviceContent {
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+  }
+}
+
+/* 圖片區域 */
+.imageWrapper {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.serviceImage {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.serviceImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    width: 320px;
+  }
+
+  .serviceImage {
+    max-width: 320px;
+  }
+}
+
+/* 資訊區域 */
+.serviceInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.serviceTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.serviceDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* CTA 按鈕 */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 104, 80, 0.3);
+  transition: all var(--transition-fast);
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 104, 80, 0.4);
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+}
+
+.ctaIcon {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.ctaButton:hover .ctaIcon {
+  transform: translateX(4px);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .serviceTitle {
+    font-size: var(--font-size-2xl);
+  }
+}

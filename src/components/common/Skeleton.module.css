@@ -1,0 +1,181 @@
+/* 基礎骨架屏樣式 */
+.skeleton {
+  display: block;
+  background-color: var(--color-bg-paper-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 變體 */
+.text {
+  height: 1em;
+  margin-bottom: 0.5em;
+  border-radius: var(--radius-sm);
+  transform-origin: 0 55%;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.rectangular {
+  border-radius: 0;
+}
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+/* 脈動動畫 */
+.pulse {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 波浪動畫 */
+.wave {
+  position: relative;
+}
+
+.wave::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  animation: skeleton-wave 1.6s ease-in-out infinite;
+}
+
+@keyframes skeleton-wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* 文字區塊 */
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+/* 卡片骨架 */
+.card {
+  background: var(--color-bg-paper);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-paper);
+}
+
+.cardImage {
+  width: 100%;
+}
+
+.cardContent {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* 書籍骨架 */
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .bookCard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+  }
+}
+
+.bookCover {
+  flex-shrink: 0;
+  width: 180px;
+  height: 250px;
+  border-radius: var(--radius-sm);
+}
+
+@media (min-width: 768px) {
+  .bookCover {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+.bookInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* 服務卡片骨架 */
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .serviceCard {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+  }
+}
+
+.serviceImage {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .serviceImage {
+    width: 280px;
+    flex-shrink: 0;
+  }
+}
+
+.serviceInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

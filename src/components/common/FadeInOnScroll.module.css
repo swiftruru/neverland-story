@@ -1,0 +1,55 @@
+/* 基礎淡入效果 */
+.fadeIn {
+  opacity: 0;
+  transition:
+    opacity var(--fade-duration, 600ms) ease-out,
+    transform var(--fade-duration, 600ms) ease-out;
+  transition-delay: var(--fade-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+/* 方向變體 - 初始狀態 */
+.up {
+  transform: translateY(var(--fade-distance, 30px));
+}
+
+.down {
+  transform: translateY(calc(var(--fade-distance, 30px) * -1));
+}
+
+.left {
+  transform: translateX(var(--fade-distance, 30px));
+}
+
+.right {
+  transform: translateX(calc(var(--fade-distance, 30px) * -1));
+}
+
+.none {
+  transform: none;
+}
+
+/* 可見狀態 */
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Stagger Container */
+.staggerContainer {
+  /* 容器本身不需要特殊樣式 */
+}
+
+/* 減少動畫模式 - 尊重使用者偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .fadeIn {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .visible {
+    opacity: 1;
+    transform: none;
+  }
+}

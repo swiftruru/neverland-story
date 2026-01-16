@@ -1,0 +1,325 @@
+.booksPage {
+  padding: var(--spacing-xl) 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 書籍列表 */
+.booksList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 單本書籍卡片 */
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .bookCard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+  }
+}
+
+/* 書籍封面區域 */
+.bookCoverWrapper {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bookCover {
+  width: 180px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.bookCover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .bookCover {
+    width: 200px;
+  }
+}
+
+/* 書籍資訊區域 */
+.bookInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.bookTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.bookTitle:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 沒有連結時的書名樣式 */
+.bookTitleText {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* 補充連結區域 */
+.supplementLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.supplementLink {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  background-color: var(--color-primary-pale);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.supplementLink::before {
+  content: '📎';
+  margin-right: var(--spacing-xs);
+  font-size: 12px;
+}
+
+.supplementLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.bookMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.publishDate {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.publishDate::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* 獎項/推薦區域 */
+.awardsSection {
+  margin-top: var(--spacing-md);
+}
+
+.awardsTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.awardsTitle::before {
+  content: '🎖️';
+}
+
+.awardsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding-left: var(--spacing-md);
+}
+
+.awardItem {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  position: relative;
+  padding-left: var(--spacing-sm);
+}
+
+.awardItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* 排行榜區域 */
+.rankingSection {
+  margin-top: var(--spacing-md);
+}
+
+.rankingTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.rankingTitle::before {
+  content: '🏆';
+}
+
+.rankingList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding-left: var(--spacing-md);
+}
+
+.rankingItem {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  position: relative;
+  padding-left: var(--spacing-sm);
+}
+
+.rankingItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.rankingItem strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* 排行榜截圖 */
+.rankingImageWrapper {
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+}
+
+.rankingImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.rankingImage:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .rankingImage {
+    max-width: 400px;
+  }
+}
+
+/* Lightbox 樣式 */
+.lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--spacing-md);
+  cursor: pointer;
+}
+
+.lightboxImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.lightboxClose {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.lightboxClose:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

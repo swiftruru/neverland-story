@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { PaperCard } from '@components/common'
+import { PaperCard, FadeInOnScroll } from '@components/common'
 import styles from './page.module.css'
 
 // 聯絡方式資料
@@ -106,60 +106,66 @@ export default function ContactPage() {
   return (
     <div className={styles.contactPage}>
       <div className="container">
-        <header className={styles.header}>
-          <h1 className={styles.title}>{t('pages.contact.mainTitle')}</h1>
-          <p className={styles.subtitle}>{t('pages.contact.subtitle')}</p>
-          <p className={styles.note}>
-            {t('pages.contact.note')}{' '}
-            <a
-              href="http://iosappanswer.strikingly.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-            >
-              {t('pages.contact.qaColumn')}
-            </a>
-          </p>
-        </header>
+        <FadeInOnScroll direction="up">
+          <header className={styles.header}>
+            <h1 className={styles.title}>{t('pages.contact.mainTitle')}</h1>
+            <p className={styles.subtitle}>{t('pages.contact.subtitle')}</p>
+            <p className={styles.note}>
+              {t('pages.contact.note')}{' '}
+              <a
+                href="http://iosappanswer.strikingly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                {t('pages.contact.qaColumn')}
+              </a>
+            </p>
+          </header>
+        </FadeInOnScroll>
 
         <section className={styles.contactGrid}>
-          {CONTACT_LINKS.map((contact) => (
-            <PaperCard
+          {CONTACT_LINKS.map((contact, index) => (
+            <FadeInOnScroll
               key={contact.id}
-              tapeColor={contact.id === 'email' ? 'green' : contact.id.includes('line') ? 'green' : 'yellow'}
-              tapePosition="top-left"
-              tapeRotation={-3}
-              hover
+              direction="up"
+              delay={index * 80}
             >
-              <div className={styles.contactCard}>
-                <div className={`${styles.iconWrapper} ${styles[contact.icon]}`}>
-                  <Icon name={contact.icon} className={styles.icon} />
-                </div>
-                <h3 className={styles.contactName}>{t(`pages.contact.${contact.id}`)}</h3>
-                {contact.copyValue && (
-                  <p className={styles.contactValue}>{contact.copyValue}</p>
-                )}
-                <div className={styles.actions}>
-                  {contact.url && (
-                    <a
-                      href={contact.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.actionButton}
-                    >
-                      {contact.id === 'email' ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
-                    </a>
-                  )}
+              <PaperCard
+                tapeColor={contact.id === 'email' ? 'green' : contact.id.includes('line') ? 'green' : 'yellow'}
+                tapePosition="top-left"
+                tapeRotation={-3}
+                hover
+              >
+                <div className={styles.contactCard}>
+                  <div className={`${styles.iconWrapper} ${styles[contact.icon]}`}>
+                    <Icon name={contact.icon} className={styles.icon} />
+                  </div>
+                  <h3 className={styles.contactName}>{t(`pages.contact.${contact.id}`)}</h3>
                   {contact.copyValue && (
-                    <CopyButton
-                      text={contact.copyValue}
-                      label={t('pages.contact.copy')}
-                      copiedLabel={t('pages.contact.copied')}
-                    />
+                    <p className={styles.contactValue}>{contact.copyValue}</p>
                   )}
+                  <div className={styles.actions}>
+                    {contact.url && (
+                      <a
+                        href={contact.url}
+                        {...(contact.url.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
+                        className={styles.actionButton}
+                      >
+                        {contact.id === 'email' ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
+                      </a>
+                    )}
+                    {contact.copyValue && (
+                      <CopyButton
+                        text={contact.copyValue}
+                        label={t('pages.contact.copy')}
+                        copiedLabel={t('pages.contact.copied')}
+                      />
+                    )}
+                  </div>
                 </div>
-              </div>
-            </PaperCard>
+              </PaperCard>
+            </FadeInOnScroll>
           ))}
         </section>
       </div>

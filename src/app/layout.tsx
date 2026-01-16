@@ -10,6 +10,16 @@ const PageTransition = dynamic(
   { ssr: false }
 )
 
+const FloatingContact = dynamic(
+  () => import('@components/common/FloatingContact').then((mod) => mod.FloatingContact),
+  { ssr: false }
+)
+
+const BackToTop = dynamic(
+  () => import('@components/common/BackToTop').then((mod) => mod.BackToTop),
+  { ssr: false }
+)
+
 export const metadata: Metadata = {
   title: '彼得潘的 iOS App 程式設計入門',
   description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
@@ -35,6 +45,8 @@ export default function RootLayout({
               {children}
             </main>
             <Footer />
+            <FloatingContact />
+            <BackToTop />
           </div>
         </I18nProvider>
       </body>

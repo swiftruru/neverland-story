@@ -109,6 +109,65 @@
     },
     "comingSoon": "Content coming soon..."
   },
+  "books": {
+    "mainTitle": "Peter Pan's Books",
+    "subtitle": "iOS App development books, from beginner to advanced, guiding you step by step to master Swift programming",
+    "published": "Published",
+    "rankingTitle": "Ranking Records",
+    "rankingImageAlt": "Ranking screenshot",
+    "swiftProgramming": {
+      "title": "Peter Pan's Swift Programming Guide"
+    },
+    "swiftIntro": {
+      "title": "Swift Programming Introduction",
+      "swift3Supplement": "Swift 3.0 Online Supplement"
+    },
+    "appIntroV2": {
+      "title": "App Programming Introduction - iPhone．iPad 2nd Edition"
+    },
+    "appIntroV1": {
+      "title": "App Programming Introduction: iPhone, iPad",
+      "ithomeAward": "IThome 2011 Top 100 IT Books Recommendation"
+    },
+    "awardsTitle": "Honors & Recommendations",
+    "ranking": {
+      "booksStore": "Books.com.tw ",
+      "kingstoneStore": "Kingstone ",
+      "pchome": "PC Home ",
+      "tenlong": "Tenlong ",
+      "computerNewBooks": "Computer New Books ",
+      "computerBestsellers": "Computer Bestsellers ",
+      "computerWeeklyBestsellers": "Computer Weekly Bestsellers ",
+      "computerCategory": "Computer Category ",
+      "annualTop100Computer2012": "2012 Annual Top 100 Computer ",
+      "salesRanking": "Sales Ranking ",
+      "computerPhoto": "Computer/Photography "
+    }
+  },
+  "tutoring": {
+    "mainTitle": "Tutoring Services",
+    "subtitle": "Professional one-on-one App development tutoring to help you realize your ideas",
+    "learnMore": "Learn More",
+    "vibeCoding": {
+      "title": "Your Personal APP VIBE CODING Coach",
+      "description": "In the AI era, everyone can develop Apps with AI. With years of App teaching experience, Peter Pan will assist you and guide you to complete your own App using AI."
+    },
+    "appMentor": {
+      "title": "Your Personal Swift / Flutter APP Development Mentor",
+      "description": "Swift and Flutter are currently the hottest cross-platform App development technologies. With years of programming experience, Peter Pan will teach you App development knowledge one-on-one, helping you become a professional App engineer."
+    }
+  },
+  "floatingContact": {
+    "open": "Open contact options",
+    "close": "Close contact options",
+    "line": "Contact via LINE",
+    "email": "Send Email",
+    "facebook": "Contact via Facebook",
+    "allContacts": "More contact options"
+  },
+  "backToTop": {
+    "label": "Back to top"
+  },
   "footer": {
     "copyright": "© {{year}} Peter Pan's iOS App Development. All rights reserved."
   }

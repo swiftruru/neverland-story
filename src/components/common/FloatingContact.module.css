@@ -1,0 +1,190 @@
+.container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  left: var(--spacing-lg);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* 主按鈕 */
+.mainButton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  cursor: pointer;
+  box-shadow:
+    0 4px 12px rgba(0, 104, 80, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainButton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.mainButton:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 6px 20px rgba(0, 104, 80, 0.4),
+    0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mainButton:hover::before {
+  opacity: 1;
+}
+
+.mainButton:active {
+  transform: scale(0.98);
+}
+
+.mainButtonOpen {
+  background: var(--color-text);
+}
+
+.mainButtonOpen::before {
+  display: none;
+}
+
+/* 圖標切換 */
+.iconWrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.iconHidden {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+/* 聯絡選項 */
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-base);
+}
+
+.optionsOpen {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.optionButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: var(--contact-color, var(--color-primary));
+  cursor: pointer;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.12),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  transform: scale(0.5) translateY(20px);
+}
+
+.optionsOpen .optionButton {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition-delay: var(--delay, 0ms);
+}
+
+.optionButton:hover {
+  background: var(--contact-color, var(--color-primary));
+  color: white;
+  transform: scale(1.1);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.optionButton:active {
+  transform: scale(0.95);
+}
+
+.moreText {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+/* 脈動動畫 */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow:
+      0 4px 12px rgba(0, 104, 80, 0.3),
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      0 0 0 0 rgba(0, 104, 80, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 4px 12px rgba(0, 104, 80, 0.3),
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      0 0 0 8px rgba(0, 104, 80, 0);
+  }
+}
+
+.mainButton:not(.mainButtonOpen) {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.mainButton:hover {
+  animation: none;
+}
+
+/* 手機版調整 */
+@media (max-width: 768px) {
+  .container {
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+  }
+
+  .mainButton {
+    width: 52px;
+    height: 52px;
+  }
+
+  .optionButton {
+    width: 40px;
+    height: 40px;
+  }
+}

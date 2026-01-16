@@ -109,6 +109,65 @@
     },
     "comingSoon": "此頁面內容即將推出..."
   },
+  "books": {
+    "mainTitle": "彼得潘的著作",
+    "subtitle": "iOS App 開發相關書籍，從入門到進階，帶你一步步學會 Swift 程式設計",
+    "published": "出版",
+    "rankingTitle": "排行榜紀錄",
+    "rankingImageAlt": "排行榜截圖",
+    "swiftProgramming": {
+      "title": "彼得潘的 Swift 程式設計入門"
+    },
+    "swiftIntro": {
+      "title": "Swift 程式設計入門",
+      "swift3Supplement": "Swift 3.0 版線上修訂補充包"
+    },
+    "appIntroV2": {
+      "title": "App 程式設計入門 - iPhone．iPad 第二版"
+    },
+    "appIntroV1": {
+      "title": "App 程式設計入門：iPhone、iPad",
+      "ithomeAward": "IThome 2011 年 100 大 IT 好書推薦"
+    },
+    "awardsTitle": "榮譽推薦",
+    "ranking": {
+      "booksStore": "博客來",
+      "kingstoneStore": "金石堂",
+      "pchome": "PC Home",
+      "tenlong": "天瓏",
+      "computerNewBooks": "電腦類新書榜",
+      "computerBestsellers": "電腦類暢銷榜",
+      "computerWeeklyBestsellers": "電腦類週暢銷排行榜",
+      "computerCategory": "電腦類",
+      "annualTop100Computer2012": "2012 年度百大電腦類",
+      "salesRanking": "銷售排行",
+      "computerPhoto": "電腦/攝影"
+    }
+  },
+  "tutoring": {
+    "mainTitle": "家教服務",
+    "subtitle": "專業的一對一 App 開發教學，助你實現創意",
+    "learnMore": "了解更多",
+    "vibeCoding": {
+      "title": "專屬於你的 APP VIBE CODING 陪跑教練",
+      "description": "在 AI 時代，人人皆可用 AI 開發 App。彼得潘將以多年的 App 教學經驗，從旁協助，陪著你一起用 AI 完成自己專屬的 App。"
+    },
+    "appMentor": {
+      "title": "專屬於你的 Swift / Flutter APP 開發導師",
+      "description": "Swift 和 Flutter 是目前最熱門的 App 跨平台開發技術。彼得潘將以多年程式設計經驗，以一對一的方式傳授開發 App 的知識，幫助你成為專業的 App 工程師。"
+    }
+  },
+  "floatingContact": {
+    "open": "開啟聯絡選項",
+    "close": "關閉聯絡選項",
+    "line": "LINE 聯繫",
+    "email": "寄送 Email",
+    "facebook": "Facebook 聯繫",
+    "allContacts": "更多聯絡方式"
+  },
+  "backToTop": {
+    "label": "回到頂部"
+  },
   "footer": {
     "copyright": "© {{year}} 彼得潘的 iOS App 程式設計入門. All rights reserved."
   }
