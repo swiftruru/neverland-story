@@ -34,7 +34,9 @@
   "pages": {
     "videos": {
       "title": "影片",
-      "description": "iOS 開發教學影片"
+      "description": "iOS 開發教學影片",
+      "mainTitle": "給我一首歌的時間做 App",
+      "subtitle": "做 App 真的不難，一首歌的時間就可以做出一個簡單的小王子電子書 App"
     },
     "classroom": {
       "title": "開發教室",

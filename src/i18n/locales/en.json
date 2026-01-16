@@ -34,7 +34,9 @@
   "pages": {
     "videos": {
       "title": "Videos",
-      "description": "iOS development tutorial videos"
+      "description": "iOS development tutorial videos",
+      "mainTitle": "Build an App in One Song",
+      "subtitle": "Making an app is not hard - you can build a simple Little Prince eBook app in just the time of one song"
     },
     "classroom": {
       "title": "Classroom",
