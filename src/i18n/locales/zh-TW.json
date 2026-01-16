@@ -252,6 +252,36 @@
       "title": "新手的 iOS App 練功坊 2 - 芝加哥大學的圈圈叉叉 App",
       "date": "2019/7/27",
       "description": "學習製作芝加哥大學 Stanford 的圈圈叉叉 App"
+    },
+    "swiftRecursiveIterative": {
+      "title": "用 Swift 學習資工系的經典程式問題 1: recursive & iterative",
+      "date": "2018/11/16",
+      "description": "適合 Swift iOS App 開發新手的經典程式問題練功坊。"
+    },
+    "programmingBeginnerTalk": {
+      "title": "初學者如何學習程式設計 & 工程師工作甘苦談",
+      "date": "2019/2/26",
+      "description": ""
+    },
+    "swiftProgrammingIntro": {
+      "title": "彼得潘的 Swift 程式設計入門",
+      "date": "2018/1/27, 2/3，週六 10:00 ~ 17:00",
+      "description": "Swift 是 Apple 全新發明的新時代程式語言，簡潔、易懂、快速、安全。隨著它的 Open Source，未來 Swift 不只能開發 iOS App，還有機會開發 Linux，Windows, Android，甚至後台的 App。此時此刻正是學習 Swift 的最好時機。本課程將以書籍「彼得潘的 Swift 程式設計入門」為主，帶領學員 12 小時熟悉 Swift 的各項語法和功能！"
+    },
+    "autoLayoutStackView": {
+      "title": "深入淺出 Auto Layout 和 Stack View",
+      "date": "2018/3/10 (六) ~ 3/11 (日) 10:00 ~ 16:00",
+      "description": "彼得潘將經由課程講解和課堂操作練習，傳授關於 Auto Layout 和 Stack View 的一切機密。透過它們，打造滿足各種尺寸的 App 畫面再也不是難事！"
+    },
+    "musickitLoveSong": {
+      "title": "創作 MusicKit 告白情歌 App",
+      "date": "2018/1/21，台中 iOSDC",
+      "description": ""
+    },
+    "liberalArtsFirstApp": {
+      "title": "文組生的 iOS App 程式初體驗",
+      "date": "2017/12/10, 12/17，週日 10:00 ~ 18:00，台中",
+      "description": "專為文組生量身訂做，從零開始學程式，開開心心寫 App！只要 2 個週末，14 個小時，即可學會程式設計的核心概念，開發出人生的第一個 iOS App！"
     }
   },
   "qa": {

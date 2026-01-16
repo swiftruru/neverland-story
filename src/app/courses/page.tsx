@@ -155,6 +155,52 @@ const COURSES: Course[] = [
     image: '/courses/tic-tac-toe.png',
     url: 'https://swiftappworkshop2.mystrikingly.com/',
   },
+  {
+    id: 'swift-recursive-iterative',
+    titleKey: 'swiftRecursiveIterative.title',
+    dateKey: 'swiftRecursiveIterative.date',
+    descriptionKey: 'swiftRecursiveIterative.description',
+    image: '/courses/swift-recursive-iterative.png',
+    url: 'http://csproblemsinswift.strikingly.com/',
+  },
+  {
+    id: 'programming-beginner-talk',
+    titleKey: 'programmingBeginnerTalk.title',
+    dateKey: 'programmingBeginnerTalk.date',
+    descriptionKey: 'programmingBeginnerTalk.description',
+    image: '/courses/programming-beginner-talk.png',
+  },
+  {
+    id: 'swift-programming-intro',
+    titleKey: 'swiftProgrammingIntro.title',
+    dateKey: 'swiftProgrammingIntro.date',
+    descriptionKey: 'swiftProgrammingIntro.description',
+    image: '/courses/swift-programming-intro.png',
+    url: 'http://learnswift.strikingly.com/',
+  },
+  {
+    id: 'auto-layout-stack-view',
+    titleKey: 'autoLayoutStackView.title',
+    dateKey: 'autoLayoutStackView.date',
+    descriptionKey: 'autoLayoutStackView.description',
+    image: '/courses/auto-layout-stack-view.png',
+    url: 'http://autolayout.strikingly.com/',
+  },
+  {
+    id: 'musickit-love-song',
+    titleKey: 'musickitLoveSong.title',
+    dateKey: 'musickitLoveSong.date',
+    descriptionKey: 'musickitLoveSong.description',
+    image: '/courses/musickit-love-song.png',
+  },
+  {
+    id: 'liberal-arts-first-app',
+    titleKey: 'liberalArtsFirstApp.title',
+    dateKey: 'liberalArtsFirstApp.date',
+    descriptionKey: 'liberalArtsFirstApp.description',
+    image: '/courses/liberal-arts-first-app.png',
+    url: 'http://learniosappfirsttime.strikingly.com/',
+  },
 ]
 
 // 箭頭圖標
@@ -327,7 +373,8 @@ export default function CoursesPage() {
               <FadeInOnScroll
                 key={course.id}
                 direction="up"
-                delay={index * 100}
+                delay={(index % 3) * 50}
+                duration={400}
               >
                 <PaperCard
                   tapeColor={index % 2 === 0 ? 'green' : 'yellow'}

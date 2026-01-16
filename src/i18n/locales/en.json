@@ -252,6 +252,36 @@
       "title": "iOS App Workshop 2 - University of Chicago Tic-Tac-Toe App",
       "date": "2019/7/27",
       "description": "Learn to build the University of Chicago Stanford's Tic-Tac-Toe App"
+    },
+    "swiftRecursiveIterative": {
+      "title": "Classic CS Problems in Swift 1: Recursive & Iterative",
+      "date": "2018/11/16",
+      "description": "A classic programming problem workshop for Swift iOS App development beginners."
+    },
+    "programmingBeginnerTalk": {
+      "title": "How Beginners Learn Programming & Engineer Career Talk",
+      "date": "2019/2/26",
+      "description": ""
+    },
+    "swiftProgrammingIntro": {
+      "title": "Peter Pan's Swift Programming Introduction",
+      "date": "2018/1/27, 2/3, Sat 10:00 ~ 17:00",
+      "description": "Swift is Apple's new-generation programming language - concise, easy to understand, fast, and safe. With its Open Source release, Swift can not only develop iOS Apps but also Linux, Windows, Android, and even backend Apps. Now is the perfect time to learn Swift. This course uses the book 'Peter Pan's Swift Programming Introduction' to guide students through 12 hours of Swift syntax and features!"
+    },
+    "autoLayoutStackView": {
+      "title": "Deep Dive into Auto Layout and Stack View",
+      "date": "2018/3/10 (Sat) ~ 3/11 (Sun) 10:00 ~ 16:00",
+      "description": "Peter Pan will teach all the secrets about Auto Layout and Stack View through lectures and hands-on exercises. Creating App interfaces that adapt to various screen sizes will no longer be a challenge!"
+    },
+    "musickitLoveSong": {
+      "title": "Creating a MusicKit Love Song App",
+      "date": "2018/1/21, Taichung iOSDC",
+      "description": ""
+    },
+    "liberalArtsFirstApp": {
+      "title": "Liberal Arts Students' First iOS App Experience",
+      "date": "2017/12/10, 12/17, Sun 10:00 ~ 18:00, Taichung",
+      "description": "Tailored for liberal arts students, learn programming from scratch and have fun building Apps! In just 2 weekends, 14 hours, you can master core programming concepts and develop your first iOS App!"
     }
   },
   "qa": {
