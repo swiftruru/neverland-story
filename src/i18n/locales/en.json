@@ -48,7 +48,21 @@
     },
     "contact": {
       "title": "Contact",
-      "description": "Get in touch with Peter Pan"
+      "description": "Get in touch with Peter Pan",
+      "mainTitle": "Contact Peter Pan",
+      "subtitle": "For any questions about iOS App development, feel free to contact Peter Pan anytime. When answering questions, Peter Pan also learns and grows in the process, makes friends, and gains rewards that money can't buy.",
+      "note": "For more details, see",
+      "qaColumn": "Peter Pan's iOS Swift App Q&A Column",
+      "facebook": "Personal FB",
+      "fanpage": "Fan Page: Peter Pan for Apple",
+      "linePersonal": "LINE Personal",
+      "lineOfficial": "LINE Official",
+      "email": "Email",
+      "visit": "Visit",
+      "copy": "Copy",
+      "sendEmail": "Send",
+      "copied": "Copied to clipboard!",
+      "copyFailed": "Copy failed, please copy manually"
     },
     "books": {
       "title": "Books",

@@ -48,7 +48,21 @@
     },
     "contact": {
       "title": "聯絡",
-      "description": "與彼得潘聯繫"
+      "description": "與彼得潘聯繫",
+      "mainTitle": "聯絡彼得潘",
+      "subtitle": "任何關於 iOS App 開發的相關問題，歡迎隨時聯絡彼得潘。當彼得潘回答大家的問題時，其實也在找答案的過程中精進學習，增長了自己的功力，和大家交了朋友，獲得再多錢也買不到的回報和收獲。",
+      "note": "詳情可參考",
+      "qaColumn": "彼得潘的 iOS Swift App 問題解答專欄",
+      "facebook": "私人 FB",
+      "fanpage": "粉絲團：愛瘋一切為蘋果的彼得潘",
+      "linePersonal": "LINE 私人帳號",
+      "lineOfficial": "LINE 官方帳號",
+      "email": "Email",
+      "visit": "前往",
+      "copy": "複製",
+      "sendEmail": "寄信",
+      "copied": "已複製到剪貼簿！",
+      "copyFailed": "複製失敗，請手動複製"
     },
     "books": {
       "title": "著作",
