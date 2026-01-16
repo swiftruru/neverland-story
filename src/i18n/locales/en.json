@@ -222,6 +222,36 @@
       "title": "First Handmade iOS SwiftUI App",
       "date": "2021/5/23",
       "description": "Everyone has the talent to create Apps - it's time to unlock it! A hands-on iOS App course for beginners, teaching you to build Apps you love (like a beloved pet App or a sweet relationship App), installed on your own or friends' and family's iPhones to enjoy anytime."
+    },
+    "christmasGiftApp": {
+      "title": "iOS App Workshop 6 - SwiftUI Christmas Gift Exchange App",
+      "date": "2019/12/27",
+      "description": "Develop a Christmas gift exchange App using SwiftUI"
+    },
+    "appDevSwiftBook": {
+      "title": "iOS App Workshop 3 - App Development with Swift eBook Code Analysis",
+      "date": "2019/8/31",
+      "description": "Analyze Apple's App Development with Swift eBook code examples"
+    },
+    "swiftuiEbook": {
+      "title": "iOS App Workshop 5 - Create eBook App with SwiftUI",
+      "date": "2019/11/2",
+      "description": "Create an eBook App using SwiftUI"
+    },
+    "yahooTraining": {
+      "title": "Yahoo iOS App Corporate Training",
+      "date": "2019/9 ~ 2019/11",
+      "description": ""
+    },
+    "wwdc19Workshop": {
+      "title": "iOS App Workshop 4 - WWDC19 New Technology Sharing",
+      "date": "2019/10/5",
+      "description": "WWDC19 New Technology Sharing - Xcode 11, iOS 13 & SwiftUI"
+    },
+    "ticTacToe": {
+      "title": "iOS App Workshop 2 - University of Chicago Tic-Tac-Toe App",
+      "date": "2019/7/27",
+      "description": "Learn to build the University of Chicago Stanford's Tic-Tac-Toe App"
     }
   },
   "qa": {

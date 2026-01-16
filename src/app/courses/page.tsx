@@ -108,6 +108,53 @@ const COURSES: Course[] = [
     image: '/courses/first-swiftui-app.png',
     url: 'https://firstiosswiftuiapp.mystrikingly.com/',
   },
+  {
+    id: 'christmas-gift-app',
+    titleKey: 'christmasGiftApp.title',
+    dateKey: 'christmasGiftApp.date',
+    descriptionKey: 'christmasGiftApp.description',
+    image: '/courses/christmas-gift-app.png',
+    url: 'http://swiftuichristmasgift.mystrikingly.com/',
+  },
+  {
+    id: 'app-dev-swift-book',
+    titleKey: 'appDevSwiftBook.title',
+    dateKey: 'appDevSwiftBook.date',
+    descriptionKey: 'appDevSwiftBook.description',
+    image: '/courses/app-dev-swift-book.png',
+    url: 'https://swiftappworkshop3.mystrikingly.com/',
+  },
+  {
+    id: 'swiftui-ebook',
+    titleKey: 'swiftuiEbook.title',
+    dateKey: 'swiftuiEbook.date',
+    descriptionKey: 'swiftuiEbook.description',
+    image: '/courses/swiftui-ebook.png',
+    url: 'https://swiftuibook.mystrikingly.com/',
+  },
+  {
+    id: 'yahoo-training',
+    titleKey: 'yahooTraining.title',
+    dateKey: 'yahooTraining.date',
+    descriptionKey: 'yahooTraining.description',
+    image: '/courses/yahoo-training.png',
+  },
+  {
+    id: 'wwdc19-workshop',
+    titleKey: 'wwdc19Workshop.title',
+    dateKey: 'wwdc19Workshop.date',
+    descriptionKey: 'wwdc19Workshop.description',
+    image: '/courses/wwdc19-workshop.png',
+    url: 'https://swiftappworkshop4.mystrikingly.com/',
+  },
+  {
+    id: 'tic-tac-toe',
+    titleKey: 'ticTacToe.title',
+    dateKey: 'ticTacToe.date',
+    descriptionKey: 'ticTacToe.description',
+    image: '/courses/tic-tac-toe.png',
+    url: 'https://swiftappworkshop2.mystrikingly.com/',
+  },
 ]
 
 // 箭頭圖標
