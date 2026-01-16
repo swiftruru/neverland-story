@@ -41,7 +41,10 @@
     },
     "classroom": {
       "title": "開發教室",
-      "description": "實作課程與練習"
+      "description": "實作課程與練習",
+      "mainTitle": "彼得潘的 Swift iOS / Flutter App 開發教室",
+      "subtitle": "學生們精心創作的作業",
+      "visitMedium": "前往 Medium 教室"
     },
     "contact": {
       "title": "聯絡",

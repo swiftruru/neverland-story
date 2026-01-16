@@ -41,7 +41,10 @@
     },
     "classroom": {
       "title": "Classroom",
-      "description": "Hands-on courses and exercises"
+      "description": "Hands-on courses and exercises",
+      "mainTitle": "Peter Pan's Swift iOS / Flutter App Classroom",
+      "subtitle": "Students' carefully crafted assignments",
+      "visitMedium": "Visit Medium Classroom"
     },
     "contact": {
       "title": "Contact",
