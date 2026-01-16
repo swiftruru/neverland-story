@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { I18nProvider } from '@i18n/I18nProvider'
 import { Header, Navigation, Footer } from '@components/layout'
+import { PageTransition } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="zh-TW">
       <body>
         <I18nProvider>
+          <PageTransition />
           <div className={styles.layout}>
             <Header />
             <Navigation />
