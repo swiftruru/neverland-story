@@ -82,32 +82,54 @@
     "gallery": {
       "title": "Gallery",
       "description": "Event and course photos"
-    },
-    "ferryman": {
-      "title": "Success Stories",
-      "description": "Student success stories"
-    },
-    "apps": {
-      "title": "APP Works",
-      "description": "Student and personal app showcase"
-    },
-    "essays": {
-      "title": "Essays",
-      "description": "Life reflections and thoughts"
-    },
-    "columns": {
-      "title": "Columns",
-      "description": "Magazine articles"
-    },
-    "links": {
-      "title": "Links",
-      "description": "Useful resources"
-    },
-    "experience": {
-      "title": "Experience",
-      "description": "Personal resume and experience"
-    },
-    "comingSoon": "Content coming soon..."
+    }
+  },
+  "gallery": {
+    "mainTitle": "Happy Moments from Peter Pan's iOS App Courses",
+    "subtitle": "More App Course Photos",
+    "viewPhoto": "View photo",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "hint": "Click to enlarge, use arrow keys to navigate",
+    "classPhoto1": "Class Photo 1",
+    "classPhoto2": "Class Photo 2",
+    "classPhoto3": "Class Photo 3",
+    "classPhoto4": "Class Photo 4",
+    "classPhoto5": "Class Photo 5",
+    "classPhoto6": "Class Photo 6",
+    "classPhoto7": "Class Photo 7",
+    "classPhoto8": "Class Photo 8"
+  },
+  "ferryman": {
+    "title": "Success Stories",
+    "description": "Student success stories",
+    "comingSoon": "This page is coming soon..."
+  },
+  "apps": {
+    "title": "APP Works",
+    "description": "Student and personal app showcase",
+    "comingSoon": "This page is coming soon..."
+  },
+  "essays": {
+    "title": "Essays",
+    "description": "Life reflections and thoughts",
+    "comingSoon": "This page is coming soon..."
+  },
+  "columns": {
+    "title": "Columns",
+    "description": "Magazine articles",
+    "comingSoon": "This page is coming soon..."
+  },
+  "links": {
+    "title": "Links",
+    "description": "Useful resources",
+    "comingSoon": "This page is coming soon..."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Personal resume and experience",
+    "comingSoon": "This page is coming soon..."
   },
   "books": {
     "mainTitle": "Peter Pan's Books",

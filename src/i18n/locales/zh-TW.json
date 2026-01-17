@@ -82,31 +82,53 @@
     "gallery": {
       "title": "相冊",
       "description": "活動與課程照片"
-    },
-    "ferryman": {
-      "title": "金牌擺渡人",
-      "description": "學員成功故事"
-    },
-    "apps": {
-      "title": "APP 作品",
-      "description": "學員與個人作品展示"
-    },
-    "essays": {
-      "title": "散文集",
-      "description": "生活隨筆與心得"
-    },
-    "columns": {
-      "title": "雜誌專欄",
-      "description": "雜誌刊登文章"
-    },
-    "links": {
-      "title": "相關連結",
-      "description": "實用資源連結"
-    },
-    "experience": {
-      "title": "經歷",
-      "description": "個人履歷與經歷"
-    },
+    }
+  },
+  "gallery": {
+    "mainTitle": "彼得潘 iOS App 課程的幸福合影",
+    "subtitle": "更多 App 課程合影",
+    "viewPhoto": "查看照片",
+    "close": "關閉",
+    "prev": "上一張",
+    "next": "下一張",
+    "hint": "點擊照片放大查看，使用左右鍵切換",
+    "classPhoto1": "課程合影 1",
+    "classPhoto2": "課程合影 2",
+    "classPhoto3": "課程合影 3",
+    "classPhoto4": "課程合影 4",
+    "classPhoto5": "課程合影 5",
+    "classPhoto6": "課程合影 6",
+    "classPhoto7": "課程合影 7",
+    "classPhoto8": "課程合影 8"
+  },
+  "ferryman": {
+    "title": "金牌擺渡人",
+    "description": "學員成功故事",
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "apps": {
+    "title": "APP 作品",
+    "description": "學員與個人作品展示",
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "essays": {
+    "title": "散文集",
+    "description": "生活隨筆與心得",
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "columns": {
+    "title": "雜誌專欄",
+    "description": "雜誌刊登文章",
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "links": {
+    "title": "相關連結",
+    "description": "實用資源連結",
+    "comingSoon": "此頁面內容即將推出..."
+  },
+  "experience": {
+    "title": "經歷",
+    "description": "個人履歷與經歷",
     "comingSoon": "此頁面內容即將推出..."
   },
   "books": {
