@@ -342,6 +342,36 @@
       "title": "NCU Computer Science iOS App Programming Introduction",
       "date": "2016/12/10, 12/11, 12/17, 12/18, NCU CS",
       "description": "National Central University iOS App Programming Workshop."
+    },
+    "objcToSwift": {
+      "title": "Swift Programming for Objective-C Engineers",
+      "date": "2016/3/27 (Sun) 10:00 ~ 18:00",
+      "description": "Swift is Apple's new-generation programming language - concise, easy to understand, fast, and safe. With its Open Source release, Swift can not only develop iOS Apps but also Linux, Windows, Android, and even backend Apps. Now is the perfect time to learn Swift. This course uses Peter Pan's engaging book 'Swift Programming Introduction' combined with fully-evolved Swift to guide Objective-C engineers through 7 hours of Swift syntax and features!"
+    },
+    "girlsHandmadeIosApp": {
+      "title": "Handmade iOS App for Girls",
+      "date": "Three sessions: 2016/3/6 (Sun), 2016/3/13 (Sun), 2016/3/20 (Sun) 10:00 ~ 18:00",
+      "description": "Every girl has the talent to create Apps - it's time to unlock it! A hands-on eBook App course designed exclusively for girls, teaching you to create your own themed eBook App in 7 hours, installed on your precious iPhone to share with family and friends anytime."
+    },
+    "ntmofaMagicApp": {
+      "title": "NTMOFA Magic App Workshop",
+      "date": "2016/8/21 (Sun) 13:00 ~ 17:00, National Taiwan Museum of Fine Arts",
+      "description": "Combining art and App development, guiding students to create a unique NTMOFA Magic App from scratch. Through this course, students will gain deeper understanding of 'NTMOFA Masterpieces' and 'Nature Wizard' related works, while learning iOS App creation techniques, expressing their creativity and aesthetics to build an NTMOFA Magic App installed on their own and friends' and family's iPhones."
+    },
+    "kkdayCorporateTraining": {
+      "title": "KKday Corporate Training",
+      "date": "2016 4/17 ~ 8/27, 70 hours",
+      "description": "Corporate training program"
+    },
+    "collegeIosMagic": {
+      "title": "iOS App Development Magic Course for College Students",
+      "date": "2016/3/16 ~ 2016/6/1, Wed 19:00 ~ 22:00",
+      "description": "Tailored for college students - whether you're a tech enthusiast or an arts major, in just 10 weeks, one evening per week, you can master the core concepts of programming and become a cool iOS App development wizard!"
+    },
+    "firstCodeContact": {
+      "title": "First Code Encounter",
+      "date": "2016/4/10 (Sun)",
+      "description": "This course introduces basic programming concepts using the easy-to-understand Swift language, making you fall in love with programming from the first try!"
     }
   },
   "qa": {

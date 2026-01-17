@@ -297,6 +297,53 @@ const COURSES: Course[] = [
     descriptionKey: 'ncuIosAppIntro.description',
     image: '',
   },
+  {
+    id: 'objc-to-swift',
+    titleKey: 'objcToSwift.title',
+    dateKey: 'objcToSwift.date',
+    descriptionKey: 'objcToSwift.description',
+    image: '/courses/objc-to-swift.png',
+    url: 'http://objectivectoswift.strikingly.com/',
+  },
+  {
+    id: 'girls-handmade-ios-app',
+    titleKey: 'girlsHandmadeIosApp.title',
+    dateKey: 'girlsHandmadeIosApp.date',
+    descriptionKey: 'girlsHandmadeIosApp.description',
+    image: '/courses/girls-handmade-ios-app.png',
+    url: 'http://girlapp.strikingly.com/',
+  },
+  {
+    id: 'ntmofa-magic-app',
+    titleKey: 'ntmofaMagicApp.title',
+    dateKey: 'ntmofaMagicApp.date',
+    descriptionKey: 'ntmofaMagicApp.description',
+    image: '',
+    url: 'http://ntmofaiosapp.strikingly.com/',
+  },
+  {
+    id: 'kkday-corporate-training',
+    titleKey: 'kkdayCorporateTraining.title',
+    dateKey: 'kkdayCorporateTraining.date',
+    descriptionKey: 'kkdayCorporateTraining.description',
+    image: '',
+  },
+  {
+    id: 'college-ios-magic',
+    titleKey: 'collegeIosMagic.title',
+    dateKey: 'collegeIosMagic.date',
+    descriptionKey: 'collegeIosMagic.description',
+    image: '',
+    url: 'http://collegelearnios.strikingly.com/',
+  },
+  {
+    id: 'first-code-contact',
+    titleKey: 'firstCodeContact.title',
+    dateKey: 'firstCodeContact.date',
+    descriptionKey: 'firstCodeContact.description',
+    image: '',
+    url: 'http://firstswiftcode.strikingly.com/',
+  },
 ]
 
 // 箭頭圖標

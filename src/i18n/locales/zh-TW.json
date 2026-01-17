@@ -342,6 +342,36 @@
       "title": "中央資工 iOS App 程式設計入門",
       "date": "2016/12/10，12/11，12/17，12/18，中央資工",
       "description": "中央大學 iOS App 程式設計研習營。"
+    },
+    "objcToSwift": {
+      "title": "Objective-C 工程師的 Swift 程式入門",
+      "date": "2016/3/27 (日) 10:00 ~ 18:00",
+      "description": "Swift 是 Apple 全新發明的新時代程式語言，簡潔、易懂、快速、安全。隨著它的 Open Source，未來 Swift 不只能開發 iOS App，還有機會開發 Linux，Windows, Android，甚至後台的 App。此時此刻正是學習 Swift 的最好時機。本課程將以彼得潘生動有趣的著作「Swift 程式設計入門」為主，輔以全面進化的 Swift，帶領 Objective-C 工程師 7 小時熟悉 Swift 的各項語法和功能！"
+    },
+    "girlsHandmadeIosApp": {
+      "title": "女孩們的手做 iOS App",
+      "date": "三個班次，2016/3/6 (日)，2016/3/13 (日), 2016/3/20 (日) 10:00 ~ 18:00",
+      "description": "每個女孩，都有著創作 App 的天份，是時候將它開啟了！專屬於女孩們的手做電子書 App，教你 7 個小時打造自己喜愛主題的電子書 App，安裝在自己的寶貝 iPhone 上，隨時和家人朋友分享。"
+    },
+    "ntmofaMagicApp": {
+      "title": "國美魔法 App 工作坊",
+      "date": "2016/8/21 (日) 13:00 ~ 17:00，國美館",
+      "description": "結合藝術與 App，帶領學生從無到有創作獨一無二的國美魔法 App。透過本課程學生將對「國美無雙」和「自然魔法師」的相關作品有進一步的了解，並學習創作 iOS App 的相關技巧，發揮自己的創意和美感，打造安裝在自己和家人朋友 iPhone 的國美魔法 App。"
+    },
+    "kkdayCorporateTraining": {
+      "title": "譯智 KKday 企業包班",
+      "date": "2016 4/17 ~ 8/27，70 小時，譯智",
+      "description": "企業包班"
+    },
+    "collegeIosMagic": {
+      "title": "大學生的 iOS App 開發入門魔法課",
+      "date": "2016/3/16 ~ 2016/6/1，每週三 19:00 ~ 22:00",
+      "description": "專為大學生量身訂做，不管你是陽光宅男還是文藝少女，只要 10 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！"
+    },
+    "firstCodeContact": {
+      "title": "第一次程式親密接觸",
+      "date": "2016/4/10 (日)",
+      "description": "本課程將以淺顯易懂的 Swift 語言介紹程式設計的基本概念，讓你第一次就愛上程式設計！"
     }
   },
   "qa": {
