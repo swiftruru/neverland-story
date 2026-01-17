@@ -282,6 +282,36 @@
       "title": "文組生的 iOS App 程式初體驗",
       "date": "2017/12/10, 12/17，週日 10:00 ~ 18:00，台中",
       "description": "專為文組生量身訂做，從零開始學程式，開開心心寫 App！只要 2 個週末，14 個小時，即可學會程式設計的核心概念，開發出人生的第一個 iOS App！"
+    },
+    "iosAppWizardFree": {
+      "title": "如何變成 iOS App 開發魔法師（免費！）",
+      "date": "2017/4/29，政大",
+      "description": "適合初學者的免費講座，帶你了解如何踏入 iOS App 開發的魔法世界！"
+    },
+    "ntuCsXMobile": {
+      "title": "台大 CS + X 手機應用程式設計",
+      "date": "2017/6 ~ 2017/7，臺灣大學",
+      "description": "台大 CS + X 跨領域課程，學習手機應用程式設計的基礎與實作。"
+    },
+    "wwdc17Xcode9Swift4": {
+      "title": "不可能不愛的 Xcode 9，Swift 4，iOS 11",
+      "date": "2017/8/19，台中 iOSDC",
+      "description": "WWDC17 新技術分享 - 介紹讓人不可能不愛的 Xcode 9、Swift 4 和 iOS 11 新功能。"
+    },
+    "nccuSwiftIos": {
+      "title": "政大南風四重奏的 iOS App 開發與 Swift 程式語法",
+      "date": "2017/3/13 ~ 2017/4/24，政治大學",
+      "description": "在政大南風四重奏活動中，教授 iOS App 開發與 Swift 程式語法的基礎課程。"
+    },
+    "fcuOneSongApp": {
+      "title": "逢甲給我一首歌的時間做 App",
+      "date": "2017/6/2，逢甲大學",
+      "description": "在逢甲大學的演講，示範如何在一首歌的時間內完成一個簡單的 App。"
+    },
+    "dessertAppExperience": {
+      "title": "晚餐後的幸福甜點 ~ App 創作初體驗",
+      "date": "2017/6/16，iOSDC",
+      "description": "適合初學者的 App 創作體驗課程，像享用幸福甜點一樣輕鬆愉快地開始學習 App 開發。"
     }
   },
   "qa": {

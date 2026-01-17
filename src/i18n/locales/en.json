@@ -282,6 +282,36 @@
       "title": "Liberal Arts Students' First iOS App Experience",
       "date": "2017/12/10, 12/17, Sun 10:00 ~ 18:00, Taichung",
       "description": "Tailored for liberal arts students, learn programming from scratch and have fun building Apps! In just 2 weekends, 14 hours, you can master core programming concepts and develop your first iOS App!"
+    },
+    "iosAppWizardFree": {
+      "title": "How to Become an iOS App Development Wizard (Free!)",
+      "date": "2017/4/29, NCCU",
+      "description": "A free introductory lecture for beginners, showing you how to enter the magical world of iOS App development!"
+    },
+    "ntuCsXMobile": {
+      "title": "NTU CS + X Mobile App Development",
+      "date": "2017/6 ~ 2017/7, National Taiwan University",
+      "description": "NTU CS + X interdisciplinary course, learning the fundamentals and practice of mobile app development."
+    },
+    "wwdc17Xcode9Swift4": {
+      "title": "Can't Help But Love Xcode 9, Swift 4, iOS 11",
+      "date": "2017/8/19, Taichung iOSDC",
+      "description": "WWDC17 new technology sharing - introducing the irresistible new features of Xcode 9, Swift 4, and iOS 11."
+    },
+    "nccuSwiftIos": {
+      "title": "NCCU South Wind Quartet: iOS App Development & Swift Programming",
+      "date": "2017/3/13 ~ 2017/4/24, National Chengchi University",
+      "description": "Teaching iOS App development and Swift programming fundamentals as part of the NCCU South Wind Quartet event."
+    },
+    "fcuOneSongApp": {
+      "title": "FCU: Build an App in One Song",
+      "date": "2017/6/2, Feng Chia University",
+      "description": "A lecture at Feng Chia University, demonstrating how to build a simple App in the time of one song."
+    },
+    "dessertAppExperience": {
+      "title": "After-Dinner Dessert: First App Creation Experience",
+      "date": "2017/6/16, iOSDC",
+      "description": "An App creation experience course for beginners - start learning App development as enjoyably as savoring a delightful dessert."
     }
   },
   "qa": {
