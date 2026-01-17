@@ -353,6 +353,21 @@ function ExpandIcon({ className }: { className?: string }) {
   )
 }
 
+// 課程預設圖標（書本+程式碼）
+function CourseDefaultIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 80 80" fill="none" stroke="currentColor" strokeWidth="2">
+      {/* 書本 */}
+      <path d="M10 15 L10 60 Q25 55 40 60 Q55 55 70 60 L70 15 Q55 20 40 15 Q25 20 10 15" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M40 15 L40 60" strokeLinecap="round" />
+      {/* 程式碼符號 */}
+      <path d="M22 32 L16 38 L22 44" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M58 32 L64 38 L58 44" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M48 28 L32 48" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 // Modal 組件
 function CourseModal({
   course,
@@ -387,13 +402,19 @@ function CourseModal({
         </button>
 
         <div className={styles.modalImageWrapper}>
-          <Image
-            src={course.image}
-            alt={t(`courses.${course.titleKey}`)}
-            width={600}
-            height={375}
-            className={styles.modalImage}
-          />
+          {course.image ? (
+            <Image
+              src={course.image}
+              alt={t(`courses.${course.titleKey}`)}
+              width={600}
+              height={375}
+              className={styles.modalImage}
+            />
+          ) : (
+            <div className={styles.modalPlaceholder}>
+              <CourseDefaultIcon className={styles.placeholderIcon} />
+            </div>
+          )}
         </div>
 
         <div className={styles.modalBody}>
@@ -485,13 +506,19 @@ export default function CoursesPage() {
                       aria-label={`${t('courses.viewDetails')} ${t(`courses.${course.titleKey}`)}`}
                     >
                       <div className={styles.imageWrapper}>
-                        <Image
-                          src={course.image}
-                          alt={t(`courses.${course.titleKey}`)}
-                          width={400}
-                          height={250}
-                          className={styles.courseImage}
-                        />
+                        {course.image ? (
+                          <Image
+                            src={course.image}
+                            alt={t(`courses.${course.titleKey}`)}
+                            width={400}
+                            height={250}
+                            className={styles.courseImage}
+                          />
+                        ) : (
+                          <div className={styles.imagePlaceholder}>
+                            <CourseDefaultIcon className={styles.placeholderIcon} />
+                          </div>
+                        )}
                         <div className={styles.imageOverlay}>
                           <ExpandIcon className={styles.expandIcon} />
                         </div>

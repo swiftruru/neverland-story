@@ -90,6 +90,33 @@
   transition: transform 0.3s ease;
 }
 
+/* Placeholder for courses without images */
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #006850 0%, #00a67d 50%, #00c896 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.placeholderIcon {
+  width: 80px;
+  height: 80px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.cardClickArea:hover .imagePlaceholder {
+  transform: scale(1.02);
+}
+
+.cardClickArea:hover .placeholderIcon {
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
 .imageOverlay {
   position: absolute;
   inset: 0;
@@ -318,6 +345,21 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.modalPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #006850 0%, #00a67d 50%, #00c896 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalPlaceholder .placeholderIcon {
+  width: 100px;
+  height: 100px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .modalBody {
