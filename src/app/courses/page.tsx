@@ -250,6 +250,53 @@ const COURSES: Course[] = [
     image: '/courses/dessert-app-experience.png',
     url: 'http://blesseddessertapp.strikingly.com/',
   },
+  {
+    id: 'ntu-startup-challenge-workshop',
+    titleKey: 'ntuStartupChallengeWorkshop.title',
+    dateKey: 'ntuStartupChallengeWorkshop.date',
+    descriptionKey: 'ntuStartupChallengeWorkshop.description',
+    image: '/courses/ntu-startup-challenge-workshop.png',
+    url: 'https://medium.com/@apppeterpan/%E5%8F%B0%E5%A4%A7%E5%89%B5%E5%89%B5%E6%8C%91%E6%88%B0%E8%B3%BD-ios-app-%E9%96%8B%E7%99%BC%E5%B7%A5%E4%BD%9C%E5%9D%8A-7700a22055fe',
+  },
+  {
+    id: 'alpha-camp-ios-bootcamp',
+    titleKey: 'alphaCampIosBootcamp.title',
+    dateKey: 'alphaCampIosBootcamp.date',
+    descriptionKey: 'alphaCampIosBootcamp.description',
+    image: '/courses/alpha-camp-ios-bootcamp.png',
+    url: 'https://www.alphacamp.co/bootcamp/ios-app-dev-bootcamp/',
+  },
+  {
+    id: 'ios-app-startup-methods',
+    titleKey: 'iosAppStartupMethods.title',
+    dateKey: 'iosAppStartupMethods.date',
+    descriptionKey: 'iosAppStartupMethods.description',
+    image: '',
+    url: 'https://medium.com/@apppeterpan/%E5%88%A9%E7%94%A8-ios-app-%E6%8A%80%E8%A1%93%E5%89%B5%E6%A5%AD%E7%9A%84-13-%E5%80%8B%E6%96%B9%E6%B3%95-5c7559bd0de5',
+  },
+  {
+    id: 'first-handmade-ios-app',
+    titleKey: 'firstHandmadeIosApp.title',
+    dateKey: 'firstHandmadeIosApp.date',
+    descriptionKey: 'firstHandmadeIosApp.description',
+    image: '/courses/first-handmade-ios-app.png',
+    url: 'http://firstiosapp.strikingly.com/',
+  },
+  {
+    id: 'learn-code-from-zero',
+    titleKey: 'learnCodeFromZero.title',
+    dateKey: 'learnCodeFromZero.date',
+    descriptionKey: 'learnCodeFromZero.description',
+    image: '/courses/learn-code-from-zero.png',
+    url: 'http://learncodefromzero.strikingly.com/',
+  },
+  {
+    id: 'ncu-ios-app-intro',
+    titleKey: 'ncuIosAppIntro.title',
+    dateKey: 'ncuIosAppIntro.date',
+    descriptionKey: 'ncuIosAppIntro.description',
+    image: '',
+  },
 ]
 
 // 箭頭圖標

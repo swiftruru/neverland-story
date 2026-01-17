@@ -312,6 +312,36 @@
       "title": "After-Dinner Dessert: First App Creation Experience",
       "date": "2017/6/16, iOSDC",
       "description": "An App creation experience course for beginners - start learning App development as enjoyably as savoring a delightful dessert."
+    },
+    "ntuStartupChallengeWorkshop": {
+      "title": "NTU Startup Challenge iOS App Development Workshop",
+      "date": "2017/1/18, NTU",
+      "description": "Introduction to basic iOS App development techniques."
+    },
+    "alphaCampIosBootcamp": {
+      "title": "ALPHA Camp iOS APP Bootcamp",
+      "date": "10 weeks",
+      "description": "An iOS App course for beginners, starting from basic Xcode, Swift, and Cocoa Touch Framework, teaching you step by step to build your dream App and become an outstanding App developer."
+    },
+    "iosAppStartupMethods": {
+      "title": "13 Ways to Start a Business with iOS App Skills",
+      "date": "2017/1/19, Hourly Master & Startup Cafe",
+      "description": "Work as an engineer at a startup, freelancing, co-founding, publishing your own App, proposing collaborations for your dreams, writing books, column writer, one-on-one tutoring, teaching at universities/cram schools/corporate training, running your own courses, online video courses, iOS App success mentor, iOS App engineer/outsourcing vendor interview consultant"
+    },
+    "firstHandmadeIosApp": {
+      "title": "First Handmade iOS App (990 NTD)",
+      "date": "Taipei: 2016/5/1 (Sun), Taichung: 2016/4/30 (Sat), 10:00 ~ 18:00",
+      "description": "Everyone has the talent to create Apps - it's time to unlock it! A hands-on iOS App course designed for you, teaching you to build Apps you love (like a beloved pet App or a sweet relationship App), installed on your own or friends' and family's iPhones to enjoy anytime."
+    },
+    "learnCodeFromZero": {
+      "title": "Learn Programming from Zero (Free)",
+      "date": "2016/5/29 (Sun), 10:00 ~ 18:00",
+      "description": "Step by step learning programming, waiting for friends to admire you. Small steps lead to big dreams, free courses with fun programming. This course introduces basic programming concepts using the easy-to-understand Swift language, with step-by-step teaching and rich hands-on practice, making you fall in love with programming from the first try!"
+    },
+    "ncuIosAppIntro": {
+      "title": "NCU Computer Science iOS App Programming Introduction",
+      "date": "2016/12/10, 12/11, 12/17, 12/18, NCU CS",
+      "description": "National Central University iOS App Programming Workshop."
     }
   },
   "qa": {
