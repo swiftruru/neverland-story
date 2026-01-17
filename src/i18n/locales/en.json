@@ -102,9 +102,24 @@
     "classPhoto8": "Class Photo 8"
   },
   "ferryman": {
-    "title": "Success Stories",
-    "description": "Student success stories",
-    "comingSoon": "This page is coming soon..."
+    "title": "iOS App Ferryman",
+    "description": "Helping you solve iOS App development problems",
+    "mainTitle": "iOS APP Golden Ferryman",
+    "subtitle": "Helping you solve iOS App development problems and overcome challenges",
+    "learnMore": "Learn More",
+    "servicesTitle": "We Can Help You With",
+    "scenariosAlt": "Various scenarios where you need help",
+    "services": {
+      "work": "Work Projects",
+      "school": "School Projects",
+      "demo": "APP DEMO",
+      "outsource": "Outsourcing",
+      "interview": "Interviews",
+      "appStore": "APP Store"
+    },
+    "ctaTitle": "Need Help?",
+    "ctaDescription": "Whether you're struggling with learning or need professional assistance at work, the Golden Ferryman is here to help you overcome any challenges.",
+    "ctaButton": "Visit Golden Ferryman"
   },
   "apps": {
     "title": "APP Works",

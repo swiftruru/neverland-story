@@ -35,8 +35,9 @@
 }
 
 .heroTitle {
-  font-family: var(--font-family-handwriting);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   color: white;
   margin-bottom: 0.75rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);

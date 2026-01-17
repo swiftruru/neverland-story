@@ -103,8 +103,23 @@
   },
   "ferryman": {
     "title": "金牌擺渡人",
-    "description": "學員成功故事",
-    "comingSoon": "此頁面內容即將推出..."
+    "description": "幫助你解決 iOS App 開發問題",
+    "mainTitle": "iOS APP 金牌擺渡人",
+    "subtitle": "幫助你解決 iOS App 開發問題，度過難關",
+    "learnMore": "了解更多",
+    "servicesTitle": "我們可以幫助你",
+    "scenariosAlt": "各種需要幫助的情境",
+    "services": {
+      "work": "工作",
+      "school": "學校專題",
+      "demo": "APP DEMO",
+      "outsource": "外包案",
+      "interview": "面試",
+      "appStore": "APP 上架"
+    },
+    "ctaTitle": "需要幫助嗎？",
+    "ctaDescription": "無論你是在學習過程中遇到困難，還是工作上需要專業協助，金牌擺渡人都能幫助你度過難關。",
+    "ctaButton": "前往金牌擺渡人"
   },
   "apps": {
     "title": "APP 作品",
