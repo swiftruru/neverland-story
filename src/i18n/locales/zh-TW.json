@@ -372,6 +372,46 @@
       "title": "第一次程式親密接觸",
       "date": "2016/4/10 (日)",
       "description": "本課程將以淺顯易懂的 Swift 語言介紹程式設計的基本概念，讓你第一次就愛上程式設計！"
+    },
+    "findIosDeepDive": {
+      "title": "彼得潘的深入淺出 iOS App 開發應用",
+      "date": "3/5 ~ 4/23，每星期六 9:30 - 12:30，共七堂，資策會",
+      "description": "特別的主題課程，全部七個主題，包含「網路後台串接」、「表格應用」、「照片牆」、「Stack View」、「Facebook」、「地圖定位」、「App 分析技術」等，並結合資策會的社群數據分析 SER API。可單堂報名，也可全部報名享折扣。"
+    },
+    "littlePrinceEbookApp": {
+      "title": "打造你的第一個 iPhone APP（以小王子電子書為例）",
+      "date": "2015/12/12，ALPHA Camp",
+      "description": "以淺顯易懂的 storyboard 教你打造小王子電子故事書 APP，讓你第一次寫 APP 就輕鬆上手！"
+    },
+    "stanfordIosStudyGroup": {
+      "title": "Stanford 2015 iOS 讀書會講師",
+      "date": "2015/4/11 起十個星期，ALPHA Camp",
+      "description": "Stanford 十個星期的 Swift + iOS 8 課程講解。"
+    },
+    "tcuIosAppIntro": {
+      "title": "慈濟科大 iOS App 程式設計入門",
+      "date": "2016/10/23、11/6、11/27、12/04，8:00 ~ 17:00，花蓮慈濟科大",
+      "description": "慈濟科大 iOS App 程式設計研習營。"
+    },
+    "hkIosCollaborative": {
+      "title": "弘光科大 iOS App 協同教學",
+      "date": "弘光科大，2014/11/7、11/21、11/28、12/5、12/12、12/26",
+      "description": "弘光科大 iOS App 協同教學課程。"
+    },
+    "appDreamJourney": {
+      "title": "彼得潘的 App 逐夢之旅",
+      "date": "2012 ~ 2015，多場演講",
+      "description": "關於彼得潘的 iOS App 冒險故事。朝陽科技大學通識課（2015/6/5）、資策會行動開發學院（2015/6/3）、南台科大資工系演講（2012/12/11）、政大資管演講（2012/12/26）、東林扶輪社演講（2012/12/9）、HPX Life 5 講座（2012/4/5）。"
+    },
+    "firstCodingExperience": {
+      "title": "你的程式開發初體驗",
+      "date": "2015/8/15",
+      "description": "一直想學習程式語言，卻不知道從何下手嗎？想在最短的時間內體驗開發流程，學習最重要的基本概念嗎？「彼得潘的 App 異想世界 - 你的程式開發初體驗」課程，以淺顯易懂的 Swift 語言介紹程式開發的基本概念，讓你第一次學寫程式就上手！"
+    },
+    "buildAppForLove": {
+      "title": "為愛打造 APP",
+      "date": "2014/1/25，ALPHA Camp x STUDIO A",
+      "description": "愛情專屬 App，情人節禮物創意首選！"
     }
   },
   "qa": {

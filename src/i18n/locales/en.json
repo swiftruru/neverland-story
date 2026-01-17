@@ -372,6 +372,46 @@
       "title": "First Code Encounter",
       "date": "2016/4/10 (Sun)",
       "description": "This course introduces basic programming concepts using the easy-to-understand Swift language, making you fall in love with programming from the first try!"
+    },
+    "findIosDeepDive": {
+      "title": "Peter Pan's Deep Dive into iOS App Development",
+      "date": "3/5 ~ 4/23, Every Saturday 9:30 - 12:30, 7 sessions, III",
+      "description": "Special themed courses covering 7 topics including \"Network Backend Integration\", \"Table Applications\", \"Photo Wall\", \"Stack View\", \"Facebook\", \"Maps & Location\", and \"App Analytics\", combined with III's social data analysis SER API. Register for single sessions or all for a discount."
+    },
+    "littlePrinceEbookApp": {
+      "title": "Build Your First iPhone APP (Little Prince eBook)",
+      "date": "2015/12/12, ALPHA Camp",
+      "description": "Using easy-to-understand storyboard to teach you how to build a Little Prince electronic storybook APP, making your first APP development experience effortless!"
+    },
+    "stanfordIosStudyGroup": {
+      "title": "Stanford 2015 iOS Study Group Instructor",
+      "date": "Starting 2015/4/11 for 10 weeks, ALPHA Camp",
+      "description": "Stanford's 10-week Swift + iOS 8 course instruction."
+    },
+    "tcuIosAppIntro": {
+      "title": "Tzu Chi University iOS App Programming Introduction",
+      "date": "2016/10/23, 11/6, 11/27, 12/04, 8:00 ~ 17:00, Hualien TCU",
+      "description": "Tzu Chi University iOS App Programming Workshop."
+    },
+    "hkIosCollaborative": {
+      "title": "Hungkuang University iOS App Collaborative Teaching",
+      "date": "Hungkuang University, 2014/11/7, 11/21, 11/28, 12/5, 12/12, 12/26",
+      "description": "Hungkuang University iOS App collaborative teaching course."
+    },
+    "appDreamJourney": {
+      "title": "Peter Pan's App Dream Journey",
+      "date": "2012 ~ 2015, Multiple talks",
+      "description": "About Peter Pan's iOS App adventure story. Chaoyang University of Technology general education (2015/6/5), III Mobile Development Academy (2015/6/3), Southern Taiwan University of Science and Technology CS lecture (2012/12/11), NCCU MIS lecture (2012/12/26), Donglin Rotary Club speech (2012/12/9), HPX Life 5 lecture (2012/4/5)."
+    },
+    "firstCodingExperience": {
+      "title": "Your First Coding Experience",
+      "date": "2015/8/15",
+      "description": "Always wanted to learn programming but don't know where to start? Want to experience the development process in the shortest time and learn the most important basic concepts? The \"Peter Pan's App Wonderland - Your First Coding Experience\" course introduces basic programming concepts using the easy-to-understand Swift language, making programming accessible from your very first try!"
+    },
+    "buildAppForLove": {
+      "title": "Build APP for Love",
+      "date": "2014/1/25, ALPHA Camp x STUDIO A",
+      "description": "Love-exclusive App, the creative first choice for Valentine's Day gifts!"
     }
   },
   "qa": {
