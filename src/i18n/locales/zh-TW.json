@@ -412,6 +412,46 @@
       "title": "為愛打造 APP",
       "date": "2014/1/25，ALPHA Camp x STUDIO A",
       "description": "愛情專屬 App，情人節禮物創意首選！"
+    },
+    "objcProgramming": {
+      "title": "Objective-C 程式設計",
+      "date": "2013/7/6、7/7、7/20、7/21，譯智教育訓練",
+      "description": "Objective-C 程式語言課程。"
+    },
+    "csuIosCollaborative": {
+      "title": "正修科大 iOS App 協同教學",
+      "date": "2013/5/4、5/18、5/25，正修科大",
+      "description": "正修科大 iOS App 協同教學課程。"
+    },
+    "appAccountSubmission": {
+      "title": "App 開發帳號申請和上架流程",
+      "date": "2013/10/18，城邦",
+      "description": "介紹 App 開發帳號申請和上架流程。"
+    },
+    "ios7SdkBootcamp": {
+      "title": "iOS 7 SDK 特訓班",
+      "date": "2013/10/5，譯智教育訓練",
+      "description": "iOS 7 SDK 特訓課程。"
+    },
+    "ideaToApp": {
+      "title": "如何將創意提案發展成為一個 App",
+      "date": "2013/7/26，遊戲橘子",
+      "description": "從創意發想到 App 實現的完整開發流程分享。"
+    },
+    "mothersDayApp": {
+      "title": "打造世界上獨一無二的母親節禮物－專屬於媽媽的 APP",
+      "date": "2013/5/5，ALPHA Camp",
+      "description": "親手打造專屬於媽媽的 App，作為世界上獨一無二的母親節禮物！"
+    },
+    "mobileAppStartup": {
+      "title": "MOBILE APP 創業解碼",
+      "date": "2013/3/20，ALPHA Camp",
+      "description": "分享 Mobile App 創業的經驗與心得。"
+    },
+    "musicBecomesApp": {
+      "title": "當音樂克制不了變成 App 的衝動",
+      "date": "2012/9/1，PunApp InstALL 1",
+      "description": "分享如何將對音樂的熱情轉化為 App 創作。"
     }
   },
   "qa": {

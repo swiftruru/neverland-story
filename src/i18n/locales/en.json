@@ -412,6 +412,46 @@
       "title": "Build APP for Love",
       "date": "2014/1/25, ALPHA Camp x STUDIO A",
       "description": "Love-exclusive App, the creative first choice for Valentine's Day gifts!"
+    },
+    "objcProgramming": {
+      "title": "Objective-C Programming",
+      "date": "2013/7/6, 7/7, 7/20, 7/21, eGames Training",
+      "description": "Objective-C programming language course."
+    },
+    "csuIosCollaborative": {
+      "title": "Cheng Shiu University iOS App Collaborative Teaching",
+      "date": "2013/5/4, 5/18, 5/25, Cheng Shiu University",
+      "description": "Cheng Shiu University iOS App collaborative teaching course."
+    },
+    "appAccountSubmission": {
+      "title": "App Developer Account & Submission Process",
+      "date": "2013/10/18, Cite Publishing",
+      "description": "Introduction to App developer account registration and submission process."
+    },
+    "ios7SdkBootcamp": {
+      "title": "iOS 7 SDK Bootcamp",
+      "date": "2013/10/5, eGames Training",
+      "description": "iOS 7 SDK intensive training course."
+    },
+    "ideaToApp": {
+      "title": "How to Develop a Creative Idea into an App",
+      "date": "2013/7/26, Gamania",
+      "description": "Sharing the complete development process from creative idea to App implementation."
+    },
+    "mothersDayApp": {
+      "title": "Create a One-of-a-Kind Mother's Day Gift - An APP Just for Mom",
+      "date": "2013/5/5, ALPHA Camp",
+      "description": "Handcraft an App exclusively for your mom as the world's most unique Mother's Day gift!"
+    },
+    "mobileAppStartup": {
+      "title": "MOBILE APP Startup Decoded",
+      "date": "2013/3/20, ALPHA Camp",
+      "description": "Sharing experiences and insights on Mobile App entrepreneurship."
+    },
+    "musicBecomesApp": {
+      "title": "When Music Can't Help But Become an App",
+      "date": "2012/9/1, PunApp InstALL 1",
+      "description": "Sharing how to transform passion for music into App creation."
     }
   },
   "qa": {

@@ -402,6 +402,62 @@ const COURSES: Course[] = [
     descriptionKey: 'buildAppForLove.description',
     image: '',
   },
+  {
+    id: 'objc-programming',
+    titleKey: 'objcProgramming.title',
+    dateKey: 'objcProgramming.date',
+    descriptionKey: 'objcProgramming.description',
+    image: '',
+  },
+  {
+    id: 'csu-ios-collaborative',
+    titleKey: 'csuIosCollaborative.title',
+    dateKey: 'csuIosCollaborative.date',
+    descriptionKey: 'csuIosCollaborative.description',
+    image: '',
+  },
+  {
+    id: 'app-account-submission',
+    titleKey: 'appAccountSubmission.title',
+    dateKey: 'appAccountSubmission.date',
+    descriptionKey: 'appAccountSubmission.description',
+    image: '',
+  },
+  {
+    id: 'ios7-sdk-bootcamp',
+    titleKey: 'ios7SdkBootcamp.title',
+    dateKey: 'ios7SdkBootcamp.date',
+    descriptionKey: 'ios7SdkBootcamp.description',
+    image: '',
+  },
+  {
+    id: 'idea-to-app',
+    titleKey: 'ideaToApp.title',
+    dateKey: 'ideaToApp.date',
+    descriptionKey: 'ideaToApp.description',
+    image: '',
+  },
+  {
+    id: 'mothers-day-app',
+    titleKey: 'mothersDayApp.title',
+    dateKey: 'mothersDayApp.date',
+    descriptionKey: 'mothersDayApp.description',
+    image: '',
+  },
+  {
+    id: 'mobile-app-startup',
+    titleKey: 'mobileAppStartup.title',
+    dateKey: 'mobileAppStartup.date',
+    descriptionKey: 'mobileAppStartup.description',
+    image: '',
+  },
+  {
+    id: 'music-becomes-app',
+    titleKey: 'musicBecomesApp.title',
+    dateKey: 'musicBecomesApp.date',
+    descriptionKey: 'musicBecomesApp.description',
+    image: '',
+  },
 ]
 
 // 箭頭圖標
