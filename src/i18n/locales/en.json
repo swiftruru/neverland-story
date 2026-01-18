@@ -520,6 +520,65 @@
       "description": "Learn to recreate real App UIs and features, improve practical skills"
     }
   },
+  "appWorks": {
+    "mainTitle": "Peter Pan's APP Portfolio",
+    "subtitle": "From expense tracking to music album Apps, showcasing years of iOS App development work",
+    "viewDetails": "View Details",
+    "viewOnAppStore": "App Store",
+    "wealthy": {
+      "title": "Wealthy! - Track expenses, take photo, and share at one step."
+    },
+    "wealthy01": {
+      "description": "Expense Tracking App, 2013.12.11, $0.99 & Free Version\nTaiwan Finance Top 1, Taiwan Overall Top 2, China Finance Top 2",
+      "description2": "Photo expense tracking, record beautiful shopping memories!"
+    },
+    "wealthy02": {
+      "description": "Photo Expense Tracking",
+      "description2": "Exclusive photo display mode with beautiful interface, your ledger becomes a diary, stunning!"
+    },
+    "wealthy03": {
+      "description": "Timeline",
+      "description2": "Browse and manage finances with timeline, simple and intuitive"
+    },
+    "wealthy04": {
+      "description": "Wealthy App Team Photo"
+    },
+    "pennyHome": {
+      "title": "Penny Tai - On the Way Home"
+    },
+    "pennyHome01": {
+      "description": "Penny Tai Album 'On the Way Home' App, 2011.12, Free & $4.99 Version",
+      "description2": "An album App Peter Pan made for his idol Penny!"
+    },
+    "pennyHome02": {
+      "description": "Listen to Penny's Warm Voice",
+      "description2": "Control the CD turntable, listen to Penny's warm voice."
+    },
+    "pennyHome03": {
+      "description": "YouTube MV",
+      "description2": "Watch the amazing MV."
+    },
+    "pennyHome04": {
+      "description": "Photo of Peter Pan with Penny",
+      "description2": "A keepsake photo worth cherishing forever."
+    },
+    "apart": {
+      "title": "Apart - Group Socializing"
+    },
+    "apart01": {
+      "description": "Group social App, 2015.05.09, Free, published by Attune Ventures Limited",
+      "description2": "Apart connects your circle of friends with other circles in your city. Create a crew, discover and socialize with new and interesting people nearby. Meeting people with your friends is more fun than being on your own. Be a part of something new and meaningful today!"
+    },
+    "apart02": {
+      "description": "Chatroom"
+    },
+    "apart03": {
+      "description": "Accept mysterious invitation"
+    },
+    "apart04": {
+      "description": "Group page"
+    }
+  },
   "floatingContact": {
     "open": "Open contact options",
     "close": "Close contact options",

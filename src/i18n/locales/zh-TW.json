@@ -520,6 +520,65 @@
       "description": "學習復刻真實 App 的 UI 和功能，提升實戰能力"
     }
   },
+  "appWorks": {
+    "mainTitle": "彼得潘的 APP 作品集",
+    "subtitle": "從記帳 App 到音樂專輯 App，展示彼得潘多年來的 iOS App 開發成果",
+    "viewDetails": "查看詳情",
+    "viewOnAppStore": "App Store",
+    "wealthy": {
+      "title": "Wealthy! - Track expenses, take photo, and share at one step."
+    },
+    "wealthy01": {
+      "description": "記帳 App, 2013.12.11, $0.99 & 免費版\n台灣 Finance Top 1，台灣不分類 Top 2，中國 Finance Top 2",
+      "description2": "拍照記帳，記錄每一次購物的美麗回憶!"
+    },
+    "wealthy02": {
+      "description": "拍照記帳",
+      "description2": "獨家的照片展示模式加上美觀的介面，帳簿就是一本日記本，美不勝收！"
+    },
+    "wealthy03": {
+      "description": "時間軸",
+      "description2": "時間軸來瀏覽與管理帳務，簡單直覺"
+    },
+    "wealthy04": {
+      "description": "Wealthy App 團隊成員合影"
+    },
+    "pennyHome": {
+      "title": "戴佩妮回家路上"
+    },
+    "pennyHome01": {
+      "description": "戴佩妮專輯回家路上 App, 2011.12, 免費版 & $4.99 版",
+      "description2": "彼得潘為偶像 Penny 製作的專輯 App!"
+    },
+    "pennyHome02": {
+      "description": "聆聽 Penny 的溫暖歌聲",
+      "description2": "控制 CD 轉盤，聆聽 Penny 的溫暖歌聲。"
+    },
+    "pennyHome03": {
+      "description": "Youtube MV",
+      "description2": "觀賞精彩 MV。"
+    },
+    "pennyHome04": {
+      "description": "彼得潘和 Penny 的合照",
+      "description2": "值得永久收藏的合影留念。"
+    },
+    "apart": {
+      "title": "Apart - Group Socializing"
+    },
+    "apart01": {
+      "description": "組隊交友 App, 2015.05.09, 免費, Attune Ventures Limited 發行",
+      "description2": "Apart connects your circle of friends with other circles in your city. Create a crew, discover and socialize with new and interesting people nearby. Meeting people with your friends is more fun than being on your own. Be a part of something new and meaningful today!"
+    },
+    "apart02": {
+      "description": "聊天室"
+    },
+    "apart03": {
+      "description": "接受神秘邀請"
+    },
+    "apart04": {
+      "description": "群組頁面"
+    }
+  },
   "floatingContact": {
     "open": "開啟聯絡選項",
     "close": "關閉聯絡選項",
