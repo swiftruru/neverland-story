@@ -40,6 +40,15 @@ const SERVICES = [
   { key: 'appStore', icon: '🚀' },
 ]
 
+const PROCESS_STEPS = [
+  { key: 'diagnose', order: '01' },
+  { key: 'plan', order: '02' },
+  { key: 'build', order: '03' },
+  { key: 'launch', order: '04' },
+]
+
+const HIGHLIGHTS = ['focus', 'clarity', 'delivery']
+
 export default function FerrymanPage() {
   const { t } = useTranslation()
 
@@ -47,36 +56,129 @@ export default function FerrymanPage() {
     <main className={styles.ferrymanPage}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroBackground}>
-          <div className={styles.heroOverlay} />
-        </div>
+        <div className={styles.heroBackground} />
+        <div className="container">
+          <div className={styles.heroGrid}>
+            <div className={styles.heroContent}>
+              <FadeInOnScroll direction="up">
+                <span className={styles.heroBadge}>{t('ferryman.badge')}</span>
+              </FadeInOnScroll>
 
-        <div className={styles.heroContent}>
-          <FadeInOnScroll direction="up">
-            <div className={styles.heroIcon}>
-              <LifebuoyIcon />
+              <FadeInOnScroll direction="up" delay={80}>
+                <div className={styles.heroTitleRow}>
+                  <span className={styles.heroIcon}>
+                    <LifebuoyIcon />
+                  </span>
+                  <h1 className={styles.heroTitle}>{t('ferryman.mainTitle')}</h1>
+                </div>
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={160}>
+                <p className={styles.heroSubtitle}>{t('ferryman.subtitle')}</p>
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={240}>
+                <p className={styles.heroLead}>{t('ferryman.lead')}</p>
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={320}>
+                <a
+                  href="http://iosappferryman.strikingly.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  <span>{t('ferryman.learnMore')}</span>
+                  <ExternalLinkIcon className={styles.ctaIcon} />
+                </a>
+              </FadeInOnScroll>
             </div>
-          </FadeInOnScroll>
 
+            <FadeInOnScroll direction="up" delay={200}>
+              <div className={styles.heroPanel}>
+                <div className={styles.panelHeader}>
+                  <span className={styles.panelLabel}>{t('ferryman.panelTitle')}</span>
+                  <span className={styles.panelSubtitle}>{t('ferryman.panelSubtitle')}</span>
+                </div>
+                <div className={styles.statGrid}>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{t('ferryman.stats.years.value')}</span>
+                    <span className={styles.statLabel}>{t('ferryman.stats.years.label')}</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{t('ferryman.stats.apps.value')}</span>
+                    <span className={styles.statLabel}>{t('ferryman.stats.apps.label')}</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{t('ferryman.stats.cases.value')}</span>
+                    <span className={styles.statLabel}>{t('ferryman.stats.cases.label')}</span>
+                  </div>
+                </div>
+              </div>
+            </FadeInOnScroll>
+          </div>
+        </div>
+      </section>
+
+      {/* Highlights Section */}
+      <section className={styles.highlightsSection}>
+        <div className="container">
+          <div className={styles.highlightsGrid}>
+            <div className={styles.highlightsContent}>
+              <FadeInOnScroll direction="up">
+                <h2 className={styles.sectionTitle}>{t('ferryman.highlightsTitle')}</h2>
+              </FadeInOnScroll>
+              <FadeInOnScroll direction="up" delay={120}>
+                <p className={styles.sectionDescription}>{t('ferryman.highlightsDescription')}</p>
+              </FadeInOnScroll>
+              <div className={styles.highlightsList}>
+                {HIGHLIGHTS.map((item, index) => (
+                  <FadeInOnScroll key={item} direction="up" delay={160 + index * 60}>
+                    <div className={styles.highlightItem}>
+                      <span className={styles.highlightMarker} />
+                      <span>{t(`ferryman.highlights.${item}`)}</span>
+                    </div>
+                  </FadeInOnScroll>
+                ))}
+              </div>
+            </div>
+
+            <FadeInOnScroll direction="up" delay={100}>
+              <div className={styles.scenariosImageWrapper}>
+                <Image
+                  src="/ferryman/help-scenarios.png"
+                  alt={t('ferryman.scenariosAlt')}
+                  width={800}
+                  height={480}
+                  className={styles.scenariosImage}
+                />
+              </div>
+            </FadeInOnScroll>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className={styles.processSection}>
+        <div className="container">
+          <FadeInOnScroll direction="up">
+            <h2 className={styles.sectionTitle}>{t('ferryman.processTitle')}</h2>
+          </FadeInOnScroll>
           <FadeInOnScroll direction="up" delay={100}>
-            <h1 className={styles.heroTitle}>{t('ferryman.mainTitle')}</h1>
+            <p className={styles.sectionDescription}>{t('ferryman.processDescription')}</p>
           </FadeInOnScroll>
 
-          <FadeInOnScroll direction="up" delay={200}>
-            <p className={styles.heroSubtitle}>{t('ferryman.subtitle')}</p>
-          </FadeInOnScroll>
-
-          <FadeInOnScroll direction="up" delay={300}>
-            <a
-              href="http://iosappferryman.strikingly.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.ctaButton}
-            >
-              <span>{t('ferryman.learnMore')}</span>
-              <ExternalLinkIcon className={styles.ctaIcon} />
-            </a>
-          </FadeInOnScroll>
+          <div className={styles.processGrid}>
+            {PROCESS_STEPS.map((step, index) => (
+              <FadeInOnScroll key={step.key} direction="up" delay={140 + index * 80}>
+                <div className={styles.processCard}>
+                  <span className={styles.processOrder}>{step.order}</span>
+                  <h3 className={styles.processTitle}>{t(`ferryman.process.${step.key}.title`)}</h3>
+                  <p className={styles.processDescription}>{t(`ferryman.process.${step.key}.description`)}</p>
+                </div>
+              </FadeInOnScroll>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -86,17 +188,8 @@ export default function FerrymanPage() {
           <FadeInOnScroll direction="up">
             <h2 className={styles.sectionTitle}>{t('ferryman.servicesTitle')}</h2>
           </FadeInOnScroll>
-
           <FadeInOnScroll direction="up" delay={100}>
-            <div className={styles.scenariosImageWrapper}>
-              <Image
-                src="/ferryman/help-scenarios.png"
-                alt={t('ferryman.scenariosAlt')}
-                width={800}
-                height={400}
-                className={styles.scenariosImage}
-              />
-            </div>
+            <p className={styles.sectionDescription}>{t('ferryman.servicesDescription')}</p>
           </FadeInOnScroll>
 
           <div className={styles.servicesGrid}>

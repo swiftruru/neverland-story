@@ -106,8 +106,45 @@
     "description": "Helping you solve iOS App development problems",
     "mainTitle": "iOS APP Golden Ferryman",
     "subtitle": "Helping you solve iOS App development problems and overcome challenges",
+    "badge": "Expert Guidance",
+    "lead": "Focused on problem framing, technical judgment, and delivery strategy so you can make the right calls at critical moments.",
+    "panelTitle": "Service Overview",
+    "panelSubtitle": "1-on-1 advisory and hands-on support",
+    "stats": {
+      "years": { "value": "10+ yrs", "label": "iOS development & teaching" },
+      "apps": { "value": "50+ apps", "label": "Real-world projects and apps" },
+      "cases": { "value": "100+ cases", "label": "Diagnostics and resolutions" }
+    },
     "learnMore": "Learn More",
+    "highlightsTitle": "What Is the iOS App Golden Ferryman",
+    "highlightsDescription": "Advisory-led guidance to clarify goals and define actionable technical paths.",
+    "highlights": {
+      "focus": "Focus on the core problem and reduce trial costs",
+      "clarity": "Clear, feasible technical roadmap",
+      "delivery": "Ship toward verifiable outcomes"
+    },
+    "processTitle": "Engagement Flow",
+    "processDescription": "Each step aligns goals and delivers measurable progress.",
+    "process": {
+      "diagnose": {
+        "title": "Discovery",
+        "description": "Assess the current state and identify the highest-impact direction."
+      },
+      "plan": {
+        "title": "Strategy",
+        "description": "Define the roadmap, milestones, and deliverables."
+      },
+      "build": {
+        "title": "Co-Build",
+        "description": "Hands-on guidance for technical depth and quality."
+      },
+      "launch": {
+        "title": "Launch",
+        "description": "Validate outcomes and align the next iteration."
+      }
+    },
     "servicesTitle": "We Can Help You With",
+    "servicesDescription": "From learning and demos to launch, with full advisory support.",
     "scenariosAlt": "Various scenarios where you need help",
     "services": {
       "work": "Work Projects",

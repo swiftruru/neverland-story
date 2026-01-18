@@ -106,8 +106,45 @@
     "description": "幫助你解決 iOS App 開發問題",
     "mainTitle": "iOS APP 金牌擺渡人",
     "subtitle": "幫助你解決 iOS App 開發問題，度過難關",
+    "badge": "專業協助",
+    "lead": "專注於問題拆解、技術判斷與落地策略，讓你在關鍵時間點做對選擇。",
+    "panelTitle": "服務概覽",
+    "panelSubtitle": "一對一顧問與實作陪跑",
+    "stats": {
+      "years": { "value": "10+ 年", "label": "iOS 開發與教學經驗" },
+      "apps": { "value": "50+ 件", "label": "實務 App 專案與作品" },
+      "cases": { "value": "100+ 次", "label": "協助診斷與解決案例" }
+    },
     "learnMore": "了解更多",
+    "highlightsTitle": "什麼是 iOS App 金牌擺渡人",
+    "highlightsDescription": "以顧問式的節奏陪你釐清目標，提供可執行的路線與技術決策。",
+    "highlights": {
+      "focus": "聚焦核心問題，縮短嘗試成本",
+      "clarity": "清楚可行的技術路線與拆解",
+      "delivery": "陪你推進到可驗證的成果"
+    },
+    "processTitle": "合作流程",
+    "processDescription": "每一步都能對焦目標、驗證成果，讓進度有節奏可追。",
+    "process": {
+      "diagnose": {
+        "title": "需求診斷",
+        "description": "盤點現況、拆解問題，鎖定最值得投入的方向。"
+      },
+      "plan": {
+        "title": "策略規劃",
+        "description": "定義開發路線、時間節點與可交付成果。"
+      },
+      "build": {
+        "title": "共同實作",
+        "description": "針對技術難點陪跑，強化架構與細節品質。"
+      },
+      "launch": {
+        "title": "上線收斂",
+        "description": "完成驗證與交付，整理後續維護與優化節奏。"
+      }
+    },
     "servicesTitle": "我們可以幫助你",
+    "servicesDescription": "涵蓋學習、作品到產品上線，提供完整的顧問式支援。",
     "scenariosAlt": "各種需要幫助的情境",
     "services": {
       "work": "工作",
