@@ -522,7 +522,7 @@
   },
   "appWorks": {
     "mainTitle": "彼得潘的 APP 作品集",
-    "subtitle": "從記帳 App 到音樂專輯 App，展示彼得潘多年來的 iOS App 開發成果",
+    "subtitle": "從記帳 App 到音樂專輯 App，展示彼得潘多年來的 App 開發成果",
     "viewDetails": "查看詳情",
     "viewOnAppStore": "App Store",
     "wealthy": {
@@ -577,6 +577,137 @@
     },
     "apart04": {
       "description": "群組頁面"
+    },
+    "acaia": {
+      "title": "acaia Coffee"
+    },
+    "acaia01": {
+      "description": "手沖咖啡記錄 App, 2014.3.25, 免費, acaia 發行\n2014 SCAA Best New Product\n2014 SCAA People's Choice Award",
+      "description2": "首創「咖啡沖煮記錄圖」，藉由 App 連結 acaia 咖啡秤觀察咖啡沖泡的情況、掌控時間，提昇沖泡咖啡的技術，或是記錄喜愛的沖泡比例，提供你探索精品咖啡世界無限的可能。"
+    },
+    "acaia02": {
+      "description": "咖啡豆收藏",
+      "description2": "記錄咖啡豆明細。"
+    },
+    "acaia03": {
+      "description": "沖煮記錄圖",
+      "description2": "將沖煮咖啡的過程畫成視覺化，還能在 Facebook 或 Twitter 與朋友分享你的咖啡時光!"
+    },
+    "acaia04": {
+      "description": "沖泡咖啡的歷史記錄",
+      "description2": "回味每一次的沖泡咖啡過程。"
+    },
+    "vk": {
+      "title": "V.K 克 Official App"
+    },
+    "vk01": {
+      "description": "鋼琴王子 V.K 克的 App, 2014.3.20, 免費, 小巨人音樂發行",
+      "description2": "V.K official app contains all the latest information including profile, news, photos, event schedule, music videos and latest songs tracks."
+    },
+    "vk02": {
+      "description": "首頁主選單"
+    },
+    "vk03": {
+      "description": "聆聽琴聲"
+    },
+    "vk04": {
+      "description": "和 V.K 克錄音室合影"
+    },
+    "minihana": {
+      "title": "mini．Hana 幸福插畫"
+    },
+    "minihana01": {
+      "description": "mini.Hana 作品集, 2012.12, 免費",
+      "description2": "mini Hana 米花兒，心花朵朵開時會冒出的可愛生物。"
+    },
+    "minihana02": {
+      "description": "照片集"
+    },
+    "minihana03": {
+      "description": "人物介紹"
+    },
+    "minihana04": {
+      "description": "彼得潘和插畫家 Hana 的合照"
+    },
+    "locomo": {
+      "title": "LOCOMO 運動記錄"
+    },
+    "locomo01": {
+      "description": "運動記錄社群 App, 2012.11, 免費, 馬拉松世界發行，原熱情豆\n台灣 Health & Fitness Top 2\n2012 TIDCA 臺北國際數位內容設計競賽評審推薦獎\n2012 數位時代 \"最佳企業 App\"\n2012 Mobile App 應用程式創新創意大賽潛力合作獎",
+      "description2": "參加活動，記錄軌跡，分享你運動的驕傲！"
+    },
+    "locomo02": {
+      "description": "運動相框",
+      "description2": "帥氣運動記錄分享"
+    },
+    "locomo03": {
+      "description": "運動記錄",
+      "description2": "記錄運動過程中的數據和珍貴照片"
+    },
+    "locomo04": {
+      "description": "熱情豆團隊合影"
+    },
+    "fitmi": {
+      "title": "FitMi 雲端減重"
+    },
+    "fitmi01": {
+      "description": "減重飲食記錄 App, 2013.3, 免費，熱情豆發行\n最高排品 - Health & Fitness Top 3",
+      "description2": "計算每天飲食熱量，設定專屬自己的減重計畫。"
+    },
+    "fitmi02": {
+      "description": "體重趨勢圖"
+    },
+    "fitmi03": {
+      "description": "飲食資料庫"
+    },
+    "fitmi04": {
+      "description": "多樣的記錄項目"
+    },
+    "toeic": {
+      "title": "新多益單字"
+    },
+    "toeic01": {
+      "description": "多益單字 App, 2014.10.09, 免費，In-App 付費",
+      "description2": "最標準的英文發音，最超值的升學單字書!"
+    },
+    "toeic02": {
+      "description": "單字頁面"
+    },
+    "toeic03": {
+      "description": "解鎖單字"
+    },
+    "toeic04": {
+      "description": "和可愛的英文老師 Carrie 合影"
+    },
+    "superSinger": {
+      "title": "超級歌手"
+    },
+    "superSinger01": {
+      "description": "吹氣唱歌訓練遊戲, 2012.2.4, 免費, 歌唱聖經作者秀珠老師發行"
+    },
+    "superSinger02": {
+      "description": "努力地吹走薑餅人 !"
+    },
+    "superSinger03": {
+      "description": "多種薑餅人角色"
+    },
+    "superSinger04": {
+      "description": "多道關卡"
+    },
+    "wretch": {
+      "title": "正妹傳很大"
+    },
+    "wretch01": {
+      "description": "無名照片上傳 App, 2010.3, 免費, 英諾奧茲發行"
+    },
+    "wretch02": {
+      "description": "照片上傳列表"
+    },
+    "wretch03": {
+      "description": "選擇相片"
+    },
+    "wretch04": {
+      "description": "無名帳號設定頁面"
     }
   },
   "floatingContact": {

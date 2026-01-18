@@ -522,7 +522,7 @@
   },
   "appWorks": {
     "mainTitle": "Peter Pan's APP Portfolio",
-    "subtitle": "From expense tracking to music album Apps, showcasing years of iOS App development work",
+    "subtitle": "From expense tracking to music album Apps, showcasing years of App development work",
     "viewDetails": "View Details",
     "viewOnAppStore": "App Store",
     "wealthy": {
@@ -577,6 +577,137 @@
     },
     "apart04": {
       "description": "Group page"
+    },
+    "acaia": {
+      "title": "acaia Coffee"
+    },
+    "acaia01": {
+      "description": "Pour-over coffee logging App, 2014.3.25, Free, published by acaia\n2014 SCAA Best New Product\n2014 SCAA People's Choice Award",
+      "description2": "The first brew-record chart: connect the acaia scale to monitor pour-over progress, control timing, improve technique, and save favorite brew ratios to explore the world of specialty coffee."
+    },
+    "acaia02": {
+      "description": "Coffee bean collection",
+      "description2": "Record coffee bean details."
+    },
+    "acaia03": {
+      "description": "Brew chart",
+      "description2": "Visualize the brewing process and share your coffee moments on Facebook or Twitter!"
+    },
+    "acaia04": {
+      "description": "Brew history",
+      "description2": "Relive every brewing session."
+    },
+    "vk": {
+      "title": "V.K Official App"
+    },
+    "vk01": {
+      "description": "Piano Prince V.K's App, 2014.3.20, Free, released by Giant Music",
+      "description2": "V.K official app contains all the latest information including profile, news, photos, event schedule, music videos and latest songs tracks."
+    },
+    "vk02": {
+      "description": "Home menu"
+    },
+    "vk03": {
+      "description": "Listen to the piano"
+    },
+    "vk04": {
+      "description": "Photo with V.K in the recording studio"
+    },
+    "minihana": {
+      "title": "mini. Hana Happiness Illustrations"
+    },
+    "minihana01": {
+      "description": "mini.Hana portfolio, 2012.12, Free",
+      "description2": "mini Hana is a cute creature that appears when hearts bloom."
+    },
+    "minihana02": {
+      "description": "Photo gallery"
+    },
+    "minihana03": {
+      "description": "Character introduction"
+    },
+    "minihana04": {
+      "description": "Photo of Peter Pan with illustrator Hana"
+    },
+    "locomo": {
+      "title": "LOCOMO Fitness Tracker"
+    },
+    "locomo01": {
+      "description": "Sports activity community App, 2012.11, Free, published by Marathon's World (formerly Passion Bean)\nTaiwan Health & Fitness Top 2\n2012 TIDCA Jury Recommended Award\n2012 Business Next \"Best Enterprise App\"\n2012 Mobile App Innovation Contest Potential Collaboration Award",
+      "description2": "Join events, record routes, and share your sporting pride!"
+    },
+    "locomo02": {
+      "description": "Sports photo frame",
+      "description2": "Share your cool workout record"
+    },
+    "locomo03": {
+      "description": "Workout log",
+      "description2": "Record data and precious photos during workouts"
+    },
+    "locomo04": {
+      "description": "Passion Bean team photo"
+    },
+    "fitmi": {
+      "title": "FitMi Cloud Weight Loss"
+    },
+    "fitmi01": {
+      "description": "Weight loss diet log App, 2013.3, Free, published by Passion Bean\nRanked #3 in Health & Fitness",
+      "description2": "Calculate daily calories and set your own weight-loss plan."
+    },
+    "fitmi02": {
+      "description": "Weight trend chart"
+    },
+    "fitmi03": {
+      "description": "Food database"
+    },
+    "fitmi04": {
+      "description": "Multiple tracking items"
+    },
+    "toeic": {
+      "title": "New TOEIC Vocabulary"
+    },
+    "toeic01": {
+      "description": "TOEIC vocabulary App, 2014.10.09, Free with in-app purchases",
+      "description2": "Standard English pronunciation and great-value vocabulary for exam prep!"
+    },
+    "toeic02": {
+      "description": "Vocabulary page"
+    },
+    "toeic03": {
+      "description": "Unlock vocabulary"
+    },
+    "toeic04": {
+      "description": "Photo with the lovely English teacher Carrie"
+    },
+    "superSinger": {
+      "title": "Super Singer"
+    },
+    "superSinger01": {
+      "description": "Blowing and singing training game, 2012.2.4, Free, released by Vocal Bible author Teacher Xiuzhu"
+    },
+    "superSinger02": {
+      "description": "Blow the gingerbread man away!"
+    },
+    "superSinger03": {
+      "description": "Multiple gingerbread characters"
+    },
+    "superSinger04": {
+      "description": "Multiple levels"
+    },
+    "wretch": {
+      "title": "Wretch Upload"
+    },
+    "wretch01": {
+      "description": "Wretch photo upload App, 2010.3, Free, released by InnoOdds"
+    },
+    "wretch02": {
+      "description": "Upload list"
+    },
+    "wretch03": {
+      "description": "Select photos"
+    },
+    "wretch04": {
+      "description": "Wretch account settings page"
     }
   },
   "floatingContact": {
