@@ -1,7 +1,8 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
 import { Header, Navigation, Footer } from '@components/layout'
+import { PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 
@@ -20,12 +21,22 @@ const BackToTop = dynamic(
   { ssr: false }
 )
 
+const ReadingProgress = dynamic(
+  () => import('@components/common/ReadingProgress').then((mod) => mod.ReadingProgress),
+  { ssr: false }
+)
+
 export const metadata: Metadata = {
   title: '彼得潘的 iOS App 程式設計入門',
   description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
+  manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.png',
+    icon: '/icons/pwa-512.png',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#006850',
 }
 
 export default function RootLayout({
@@ -37,6 +48,8 @@ export default function RootLayout({
     <html lang="zh-TW">
       <body>
         <I18nProvider>
+          <PwaProvider />
+          <ReadingProgress />
           <div className={styles.layout}>
             <Header />
             <Navigation />
