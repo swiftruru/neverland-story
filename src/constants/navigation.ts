@@ -14,6 +14,5 @@ export const NAV_ITEMS: NavItem[] = [
   { id: 'apps', label: 'APP 作品', path: '/apps' },
   { id: 'essays', label: '散文集', path: '/essays' },
   { id: 'columns', label: '雜誌專欄', path: '/columns' },
-  { id: 'links', label: '相關連結', path: '/links' },
   { id: 'experience', label: '經歷', path: '/experience' },
 ]

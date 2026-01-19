@@ -58,6 +58,11 @@
       "linePersonal": "LINE 私人帳號",
       "lineOfficial": "LINE 官方帳號",
       "email": "Email",
+      "medium": "彼得潘的 App Neverland",
+      "instagram": "Instagram",
+      "slideshare": "SlideShare",
+      "linkedin": "LinkedIn",
+      "itsAllAboutApp": "It's all about App",
       "visit": "前往",
       "copy": "複製",
       "sendEmail": "寄信",
@@ -300,7 +305,19 @@
   "columns": {
     "title": "雜誌專欄",
     "description": "雜誌刊登文章",
-    "comingSoon": "此頁面內容即將推出..."
+    "comingSoon": "此頁面內容即將推出...",
+    "kicker": "雜誌專欄",
+    "mainTitle": "MacToday App 開發",
+    "subtitle": "2011.02 ~ 2014.10",
+    "fullList": "完整專欄文章清單",
+    "magazineAlt": "MacToday App 開發專欄雜誌頁面",
+    "entriesTitle": "2011.2–2014.10，彼得潘在 MacToday 每月撰寫 App 專欄，邊學邊寫的甜蜜回憶。",
+    "entries": {
+      "2014-10": "2014.10: 全面進化的 Swift enum",
+      "2014-09": "2014.09: Swift App 快速入門心法",
+      "ellipsis": "...",
+      "2011-02": "2011.02: 認識 Xcode 4 與 iOS SDK，寫出第一個 Hello World 程式"
+    }
   },
   "links": {
     "title": "相關連結",
@@ -310,7 +327,73 @@
   "experience": {
     "title": "經歷",
     "description": "個人履歷與經歷",
-    "comingSoon": "此頁面內容即將推出..."
+    "comingSoon": "此頁面內容即將推出...",
+    "kicker": "經歷",
+    "mainTitle": "彼得潘的經歷",
+    "subtitle": "從教學、顧問到軟體工程，累積超過十年的 iOS App 開發與培訓經驗。",
+    "fullList": "完整經歷連結",
+    "nowTitle": "現在",
+    "pastTitle": "過去",
+    "current": {
+      "writer": {
+        "title": "作家",
+        "description": "長期撰寫 iOS App 相關內容，持續分享技術與學習心得。"
+      },
+      "trainer": {
+        "title": "Swift iOS / Flutter 開發講師",
+        "description": "企業與專業訓練單位授課",
+        "links": {
+          "ntuTraining": "臺灣大學資訊系統訓練班",
+          "alphaCamp": "ALPHA Camp",
+          "ichih": "譯智教育訓練",
+          "iii": "資策會",
+          "tibame": "TibaMe",
+          "studioA": "STUDIO A"
+        },
+        "extra": "職訓局、國家文官學院、台中軟體園區、iPlayground、MOPCON、中華電信學院、新北市政府青年局"
+      },
+      "campus": {
+        "title": "學校 iOS 開發課程講師",
+        "description": "海洋大學資工系、臺北科大資工系、臺北教育大學 iOS 社團、淡江大學 iOS 社團、台大共同教育中心、台大 CS + X 手機應用程式設計、政治大學、中央大學、臺北大學、台北醫學大學、逢甲大學、文化大學、宏國德霖科大、醒吾科大、勤益科大、弘光科大、正修科大、慈濟科大、中國科大、龍華科大、中央警察大學、南崁高中、高雄美國學校、華砇程式社團"
+      },
+      "columns": {
+        "title": "專欄",
+        "links": {
+          "appcoda": "AppCoda",
+          "alphaCamp": "ALPHA Camp"
+        }
+      },
+      "training": {
+        "title": "企業內訓",
+        "description": "Yahoo、聯陽半導體、世界先進、統一資訊、新光人壽、信義房屋、果思設計"
+      },
+      "wwdc": {
+        "title": "WWDC Swift Student Challenge 指導老師",
+        "description": "輔導得獎學生，協助完成挑戰專案。"
+      },
+      "advisor": {
+        "title": "技術顧問",
+        "links": {
+          "funtek": "FUNTEK"
+        },
+        "extra": "點點數位、英諾奧茲、Brocas"
+      },
+      "freelance": {
+        "title": "iOS App 開發接案",
+        "description": "提供企業與團隊的 iOS App 開發協作。"
+      }
+    },
+    "past": {
+      "mactoday": "MacToday App 開發專欄作家",
+      "pchome": "PC home Mac 基礎教室專欄作家",
+      "punapp": "PunApp App 評論",
+      "funtek": "FUNTEK 首席 iOS 軟體工程師",
+      "acaia": "acaia 首席 iOS 軟體工程師",
+      "passionBean": "熱情豆行動樂活科技首席軟體工程師",
+      "nthuGrad": "國立清華大學通訊工程研究所",
+      "nthu": "國立清華大學資訊工程學系",
+      "kshs": "國立高雄中學"
+    }
   },
   "books": {
     "mainTitle": "彼得潘的著作",

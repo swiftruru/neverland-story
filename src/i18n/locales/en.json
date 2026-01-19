@@ -58,6 +58,11 @@
       "linePersonal": "LINE Personal",
       "lineOfficial": "LINE Official",
       "email": "Email",
+      "medium": "Peter Pan's App Neverland",
+      "instagram": "Instagram",
+      "slideshare": "SlideShare",
+      "linkedin": "LinkedIn",
+      "itsAllAboutApp": "It's all about App",
       "visit": "Visit",
       "copy": "Copy",
       "sendEmail": "Send",
@@ -300,7 +305,19 @@
   "columns": {
     "title": "Columns",
     "description": "Magazine articles",
-    "comingSoon": "This page is coming soon..."
+    "comingSoon": "This page is coming soon...",
+    "kicker": "Magazine Column",
+    "mainTitle": "MacToday App Development",
+    "subtitle": "2011.02 ~ 2014.10",
+    "fullList": "Full Column List",
+    "magazineAlt": "MacToday App development magazine spread",
+    "entriesTitle": "2011.2–2014.10: Peter Pan wrote a monthly App column for MacToday, a sweet memory of learning while writing.",
+    "entries": {
+      "2014-10": "2014.10: Swift enum, fully evolved",
+      "2014-09": "2014.09: Swift App quick-start guide",
+      "ellipsis": "...",
+      "2011-02": "2011.02: Meet Xcode 4 and the iOS SDK, write your first Hello World"
+    }
   },
   "links": {
     "title": "Links",
@@ -310,7 +327,73 @@
   "experience": {
     "title": "Experience",
     "description": "Personal resume and experience",
-    "comingSoon": "This page is coming soon..."
+    "comingSoon": "This page is coming soon...",
+    "kicker": "Experience",
+    "mainTitle": "Peter Pan's Experience",
+    "subtitle": "From teaching and consulting to engineering, over a decade of iOS App development and training.",
+    "fullList": "Full Experience Link",
+    "nowTitle": "Now",
+    "pastTitle": "Past",
+    "current": {
+      "writer": {
+        "title": "Writer",
+        "description": "Writes and shares iOS App development insights and learning notes."
+      },
+      "trainer": {
+        "title": "Swift iOS / Flutter Instructor",
+        "description": "Corporate and professional training programs",
+        "links": {
+          "ntuTraining": "NTU Information Systems Training Program",
+          "alphaCamp": "ALPHA Camp",
+          "ichih": "Ichih Training",
+          "iii": "Institute for Information Industry",
+          "tibame": "TibaMe",
+          "studioA": "STUDIO A"
+        },
+        "extra": "Vocational Training Bureau, National Civil Service Institute, Taichung Software Park, iPlayground, MOPCON, Chunghwa Telecom Academy, New Taipei City Youth Bureau"
+      },
+      "campus": {
+        "title": "University iOS Course Instructor",
+        "description": "National Ocean University CS, Taipei Tech CS, NTUE iOS Club, Tamkang iOS Club, NTU General Education Center, NTU CS + X Mobile App Design, NCCU, NCU, Taipei University, Taipei Medical University, Feng Chia University, Chinese Culture University, HDUT, Hsing Wu University, Qinyi University, Hungkuang University, Cheng Shiu University, Tzu Chi University of Science and Technology, China University of Technology, Lunghwa University of Science and Technology, Central Police University, Nankan High School, Kaohsiung American School, Huawen Coding Club"
+      },
+      "columns": {
+        "title": "Columns",
+        "links": {
+          "appcoda": "AppCoda",
+          "alphaCamp": "ALPHA Camp"
+        }
+      },
+      "training": {
+        "title": "Corporate Training",
+        "description": "Yahoo, Lattice Semiconductor, Vanguard International Semiconductor, Uniinfo, Shin Kong Life, Sinyi Realty, Gose Design"
+      },
+      "wwdc": {
+        "title": "WWDC Swift Student Challenge Mentor",
+        "description": "Mentored award-winning students and guided their projects."
+      },
+      "advisor": {
+        "title": "Technical Advisor",
+        "links": {
+          "funtek": "FUNTEK"
+        },
+        "extra": "Dotdot Digital, InnoOdds, Brocas"
+      },
+      "freelance": {
+        "title": "iOS App Development Projects",
+        "description": "Collaborates with companies and teams on iOS App development."
+      }
+    },
+    "past": {
+      "mactoday": "MacToday App development columnist",
+      "pchome": "PChome Mac Basics columnist",
+      "punapp": "PunApp App reviews",
+      "funtek": "Chief iOS Software Engineer at FUNTEK",
+      "acaia": "Chief iOS Software Engineer at acaia",
+      "passionBean": "Chief Software Engineer at Passion Bean Mobile Health Tech",
+      "nthuGrad": "M.S. in Communications Engineering, NTHU",
+      "nthu": "B.S. in Computer Science, NTHU",
+      "kshs": "Kaohsiung Senior High School"
+    }
   },
   "books": {
     "mainTitle": "Peter Pan's Books",

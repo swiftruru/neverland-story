@@ -98,9 +98,43 @@
   color: white;
 }
 
+.iconWrapper.medium {
+  background: linear-gradient(135deg, #0f1419, #2b3137);
+  color: white;
+}
+
+.iconWrapper.instagram {
+  background: linear-gradient(135deg, #f58529, #dd2a7b 50%, #8134af);
+  color: white;
+}
+
+.iconWrapper.slideshare {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  color: white;
+}
+
+.iconWrapper.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+}
+
+.iconWrapper.github {
+  background: linear-gradient(135deg, #24292e, #57606a);
+  color: white;
+}
+
 .icon {
   width: 32px;
   height: 32px;
+}
+
+.iconImage {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 4px;
 }
 
 .contactName {

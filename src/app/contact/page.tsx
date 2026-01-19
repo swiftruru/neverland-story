@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
 import styles from './page.module.css'
@@ -33,6 +34,32 @@ const CONTACT_LINKS = [
     url: 'mailto:apppeterpan@gmail.com',
     copyValue: 'apppeterpan@gmail.com',
   },
+  {
+    id: 'medium',
+    icon: 'medium',
+    url: 'https://medium.com/@apppeterpan',
+  },
+  {
+    id: 'instagram',
+    icon: 'instagram',
+    url: 'https://www.instagram.com/deeplovepeter/',
+    copyValue: 'deeplovepeter',
+  },
+  {
+    id: 'slideshare',
+    icon: 'slideshare',
+    url: 'http://www.slideshare.net/deeplovepan',
+  },
+  {
+    id: 'linkedin',
+    icon: 'linkedin',
+    url: 'https://www.linkedin.com/in/apppeterpan',
+  },
+  {
+    id: 'itsAllAboutApp',
+    icon: 'github',
+    url: "https://github.com/AppPeterPan/It-s-all-about-App/wiki/It's-all-about-App",
+  },
 ]
 
 // SVG 圖標組件
@@ -60,6 +87,36 @@ function Icon({ name, className }: { name: string; className?: string }) {
       return (
         <svg className={className} viewBox="0 0 24 24" fill="currentColor">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg>
+      )
+    case 'medium':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2 6.5h3.2l4.7 9.6 4.2-7.6 4.7 7.6V7.1L22 6.5v11l-3 .6v-6.2l-4.5 7.6h-.7L8.9 9.8v8.3l2.6.6v.8H2.9v-.8l2.1-.6V7.1L2 6.5z" />
+        </svg>
+      )
+    case 'instagram':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5zm4.25-3.1a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+        </svg>
+      )
+    case 'slideshare':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7.5 6.2a3.3 3.3 0 1 1-3.3 3.3 3.3 3.3 0 0 1 3.3-3.3zm9 0a3.3 3.3 0 1 1-3.3 3.3 3.3 3.3 0 0 1 3.3-3.3zm-9.1 7.4c2.3 0 4.2 1.9 4.2 4.2V21H3.3v-3.2c0-2.3 1.9-4.2 4.1-4.2zm9.2 0c2.3 0 4.2 1.9 4.2 4.2V21h-8.3v-3.2c0-2.3 1.9-4.2 4.1-4.2z" />
+        </svg>
+      )
+    case 'linkedin':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.9-1.9 3.9-1.9 4.2 0 5 2.7 5 6.2V21h-4v-5.2c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6V21H9z" />
+        </svg>
+      )
+    case 'github':
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.36-1.2-3.36-1.2-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.04 1.53 1.04.9 1.52 2.36 1.08 2.94.83.1-.66.35-1.08.63-1.33-2.22-.26-4.56-1.12-4.56-5a3.9 3.9 0 0 1 1.03-2.7 3.6 3.6 0 0 1 .1-2.66s.84-.27 2.75 1.03a9.3 9.3 0 0 1 5 0c1.92-1.3 2.76-1.03 2.76-1.03.54 1.34.2 2.33.1 2.66a3.9 3.9 0 0 1 1.03 2.7c0 3.9-2.35 4.74-4.6 5 .36.3.68.9.68 1.83v2.7c0 .27.18.6.69.48A10 10 0 0 0 12 2z" />
         </svg>
       )
     default:
@@ -139,7 +196,17 @@ export default function ContactPage() {
               >
                 <div className={styles.contactCard}>
                   <div className={`${styles.iconWrapper} ${styles[contact.icon]}`}>
-                    <Icon name={contact.icon} className={styles.icon} />
+                    {contact.image ? (
+                      <Image
+                        src={contact.image}
+                        alt={t(`pages.contact.${contact.id}`)}
+                        width={44}
+                        height={44}
+                        className={styles.iconImage}
+                      />
+                    ) : (
+                      <Icon name={contact.icon} className={styles.icon} />
+                    )}
                   </div>
                   <h3 className={styles.contactName}>{t(`pages.contact.${contact.id}`)}</h3>
                   {contact.copyValue && (
