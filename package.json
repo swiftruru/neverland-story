@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "vercel-build": "next build"
+    "vercel-build": "next build && cp .next/routes-manifest.json out/ || true"
   },
   "dependencies": {
     "i18next": "^23.11.0",
