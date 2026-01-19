@@ -9,8 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "export": "next export",
-    "vercel-build": "npm run build && npm run export"
+    "vercel-build": "next build"
   },
   "dependencies": {
     "i18next": "^23.11.0",
