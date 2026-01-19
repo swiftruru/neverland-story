@@ -25,9 +25,9 @@ export function FadeInOnScroll({
   children,
   direction = 'up',
   delay = 0,
-  duration = 600,
-  threshold = 0.1,
-  distance = 30,
+  duration = 220,
+  threshold = 0.08,
+  distance = 16,
   once = true,
   className = '',
 }: FadeInOnScrollProps) {
@@ -51,7 +51,7 @@ export function FadeInOnScroll({
       },
       {
         threshold,
-        rootMargin: '0px 0px -50px 0px',
+        rootMargin: '0px 0px -20px 0px',
       }
     )
 

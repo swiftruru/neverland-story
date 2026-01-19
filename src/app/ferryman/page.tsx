@@ -231,6 +231,28 @@ export default function FerrymanPage() {
           </FadeInOnScroll>
         </div>
       </section>
+
+      {/* Interview Curator Section */}
+      <section className={styles.interviewSection}>
+        <div className="container">
+          <FadeInOnScroll direction="up">
+            <div className={styles.interviewCard}>
+              <span className={styles.interviewBadge}>{t('ferryman.interview.badge')}</span>
+              <h2 className={styles.interviewTitle}>{t('ferryman.interview.title')}</h2>
+              <p className={styles.interviewSubtitle}>{t('ferryman.interview.subtitle')}</p>
+              <a
+                href="http://interviewiosapp.strikingly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.interviewButton}
+              >
+                <span>{t('ferryman.interview.cta')}</span>
+                <ExternalLinkIcon className={styles.ctaIcon} />
+              </a>
+            </div>
+          </FadeInOnScroll>
+        </div>
+      </section>
     </main>
   )
 }

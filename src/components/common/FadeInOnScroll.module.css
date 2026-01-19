@@ -2,27 +2,27 @@
 .fadeIn {
   opacity: 0;
   transition:
-    opacity var(--fade-duration, 600ms) ease-out,
-    transform var(--fade-duration, 600ms) ease-out;
+    opacity var(--fade-duration, 220ms) ease-out,
+    transform var(--fade-duration, 220ms) ease-out;
   transition-delay: var(--fade-delay, 0ms);
   will-change: opacity, transform;
 }
 
 /* 方向變體 - 初始狀態 */
 .up {
-  transform: translateY(var(--fade-distance, 30px));
+  transform: translateY(var(--fade-distance, 16px));
 }
 
 .down {
-  transform: translateY(calc(var(--fade-distance, 30px) * -1));
+  transform: translateY(calc(var(--fade-distance, 16px) * -1));
 }
 
 .left {
-  transform: translateX(var(--fade-distance, 30px));
+  transform: translateX(var(--fade-distance, 16px));
 }
 
 .right {
-  transform: translateX(calc(var(--fade-distance, 30px) * -1));
+  transform: translateX(calc(var(--fade-distance, 16px) * -1));
 }
 
 .none {

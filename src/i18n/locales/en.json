@@ -156,7 +156,13 @@
     },
     "ctaTitle": "Need Help?",
     "ctaDescription": "Whether you're struggling with learning or need professional assistance at work, the Golden Ferryman is here to help you overcome any challenges.",
-    "ctaButton": "Visit Golden Ferryman"
+    "ctaButton": "Visit Golden Ferryman",
+    "interview": {
+      "badge": "Interview Curator",
+      "title": "Interview Curator for iOS App Engineers / Outsourcing Partners",
+      "subtitle": "Help you interview iOS engineers or outsourcing vendors, find the right people, and build an amazing App!",
+      "cta": "Interview Curator"
+    }
   },
   "apps": {
     "title": "APP Works",
@@ -166,7 +172,130 @@
   "essays": {
     "title": "Essays",
     "description": "Life reflections and thoughts",
-    "comingSoon": "This page is coming soon..."
+    "comingSoon": "This page is coming soon...",
+    "mainTitle": "Essays",
+    "subtitle": "From development to career and life reflections, a curated collection of Peter Pan’s iOS App essays and interviews.",
+    "featureLink": "Peter Pan and Those iOS App Years",
+    "readMore": "Read Article",
+    "placeholder": "Essay",
+    "items": {
+      "macChoice": {
+        "title": "Which Mac Should You Buy to Learn Swift iOS App Development?",
+        "description": "Friends often ask Peter Pan: I’m ready to learn Swift iOS App development, but I still need a Mac. Which one should I buy?"
+      },
+      "mediumHomework": {
+        "title": "What Correlates with Getting an iOS App Job? Medium App Homework",
+        "description": "From a small data observation, there is a strong correlation with job success: the number of App homework posts published on Medium."
+      },
+      "techGirlz": {
+        "title": "The Backstage Force Behind Liberal Arts Students Learning iOS App Development — Peter Pan",
+        "description": "Whether you’re from liberal arts or science, labels shouldn’t block what you love. This interview features Peter Pan, an Apple fan who teaches iOS App courses that even beginners can learn from."
+      },
+      "careerSwitch": {
+        "title": "How Non-CS Students Switch to Engineering in Months: 40 Hours a Week",
+        "description": "Across students and training programs, one key pattern emerges: successful career switchers consistently practice about 40 hours each week."
+      },
+      "afterGetJob": {
+        "title": "After Getting a Job, Is It a Happily Ever After?",
+        "description": "As a CS graduate and instructor, Peter Pan knows many engineers. Finding a job can be a big boss—after beating it, is life really a fairytale?"
+      },
+      "appStore": {
+        "title": "A Step-by-Step iOS App Submission and Update Process",
+        "description": "Nothing is real until your App is on the Store. After countless hours, you hope Apple reviewers see your work. Let’s walk through the submission process step by step."
+      },
+      "homeworkSpeed": {
+        "title": "Why Do Other Students Finish Coding Assignments So Fast? Am I Too Weak?",
+        "description": "When teaching iOS App development, I assign lots of fun homework. Some students finish quickly, others take longer. Students who struggle often ask if they’re not smart—why do others seem to get it instantly?"
+      },
+      "xcode10": {
+        "title": "A First Look at What’s New in Xcode 10",
+        "description": "WWDC18 introduced iOS 12, Swift 4.2, and Xcode 10. For App developers, Xcode is the most immediately useful. Let’s dive in and see what it can do."
+      },
+      "notSuited": {
+        "title": "If I Can’t Figure It Out, Does It Mean I’m Not Suited for Programming?",
+        "description": "Because I teach beginners, I often hear: I’ve thought for a long time but still can’t write it. I understand the examples, but can’t build from scratch. Does that mean I’m not suited for coding?"
+      },
+      "pushNotification": {
+        "title": "Sending a Confession Push Notification",
+        "description": "An introduction to Apple Push Notification: remote notifications, APNs keys, sending with Node.js, JSON payloads, rich notifications, and the functions triggered on receipt."
+      },
+      "betterSwift": {
+        "title": "Learn Swift by Imitating Apple’s Teaching Examples",
+        "description": "Apple’s ebook covers common App features like CRUD, storage, and networking. Master those techniques and you can build solid Apps. Here are the key parts worth studying and imitating."
+      },
+      "learnAfter30": {
+        "title": "Is It Too Late to Learn Programming After 30?",
+        "description": "People often ask if starting Swift iOS App programming after 30 is too late. It isn’t. Like falling in love, it’s never too late to begin."
+      },
+      "xcode9": {
+        "title": "It’s Impossible Not to Love Xcode 9",
+        "description": "WWDC17 brought iOS 11, Swift 4, and Xcode 9 with major improvements. For App developers, Xcode matters most. Let’s hand the stage to Xcode 9."
+      },
+      "appcodaInterview": {
+        "title": "AppCoda Interview: Peter Pan Helps Liberal Arts Students Enter Tech",
+        "description": "Active in the iOS community, Peter Pan designs tailored courses and launched a 100-problem Swift App practice project. He guides learners into software with interactive teaching and vivid storytelling."
+      },
+      "swiftOptional": {
+        "title": "Swift’s Question Mark and Exclamation: The Optional",
+        "description": "Optional is a unique concept in Swift. It lets any variable or constant represent no value. Let’s start from the world before Optionals."
+      },
+      "errorHandling": {
+        "title": "Swift Error Handling: A Beginner’s Guide",
+        "description": "Coding has errors. Some are bugs we fix, others require explicit handling. Swift’s Error Handling helps you manage the latter."
+      },
+      "iosFaq1": {
+        "title": "iOS App Development FAQ (Part 1)",
+        "description": "From development and teaching, Peter Pan collected common iOS App questions to help you find answers fast. From engineers to founders, courses, and mentoring, these are the recurring problems."
+      },
+      "iosStartup13": {
+        "title": "13 Ways to Start a Business with iOS App Skills",
+        "description": "Engineer at a startup, freelance, co-found, ship your own App, write books, teach, make courses, and more."
+      },
+      "learningTips": {
+        "title": "Eight Tips to Learn Programming More Effectively in Class",
+        "description": "There are many ways to learn coding. Classes aren’t always best, but they’re often the most expensive. If you’ve invested money and effort, why isn’t it working? Here are lessons from teaching classes of all sizes to help you learn better."
+      },
+      "ios10Notifications": {
+        "title": "iOS 10 User Notifications: Send a Cheerful Mihuahua Notification",
+        "description": "Notifications can be love or pain. Let’s use iOS 10’s UserNotifications framework to spread a little happiness."
+      },
+      "learnProgramming": {
+        "title": "Why We Couldn’t Learn Programming Back Then",
+        "description": "Is it really about talent? Peter Pan analyzes common reasons: lack of practice, weak English, fear of asking, getting stuck in self-study, or simply no interest."
+      },
+      "swiftWithoutMac": {
+        "title": "How to Learn Swift Without a Mac",
+        "description": "Swift is designed for beginners, but it’s often said you need a Mac to code it. Here are three ways to learn Swift without one."
+      },
+      "swift3": {
+        "title": "Swift 3.0 Is Coming — Are You Ready?",
+        "description": "Swift 3.0 is on the way. This article answers common questions and builds anticipation for Apple’s upcoming release."
+      },
+      "iosQa10": {
+        "title": "10 Q&As About iOS App Development",
+        "description": "What do you need to build iOS Apps? Is it hard? Are jobs good? Swift or Objective-C? App Store income? Here’s a concise FAQ."
+      },
+      "teachingBenefits": {
+        "title": "To Become a Strong App Developer, Start Teaching",
+        "description": "There are many ways to improve. After trying them all, Peter Pan found that writing and teaching are the fastest accelerators. Preparing lessons and answering questions builds real growth."
+      },
+      "littlePrince": {
+        "title": "Build Your First iPhone App with The Little Prince",
+        "description": "Peter Pan sets off to meet another boy who never grows up. When he lands in the Sahara Desert, he meets the Little Prince and a new journey begins."
+      },
+      "classOrSelf": {
+        "title": "How Should You Learn App Development: Classes or Self-Study?",
+        "description": "Students often ask whether to self-study or take classes. Peter Pan shares balanced insights from years of teaching and building Apps, including his own hustling days."
+      },
+      "worldHelps": {
+        "title": "When You Truly Want to Learn Swift, the World Helps You",
+        "description": "Missed CS programs in college? For years it felt out of reach—until Swift arrived in 2014. Let’s see the nine reasons it’s so approachable."
+      },
+      "appLearningTips": {
+        "title": "Five Secret Moves to Learn App Development",
+        "description": "If ten years make a master, Peter Pan is halfway there. He shares the quiet lessons he’s learned since 2010."
+      }
+    }
   },
   "columns": {
     "title": "Columns",
