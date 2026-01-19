@@ -111,9 +111,25 @@ function ArrowIcon({ className }: { className?: string }) {
 
 export default function QAPage() {
   const { t } = useTranslation()
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: QA_ARTICLES.map((article) => ({
+      '@type': 'Question',
+      name: t(`qa.${article.titleKey}`),
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: t(`qa.${article.descriptionKey}`),
+      },
+    })),
+  }
 
   return (
     <div className={styles.qaPage}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero Banner */}
       <section className={styles.heroBanner}>
         <div className={styles.bannerOverlay} />

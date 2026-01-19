@@ -2,9 +2,10 @@ import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
 import { Header, Navigation, Footer } from '@components/layout'
-import { PwaProvider } from '@components/common'
+import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
+import { buildMetadata } from './metadata'
 
 const PageTransition = dynamic(
   () => import('@components/common/PageTransition').then((mod) => mod.PageTransition),
@@ -26,34 +27,17 @@ const ReadingProgress = dynamic(
   { ssr: false }
 )
 
-export const metadata: Metadata = {
-  title: '彼得潘的 iOS App 程式設計入門',
+const baseMetadata = buildMetadata({
+  title: undefined,
   description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
+  path: '/',
+})
+
+export const metadata: Metadata = {
+  ...baseMetadata,
   manifest: '/manifest.json',
   icons: {
     icon: '/icons/pwa-512.png',
-  },
-  openGraph: {
-    title: '彼得潘的 iOS App 程式設計入門',
-    description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
-    url: 'https://neverland.swift.moe/',
-    siteName: 'Neverland Story',
-    images: [
-      {
-        url: '/og-cover.png',
-        width: 1200,
-        height: 630,
-        alt: 'Neverland Story',
-      },
-    ],
-    locale: 'zh_TW',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '彼得潘的 iOS App 程式設計入門',
-    description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
-    images: ['/og-cover.png'],
   },
 }
 
@@ -72,6 +56,7 @@ export default function RootLayout({
         <I18nProvider>
           <PwaProvider />
           <ReadingProgress />
+          <BreadcrumbJsonLd />
           <div className={styles.layout}>
             <Header />
             <Navigation />

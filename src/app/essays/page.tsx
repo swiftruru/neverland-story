@@ -257,8 +257,8 @@ export default function EssaysPage() {
             <FadeInOnScroll
               key={essay.id}
               direction={index % 2 === 0 ? 'left' : 'right'}
-              delay={index * 60}
-              duration={180}
+              delay={0}
+              duration={120}
             >
               <PaperCard
                 tapeColor={index % 2 === 0 ? 'green' : 'yellow'}
