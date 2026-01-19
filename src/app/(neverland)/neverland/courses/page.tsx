@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
 // 講座課程資料類型
@@ -17,13 +18,15 @@ interface Course {
 }
 
 // 講座課程資料
+const img = (file: string) => assetPath(`courses/${file}`)
+
 const COURSES: Course[] = [
   {
     id: 'swift-ios-app',
     titleKey: 'swiftIosApp.title',
     dateKey: 'swiftIosApp.date',
     descriptionKey: 'swiftIosApp.description',
-    image: '/courses/swift-ios-app.png',
+    image: img('swift-ios-app.png'),
     url: 'https://swiftpeterpan.mystrikingly.com/',
   },
   {
@@ -31,7 +34,7 @@ const COURSES: Course[] = [
     titleKey: 'swiftuiBeginner.title',
     dateKey: 'swiftuiBeginner.date',
     descriptionKey: 'swiftuiBeginner.description',
-    image: '/courses/swiftui-beginner.png',
+    image: img('swiftui-beginner.png'),
     url: 'https://learniosfromzero.mystrikingly.com/',
   },
   {
@@ -39,35 +42,35 @@ const COURSES: Course[] = [
     titleKey: 'ntouSwiftui.title',
     dateKey: 'ntouSwiftui.date',
     descriptionKey: 'ntouSwiftui.description',
-    image: '/courses/ntou-swiftui.png',
+    image: img('ntou-swiftui.png'),
   },
   {
     id: 'flutter-intro',
     titleKey: 'flutterIntro.title',
     dateKey: 'flutterIntro.date',
     descriptionKey: 'flutterIntro.description',
-    image: '/courses/flutter-intro.png',
+    image: img('flutter-intro.png'),
   },
   {
     id: 'ntou-flutter',
     titleKey: 'ntouFlutter.title',
     dateKey: 'ntouFlutter.date',
     descriptionKey: 'ntouFlutter.description',
-    image: '/courses/ntou-flutter.png',
+    image: img('ntou-flutter.png'),
   },
   {
     id: 'ntou-python',
     titleKey: 'ntouPython.title',
     dateKey: 'ntouPython.date',
     descriptionKey: 'ntouPython.description',
-    image: '/courses/ntou-python.png',
+    image: img('ntou-python.png'),
   },
   {
     id: 'flutter-cross-platform',
     titleKey: 'flutterCrossPlatform.title',
     dateKey: 'flutterCrossPlatform.date',
     descriptionKey: 'flutterCrossPlatform.description',
-    image: '/courses/flutter-cross-platform.png',
+    image: img('flutter-cross-platform.png'),
     url: 'https://flutterapp.mystrikingly.com/',
   },
   {
@@ -75,7 +78,7 @@ const COURSES: Course[] = [
     titleKey: 'apcsAiotCamp.title',
     dateKey: 'apcsAiotCamp.date',
     descriptionKey: 'apcsAiotCamp.description',
-    image: '/courses/apcs-aiot-camp.png',
+    image: img('apcs-aiot-camp.png'),
     url: 'https://www.chtti.cht.com.tw/general/course_info.jsp?activity_id=599',
   },
   {
@@ -83,21 +86,21 @@ const COURSES: Course[] = [
     titleKey: 'youthIosTraining.title',
     dateKey: 'youthIosTraining.date',
     descriptionKey: 'youthIosTraining.description',
-    image: '/courses/youth-ios-training.png',
+    image: img('youth-ios-training.png'),
   },
   {
     id: 'ntou-swiftui-game',
     titleKey: 'ntouSwiftuiGame.title',
     dateKey: 'ntouSwiftuiGame.date',
     descriptionKey: 'ntouSwiftuiGame.description',
-    image: '/courses/ntou-swiftui-game.png',
+    image: img('ntou-swiftui-game.png'),
   },
   {
     id: 'ios-rest-api',
     titleKey: 'iosRestApi.title',
     dateKey: 'iosRestApi.date',
     descriptionKey: 'iosRestApi.description',
-    image: '/courses/ios-rest-api.png',
+    image: img('ios-rest-api.png'),
     url: 'https://iosrestapiapp.mystrikingly.com/',
   },
   {
@@ -105,7 +108,7 @@ const COURSES: Course[] = [
     titleKey: 'firstSwiftuiApp.title',
     dateKey: 'firstSwiftuiApp.date',
     descriptionKey: 'firstSwiftuiApp.description',
-    image: '/courses/first-swiftui-app.png',
+    image: img('first-swiftui-app.png'),
     url: 'https://firstiosswiftuiapp.mystrikingly.com/',
   },
   {
@@ -113,7 +116,7 @@ const COURSES: Course[] = [
     titleKey: 'christmasGiftApp.title',
     dateKey: 'christmasGiftApp.date',
     descriptionKey: 'christmasGiftApp.description',
-    image: '/courses/christmas-gift-app.png',
+    image: img('christmas-gift-app.png'),
     url: 'http://swiftuichristmasgift.mystrikingly.com/',
   },
   {
@@ -121,7 +124,7 @@ const COURSES: Course[] = [
     titleKey: 'appDevSwiftBook.title',
     dateKey: 'appDevSwiftBook.date',
     descriptionKey: 'appDevSwiftBook.description',
-    image: '/courses/app-dev-swift-book.png',
+    image: img('app-dev-swift-book.png'),
     url: 'https://swiftappworkshop3.mystrikingly.com/',
   },
   {
@@ -129,7 +132,7 @@ const COURSES: Course[] = [
     titleKey: 'swiftuiEbook.title',
     dateKey: 'swiftuiEbook.date',
     descriptionKey: 'swiftuiEbook.description',
-    image: '/courses/swiftui-ebook.png',
+    image: img('swiftui-ebook.png'),
     url: 'https://swiftuibook.mystrikingly.com/',
   },
   {
@@ -137,14 +140,14 @@ const COURSES: Course[] = [
     titleKey: 'yahooTraining.title',
     dateKey: 'yahooTraining.date',
     descriptionKey: 'yahooTraining.description',
-    image: '/courses/yahoo-training.png',
+    image: img('yahoo-training.png'),
   },
   {
     id: 'wwdc19-workshop',
     titleKey: 'wwdc19Workshop.title',
     dateKey: 'wwdc19Workshop.date',
     descriptionKey: 'wwdc19Workshop.description',
-    image: '/courses/wwdc19-workshop.png',
+    image: img('wwdc19-workshop.png'),
     url: 'https://swiftappworkshop4.mystrikingly.com/',
   },
   {
@@ -152,7 +155,7 @@ const COURSES: Course[] = [
     titleKey: 'ticTacToe.title',
     dateKey: 'ticTacToe.date',
     descriptionKey: 'ticTacToe.description',
-    image: '/courses/tic-tac-toe.png',
+    image: img('tic-tac-toe.png'),
     url: 'https://swiftappworkshop2.mystrikingly.com/',
   },
   {
@@ -160,7 +163,7 @@ const COURSES: Course[] = [
     titleKey: 'swiftRecursiveIterative.title',
     dateKey: 'swiftRecursiveIterative.date',
     descriptionKey: 'swiftRecursiveIterative.description',
-    image: '/courses/swift-recursive-iterative.png',
+    image: img('swift-recursive-iterative.png'),
     url: 'http://csproblemsinswift.strikingly.com/',
   },
   {
@@ -168,7 +171,7 @@ const COURSES: Course[] = [
     titleKey: 'programmingBeginnerTalk.title',
     dateKey: 'programmingBeginnerTalk.date',
     descriptionKey: 'programmingBeginnerTalk.description',
-    image: '/courses/programming-beginner-talk.png',
+    image: img('programming-beginner-talk.png'),
     url: 'https://howtocodeforbeginners.mystrikingly.com/',
   },
   {
@@ -176,7 +179,7 @@ const COURSES: Course[] = [
     titleKey: 'swiftProgrammingIntro.title',
     dateKey: 'swiftProgrammingIntro.date',
     descriptionKey: 'swiftProgrammingIntro.description',
-    image: '/courses/swift-programming-intro.png',
+    image: img('swift-programming-intro.png'),
     url: 'http://learnswift.strikingly.com/',
   },
   {
@@ -184,7 +187,7 @@ const COURSES: Course[] = [
     titleKey: 'autoLayoutStackView.title',
     dateKey: 'autoLayoutStackView.date',
     descriptionKey: 'autoLayoutStackView.description',
-    image: '/courses/auto-layout-stack-view.png',
+    image: img('auto-layout-stack-view.png'),
     url: 'http://autolayout.strikingly.com/',
   },
   {
@@ -192,14 +195,14 @@ const COURSES: Course[] = [
     titleKey: 'musickitLoveSong.title',
     dateKey: 'musickitLoveSong.date',
     descriptionKey: 'musickitLoveSong.description',
-    image: '/courses/musickit-love-song.png',
+    image: img('musickit-love-song.png'),
   },
   {
     id: 'liberal-arts-first-app',
     titleKey: 'liberalArtsFirstApp.title',
     dateKey: 'liberalArtsFirstApp.date',
     descriptionKey: 'liberalArtsFirstApp.description',
-    image: '/courses/liberal-arts-first-app.png',
+    image: img('liberal-arts-first-app.png'),
     url: 'http://learniosappfirsttime.strikingly.com/',
   },
   {
@@ -207,7 +210,7 @@ const COURSES: Course[] = [
     titleKey: 'iosAppWizardFree.title',
     dateKey: 'iosAppWizardFree.date',
     descriptionKey: 'iosAppWizardFree.description',
-    image: '/courses/ios-app-wizard-free.png',
+    image: img('ios-app-wizard-free.png'),
     url: 'http://learniosapp.strikingly.com/',
   },
   {
@@ -215,7 +218,7 @@ const COURSES: Course[] = [
     titleKey: 'ntuCsXMobile.title',
     dateKey: 'ntuCsXMobile.date',
     descriptionKey: 'ntuCsXMobile.description',
-    image: '/courses/ntu-cs-x-mobile.png',
+    image: img('ntu-cs-x-mobile.png'),
     url: 'https://ceiba.ntu.edu.tw/course/db36f6/',
   },
   {
@@ -223,7 +226,7 @@ const COURSES: Course[] = [
     titleKey: 'wwdc17Xcode9Swift4.title',
     dateKey: 'wwdc17Xcode9Swift4.date',
     descriptionKey: 'wwdc17Xcode9Swift4.description',
-    image: '/courses/wwdc17-xcode9-swift4.png',
+    image: img('wwdc17-xcode9-swift4.png'),
     url: 'http://wwdc17peterpan.strikingly.com/',
   },
   {
@@ -231,7 +234,7 @@ const COURSES: Course[] = [
     titleKey: 'nccuSwiftIos.title',
     dateKey: 'nccuSwiftIos.date',
     descriptionKey: 'nccuSwiftIos.description',
-    image: '/courses/nccu-swift-ios.png',
+    image: img('nccu-swift-ios.png'),
     url: 'https://medium.com/@apppeterpan/%E6%94%BF%E5%A4%A7%E5%8D%97%E9%A2%A8%E5%9B%9B%E9%87%8D%E5%A5%8F%E7%9A%84-ios-app-%E9%96%8B%E7%99%BC%E8%88%87-swift-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95-2cb31c62362e',
   },
   {
@@ -239,7 +242,7 @@ const COURSES: Course[] = [
     titleKey: 'fcuOneSongApp.title',
     dateKey: 'fcuOneSongApp.date',
     descriptionKey: 'fcuOneSongApp.description',
-    image: '/courses/fcu-one-song-app.png',
+    image: img('fcu-one-song-app.png'),
     url: 'https://medium.com/@apppeterpan/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8%E7%B5%A6%E6%88%91%E4%B8%80%E9%A6%96%E6%AD%8C%E7%9A%84%E6%99%82%E9%96%93%E5%81%9A-app-331d88339158',
   },
   {
@@ -247,7 +250,7 @@ const COURSES: Course[] = [
     titleKey: 'dessertAppExperience.title',
     dateKey: 'dessertAppExperience.date',
     descriptionKey: 'dessertAppExperience.description',
-    image: '/courses/dessert-app-experience.png',
+    image: img('dessert-app-experience.png'),
     url: 'http://blesseddessertapp.strikingly.com/',
   },
   {
@@ -255,7 +258,7 @@ const COURSES: Course[] = [
     titleKey: 'ntuStartupChallengeWorkshop.title',
     dateKey: 'ntuStartupChallengeWorkshop.date',
     descriptionKey: 'ntuStartupChallengeWorkshop.description',
-    image: '/courses/ntu-startup-challenge-workshop.png',
+    image: img('ntu-startup-challenge-workshop.png'),
     url: 'https://medium.com/@apppeterpan/%E5%8F%B0%E5%A4%A7%E5%89%B5%E5%89%B5%E6%8C%91%E6%88%B0%E8%B3%BD-ios-app-%E9%96%8B%E7%99%BC%E5%B7%A5%E4%BD%9C%E5%9D%8A-7700a22055fe',
   },
   {
@@ -263,7 +266,7 @@ const COURSES: Course[] = [
     titleKey: 'alphaCampIosBootcamp.title',
     dateKey: 'alphaCampIosBootcamp.date',
     descriptionKey: 'alphaCampIosBootcamp.description',
-    image: '/courses/alpha-camp-ios-bootcamp.png',
+    image: img('alpha-camp-ios-bootcamp.png'),
     url: 'https://www.alphacamp.co/bootcamp/ios-app-dev-bootcamp/',
   },
   {
@@ -279,7 +282,7 @@ const COURSES: Course[] = [
     titleKey: 'firstHandmadeIosApp.title',
     dateKey: 'firstHandmadeIosApp.date',
     descriptionKey: 'firstHandmadeIosApp.description',
-    image: '/courses/first-handmade-ios-app.png',
+    image: img('first-handmade-ios-app.png'),
     url: 'http://firstiosapp.strikingly.com/',
   },
   {
@@ -287,7 +290,7 @@ const COURSES: Course[] = [
     titleKey: 'learnCodeFromZero.title',
     dateKey: 'learnCodeFromZero.date',
     descriptionKey: 'learnCodeFromZero.description',
-    image: '/courses/learn-code-from-zero.png',
+    image: img('learn-code-from-zero.png'),
     url: 'http://learncodefromzero.strikingly.com/',
   },
   {
@@ -302,7 +305,7 @@ const COURSES: Course[] = [
     titleKey: 'objcToSwift.title',
     dateKey: 'objcToSwift.date',
     descriptionKey: 'objcToSwift.description',
-    image: '/courses/objc-to-swift.png',
+    image: img('objc-to-swift.png'),
     url: 'http://objectivectoswift.strikingly.com/',
   },
   {
@@ -310,7 +313,7 @@ const COURSES: Course[] = [
     titleKey: 'girlsHandmadeIosApp.title',
     dateKey: 'girlsHandmadeIosApp.date',
     descriptionKey: 'girlsHandmadeIosApp.description',
-    image: '/courses/girls-handmade-ios-app.png',
+    image: img('girls-handmade-ios-app.png'),
     url: 'http://girlapp.strikingly.com/',
   },
   {

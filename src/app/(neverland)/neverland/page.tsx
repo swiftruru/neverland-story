@@ -2,6 +2,7 @@
 
 import { useTranslation } from 'react-i18next'
 import { PaperCard, ZoomImage, FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
                 <div className={styles.profileInner}>
                   <div className={styles.headshotWrapper}>
                     <ZoomImage
-                      src="/peter-pan-headshot.png"
+                      src={assetPath('peter-pan-headshot.png')}
                       alt={t('home.headshotAlt')}
                       width={160}
                       height={160}

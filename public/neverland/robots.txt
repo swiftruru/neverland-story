@@ -13,4 +13,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://neverland.swift.moe/sitemap.xml
+Sitemap: https://neverland.swift.moe/neverland/sitemap.xml

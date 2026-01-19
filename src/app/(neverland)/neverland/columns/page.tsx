@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
 const COLUMN_ENTRIES = [
@@ -52,7 +53,7 @@ export default function ColumnsPage() {
             <section className={styles.magazineSection}>
               <div className={styles.magazineFrame}>
                 <Image
-                  src="/columns/mactoday-magazine-collage.png"
+                  src={assetPath('columns/mactoday-magazine-collage.png')}
                   alt={t('columns.magazineAlt')}
                   width={1400}
                   height={900}

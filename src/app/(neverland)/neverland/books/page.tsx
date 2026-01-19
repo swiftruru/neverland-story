@@ -4,7 +4,10 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
+
+const bookImg = (file: string) => assetPath(`books/${file}`)
 
 // 書籍資料
 const BOOKS = [
@@ -12,19 +15,19 @@ const BOOKS = [
     id: 'swift-programming',
     titleKey: 'swiftProgramming.title',
     url: 'https://swiftbook.mystrikingly.com/',
-    coverImage: '/books/swift-programming-cover.png',
+    coverImage: bookImg('swift-programming-cover.png'),
     publishDate: '2017.12',
     rankings: [
       { store: 'books.ranking.booksStore', rank: 'Top 2', category: 'books.ranking.computerNewBooks' },
       { store: 'books.ranking.kingstoneStore', rank: 'Top 1', category: 'books.ranking.computerNewBooks' },
     ],
-    rankingImage: '/books/swift-programming-ranking.png',
+    rankingImage: bookImg('swift-programming-ranking.png'),
   },
   {
     id: 'swift-intro',
     titleKey: 'swiftIntro.title',
     url: 'https://www.taaze.tw/products/11100741376.html',
-    coverImage: '/books/swift-intro-cover.png',
+    coverImage: bookImg('swift-intro-cover.png'),
     publishDate: '2015.3',
     supplementLinks: [
       {
@@ -39,13 +42,13 @@ const BOOKS = [
       { store: 'books.ranking.pchome', rank: 'Top 3', category: 'books.ranking.computerWeeklyBestsellers' },
       { store: 'books.ranking.kingstoneStore', rank: 'Top 3', category: 'books.ranking.computerNewBooks' },
     ],
-    rankingImage: '/books/swift-intro-ranking.png',
+    rankingImage: bookImg('swift-intro-ranking.png'),
   },
   {
     id: 'app-intro-v2',
     titleKey: 'appIntroV2.title',
     url: 'https://www.taaze.tw/products/11100598108.html',
-    coverImage: '/books/app-intro-v2-cover.png',
+    coverImage: bookImg('app-intro-v2-cover.png'),
     publishDate: '2012.2',
     rankings: [
       { store: 'books.ranking.booksStore', rank: 'Top 1', category: 'books.ranking.computerCategory' },
@@ -53,13 +56,13 @@ const BOOKS = [
       { store: 'books.ranking.tenlong', rank: 'Top 1', category: 'books.ranking.salesRanking' },
       { store: 'books.ranking.pchome', rank: 'Top 1', category: 'books.ranking.computerPhoto' },
     ],
-    rankingImage: '/books/app-intro-v2-ranking.png',
+    rankingImage: bookImg('app-intro-v2-ranking.png'),
   },
   {
     id: 'app-intro-v1',
     titleKey: 'appIntroV1.title',
     url: 'https://www.eslite.com/product/1001113631994712',
-    coverImage: '/books/app-intro-v1-cover.jpg',
+    coverImage: bookImg('app-intro-v1-cover.jpg'),
     publishDate: '2010.11',
     awards: [
       { labelKey: 'appIntroV1.ithomeAward' },

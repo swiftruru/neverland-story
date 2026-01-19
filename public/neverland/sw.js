@@ -1,9 +1,9 @@
 const CACHE_NAME = 'neverland-story-v1'
 const PRECACHE_URLS = [
-  '/',
-  '/offline.html',
-  '/manifest.json',
-  '/favicon.png',
+  '/neverland/',
+  '/neverland/offline.html',
+  '/neverland/manifest.json',
+  '/neverland/favicon.png',
 ]
 
 self.addEventListener('install', (event) => {
@@ -39,7 +39,9 @@ self.addEventListener('fetch', (event) => {
           return response
         })
         .catch(() =>
-          caches.match(request).then((cached) => cached || caches.match('/offline.html'))
+          caches
+            .match(request)
+            .then((cached) => cached || caches.match('/neverland/offline.html'))
         )
     )
     return

@@ -6,6 +6,7 @@ export const SITE_DESCRIPTION = '彼得潘的 iOS App 程式設計入門 - Never
 // 站點來源與子路徑，可透過環境變數覆蓋，方便同一份程式部署到不同子站
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://neverland.swift.moe'
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '/neverland'
+export const ASSET_BASE = BASE_PATH
 
 type MetadataInput = {
   title?: string
@@ -19,6 +20,12 @@ export function withBasePath(path: string) {
   const normalized = normalizePath(path || '/')
   const base = BASE_PATH === '/' ? '' : BASE_PATH.replace(/\/+$/, '')
   return `${base}${normalized}`.replace(/\/+/g, '/')
+}
+
+export function assetPath(path: string) {
+  const clean = path.startsWith('/') ? path.slice(1) : path
+  const base = ASSET_BASE === '/' ? '' : ASSET_BASE.replace(/\/+$/, '')
+  return `${base}/${clean}`.replace(/\/+/g, '/')
 }
 
 export function buildAbsoluteUrl(path: string) {

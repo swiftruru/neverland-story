@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
 // 家教服務資料
@@ -11,14 +12,14 @@ const SERVICES = [
     id: 'vibe-coding',
     titleKey: 'vibeCoding.title',
     descriptionKey: 'vibeCoding.description',
-    image: '/tutoring/vibe-coding-coach.png',
+    image: assetPath('tutoring/vibe-coding-coach.png'),
     url: 'https://appvibecoding.mystrikingly.com/',
   },
   {
     id: 'app-mentor',
     titleKey: 'appMentor.title',
     descriptionKey: 'appMentor.description',
-    image: '/tutoring/app-mentor.png',
+    image: assetPath('tutoring/app-mentor.png'),
     url: 'https://yourappmentor.mystrikingly.com/',
   },
 ]

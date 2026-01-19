@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { FadeInOnScroll } from '@components/common'
+import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
 // 外部連結圖標
@@ -146,7 +147,7 @@ export default function FerrymanPage() {
             <FadeInOnScroll direction="up" delay={100}>
               <div className={styles.scenariosImageWrapper}>
                 <Image
-                  src="/ferryman/help-scenarios.png"
+                  src={assetPath('ferryman/help-scenarios.png')}
                   alt={t('ferryman.scenariosAlt')}
                   width={800}
                   height={480}
