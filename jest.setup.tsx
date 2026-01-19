@@ -21,3 +21,15 @@ jest.mock('react-i18next', () => ({
     init: () => null,
   },
 }))
+
+// Mock IntersectionObserver for scroll animations
+class MockIntersectionObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}
+
+if (!global.IntersectionObserver) {
+  // @ts-expect-error define mock on global
+  global.IntersectionObserver = MockIntersectionObserver
+}
