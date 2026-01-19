@@ -26,7 +26,7 @@ COPY --from=builder /app/out ./
 RUN mkdir -p /etc/nginx/templates && \
     cat <<'EOF' > /etc/nginx/templates/default.conf.template
 server {
-  listen ${PORT:-80};
+  listen ${PORT};
   server_name _;
   root /usr/share/nginx/html;
   include /etc/nginx/mime.types;
