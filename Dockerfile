@@ -23,7 +23,19 @@ RUN rm -rf ./*
 COPY --from=builder /app/out ./
 
 # Basic config: serve pre-rendered files with gzip if available
-RUN printf 'server {\\n  listen 80;\\n  server_name _;\\n  root /usr/share/nginx/html;\\n  include /etc/nginx/mime.types;\\n  gzip on;\\n  gzip_types text/plain text/css application/javascript application/json image/svg+xml;\\n  location / {\\n    try_files $uri $uri/ =404;\\n  }\\n}\\n' > /etc/nginx/conf.d/default.conf
+RUN cat <<'EOF' > /etc/nginx/conf.d/default.conf
+server {
+  listen 80;
+  server_name _;
+  root /usr/share/nginx/html;
+  include /etc/nginx/mime.types;
+  gzip on;
+  gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
+EOF
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
