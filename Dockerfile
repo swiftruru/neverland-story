@@ -22,10 +22,11 @@ RUN rm -rf ./*
 # Copy exported site
 COPY --from=builder /app/out ./
 
-# Basic config: serve pre-rendered files with gzip if available
-RUN cat <<'EOF' > /etc/nginx/conf.d/default.conf
+# Use nginx template so PORT can be injected by platform (e.g., Railway)
+RUN mkdir -p /etc/nginx/templates && \
+    cat <<'EOF' > /etc/nginx/templates/default.conf.template
 server {
-  listen 80;
+  listen ${PORT:-80};
   server_name _;
   root /usr/share/nginx/html;
   include /etc/nginx/mime.types;
