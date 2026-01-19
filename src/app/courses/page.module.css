@@ -161,7 +161,7 @@
 }
 
 .courseTitleButton {
-  font-family: var(--font-family-handwriting);
+  font-family: var(--font-family);
   font-size: 1.25rem;
   color: var(--color-text);
   line-height: 1.4;
