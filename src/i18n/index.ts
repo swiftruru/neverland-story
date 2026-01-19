@@ -11,16 +11,12 @@ export const LANGUAGES = [
 
 export type LanguageCode = (typeof LANGUAGES)[number]['code']
 
-const savedLanguage = typeof window !== 'undefined'
-  ? localStorage.getItem('language')
-  : null
-
 i18n.use(initReactI18next).init({
   resources: {
     'zh-TW': { translation: zhTW },
     en: { translation: en },
   },
-  lng: savedLanguage || 'zh-TW',
+  lng: 'zh-TW',
   fallbackLng: 'zh-TW',
   interpolation: {
     escapeValue: false,
