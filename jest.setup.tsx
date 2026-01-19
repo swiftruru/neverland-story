@@ -33,3 +33,11 @@ if (!global.IntersectionObserver) {
   // @ts-expect-error define mock on global
   global.IntersectionObserver = MockIntersectionObserver
 }
+
+// Mock clipboard for copy interactions
+if (!global.navigator.clipboard) {
+  // @ts-expect-error clipboard mock
+  global.navigator.clipboard = {
+    writeText: jest.fn(() => Promise.resolve()),
+  }
+}
