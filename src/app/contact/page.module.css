@@ -58,6 +58,105 @@
   }
 }
 
+.formCard {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: var(--spacing-xl) auto 0;
+  background: linear-gradient(180deg, #f9faf5 0%, #f2f7f3 100%);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+}
+
+.formIntro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.formDescription {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.web3Form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.label input,
+.label textarea {
+  border: 1px solid #d8e3db;
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.label input:focus,
+.label textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 104, 80, 0.12);
+}
+
+.label textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.submitButton {
+  border: none;
+  background: linear-gradient(90deg, #0a7c63 0%, #009875 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 10px 25px rgba(0, 104, 80, 0.18);
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(0, 104, 80, 0.22);
+}
+
+.formStatus {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 /* 單一聯絡卡片 */
 .contactCard {
   display: flex;

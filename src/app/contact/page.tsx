@@ -166,6 +166,28 @@ function CopyButton({ text, label, copiedLabel }: { text: string; label: string;
 
 export default function ContactPage() {
   const { t } = useTranslation()
+  const [formStatus, setFormStatus] = useState('')
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setFormStatus('Sending...')
+
+    const formData = new FormData(event.currentTarget)
+    formData.append('access_key', 'cdf36c24-830b-4074-8f19-e7d3221fbd3b')
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    })
+
+    const data = await response.json()
+    if (data.success) {
+      setFormStatus('已送出，謝謝你的訊息！')
+      event.currentTarget.reset()
+    } else {
+      setFormStatus('送出時發生錯誤，請稍後再試。')
+    }
+  }
 
   return (
     <div className={styles.contactPage}>
@@ -232,6 +254,39 @@ export default function ContactPage() {
             </FadeInOnScroll>
           ))}
         </section>
+
+        <FadeInOnScroll direction="up" delay={80}>
+          <PaperCard tapeColor="green" tapePosition="top-left" tapeRotation={-2}>
+            <div className={styles.formCard}>
+              <div className={styles.formIntro}>
+                <h2 className={styles.formTitle}>寫信給彼得潘</h2>
+                <p className={styles.formDescription}>有任何合作、課程或 App 開發需求，歡迎留言，會盡快回覆。</p>
+              </div>
+              <form className={styles.web3Form} onSubmit={onSubmit}>
+                <div className={styles.formRow}>
+                  <label className={styles.label}>
+                    姓名
+                    <input name="name" type="text" required placeholder="你的名字" />
+                  </label>
+                  <label className={styles.label}>
+                    Email
+                    <input name="email" type="email" required placeholder="you@example.com" />
+                  </label>
+                </div>
+                <label className={styles.label}>
+                  想說的話
+                  <textarea name="message" rows={4} required placeholder="請描述你的需求或想法" />
+                </label>
+                <div className={styles.formActions}>
+                  <button type="submit" className={styles.submitButton}>
+                    送出表單
+                  </button>
+                  {formStatus && <span className={styles.formStatus}>{formStatus}</span>}
+                </div>
+              </form>
+            </div>
+          </PaperCard>
+        </FadeInOnScroll>
       </div>
     </div>
   )
