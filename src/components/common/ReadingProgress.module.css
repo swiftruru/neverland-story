@@ -8,10 +8,43 @@
   z-index: 9999;
   transition: width 80ms linear;
   pointer-events: none;
+  overflow: hidden;
+  box-shadow:
+    0 0 6px rgba(0, 104, 80, 0.35),
+    inset 0 0 3px rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.16) 18%,
+    rgba(255, 255, 255, 0.32) 34%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(60%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .bar {
     transition: none;
+  }
+  .bar::after {
+    animation: none;
   }
 }
