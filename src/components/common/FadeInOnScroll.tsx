@@ -36,6 +36,7 @@ export function FadeInOnScroll({
 
   useEffect(() => {
     const element = ref.current
+    /* istanbul ignore next -- defensive guard */
     if (!element) return
 
     const observer = new IntersectionObserver(
@@ -104,6 +105,7 @@ export function StaggerContainer({
 
   useEffect(() => {
     const element = ref.current
+    /* istanbul ignore next -- defensive guard */
     if (!element) return
 
     const observer = new IntersectionObserver(

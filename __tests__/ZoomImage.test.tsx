@@ -15,4 +15,13 @@ describe('ZoomImage', () => {
     fireEvent.click(dialog)
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
+
+  it('closes on Escape key', () => {
+    render(<ZoomImage src="/demo.jpg" alt="測試圖片" width={100} height={100} />)
+    fireEvent.click(screen.getByRole('button', { name: /點擊放大 測試圖片/ }))
+
+    const dialog = screen.getByRole('dialog', { name: '測試圖片' })
+    fireEvent.keyDown(dialog, { key: 'Escape' })
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
 })

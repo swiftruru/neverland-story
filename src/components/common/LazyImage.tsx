@@ -28,6 +28,7 @@ interface LazyImageProps {
 // 生成簡單的模糊佔位圖 SVG（使用 btoa 代替 Buffer 以支援 client 端）
 function generateBlurSVG(width: number, height: number): string {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="20"/></filter><rect width="100%" height="100%" fill="#e6f2ef"/><rect width="100%" height="100%" fill="#d4cfc2" filter="url(#b)" opacity="0.5"/></svg>`
+  /* istanbul ignore next -- server branch not hit in jsdom */
   if (typeof window === 'undefined') {
     return `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`
   }

@@ -4,8 +4,13 @@ import React from 'react'
 // Mock next/image to behave like a normal img in tests
 jest.mock('next/image', () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any, @next/next/no-img-element
-  return function MockedImage({ priority: _priority, ...props }: any) {
-    return <img {...props} />
+  return function MockedImage({ priority: _priority, blurDataURL, placeholder, ...props }: any) {
+    const rest = { ...props } as Record<string, any>
+    if (placeholder === 'blur') {
+      rest['data-blur-placeholder'] = 'true'
+      rest['data-blur-dataurl'] = blurDataURL
+    }
+    return <img {...rest} />
   }
 })
 

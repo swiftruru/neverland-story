@@ -1,4 +1,4 @@
-import { buildMetadata } from '../src/app/metadata'
+import { buildMetadata, SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '../src/app/metadata'
 
 describe('buildMetadata', () => {
   it('產生含 OG/Twitter 與 canonical 的完整 metadata', () => {
@@ -20,5 +20,29 @@ describe('buildMetadata', () => {
     )
     expect(metadata.twitter?.card).toBe('summary_large_image')
     expect(metadata.alternates?.canonical).toBe('https://neverland.swift.moe/sample')
+  })
+
+  it('使用預設值時回傳站點資訊', () => {
+    const metadata = buildMetadata({})
+    expect(metadata.title).toBe('彼得潘的 iOS App 程式設計入門')
+    expect(metadata.description).toBe('彼得潘的 iOS App 程式設計入門 - Neverland Story')
+    expect(metadata.openGraph?.url).toBe('https://neverland.swift.moe/')
+  })
+
+  it('可覆寫描述與路徑為根目錄', () => {
+    const metadata = buildMetadata({ description: '自訂描述', path: '/' })
+    expect(metadata.description).toBe('自訂描述')
+    expect(metadata.alternates?.canonical).toBe('https://neverland.swift.moe/')
+  })
+
+  it('多語言 alternate 至少包含 zh-TW', () => {
+    const metadata = buildMetadata({ path: '/videos' })
+    expect(metadata.alternates?.languages?.['zh-TW']).toBe('https://neverland.swift.moe/videos')
+  })
+
+  it('站點常數皆存在', () => {
+    expect(SITE_NAME).toBeTruthy()
+    expect(SITE_DESCRIPTION).toBeTruthy()
+    expect(SITE_URL).toBeTruthy()
   })
 })
