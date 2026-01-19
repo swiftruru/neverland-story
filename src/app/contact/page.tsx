@@ -7,7 +7,14 @@ import { PaperCard, FadeInOnScroll } from '@components/common'
 import styles from './page.module.css'
 
 // 聯絡方式資料
-const CONTACT_LINKS = [
+interface ContactLink {
+  id: string
+  icon: string
+  url?: string
+  copyValue?: string
+}
+
+const CONTACT_LINKS: ContactLink[] = [
   {
     id: 'facebook',
     icon: 'facebook',
@@ -196,17 +203,7 @@ export default function ContactPage() {
               >
                 <div className={styles.contactCard}>
                   <div className={`${styles.iconWrapper} ${styles[contact.icon]}`}>
-                    {contact.image ? (
-                      <Image
-                        src={contact.image}
-                        alt={t(`pages.contact.${contact.id}`)}
-                        width={44}
-                        height={44}
-                        className={styles.iconImage}
-                      />
-                    ) : (
-                      <Icon name={contact.icon} className={styles.icon} />
-                    )}
+                    <Icon name={contact.icon} className={styles.icon} />
                   </div>
                   <h3 className={styles.contactName}>{t(`pages.contact.${contact.id}`)}</h3>
                   {contact.copyValue && (
