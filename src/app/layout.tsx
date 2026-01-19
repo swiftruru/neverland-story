@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
-import { Header, Navigation, Footer } from '@components/layout'
 import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 import { SITE_URL, buildMetadata, buildAbsoluteUrl, withBasePath } from './metadata'
+import { LayoutChrome } from '@components/layout/LayoutChrome'
 
 const PageTransition = dynamic(
   () => import('@components/common/PageTransition').then((mod) => mod.PageTransition),
@@ -58,17 +58,14 @@ export default function RootLayout({
           <PwaProvider />
           <ReadingProgress />
           <BreadcrumbJsonLd />
-          <div className={styles.layout}>
-            <Header />
-            <Navigation />
-            <main className={styles.main}>
-              <PageTransition />
-              {children}
-            </main>
-            <Footer />
-            <FloatingContact />
-            <BackToTop />
-          </div>
+          <LayoutChrome>
+            <div className={styles.layout}>
+              <main className={styles.main}>
+                <PageTransition />
+                {children}
+              </main>
+            </div>
+          </LayoutChrome>
         </I18nProvider>
       </body>
     </html>
