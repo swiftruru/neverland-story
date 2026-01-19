@@ -19,8 +19,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # 建置任務
-  build:
+  # 測試任務
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test -- --runInBand
+
+  # Lint 任務
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -38,11 +57,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
-
       - name: Run lint
         run: npm run lint
+
+  # 建置任務
+  build:
+    runs-on: ubuntu-latest
+    needs: [test, lint]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
