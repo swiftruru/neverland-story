@@ -76,7 +76,7 @@
 .imageWrapper {
   max-width: 90vw;
   max-height: 90vh;
-  cursor: default;
+  cursor: zoom-out;
   animation: zoomIn 0.25s ease;
 }
 
