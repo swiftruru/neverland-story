@@ -64,7 +64,7 @@
   max-width: 1000px;
   margin: var(--spacing-xl) auto 0;
   background: linear-gradient(180deg, #f9faf5 0%, #f2f7f3 100%);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
   border-radius: var(--radius-lg);
 }
 
