@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "SwiftUI Foundation",
+    "intro": "簡介",
+    "goals": "目標",
+    "info": "課程資訊",
+    "features": "特色",
+    "assignments": "作業",
+    "audience": "對象",
+    "instructor": "講師",
+    "qa": "Q & A",
+    "outline": "大綱",
+    "tuition": "學費",
+    "signup": "報名",
+    "testimonials": "學生心得",
+    "contact": "聯絡"
+  },
+  "hero": {
+    "kicker": "SwiftUI Foundation · 文組生入門",
+    "title": "文組生的 iOS SwiftUI App 程式設計入門",
+    "subtitle": "為零程式與轉職學習者打造的 SwiftUI 教學站。以下區塊將逐步填入完整內容，先建立骨架，稍後逐段實作。"
+  },
+  "cta": {
+    "start": "開始瀏覽",
+    "back": "返回 SwiftUI 課程首頁"
+  },
+  "sections": {
+    "intro": {
+      "title": "簡介",
+      "desc": "本頁將放入課程的整體介紹、誰適合學、與其他課程的差異。"
+    },
+    "goals": {
+      "title": "目標",
+      "desc": "列出學習目標與成果範例，包含完成第一個 SwiftUI App 所需的能力。"
+    },
+    "info": {
+      "title": "課程資訊",
+      "desc": "課程形式、時數、上課工具與環境需求。"
+    },
+    "features": {
+      "title": "特色",
+      "desc": "文組友善、情境導向的課程設計與學習優勢。"
+    },
+    "assignments": {
+      "title": "作業",
+      "desc": "每週作業與實作要求，提交方式與評估標準。"
+    },
+    "audience": {
+      "title": "對象",
+      "desc": "適合的學員輪廓與先備條件，協助判斷課程適配度。"
+    },
+    "instructor": {
+      "title": "講師",
+      "desc": "講師背景、教學經驗與代表作品。"
+    },
+    "qa": {
+      "title": "Q & A",
+      "desc": "常見問題：時間安排、設備需求、作業量與支援方式。"
+    },
+    "outline": {
+      "title": "大綱",
+      "desc": "課程章節與實作專題列表，基礎到進階的學習路線圖。"
+    },
+    "tuition": {
+      "title": "學費",
+      "desc": "收費方式、早鳥/團報方案與付款資訊。"
+    },
+    "signup": {
+      "title": "報名",
+      "desc": "報名流程與表單入口，包含注意事項與時間表。"
+    },
+    "testimonials": {
+      "title": "學生心得",
+      "desc": "學員回饋、作品展示與心得，供新學員參考。"
+    },
+    "contact": {
+      "title": "聯絡",
+      "desc": "聯絡資訊與表單入口，包含社群與 email 渠道。"
+    }
+  },
+  "placeholder": "內容即將補完，將涵蓋範例、作業說明、常見問題與報名資訊。"
+}

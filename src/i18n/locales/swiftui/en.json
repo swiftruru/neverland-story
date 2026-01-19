@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "SwiftUI Foundation",
+    "intro": "Introduction",
+    "goals": "Goals",
+    "info": "Course Info",
+    "features": "Highlights",
+    "assignments": "Assignments",
+    "audience": "Who it's for",
+    "instructor": "Instructor",
+    "qa": "Q & A",
+    "outline": "Outline",
+    "tuition": "Tuition",
+    "signup": "Apply",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "SwiftUI Foundation · Beginner",
+    "title": "iOS SwiftUI App Development for Liberal Arts Learners",
+    "subtitle": "A SwiftUI learning path for absolute beginners and career-switchers. We’ll fill in each section with full content—this is the scaffold for now."
+  },
+  "cta": {
+    "start": "Start exploring",
+    "back": "Back to SwiftUI home"
+  },
+  "sections": {
+    "intro": {
+      "title": "Introduction",
+      "desc": "Overall course intro, who it’s for, and how it differs from other offerings."
+    },
+    "goals": {
+      "title": "Goals",
+      "desc": "Learning objectives and sample outcomes—including shipping your first SwiftUI app."
+    },
+    "info": {
+      "title": "Course Info",
+      "desc": "Format, schedule, tools, and environment requirements."
+    },
+    "features": {
+      "title": "Highlights",
+      "desc": "Liberal-arts-friendly, scenario-driven curriculum and learning advantages."
+    },
+    "assignments": {
+      "title": "Assignments",
+      "desc": "Weekly tasks, submission flow, and evaluation criteria."
+    },
+    "audience": {
+      "title": "Who it’s for",
+      "desc": "Ideal learner profiles and prerequisites to check fit."
+    },
+    "instructor": {
+      "title": "Instructor",
+      "desc": "Instructor background, teaching experience, and representative work."
+    },
+    "qa": {
+      "title": "Q & A",
+      "desc": "Common questions: time commitment, device needs, workload, support."
+    },
+    "outline": {
+      "title": "Outline",
+      "desc": "Chapters and projects from fundamentals to advanced topics."
+    },
+    "tuition": {
+      "title": "Tuition",
+      "desc": "Pricing, early-bird or group packages, and payment info."
+    },
+    "signup": {
+      "title": "Apply",
+      "desc": "Application steps and form link, with key dates and notes."
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "desc": "Student feedback, showcased projects, and outcomes."
+    },
+    "contact": {
+      "title": "Contact",
+      "desc": "Contact info, form entry, and social/email channels."
+    }
+  },
+  "placeholder": "Full content coming soon: examples, assignments, FAQ, and application details."
+}

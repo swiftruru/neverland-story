@@ -1,0 +1,115 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #f5f6f4;
+  box-shadow: 0 10px 24px rgba(0, 64, 48, 0.12);
+}
+
+.brandBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(90deg, #0c6a55, #0b7c64);
+  color: #ffffff;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.brand:hover {
+  color: #e8fff6;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.6rem 1.25rem 0.8rem;
+  background: #f5f6f4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0f2f28;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.link:hover {
+  background: var(--color-primary-pale);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.active:hover {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  box-shadow: 0 2px 4px rgba(0, 104, 80, 0.3);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.active {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  box-shadow: 0 2px 4px rgba(0, 104, 80, 0.3);
+  border-color: var(--color-primary);
+  font-weight: 700;
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 30px;
+  height: 8px;
+  background: rgba(244, 229, 170, 0.9);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 960px) {
+  .brandBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .nav {
+    gap: 0.25rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}
