@@ -5,7 +5,7 @@ import { Header, Navigation, Footer } from '@components/layout'
 import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
-import { SITE_URL, buildMetadata } from './metadata'
+import { SITE_URL, buildMetadata, buildAbsoluteUrl } from './metadata'
 
 const PageTransition = dynamic(
   () => import('@components/common/PageTransition').then((mod) => mod.PageTransition),
@@ -35,7 +35,7 @@ const baseMetadata = buildMetadata({
 
 export const metadata: Metadata = {
   ...baseMetadata,
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(buildAbsoluteUrl('/')),
   manifest: '/manifest.json',
   icons: {
     icon: '/icons/pwa-512.png',

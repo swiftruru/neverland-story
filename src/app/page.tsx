@@ -1,63 +1,24 @@
 'use client'
 
-import { useTranslation } from 'react-i18next'
-import { PaperCard, ZoomImage, FadeInOnScroll } from '@components/common'
-import styles from './page.module.css'
+import { useEffect } from 'react'
+import Link from 'next/link'
+import { withBasePath } from './metadata'
 
-export default function Home() {
-  const { t } = useTranslation()
+export default function RootRedirect() {
+  const target = withBasePath('/')
+
+  useEffect(() => {
+    window.location.replace(target)
+  }, [target])
 
   return (
-    <div className={styles.home}>
-      {/* Hero Banner Section */}
-      <section className={styles.heroBanner}>
-        <div className={styles.bannerOverlay} />
-        <div className={`container ${styles.heroContent}`}>
-          <FadeInOnScroll direction="up" delay={100}>
-            <div className={styles.profileCard}>
-              <PaperCard tapeColor="green" tapeRotation={-3} hover={false}>
-                <div className={styles.profileInner}>
-                  <div className={styles.headshotWrapper}>
-                    <ZoomImage
-                      src="/peter-pan-headshot.png"
-                      alt={t('home.headshotAlt')}
-                      width={160}
-                      height={160}
-                      className={styles.headshot}
-                      priority
-                    />
-                  </div>
-                  <div className={styles.profileText}>
-                    <h1 className={styles.title}>{t('home.title')}</h1>
-                    <p className={styles.subtitle}>{t('home.subtitle')}</p>
-                  </div>
-                </div>
-              </PaperCard>
-            </div>
-          </FadeInOnScroll>
-        </div>
-      </section>
-
-      {/* Description Section */}
-      <section className={`container ${styles.descriptionSection}`}>
-        <FadeInOnScroll direction="up" delay={200}>
-          <PaperCard tapeColor="yellow" tapePosition="top-left" tapeRotation={-5} variant="lined" hover={false}>
-            <div className={styles.description}>
-              <h2 className={styles.descriptionTitle}>{t('home.rolesTitle')}</h2>
-              <div className={styles.roles}>
-                <div className={styles.roleGroup}>
-                  <span className={styles.roleLabel}>{t('home.mainJob')}</span>
-                  <p className={styles.roleContent}>{t('home.mainJobContent')}</p>
-                </div>
-                <div className={styles.roleGroup}>
-                  <span className={styles.roleLabel}>{t('home.sideJob')}</span>
-                  <p className={styles.roleContent}>{t('home.sideJobContent')}</p>
-                </div>
-              </div>
-            </div>
-          </PaperCard>
-        </FadeInOnScroll>
-      </section>
-    </div>
+    <main style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', padding: '2rem' }}>
+      <div style={{ textAlign: 'center' }}>
+        <p>即將為你導向 Neverland：</p>
+        <Link href={target} style={{ color: 'var(--color-primary)', fontWeight: 600 }}>
+          {target}
+        </Link>
+      </div>
+    </main>
   )
 }

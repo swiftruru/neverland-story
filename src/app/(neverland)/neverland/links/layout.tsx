@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { buildMetadata } from '../metadata'
+import { buildMetadata } from '@/app/metadata'
 
 export const metadata: Metadata = buildMetadata({
   title: '相關連結',

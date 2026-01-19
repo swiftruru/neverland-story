@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import { usePathname } from 'next/navigation'
 import { NAV_ITEMS } from '@constants/navigation'
-import { SITE_URL } from '../../app/metadata'
+import { buildAbsoluteUrl, withBasePath } from '../../app/metadata'
 
 export function BreadcrumbJsonLd() {
   const pathname = usePathname()
@@ -17,13 +17,13 @@ export function BreadcrumbJsonLd() {
         '@type': 'ListItem',
         position: 1,
         name: '首頁',
-        item: SITE_URL,
+        item: buildAbsoluteUrl('/'),
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: current.label,
-        item: new URL(current.path, SITE_URL).toString(),
+        item: buildAbsoluteUrl(current.path.replace(withBasePath('/'), '/') || '/'),
       },
     ]
 
