@@ -214,11 +214,14 @@ export function AppsPage() {
                     </button>
 
                     <div className={styles.appContent}>
-                      <h2
-                        className={styles.appTitleClickable}
-                        onClick={() => openModal(app)}
-                      >
-                        {t(`appWorks.${app.titleKey}`)}
+                      <h2 className={styles.appTitle}>
+                        <button
+                          type="button"
+                          className={styles.appTitleButton}
+                          onClick={() => openModal(app)}
+                        >
+                          {t(`appWorks.${app.titleKey}`)}
+                        </button>
                       </h2>
 
                       <p className={styles.appDescription}>

@@ -65,6 +65,13 @@ button {
   padding: 0 var(--spacing-lg);
 }
 
+/* ===== 鍵盤焦點 ===== */
+:where(a, button, [role="button"], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
 /* ===== 無障礙隱藏 ===== */
 .sr-only {
   position: absolute;

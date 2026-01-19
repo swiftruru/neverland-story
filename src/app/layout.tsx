@@ -33,6 +33,28 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icons/pwa-512.png',
   },
+  openGraph: {
+    title: '彼得潘的 iOS App 程式設計入門',
+    description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
+    url: 'https://neverland.swift.moe/',
+    siteName: 'Neverland Story',
+    images: [
+      {
+        url: '/og-cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Neverland Story',
+      },
+    ],
+    locale: 'zh_TW',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '彼得潘的 iOS App 程式設計入門',
+    description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
+    images: ['/og-cover.png'],
+  },
 }
 
 export const viewport: Viewport = {

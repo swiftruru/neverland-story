@@ -687,11 +687,14 @@ export default function CoursesPage() {
                     </button>
 
                     <div className={styles.courseContent}>
-                      <h2
-                        className={styles.courseTitleClickable}
-                        onClick={() => openModal(course)}
-                      >
-                        {t(`courses.${course.titleKey}`)}
+                      <h2 className={styles.courseTitle}>
+                        <button
+                          type="button"
+                          className={styles.courseTitleButton}
+                          onClick={() => openModal(course)}
+                        >
+                          {t(`courses.${course.titleKey}`)}
+                        </button>
                       </h2>
 
                       <div className={styles.courseDate}>
