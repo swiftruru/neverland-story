@@ -9,6 +9,7 @@
 
   /* 輕微的紙張邊緣效果 */
   border: 1px solid var(--color-border-light);
+  margin-top: calc(var(--spacing-2xl) + var(--spacing-lg));
 }
 
 .card.hover:hover {
