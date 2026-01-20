@@ -119,6 +119,17 @@
           "lines": ["30 人以內"]
         }
       ]
+    },
+    "assignmentsPage": {
+      "heading": "學生們精心創作的作業",
+      "blogLabel": "彼得潘 iOS App 課程的學生作業 Blog",
+      "blogUrl": "https://medium.com/彼得潘的-swift-ios-app-開發教室",
+      "items": [
+        { "title": "作業 1", "alt": "學生作業範例 1", "src": "/swiftui/hw-01.gif" },
+        { "title": "作業 2", "alt": "學生作業範例 2", "src": "/swiftui/hw-02.gif" },
+        { "title": "作業 3", "alt": "學生作業範例 3", "src": "/swiftui/hw-03.gif" },
+        { "title": "作業 4", "alt": "學生作業範例 4", "src": "/swiftui/hw-04.gif" }
+      ]
     }
   }
 }
