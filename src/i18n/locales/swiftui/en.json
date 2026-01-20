@@ -233,5 +233,8 @@
         "Tech advisor: FUNTEK, DotDot, InnoOz, Brocas"
       ]
     }
+  },
+  "footer": {
+    "copyright": "© {{year}} iOS SwiftUI App for Liberal Arts Learners. All rights reserved."
   }
 }

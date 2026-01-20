@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  padding: 0 0 4rem;
+  padding: 0;
 }
 
 .introHero {
@@ -1066,6 +1066,20 @@
   max-width: 760px;
   display: grid;
   gap: 0.75rem;
+}
+
+.qaHero .kicker {
+  display: inline-flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+  color: #e9f5ef;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .qaTitle {

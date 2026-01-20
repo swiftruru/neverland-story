@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react'
 import { usePathname } from 'next/navigation'
-import { Header, Navigation, Footer } from './index'
+import { Header, Navigation, Footer, FooterSwiftui } from './index'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import styles from './LayoutChrome.module.css'
@@ -24,7 +24,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
 
       <main className={styles.main}>{children}</main>
 
-      {!isSwiftuiSite && <Footer />}
+      {isSwiftuiSite ? <FooterSwiftui /> : <Footer />}
       <FloatingContact />
       <BackToTop />
     </div>

@@ -233,5 +233,8 @@
         "技術顧問：FUNTEK、點點數位、英諾奧茲、Brocas"
       ]
     }
+  },
+  "footer": {
+    "copyright": "© {{year}} 文組生的 iOS SwiftUI App 程式設計入門. All rights reserved."
   }
 }
