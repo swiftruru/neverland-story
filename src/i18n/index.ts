@@ -1,8 +1,8 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-import zhTW from './locales/zh-TW.json'
-import en from './locales/en.json'
+import neverlandZhTW from './locales/neverland/zh-TW.json'
+import neverlandEn from './locales/neverland/en.json'
 import swiftuiZhTW from './locales/swiftui/zh-TW.json'
 import swiftuiEn from './locales/swiftui/en.json'
 
@@ -15,8 +15,8 @@ export type LanguageCode = (typeof LANGUAGES)[number]['code']
 
 i18n.use(initReactI18next).init({
   resources: {
-    'zh-TW': { translation: zhTW, swiftui: swiftuiZhTW },
-    en: { translation: en, swiftui: swiftuiEn },
+    'zh-TW': { translation: neverlandZhTW, swiftui: swiftuiZhTW },
+    en: { translation: neverlandEn, swiftui: swiftuiEn },
   },
   lng: 'zh-TW',
   fallbackLng: 'zh-TW',
