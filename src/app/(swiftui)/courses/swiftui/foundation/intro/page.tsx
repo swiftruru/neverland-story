@@ -1,17 +1,35 @@
 'use client'
 
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import styles from '../page.module.css'
 
 export default function SwiftuiIntroPage() {
   const { t } = useTranslation('swiftui')
+  const heroLines = t('introPage.heroLines', { returnObjects: true }) as string[]
+
   return (
     <main className={styles.page}>
-      <div className="container">
-        <h1 className={styles.title}>{t('sections.intro.title')}</h1>
-        <p className={styles.subtitle}>{t('sections.intro.desc')}</p>
-        <p className={styles.placeholder}>{t('placeholder')}</p>
-      </div>
+      <section className={styles.introHero}>
+        <div className={styles.heroOverlay} />
+        <div className="container">
+          <div className={styles.heroContent}>
+            <p className={styles.kicker}>{t('hero.kicker')}</p>
+            <h1 className={styles.title}>{t('introPage.heroTitle')}</h1>
+            <p className={styles.heroLead}>{t('introPage.heroLead')}</p>
+            <ul className={styles.heroList}>
+              {heroLines.map((line, idx) => (
+                <li key={idx}>{line}</li>
+              ))}
+            </ul>
+            <div className={styles.heroActions}>
+              <Link href="/courses/swiftui/foundation/signup" className={styles.primary}>
+                {t('introPage.cta')}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

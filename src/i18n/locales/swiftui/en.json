@@ -78,5 +78,15 @@
       "desc": "Contact info, form entry, and social/email channels."
     }
   },
-  "placeholder": "Full content coming soon: examples, assignments, FAQ, and application details."
+  "placeholder": "Full content coming soon: examples, assignments, FAQ, and application details.",
+  "introPage": {
+    "heroTitle": "iOS SwiftUI App Development for Liberal Arts Learners",
+    "heroLead": "Designed for liberal arts learners to start from zero, enjoy coding, and build apps with confidence.",
+    "heroLines": [
+      "Just 12 weeks, one evening per week,",
+      "to grasp core programming concepts",
+      "and become a confident iOS SwiftUI app builder."
+    ],
+    "cta": "Apply"
+  }
 }
