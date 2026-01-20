@@ -185,6 +185,47 @@
           "desc": "Special pricing is available for those who need financial help."
         }
       ]
+    },
+    "instructorPage": {
+      "heading": "Peter Pan, the Apple-loving instructor",
+      "subheading": "More about Peter Pan",
+      "bioLink": "/neverland",
+      "heroTitle": "SwiftUI, teaching, and humor—your guide through the journey",
+      "heroSubtitle": "Instructor, author, and consultant helping you go from zero code to App Store.",
+      "avatarAlt": "Instructor Peter Pan portrait",
+      "links": [
+        { "label": "Peter Pan’s App Neverland", "url": "https://medium.com/@apppeterpan" },
+        { "label": "Fan page", "url": "https://www.facebook.com/iphone.peterpan/" },
+        { "label": "Your App Mentor", "url": "http://yourappmentor.strikingly.com/" },
+        { "label": "Swift Programming Intro by Peter Pan", "url": "http://swiftbook.strikingly.com/" },
+        { "label": "AppCoda column", "url": "http://www.appcoda.com.tw/" },
+        { "label": "iOS App Ferryman", "url": "http://iosappferryman.strikingly.com/" }
+      ],
+      "details": [
+        "Bestselling author of “Swift Programming Intro” ([Swift book](http://swiftbook.strikingly.com/)) and “App Programming Intro – iPhone, iPad” ([Eslite](https://www.eslite.com/product/1001113631994712)) — Top 1 in multiple bookstores",
+        "FB fan page: [Peter Pan on Facebook](https://www.facebook.com/iphone.peterpan/)",
+        "App portfolio: Wealthy, LOCOMO, Penny’s Journey Home, and more (Wealthy hit Taiwan Finance Top 1, overall Top 2, China Finance Top 2)",
+        "Instructor: NTU Information System Training, [ALPHA Camp](https://www.alphacamp.co/), [Ichih Training](http://www.ichih.com/), [III](http://www.iii.org.tw/), Workforce Development, [TibaMe](https://www.tibame.com/), Studio A, iPlayground, MOPCON, Dream Seed, Chunghwa Telecom Academy, New Taipei Youth Dept.",
+        "University lecturer: NTOU, Taipei Tech, NTU General Ed., NTUE iOS club, NCCU, NCU, NTPU, TKU iOS club, FCU, CCU, SCU, WFU, HKU, CSU, TCU, NTCU, CUTe, Nan Kan High, Kaohsiung American School",
+        "1:1 coaching: [Your App Mentor](http://yourappmentor.strikingly.com/)",
+        "Corporate training: Yahoo, Realtek, Vanguard, Uni-Info, Shin Kong Life, Sinyi Realty, BDD Design",
+        "Coach of WWDC Swift Student Challenge winners",
+        "Blog: [Peter Pan’s App Neverland](https://medium.com/@apppeterpan)",
+        "Tech advisor: [iOS App Ferryman](http://iosappferryman.strikingly.com/), FUNTEK, DotDot, InnoOz, Brocas",
+        "Columns: [AppCoda](http://www.appcoda.com.tw/), MacToday App dev, PChome Mac basics"
+      ],
+      "highlights": [
+        "Bestselling author of “Swift Programming Intro” and “App Programming Intro – iPhone, iPad” (Top 1 in multiple bookstores)",
+        "App portfolio: Wealthy, LOCOMO, Penny’s Journey Home and more (Wealthy hit Taiwan Finance Top 1, overall Top 2, China Finance Top 2)",
+        "Instructor for enterprises, universities, and communities (iPlayground, MOPCON, and more)",
+        "Coach of WWDC Swift Student Challenge winners"
+      ],
+      "experiences": [
+        "Swift iOS / Flutter / Python instructor: NTU Information System Training, ALPHA Camp, Ichih Training, III, Workforce Development, TibaMe, Studio A, iPlayground, MOPCON, Dream Seed, Chunghwa Telecom Academy, New Taipei Youth Dept.",
+        "University lecturer: NTOU, Taipei Tech, NTU General Ed., NTUE iOS club, NCCU, NCU, NTPU, TKU iOS club, FCU, CCU, SCU, WFU, HKU, CSU, TCU, NTCU, CUTe, Nan Kan High, Kaohsiung American School",
+        "Corporate training: Yahoo, Realtek, Vanguard, Uni-Info, Shin Kong Life, Sinyi Realty, BDD Design",
+        "Tech advisor: FUNTEK, DotDot, InnoOz, Brocas"
+      ]
     }
   }
 }

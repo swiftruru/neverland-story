@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, ReactNode } from 'react'
 import styles from './FadeInOnScroll.module.css'
 
 interface FadeInOnScrollProps {
@@ -33,6 +33,18 @@ export function FadeInOnScroll({
 }: FadeInOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
+  const isomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect
+
+  isomorphicLayoutEffect(() => {
+    const element = ref.current
+    if (!element || typeof window === 'undefined') return
+    const rect = element.getBoundingClientRect()
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight
+    const inView = rect.top <= viewportHeight * (1 - threshold) && rect.bottom >= 0
+    if (inView) {
+      setIsVisible(true)
+    }
+  }, [threshold, isomorphicLayoutEffect])
 
   useEffect(() => {
     const element = ref.current

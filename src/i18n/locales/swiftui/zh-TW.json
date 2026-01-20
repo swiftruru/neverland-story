@@ -185,6 +185,47 @@
           "desc": "需要幫助的朋友可申請特別優惠價，一起完成學習目標。"
         }
       ]
+    },
+    "instructorPage": {
+      "heading": "愛瘋一切為蘋果的彼得潘",
+      "subheading": "更多關於彼得潘的故事",
+      "bioLink": "/neverland",
+      "heroTitle": "用 SwiftUI、教育與幽默，陪你走完學習旅程",
+      "heroSubtitle": "講師、作家、顧問，從零程式到 App 上架，彼得潘陪你一步步完成。",
+      "avatarAlt": "彼得潘講師照片",
+      "links": [
+        { "label": "彼得潘的 App Neverland", "url": "https://medium.com/@apppeterpan" },
+        { "label": "粉絲團", "url": "https://www.facebook.com/iphone.peterpan/" },
+        { "label": "專屬於你的 iOS APP 開發導師", "url": "http://yourappmentor.strikingly.com/" },
+        { "label": "彼得潘的 Swift 程式設計入門", "url": "http://swiftbook.strikingly.com/" },
+        { "label": "AppCoda 專欄", "url": "http://www.appcoda.com.tw/" },
+        { "label": "iOS APP 金牌擺渡人", "url": "http://iosappferryman.strikingly.com/" }
+      ],
+      "details": [
+        "暢銷書 《[彼得潘的 Swift 程式設計入門](http://swiftbook.strikingly.com/)》、《[App 程式設計入門－iPhone, iPad](https://www.eslite.com/product/1001113631994712)》作者（博客來電腦類 Top 1，天瓏銷售排行 Top 1，PC Home 電腦 / 攝影 Top 1，金石堂 Top 3）",
+        "FB 粉絲團：[愛瘋一切為蘋果的彼得潘](https://www.facebook.com/iphone.peterpan/)",
+        "App 作品：Wealthy、LOCOMO 運動記錄、戴佩妮回家路上等二十幾款 App（Wealthy App 曾獲台灣 Finance Top 1，台灣不分類 Top 2，中國 Finance Top 2）",
+        "Swift iOS / Flutter / Python 開發講師：臺灣大學資訊系統訓練班、[ALPHA Camp](https://www.alphacamp.co/)、[譯智教育訓練](http://www.ichih.com/)、[資策會](http://www.iii.org.tw/)、職訓局、[TibaMe](https://www.tibame.com/)、Studio A、iPlayground、MOPCON、夢種子、中華電信學院、新北市政府青年局",
+        "學校講師：海洋大學資工系課程、臺北科大資工系課程、台大共同教育中心、臺北教育大學 iOS 社團、政大、中央、臺北大學、淡江大學 iOS 社團、逢甲大學、文化大學、醒吾科大、弘光科大、正修科大、慈濟科大、勤益科大、中國科大、南崁高中、高雄美國學校",
+        "家教：[專屬於你的 iOS APP 開發導師](http://yourappmentor.strikingly.com/)",
+        "企業內訓：Yahoo、聯陽半導體、世界先進、統一資訊、新光人壽、信義房屋、果思設計",
+        "WWDC Swift Student Challenge 得獎學生的指導老師",
+        "Blog：[彼得潘的 App Neverland](https://medium.com/@apppeterpan)",
+        "技術顧問：[iOS APP 金牌擺渡人](http://iosappferryman.strikingly.com/)、FUNTEK、點點數位、英諾奧茲、Brocas",
+        "雜誌專欄：[AppCoda](http://www.appcoda.com.tw/)、MacToday App 開發，PChome Mac 基礎教室"
+      ],
+      "highlights": [
+        "暢銷書《彼得潘的 Swift 程式設計入門》、《App 程式設計入門－iPhone, iPad》作者（博客來電腦類 Top 1，天瓏銷售排行 Top 1，PC Home 電腦 / 攝影 Top 1，金石堂 Top 3）",
+        "App 作品：Wealthy、LOCOMO 運動記錄、戴佩妮回家路上等數十款（Wealthy 曾獲台灣 Finance Top 1、不分類 Top 2、中國 Finance Top 2）",
+        "企業與學校講師，服務北中南大專院校、企業訓練、社群研討會、iPlayground、MOPCON 等",
+        "WWDC Swift Student Challenge 得獎學生的指導老師"
+      ],
+      "experiences": [
+        "Swift iOS / Flutter / Python 開發講師：臺灣大學資訊系統訓練班、ALPHA Camp、譯智教育訓練、資策會、職訓局、TibaMe、Studio A、iPlayground、MOPCON、夢種子、中華電信學院、新北市政府青年局",
+        "學校講師：海洋大學、臺北科大、台大共同教育中心、臺北教育大學 iOS 社團、政大、中央、臺北大學、淡江 iOS 社團、逢甲、文化、醒吾、弘光、正修、慈濟、勤益、中國科大、南崁高中、高雄美國學校",
+        "企業內訓：Yahoo、聯陽半導體、世界先進、統一資訊、新光人壽、信義房屋、果思設計",
+        "技術顧問：FUNTEK、點點數位、英諾奧茲、Brocas"
+      ]
     }
   }
 }
