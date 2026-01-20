@@ -131,6 +131,12 @@
         { "title": "作業 4", "alt": "學生作業範例 4", "src": "/swiftui/hw-04.gif" }
       ]
     },
+    "qaPage": {
+      "heading": "iOS App 開發的十個 Q & A",
+      "description": "常見的 iOS App 開發與學習疑問，彼得潘一次解答。",
+      "cta": "閱讀 Q &A",
+      "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993"
+    },
     "audiencePage": {
       "heading": "招生對象",
       "description": "為初學者量身打造，適合想入門、想轉職、想與工程師更好合作的你。",

@@ -1054,6 +1054,34 @@
   line-height: 1;
 }
 
+.qaHero {
+  position: relative;
+  padding: 3.2rem 0 3.6rem;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.qaHeroContent {
+  max-width: 760px;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.qaTitle {
+  margin: 0.2rem 0 0.25rem;
+  font-size: clamp(2.1rem, 5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.qaSubtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #eaf6f2;
+}
+
 @media (max-width: 768px) {
   .instructorHero {
     padding: 2.5rem 0 2.25rem;
@@ -1061,5 +1089,9 @@
 
   .instructorCard {
     padding: 1.1rem 1rem 1.25rem;
+  }
+
+  .qaHero {
+    padding: 2.6rem 0 3rem;
   }
 }

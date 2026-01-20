@@ -131,6 +131,12 @@
         { "title": "Assignment 4", "alt": "Student assignment sample 4", "src": "/swiftui/hw-04.gif" }
       ]
     },
+    "qaPage": {
+      "heading": "Top 10 iOS App Development Q&A",
+      "description": "Peter Pan answers the most common questions about learning and building iOS apps.",
+      "cta": "Read Q&A",
+      "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993"
+    },
     "audiencePage": {
       "heading": "Who should join",
       "description": "Designed for beginners and career-switchers who want to build apps and collaborate better with engineers.",
