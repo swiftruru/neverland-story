@@ -1,14 +1,17 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
+
+const redirectMock = jest.fn()
+
+jest.mock('next/navigation', () => ({
+  redirect: (...args: unknown[]) => redirectMock(...args),
+}))
+
 import Home from '../src/app/page'
 
 describe('Home page', () => {
-  it('shows hero title, subtitle, and zoom trigger', () => {
+  it('redirects to neverland base path', () => {
     render(<Home />)
 
-    expect(screen.getByRole('heading', { level: 1, name: /home.title/ })).toBeInTheDocument()
-    expect(screen.getByText(/home.subtitle/)).toBeInTheDocument()
-
-    const zoomButton = screen.getByRole('button', { name: /點擊放大 home.headshotAlt/ })
-    expect(zoomButton).toBeInTheDocument()
+    expect(redirectMock).toHaveBeenCalledWith('/neverland/')
   })
 })
