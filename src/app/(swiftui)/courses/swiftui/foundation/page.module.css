@@ -1,13 +1,12 @@
 .page {
   min-height: 100vh;
-  padding: 2.5rem 0 4rem;
+  padding: 0 0 4rem;
 }
 
 .introHero {
   position: relative;
-  padding: 3.5rem 0 3rem;
-  background: linear-gradient(180deg, rgba(12, 106, 85, 0.92), rgba(12, 106, 85, 0.85)),
-    url('/swiftui/foundation-hero.jpg') center/cover no-repeat;
+  padding: 3rem 0 2.75rem;
+  background: url('/swiftui/foundation-hero.jpg') center/cover no-repeat;
   color: #ffffff;
   overflow: hidden;
 }
@@ -15,8 +14,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08), transparent 40%);
+  background: none;
   pointer-events: none;
 }
 
@@ -69,6 +67,7 @@
   color: #eaf6f2;
   margin: 0;
   line-height: 1.7;
+  font-weight: 700;
 }
 
 .heroList {
@@ -80,12 +79,60 @@
   color: #f5fff9;
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 700;
 }
 
 .heroList li::before {
   content: '•';
   margin-right: 0.5rem;
   color: #b8f4dc;
+}
+
+.learnSection {
+  padding: 2.5rem 0 3.5rem;
+  background: linear-gradient(180deg, #f7faf7, #f0f5f2);
+}
+
+.learnCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 16px;
+  padding: 1.75rem 1.9rem;
+  box-shadow: 0 12px 32px rgba(0, 104, 80, 0.08);
+}
+
+.learnTitle {
+  margin: 0.15rem 0 1rem;
+  font-size: clamp(1.6rem, 3.6vw, 2rem);
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.learnList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+.learnList li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.learnList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #0c6a55, #00a67d);
+  box-shadow: 0 4px 12px rgba(0, 136, 104, 0.25);
 }
 
 .heroActions {
@@ -213,5 +260,86 @@
 
   .heroLead {
     font-size: 1rem;
+  }
+
+  .learnSection {
+    padding: 2rem 0 3rem;
+  }
+
+  .learnCard {
+    padding: 1.4rem 1.35rem;
+  }
+
+  .learnTitle {
+    margin-bottom: 0.85rem;
+  }
+}
+
+.infoSection {
+  padding: 3rem 0 3.5rem;
+  background: #f7faf7;
+}
+
+.infoHeader {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.infoCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 16px;
+  padding: 1.4rem 1.4rem 1.6rem;
+  box-shadow: 0 10px 28px rgba(0, 104, 80, 0.08);
+  display: grid;
+  gap: 0.65rem;
+  align-items: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0, 104, 80, 0.12);
+}
+
+.infoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.infoLines {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text);
+  display: grid;
+  gap: 0.3rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .infoSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .infoCard {
+    padding: 1.2rem 1.1rem 1.35rem;
   }
 }

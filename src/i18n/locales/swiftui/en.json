@@ -87,6 +87,38 @@
       "to grasp core programming concepts",
       "and become a confident iOS SwiftUI app builder."
     ],
-    "cta": "Apply"
+    "cta": "Apply",
+    "learnTitle": "What you’ll learn",
+    "learnItems": [
+      "Build iOS apps independently and publish to the App Store.",
+      "Learn Swift and core programming concepts: variables, functions, conditionals, loops, and classes.",
+      "Build an ebook-style app around topics you love, like The Little Prince, a photo album, or Tang Poetry.",
+      "Create 10+ engaging, hands-on apps.",
+      "Work with the latest Swift, Xcode, iOS SDK, and SwiftUI.",
+      "Prototype and ship the apps you care about.",
+      "Communicate better with engineers and boost team efficiency.",
+      "Get comfortable with Xcode and Playground.",
+      "Craft polished UI and prototypes with SwiftUI."
+    ],
+    "courseInfo": {
+      "heading": "Course Info",
+      "cards": [
+        {
+          "id": "time",
+          "title": "Schedule",
+          "lines": ["2026/3/10 ~ 2026/5/26", "Tuesdays 19:00 ~ 22:00", "36 hours of live online class"]
+        },
+        {
+          "id": "live",
+          "title": "Live + Recording",
+          "lines": ["Live online sessions plus recordings", "Rewatch the videos anytime, no expiry"]
+        },
+        {
+          "id": "size",
+          "title": "Class size",
+          "lines": ["Up to 30 learners"]
+        }
+      ]
+    }
   }
 }

@@ -87,6 +87,38 @@
       "即可學會程式設計的核心概念，",
       "成為酷炫的 iOS SwiftUI App 開發魔法師！"
     ],
-    "cta": "報名"
+    "cta": "報名",
+    "learnTitle": "你將會學到",
+    "learnItems": [
+      "獨力開發 iOS App，上架 App Store。",
+      "學會 Swift 程式語言，了解程式設計的核心概念，包含變數、函式、if else、迴圈、類別。",
+      "開發電子書 App，結合自己感興趣的主題，例如小王子故事、正妹相簿、唐詩三百首 App。",
+      "開發十個以上生動有趣的 App。",
+      "學習最新版的 Swift、Xcode、iOS SDK、SwiftUI。",
+      "開發自己感興趣的 App。",
+      "幫助和講火星文的工程師溝通，增進工作效率。",
+      "熟悉開發工具 Xcode 和 Playground。",
+      "利用 SwiftUI 製作精美的 App 畫面和 Prototype。"
+    ],
+    "courseInfo": {
+      "heading": "課程資訊",
+      "cards": [
+        {
+          "id": "time",
+          "title": "時間",
+          "lines": ["2026/3/10 ~ 2026/5/26", "每週二 19:00 ~ 22:00", "36 小時的線上直播課程"]
+        },
+        {
+          "id": "live",
+          "title": "線上直播和錄影",
+          "lines": ["提供線上直播和錄影，", "課程影片可無限期重覆觀看"]
+        },
+        {
+          "id": "size",
+          "title": "人數",
+          "lines": ["30 人以內"]
+        }
+      ]
+    }
   }
 }

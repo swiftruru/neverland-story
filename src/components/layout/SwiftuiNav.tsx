@@ -9,7 +9,6 @@ import styles from './SwiftuiNav.module.css'
 
 const NAV_ITEMS = [
   { id: 'intro', key: 'nav.intro', href: '/courses/swiftui/foundation/intro' },
-  { id: 'goals', key: 'nav.goals', href: '/courses/swiftui/foundation/goals' },
   { id: 'info', key: 'nav.info', href: '/courses/swiftui/foundation/info' },
   { id: 'features', key: 'nav.features', href: '/courses/swiftui/foundation/features' },
   { id: 'assignments', key: 'nav.assignments', href: '/courses/swiftui/foundation/assignments' },

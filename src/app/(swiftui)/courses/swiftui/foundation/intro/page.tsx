@@ -7,6 +7,7 @@ import styles from '../page.module.css'
 export default function SwiftuiIntroPage() {
   const { t } = useTranslation('swiftui')
   const heroLines = t('introPage.heroLines', { returnObjects: true }) as string[]
+  const learnItems = t('introPage.learnItems', { returnObjects: true }) as string[]
 
   return (
     <main className={styles.page}>
@@ -27,6 +28,20 @@ export default function SwiftuiIntroPage() {
                 {t('introPage.cta')}
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.learnSection}>
+        <div className="container">
+          <div className={styles.learnCard}>
+            <p className={styles.kicker}>{t('hero.kicker')}</p>
+            <h2 className={styles.learnTitle}>{t('introPage.learnTitle')}</h2>
+            <ul className={styles.learnList}>
+              {learnItems.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
