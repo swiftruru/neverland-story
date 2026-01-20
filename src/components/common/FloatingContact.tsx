@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import styles from './FloatingContact.module.css'
 
@@ -70,7 +71,11 @@ const CONTACT_LINKS = [
 
 export function FloatingContact() {
   const { t } = useTranslation()
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  const contactHref = pathname?.startsWith('/courses/swiftui')
+    ? '/courses/swiftui/foundation/contact'
+    : '/neverland/contact'
 
   const toggleOpen = useCallback(() => {
     setIsOpen((prev) => !prev)
@@ -113,7 +118,7 @@ export function FloatingContact() {
 
         {/* 聯絡頁面連結 */}
         <Link
-          href="/contact"
+          href={contactHref}
           className={styles.optionButton}
           style={{
             '--contact-color': '#006850',

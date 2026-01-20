@@ -130,6 +130,61 @@
         { "title": "Assignment 3", "alt": "Student assignment sample 3", "src": "/swiftui/hw-03.gif" },
         { "title": "Assignment 4", "alt": "Student assignment sample 4", "src": "/swiftui/hw-04.gif" }
       ]
+    },
+    "audiencePage": {
+      "heading": "Who should join",
+      "description": "Designed for beginners and career-switchers who want to build apps and collaborate better with engineers.",
+      "targets": [
+        "Anyone with zero programming experience.",
+        "Those who feel unsure about code and want to start from scratch.",
+        "Designers/PMs who want to learn coding and app development to collaborate better with engineers.",
+        "People who want to create their own apps.",
+        "Founders/CEOs who want to understand app technology.",
+        "High school students who want app projects in their portfolio for college applications.",
+        "Kids (grade 5+) who want to learn fundamentals and build fun iOS apps."
+      ],
+      "psPrefix": "This course is beginner-friendly and step-by-step. If you already know some code, see ",
+      "psLinkLabel": "Swift iOS App Intro",
+      "psLinkUrl": "https://swiftpeterpan.mystrikingly.com/",
+      "psSuffix": ". Beginners aiming to become iOS developers can take this course first, then upgrade by paying the difference. For a detailed comparison: ",
+      "compareLinkLabel": "Which course fits me?",
+      "compareLink": "https://medium.com/@apppeterpan/該報名文組生班還是彼得潘班-f8726b7e8c5d",
+      "promisesTitle": "Six promises of our iOS App teaching",
+      "promisesLinkLabel": "Read the full six promises",
+      "promisesLink": "https://medium.com/@apppeterpan/彼得潘ios-app開發教學的五個承諾-5bc29a7c08a5",
+      "promises": [
+        {
+          "title": "A lifelong friend",
+          "descPrefix": "Reach Peter Pan anytime via",
+          "descSuffix": ", LINE, or phone to discuss app development.",
+          "links": [
+            { "label": "Fan page", "url": "https://www.facebook.com/iphone.peterpan/" },
+            { "label": "FB", "url": "https://www.facebook.com/deeplove.pan" },
+            { "label": "Email", "url": "mailto:apppeterpan@gmail.com" }
+          ]
+        },
+        {
+          "title": "Free updates for future cohorts",
+          "desc": "Swift/Xcode keep updating—long-term students get the latest materials for free."
+        },
+        {
+          "title": "Free course retakes",
+          "desc": "Want to review or see Peter Pan again? If seats are available, you’re welcome back anytime."
+        },
+        {
+          "title": "1:1 coaching reward for full assignment completion",
+          "desc": "Submit every assignment and get 3 hours of 1:1 coaching (worth 3000 NT) after the course."
+        },
+        {
+          "title": "Special pricing for students",
+          "desc": "Students can get discounts and installments (including graduates within one year).",
+          "link": "https://medium.com/@apppeterpan/畢業或退伍未滿一年-也可享有彼得潘的-ios-app-學生價-a106e99740a"
+        },
+        {
+          "title": "Support for low-income or unemployed friends",
+          "desc": "Special pricing is available for those who need financial help."
+        }
+      ]
     }
   }
 }

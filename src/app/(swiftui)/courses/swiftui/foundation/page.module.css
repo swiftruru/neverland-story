@@ -689,3 +689,191 @@
     right: 1rem;
   }
 }
+
+.audienceSection {
+  padding: 3rem 0 3.5rem;
+  background: #ffffff;
+}
+
+.targetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.targetCard {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 22px rgba(0, 104, 80, 0.08);
+  padding: 1rem 1.1rem 1.1rem;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.targetCard::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(var(--target-tape-rotation, -3deg));
+  background: linear-gradient(
+    180deg,
+    var(--target-tape-top, #f4e5aa) 0%,
+    var(--target-tape-bottom, #f1d778) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+}
+
+.targetCard:nth-child(2n)::before {
+  --target-tape-top: #cbe7d6;
+  --target-tape-bottom: rgba(160, 200, 160, 0.88);
+  --target-tape-rotation: 2deg;
+}
+
+.targetCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.targetCard p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.noteBox {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: #f7faf7;
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text);
+  line-height: 1.6;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.noteLink {
+  color: var(--color-primary);
+  font-weight: 700;
+  word-break: break-all;
+}
+
+.promisesSection {
+  padding: 3rem 0 3.5rem;
+  background: #f7faf7;
+}
+
+.promiseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.promiseCard {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem 1.4rem 1.55rem;
+  box-shadow: 0 8px 24px rgba(0, 60, 40, 0.08);
+  display: grid;
+  gap: 0.45rem;
+  margin-top: var(--spacing-xl);
+}
+
+.promiseCard h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.promiseCard p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.promiseCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.promiseTape {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  width: 80px;
+  height: 24px;
+  transform: rotate(var(--promise-tape-rotation, -2deg));
+  background: linear-gradient(
+    180deg,
+    var(--promise-tape-top, #f4e5aa) 0%,
+    var(--promise-tape-bottom, #f1d778) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+}
+
+.promiseCard:nth-child(2n) .promiseTape {
+  --promise-tape-top: #cbe7d6;
+  --promise-tape-bottom: rgba(160, 200, 160, 0.88);
+  --promise-tape-rotation: 2deg;
+}
+
+.inlineLink {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.promiseLinkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.2rem;
+  border: 1px solid #cfe4de;
+  background: #e9f5ef;
+  color: #0c6a55;
+  font-weight: 800;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 104, 80, 0.12);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .audienceSection,
+  .promisesSection {
+    padding: 2.5rem 0 3rem;
+  }
+}

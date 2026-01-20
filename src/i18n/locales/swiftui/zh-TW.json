@@ -130,6 +130,61 @@
         { "title": "作業 3", "alt": "學生作業範例 3", "src": "/swiftui/hw-03.gif" },
         { "title": "作業 4", "alt": "學生作業範例 4", "src": "/swiftui/hw-04.gif" }
       ]
+    },
+    "audiencePage": {
+      "heading": "招生對象",
+      "description": "為初學者量身打造，適合想入門、想轉職、想與工程師更好合作的你。",
+      "targets": [
+        "完全不懂程式的普通人。",
+        "對程式似懂非懂，想重頭學起的普通人。",
+        "想學習程式設計和 App 開發，增進和工程師溝通合作的美術設計、PM。",
+        "想創作自己的 App。",
+        "想了解程式技術的公司老闆（CEO / COO / Founder 等）。",
+        "想申請大學，在學習歷程裡包含 App 作品的高中生。",
+        "想學習基礎程式概念和創作有趣 iOS App 的小朋友（小學五年級以上）。"
+      ],
+      "psPrefix": "本課程針對初學者一步步慢慢教。若對程式略懂，請參考另一堂課程：",
+      "psLinkLabel": "彼得潘的 Swift iOS App 程式設計入門",
+      "psLinkUrl": "https://swiftpeterpan.mystrikingly.com/",
+      "psSuffix": "。完全沒基礎但想成為 iOS 工程師，可先上文組生課程再補差價升級。關於文組生和彼得潘班的詳細比較：",
+      "compareLinkLabel": "文組生班和彼得潘班，哪個才是我的真命課程？",
+      "compareLink": "https://medium.com/@apppeterpan/該報名文組生班還是彼得潘班-f8726b7e8c5d",
+      "promisesTitle": "iOS App 教學的六個承諾",
+      "promisesLinkLabel": "閱讀完整六大承諾",
+      "promisesLink": "https://medium.com/@apppeterpan/彼得潘ios-app開發教學的五個承諾-5bc29a7c08a5",
+      "promises": [
+        {
+          "title": "一輩子的朋友",
+          "descPrefix": "歡迎你們隨時透過彼得潘的",
+          "descSuffix": "、LINE、手機聯絡彼得潘，討論 App 開發的相關問題。",
+          "links": [
+            { "label": "粉絲團", "url": "https://www.facebook.com/iphone.peterpan/" },
+            { "label": "FB", "url": "https://www.facebook.com/deeplove.pan" },
+            { "label": "Email", "url": "mailto:apppeterpan@gmail.com" }
+          ]
+        },
+        {
+          "title": "免費獲得未來每一屆課程的最新教材",
+          "desc": "Swift、Xcode 版本更新也不用擔心，長期課程學生可免費取得新版教材。"
+        },
+        {
+          "title": "免費重聽課程",
+          "desc": "想再複習或再見彼得潘，教室有空位就歡迎回來，一生會有很多次相遇。"
+        },
+        {
+          "title": "作業全交的一對一家教獎勵",
+          "desc": "每次作業都有交，課後即可獲得 3 小時一對一家教指導（價值 3000 元）。"
+        },
+        {
+          "title": "提供在學學生超值優惠價",
+          "desc": "學生有經濟壓力？提供優惠與分期。（含畢業或退伍未滿一年的學生）",
+          "link": "https://medium.com/@apppeterpan/畢業或退伍未滿一年-也可享有彼得潘的-ios-app-學生價-a106e99740a"
+        },
+        {
+          "title": "提供特別優惠給持低收入證明，生活困難或失業的朋友",
+          "desc": "需要幫助的朋友可申請特別優惠價，一起完成學習目標。"
+        }
+      ]
     }
   }
 }
