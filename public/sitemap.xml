@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://neverland.swift.moe/neverland/</loc>
+    <image:image>
+      <image:loc>https://neverland.swift.moe/neverland/og-cover.png</image:loc>
+      <image:title>Neverland Story</image:title>
+    </image:image>
+  </url>
+  <url><loc>https://neverland.swift.moe/neverland/videos</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/classroom</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/contact</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/books</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/tutoring</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/qa</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/courses</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/gallery</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/ferryman</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/apps</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/essays</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/columns</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/experience</loc></url>
+  <url><loc>https://neverland.swift.moe/neverland/links</loc></url>
+</urlset>

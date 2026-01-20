@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import FerrymanPage from '../src/app/ferryman/page'
+import FerrymanPage from '../src/app/(neverland)/neverland/ferryman/page'
 
 describe('Ferryman page', () => {
   it('renders all service cards and CTAs with external links', () => {

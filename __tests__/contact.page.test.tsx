@@ -1,5 +1,5 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react'
-import ContactPage from '../src/app/contact/page'
+import ContactPage from '../src/app/(neverland)/neverland/contact/page'
 
 jest.useFakeTimers()
 

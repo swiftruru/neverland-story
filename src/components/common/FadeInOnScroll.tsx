@@ -40,8 +40,9 @@ export function FadeInOnScroll({
     if (!element || typeof window === 'undefined') return
     const rect = element.getBoundingClientRect()
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
+    const hasSize = rect.height > 0 && rect.width > 0
     const inView = rect.top <= viewportHeight * (1 - threshold) && rect.bottom >= 0
-    if (inView) {
+    if (hasSize && inView) {
       setIsVisible(true)
     }
   }, [threshold, isomorphicLayoutEffect])

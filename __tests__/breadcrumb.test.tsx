@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import { BreadcrumbJsonLd } from '../src/components/common/BreadcrumbJsonLd'
 
 jest.mock('next/navigation', () => ({
-  usePathname: () => '/ferryman',
+  usePathname: () => '/neverland/ferryman',
 }))
 
 describe('BreadcrumbJsonLd', () => {

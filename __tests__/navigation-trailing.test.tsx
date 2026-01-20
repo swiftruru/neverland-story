@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { Navigation } from '../src/components/layout/Navigation'
 
 jest.mock('next/navigation', () => ({
-  usePathname: () => '/contact/',
+  usePathname: () => '/neverland/contact/',
 }))
 
 describe('Navigation trailing slash handling', () => {

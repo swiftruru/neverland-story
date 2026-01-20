@@ -1,0 +1,16 @@
+{
+  "name": "Neverland Story",
+  "short_name": "Neverland",
+  "description": "Peter Pan iOS App development portfolio and teaching site.",
+  "start_url": "/neverland/",
+  "display": "standalone",
+  "background_color": "#f7f4f0",
+  "theme_color": "#006850",
+  "icons": [
+    {
+      "src": "/neverland/icons/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

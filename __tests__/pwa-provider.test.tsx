@@ -19,7 +19,7 @@ describe('PwaProvider', () => {
     act(() => {
       loadHandler?.()
     })
-    expect(register).toHaveBeenCalledWith('/sw.js')
+    expect(register).toHaveBeenCalledWith('/neverland/sw.js')
 
     // Cleanup
     unmount()
