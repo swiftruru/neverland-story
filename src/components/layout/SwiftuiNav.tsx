@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { LanguageSwitcher } from '@components/common'
 import styles from './SwiftuiNav.module.css'
@@ -25,6 +26,11 @@ const NAV_ITEMS = [
 export function SwiftuiNav() {
   const pathname = usePathname()
   const { t } = useTranslation('swiftui')
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
 
   return (
     <header className={styles.wrapper}>
@@ -33,18 +39,47 @@ export function SwiftuiNav() {
           <img src="/swiftui/logo.png" alt="SwiftUI Foundation logo" className={styles.logo} />
           <span>{t('hero.title')}</span>
         </Link>
-        <LanguageSwitcher />
+        <div className={styles.actions}>
+          <div className={styles.langSwitch}>
+            <LanguageSwitcher />
+          </div>
+          <button
+            className={`${styles.hamburger} ${menuOpen ? styles.hamburgerOpen : ''}`}
+            onClick={() => setMenuOpen((prev) => !prev)}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          >
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+          </button>
+        </div>
       </div>
-      <nav className={styles.nav}>
-        {NAV_ITEMS.map((item) => {
-          const active = pathname === item.href || pathname?.startsWith(`${item.href}/`)
-          return (
-            <Link key={item.id} href={item.href} className={`${styles.link} ${active ? styles.active : ''}`}>
-              {t(item.key)}
-            </Link>
-          )
-        })}
-      </nav>
+      <div className={`${styles.navWrapper} ${menuOpen ? styles.menuOpen : ''}`}>
+        <div className={styles.overlay} onClick={() => setMenuOpen(false)} />
+        <nav className={styles.nav}>
+          <button
+            type="button"
+            className={styles.navClose}
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+          {NAV_ITEMS.map((item) => {
+            const active = pathname === item.href || pathname?.startsWith(`${item.href}/`)
+            return (
+              <Link
+                key={item.id}
+                href={item.href}
+                className={`${styles.link} ${active ? styles.active : ''}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {t(item.key)}
+              </Link>
+            )
+          })}
+        </nav>
+      </div>
     </header>
   )
 }
