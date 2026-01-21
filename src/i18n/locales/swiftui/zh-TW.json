@@ -184,6 +184,34 @@
         }
       ]
     },
+    "signupPage": {
+      "title": "報名",
+      "description": "透過 Google 表單報名，付款採匯款方式，彼得潘將在回信中告知匯款帳號。請填寫正確 Email，以便收到回覆。",
+      "cta": "點此填寫 Google 表單",
+      "formHeading": "填寫 Google 表單",
+      "formCopy": "填完表單後，我們會寄信提供匯款帳號與後續流程。",
+      "hint": "送出表單後請留意信箱。",
+      "formUrl": "https://forms.gle/DkQ7gniQ7aMYudHJ9",
+      "psText": "本課程針對初學者一步步慢慢教，對程式略懂的請參考彼得潘開設的另一堂課程：",
+      "psLinkLabel": "彼得潘的 iOS App 程式設計入門",
+      "psUrl": "https://swiftpeterpan.mystrikingly.com/",
+      "steps": ["填寫 Google 表單預約名額。", "留意信箱，我們會寄送匯款資訊。", "完成匯款並回覆確認，即可保留座位。"],
+      "video": {
+        "title": "給我一首歌的時間做 App",
+        "description": "做 App 真的不難，一首歌的時間就可以做出一個簡單的小王子電子書 App。"
+      },
+      "photos": {
+        "title": "上課照片",
+        "ctaLabel": "更多 App 課程合影留念",
+        "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
+        "items": [
+          { "src": "/swiftui/foundation/signup/photos/photo-01.png", "alt": "上課合照 1" },
+          { "src": "/swiftui/foundation/signup/photos/photo-02.png", "alt": "上課合照 2" },
+          { "src": "/swiftui/foundation/signup/photos/photo-03.png", "alt": "上課合照 3" },
+          { "src": "/swiftui/foundation/signup/photos/photo-04.png", "alt": "學生們的暖心卡片", "caption": "學生們的暖心卡片" }
+        ]
+      }
+    },
     "outlinePage": {
       "items": [
         {

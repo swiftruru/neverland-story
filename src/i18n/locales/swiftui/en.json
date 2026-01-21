@@ -184,6 +184,38 @@
         }
       ]
     },
+    "signupPage": {
+      "title": "Apply",
+      "description": "Sign up via Google Form. Payment is by bank transfer—we’ll send account details by email, so be sure to enter a correct email address.",
+      "cta": "Fill out the Google Form",
+      "formHeading": "Google Form",
+      "formCopy": "Submit the form and we’ll email you the bank details and next steps.",
+      "hint": "After submitting, please check your inbox.",
+      "formUrl": "https://forms.gle/DkQ7gniQ7aMYudHJ9",
+      "psText": "This course is beginner-friendly. If you already know some coding, check out our other course:",
+      "psLinkLabel": "Peter Pan’s iOS App Intro",
+      "psUrl": "https://swiftpeterpan.mystrikingly.com/",
+      "steps": [
+        "Fill out the Google Form to reserve your spot.",
+        "Watch your inbox—we’ll send bank details and confirmation.",
+        "Complete the transfer to lock in your seat."
+      ],
+      "video": {
+        "title": "Build an app in a song’s time",
+        "description": "Creating an app isn’t hard—within one song you can craft a simple Little Prince ebook app."
+      },
+      "photos": {
+        "title": "Class photos",
+        "ctaLabel": "More class memories",
+        "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
+        "items": [
+          { "src": "/swiftui/foundation/signup/photos/photo-01.png", "alt": "Class photo 1" },
+          { "src": "/swiftui/foundation/signup/photos/photo-02.png", "alt": "Class photo 2" },
+          { "src": "/swiftui/foundation/signup/photos/photo-03.png", "alt": "Class photo 3" },
+          { "src": "/swiftui/foundation/signup/photos/photo-04.png", "alt": "Thank-you cards from students", "caption": "Student thank-you cards" }
+        ]
+      }
+    },
     "outlinePage": {
       "items": [
         {
