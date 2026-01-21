@@ -1194,6 +1194,133 @@
   line-height: 1.6;
 }
 
+.tuitionSection {
+  padding: 3rem 0 3.5rem;
+  background: #f7faf7;
+}
+
+.tuitionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.tuitionCard {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-paper);
+  padding: 1.2rem 1.15rem 1.35rem;
+  display: grid;
+  gap: 0.7rem;
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.tuitionTape {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(calc(-3deg + (var(--tuition-idx, 0) % 2) * 5deg));
+  background: linear-gradient(180deg, var(--tape-top, #f4e5aa) 0%, var(--tape-bottom, #f1d778) 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 80 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q2 0 4 4 Q6 8 8 4 Q10 0 12 4 Q14 8 16 4 Q18 0 20 4 Q22 8 24 4 Q26 0 28 4 Q30 8 32 4 Q34 0 36 4 Q38 8 40 4 Q42 0 44 4 Q46 8 48 4 Q50 0 52 4 Q54 8 56 4 Q58 0 60 4 Q62 8 64 4 Q66 0 68 4 Q70 8 72 4 Q74 0 76 4 Q78 8 80 4 L80 20 Q78 24 76 20 Q74 16 72 20 Q70 24 68 20 Q66 16 64 20 Q62 24 60 20 Q58 16 56 20 Q54 24 52 20 Q50 16 48 20 Q46 24 44 20 Q42 16 40 20 Q38 24 36 20 Q34 16 32 20 Q30 24 28 20 Q26 16 24 20 Q22 24 20 20 Q18 16 16 20 Q14 24 12 20 Q10 16 8 20 Q6 24 4 20 Q2 16 0 20 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+}
+
+.tuitionCard:nth-child(2n) .tuitionTape {
+  --tape-top: #cbe7d6;
+  --tape-bottom: rgba(160, 200, 160, 0.88);
+}
+
+.tuitionCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tuitionIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background: #f7faf7;
+  border: 1px solid var(--color-border-light);
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+
+.tuitionIcon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.tuitionBody h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.planSubtitle {
+  margin: 0.1rem 0 0.2rem;
+  color: #0c6a55;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.priceBlock {
+  display: grid;
+  gap: 0.1rem;
+  justify-items: center;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.original {
+  font-size: 0.95rem;
+  color: #767676;
+  text-decoration: line-through;
+}
+
+.planNote {
+  margin: 0.15rem 0 0.25rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.planLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #cfe4de;
+  background: #e9f5ef;
+  color: #0c6a55;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.2rem;
+}
+
 @media (max-width: 768px) {
   .instructorHero {
     padding: 2.5rem 0 2.25rem;
@@ -1208,6 +1335,10 @@
   }
 
   .outlineSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .tuitionSection {
     padding: 2.5rem 0 3rem;
   }
 }

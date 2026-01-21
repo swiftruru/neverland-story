@@ -137,6 +137,53 @@
       "cta": "Read Q&A",
       "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993"
     },
+    "tuitionPage": {
+      "plans": [
+        {
+          "id": "discount",
+          "title": "Special price",
+          "price": "$ 9,500",
+          "original": "Original $12,000",
+          "image": "/swiftui/foundation/tuition/tuition-basic.png"
+        },
+        {
+          "id": "group",
+          "title": "Group price",
+          "subtitle": "2+ learners (including 2)",
+          "price": "$ 8,000 / person",
+          "original": "Original $12,000 / person",
+          "image": "/swiftui/foundation/tuition/tuition-group.png"
+        },
+        {
+          "id": "student",
+          "title": "Student price",
+          "subtitle": "Students and grads within 1 year",
+          "price": "$ 7,000",
+          "note": "Installments available: 2,400 NT each, 3 installments, every 3 weeks.",
+          "linkLabel": "Student pricing details",
+          "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
+          "image": "/swiftui/foundation/tuition/tuition-student.png"
+        },
+        {
+          "id": "combo",
+          "title": "Peter Pan + Foundation combo",
+          "subtitle": "Enroll both Peter Pan + Foundation",
+          "price": "$ 16,000",
+          "note": "Start with Foundation, then move to the advanced Peter Pan class.",
+          "linkLabel": "Plan details",
+          "linkUrl": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%96%87%E7%B5%84%E7%94%9F%E7%8F%AD-%E5%BD%BC%E5%BE%97%E6%BD%98%E7%8F%AD-%E5%BD%BC%E5%BE%97%E6%BD%98%E7%8F%AD-1abc581863b2",
+          "image": "/swiftui/foundation/tuition/tuition-combo.png"
+        },
+        {
+          "id": "support",
+          "title": "Unemployment support price",
+          "subtitle": "3 slots, 3+ months unemployed",
+          "price": "$ 6,000",
+          "note": "Elderly learner price (60+, 2 slots): 2,500 NT; Warm-heart price (low income or hardship, 2 slots): 100 NT",
+          "image": "/swiftui/foundation/tuition/tuition-support.png"
+        }
+      ]
+    },
     "outlinePage": {
       "items": [
         {

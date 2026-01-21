@@ -137,6 +137,53 @@
       "cta": "閱讀 Q &A",
       "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993"
     },
+    "tuitionPage": {
+      "plans": [
+        {
+          "id": "discount",
+          "title": "優惠價",
+          "price": "$ 9,500",
+          "original": "原價 $12,000",
+          "image": "/swiftui/foundation/tuition/tuition-basic.png"
+        },
+        {
+          "id": "group",
+          "title": "團報價",
+          "subtitle": "2 人以上，包含 2 人",
+          "price": "$ 8,000 / 人",
+          "original": "原價 $12,000 / 人",
+          "image": "/swiftui/foundation/tuition/tuition-group.png"
+        },
+        {
+          "id": "student",
+          "title": "學生價",
+          "subtitle": "含在學生和畢業或退伍未滿一年的學生",
+          "price": "$ 7,000",
+          "note": "另有學生分期方案：一期 2,400 元，分三期，每三個星期付款",
+          "linkLabel": "學生價說明",
+          "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
+          "image": "/swiftui/foundation/tuition/tuition-student.png"
+        },
+        {
+          "id": "combo",
+          "title": "彼得潘班 + 文組生班",
+          "subtitle": "同時報名彼得潘班 + 文組生班",
+          "price": "$ 16,000",
+          "note": "先上文組班學會程式基礎，下一期再上進階的彼得潘班",
+          "linkLabel": "方案說明",
+          "linkUrl": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%96%87%E7%B5%84%E7%94%9F%E7%8F%AD-%E5%BD%BC%E5%BE%97%E6%BD%98%E7%8F%AD-%E5%BD%BC%E5%BE%97%E6%BD%98%E7%8F%AD-1abc581863b2",
+          "image": "/swiftui/foundation/tuition/tuition-combo.png"
+        },
+        {
+          "id": "support",
+          "title": "失業加油價",
+          "subtitle": "3 個名額，連續失業三個月以上",
+          "price": "$ 6,000",
+          "note": "長輩學到老價（60 歲以上，2 名額）：2,500 元；暖暖包價（持低收入證明或生活困難，2 名額）：100 元",
+          "image": "/swiftui/foundation/tuition/tuition-support.png"
+        }
+      ]
+    },
     "outlinePage": {
       "items": [
         {
