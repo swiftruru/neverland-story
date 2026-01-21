@@ -137,6 +137,88 @@
       "cta": "Read Q&A",
       "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993"
     },
+    "outlinePage": {
+      "items": [
+        {
+          "id": "xcode",
+          "title": "Getting close to Xcode",
+          "description": "Learn the all-in-one app development tool, Xcode.",
+          "image": "/swiftui/outline-xcode.png"
+        },
+        {
+          "id": "swift",
+          "title": "Swift, the modern app language",
+          "description": "Use Playground to learn Swift and core programming concepts: variables, types, functions, conditionals, loops, classes, and objects.",
+          "image": "/swiftui/outline-swift.png"
+        },
+        {
+          "id": "swiftui",
+          "title": "Building UIs with SwiftUI",
+          "description": "Create eye-catching app screens with SwiftUI.",
+          "image": "/swiftui/outline-swiftui.png"
+        },
+        {
+          "id": "ebook",
+          "title": "E-book App",
+          "description": "Learn how to build an e-book style app—The Little Prince, Tang Poems, movie library, and more.",
+          "image": "/swiftui/outline-ebook.png"
+        },
+        {
+          "id": "content-switch",
+          "title": "Content switching App",
+          "description": "Apply app logic to switch and navigate content within the UI.",
+          "image": "/swiftui/outline-switcher.png"
+        },
+        {
+          "id": "hats",
+          "title": "Colorful Hats App",
+          "description": "A playful app to build and interact with colorful hats.",
+          "image": "/swiftui/outline-hats.png"
+        },
+        {
+          "id": "quiz",
+          "title": "Quiz App",
+          "description": "Learn arrays and custom data structures.",
+          "image": "/swiftui/outline-quiz.png"
+        },
+        {
+          "id": "rps",
+          "title": "Rock-Paper-Scissors App",
+          "description": "Learn randomness.",
+          "image": "/swiftui/outline-rps.png"
+        },
+        {
+          "id": "ifelse",
+          "title": "If-Else App – Polaroid",
+          "description": "Practice conditional logic to build an app.",
+          "image": "/swiftui/outline-ifelse.png"
+        },
+        {
+          "id": "choice",
+          "title": "Multiple-choice App",
+          "description": "Combine core programming skills to build a quiz app.",
+          "image": "/swiftui/outline-choice.png"
+        },
+        {
+          "id": "tip",
+          "title": "Tip Calculator App",
+          "description": "Learn keyboard handling and string-number conversion.",
+          "image": "/swiftui/outline-tip.png"
+        },
+        {
+          "id": "loop-cards",
+          "title": "Loop App – Dice & Cards",
+          "description": "Learn loop concepts and applications.",
+          "image": "/swiftui/outline-loop-cards.png"
+        },
+        {
+          "id": "appstore",
+          "title": "Ship to App Store",
+          "description": "Learn the steps to publish your app to the App Store.",
+          "image": "/swiftui/outline-appstore.png"
+        }
+      ]
+    },
     "audiencePage": {
       "heading": "Who should join",
       "description": "Designed for beginners and career-switchers who want to build apps and collaborate better with engineers.",
