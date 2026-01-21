@@ -125,10 +125,10 @@
       "blogLabel": "彼得潘 iOS App 課程的學生作業 Blog",
       "blogUrl": "https://medium.com/彼得潘的-swift-ios-app-開發教室",
       "items": [
-        { "title": "作業 1", "alt": "學生作業範例 1", "src": "/swiftui/hw-01.gif" },
-        { "title": "作業 2", "alt": "學生作業範例 2", "src": "/swiftui/hw-02.gif" },
-        { "title": "作業 3", "alt": "學生作業範例 3", "src": "/swiftui/hw-03.gif" },
-        { "title": "作業 4", "alt": "學生作業範例 4", "src": "/swiftui/hw-04.gif" }
+        { "title": "作業 1", "alt": "學生作業範例 1", "src": "/swiftui/foundation/assignments/hw-01.gif" },
+        { "title": "作業 2", "alt": "學生作業範例 2", "src": "/swiftui/foundation/assignments/hw-02.gif" },
+        { "title": "作業 3", "alt": "學生作業範例 3", "src": "/swiftui/foundation/assignments/hw-03.gif" },
+        { "title": "作業 4", "alt": "學生作業範例 4", "src": "/swiftui/foundation/assignments/hw-04.gif" }
       ]
     },
     "qaPage": {
@@ -143,79 +143,79 @@
           "id": "xcode",
           "title": "Xcode 的親密接觸",
           "description": "學習十項全能的 App 開發工具 Xcode。",
-          "image": "/swiftui/outline-xcode.png"
+          "image": "/swiftui/foundation/outline/outline-xcode.png"
         },
         {
           "id": "swift",
           "title": "新時代的 App 開發語言 Swift",
           "description": "利用 Playground 學習 Swift 程式語言，了解程式設計的基本概念，比方變數、型別、function、if else、迴圈、類件、物件。",
-          "image": "/swiftui/outline-swift.png"
+          "image": "/swiftui/foundation/outline/outline-swift.png"
         },
         {
           "id": "swiftui",
           "title": "打造 App 畫面的 SwiftUI",
           "description": "利用 SwiftUI 製作一頁頁酷炫的 App 畫面。",
-          "image": "/swiftui/outline-swiftui.png"
+          "image": "/swiftui/foundation/outline/outline-swiftui.png"
         },
         {
           "id": "ebook",
           "title": "電子書 App",
           "description": "學會製作電子書 App 的技巧，打造小王子、唐詩三百首、電影 App。",
-          "image": "/swiftui/outline-ebook.png"
+          "image": "/swiftui/foundation/outline/outline-ebook.png"
         },
         {
           "id": "content-switch",
           "title": "內容切換 App",
           "description": "學習在 App 畫面套用程式邏輯。",
-          "image": "/swiftui/outline-switcher.png"
+          "image": "/swiftui/foundation/outline/outline-switcher.png"
         },
         {
           "id": "hats",
           "title": "彩色帽子 App",
           "description": "用色彩與互動，完成可愛的彩色帽子 App。",
-          "image": "/swiftui/outline-hats.png"
+          "image": "/swiftui/foundation/outline/outline-hats.png"
         },
         {
           "id": "quiz",
           "title": "問答題 App",
           "description": "學習陣列和自訂資料。",
-          "image": "/swiftui/outline-quiz.png"
+          "image": "/swiftui/foundation/outline/outline-quiz.png"
         },
         {
           "id": "rps",
           "title": "猜拳 App",
           "description": "學習亂數。",
-          "image": "/swiftui/outline-rps.png"
+          "image": "/swiftui/foundation/outline/outline-rps.png"
         },
         {
           "id": "ifelse",
           "title": "if else App - 拍立得",
           "description": "學習和應用 if else 製作 App。",
-          "image": "/swiftui/outline-ifelse.png"
+          "image": "/swiftui/foundation/outline/outline-ifelse.png"
         },
         {
           "id": "choice",
           "title": "選擇題 App",
           "description": "結合各種基本程式技術製作選擇題 App。",
-          "image": "/swiftui/outline-choice.png"
+          "image": "/swiftui/foundation/outline/outline-choice.png"
         },
         {
           "id": "tip",
           "title": "小費 App",
           "description": "學習鍵盤操作和字串數字的轉換。",
-          "image": "/swiftui/outline-tip.png"
+          "image": "/swiftui/foundation/outline/outline-tip.png"
         },
         {
           "id": "loop-cards",
           "title": "迴圈 App - 骰子和撲克牌",
           "description": "學習迴圈的概念和應用。",
-          "image": "/swiftui/outline-loop-cards.png"
+          "image": "/swiftui/foundation/outline/outline-loop-cards.png"
         },
         {
           "id": "appstore",
           "title": "App 上架",
           "description": "上架 App Store。",
-          "image": "/swiftui/outline-appstore.png"
+          "image": "/swiftui/foundation/outline/outline-appstore.png"
         }
       ]
     },

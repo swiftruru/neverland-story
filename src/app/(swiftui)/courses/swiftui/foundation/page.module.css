@@ -6,7 +6,7 @@
 .introHero {
   position: relative;
   padding: 3rem 0 2.75rem;
-  background: url('/swiftui/foundation-hero.jpg') center/cover no-repeat;
+  background: url('/swiftui/foundation/intro/hero.jpg') center/cover no-repeat;
   color: #ffffff;
   overflow: hidden;
 }

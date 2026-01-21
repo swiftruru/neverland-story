@@ -35,7 +35,7 @@ export function SwiftuiNav() {
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>
         <Link className={styles.brand} href="/courses/swiftui/foundation">
-          <img src="/swiftui/logo.png" alt="SwiftUI Foundation logo" className={styles.logo} />
+          <img src="/swiftui/foundation/logo.png" alt="SwiftUI Foundation logo" className={styles.logo} />
           <span>{t('hero.title')}</span>
         </Link>
         <div className={styles.actions}>

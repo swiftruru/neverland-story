@@ -15,7 +15,7 @@ export default function SwiftuiQaPage() {
     <main className={styles.page}>
       <section
         className={styles.qaHero}
-        style={{ backgroundImage: "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.18)), url('/swiftui/qa-hero.jpg')" }}
+        style={{ backgroundImage: "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.18)), url('/swiftui/foundation/qa/hero.jpg')" }}
       >
         <div className="container">
           <div className={styles.qaHeroContent}>

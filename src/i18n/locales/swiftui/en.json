@@ -125,10 +125,10 @@
       "blogLabel": "Student assignment blog",
       "blogUrl": "https://medium.com/彼得潘的-swift-ios-app-開發教室",
       "items": [
-        { "title": "Assignment 1", "alt": "Student assignment sample 1", "src": "/swiftui/hw-01.gif" },
-        { "title": "Assignment 2", "alt": "Student assignment sample 2", "src": "/swiftui/hw-02.gif" },
-        { "title": "Assignment 3", "alt": "Student assignment sample 3", "src": "/swiftui/hw-03.gif" },
-        { "title": "Assignment 4", "alt": "Student assignment sample 4", "src": "/swiftui/hw-04.gif" }
+        { "title": "Assignment 1", "alt": "Student assignment sample 1", "src": "/swiftui/foundation/assignments/hw-01.gif" },
+        { "title": "Assignment 2", "alt": "Student assignment sample 2", "src": "/swiftui/foundation/assignments/hw-02.gif" },
+        { "title": "Assignment 3", "alt": "Student assignment sample 3", "src": "/swiftui/foundation/assignments/hw-03.gif" },
+        { "title": "Assignment 4", "alt": "Student assignment sample 4", "src": "/swiftui/foundation/assignments/hw-04.gif" }
       ]
     },
     "qaPage": {
@@ -143,79 +143,79 @@
           "id": "xcode",
           "title": "Getting close to Xcode",
           "description": "Learn the all-in-one app development tool, Xcode.",
-          "image": "/swiftui/outline-xcode.png"
+          "image": "/swiftui/foundation/outline/outline-xcode.png"
         },
         {
           "id": "swift",
           "title": "Swift, the modern app language",
           "description": "Use Playground to learn Swift and core programming concepts: variables, types, functions, conditionals, loops, classes, and objects.",
-          "image": "/swiftui/outline-swift.png"
+          "image": "/swiftui/foundation/outline/outline-swift.png"
         },
         {
           "id": "swiftui",
           "title": "Building UIs with SwiftUI",
           "description": "Create eye-catching app screens with SwiftUI.",
-          "image": "/swiftui/outline-swiftui.png"
+          "image": "/swiftui/foundation/outline/outline-swiftui.png"
         },
         {
           "id": "ebook",
           "title": "E-book App",
           "description": "Learn how to build an e-book style app—The Little Prince, Tang Poems, movie library, and more.",
-          "image": "/swiftui/outline-ebook.png"
+          "image": "/swiftui/foundation/outline/outline-ebook.png"
         },
         {
           "id": "content-switch",
           "title": "Content switching App",
           "description": "Apply app logic to switch and navigate content within the UI.",
-          "image": "/swiftui/outline-switcher.png"
+          "image": "/swiftui/foundation/outline/outline-switcher.png"
         },
         {
           "id": "hats",
           "title": "Colorful Hats App",
           "description": "A playful app to build and interact with colorful hats.",
-          "image": "/swiftui/outline-hats.png"
+          "image": "/swiftui/foundation/outline/outline-hats.png"
         },
         {
           "id": "quiz",
           "title": "Quiz App",
           "description": "Learn arrays and custom data structures.",
-          "image": "/swiftui/outline-quiz.png"
+          "image": "/swiftui/foundation/outline/outline-quiz.png"
         },
         {
           "id": "rps",
           "title": "Rock-Paper-Scissors App",
           "description": "Learn randomness.",
-          "image": "/swiftui/outline-rps.png"
+          "image": "/swiftui/foundation/outline/outline-rps.png"
         },
         {
           "id": "ifelse",
           "title": "If-Else App – Polaroid",
           "description": "Practice conditional logic to build an app.",
-          "image": "/swiftui/outline-ifelse.png"
+          "image": "/swiftui/foundation/outline/outline-ifelse.png"
         },
         {
           "id": "choice",
           "title": "Multiple-choice App",
           "description": "Combine core programming skills to build a quiz app.",
-          "image": "/swiftui/outline-choice.png"
+          "image": "/swiftui/foundation/outline/outline-choice.png"
         },
         {
           "id": "tip",
           "title": "Tip Calculator App",
           "description": "Learn keyboard handling and string-number conversion.",
-          "image": "/swiftui/outline-tip.png"
+          "image": "/swiftui/foundation/outline/outline-tip.png"
         },
         {
           "id": "loop-cards",
           "title": "Loop App – Dice & Cards",
           "description": "Learn loop concepts and applications.",
-          "image": "/swiftui/outline-loop-cards.png"
+          "image": "/swiftui/foundation/outline/outline-loop-cards.png"
         },
         {
           "id": "appstore",
           "title": "Ship to App Store",
           "description": "Learn the steps to publish your app to the App Store.",
-          "image": "/swiftui/outline-appstore.png"
+          "image": "/swiftui/foundation/outline/outline-appstore.png"
         }
       ]
     },
