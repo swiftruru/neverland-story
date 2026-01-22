@@ -26,17 +26,22 @@ export function SwiftuiNav() {
   const pathname = usePathname()
   const { t } = useTranslation('swiftui')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMenuOpen(false)
   }, [pathname])
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>
         <Link className={styles.brand} href="/courses/swiftui/foundation">
           <img src="/swiftui/foundation/logo.png" alt="SwiftUI Foundation logo" className={styles.logo} />
-          <span>{t('hero.title')}</span>
+          <span suppressHydrationWarning>{mounted ? t('hero.title') : ''}</span>
         </Link>
         <div className={styles.actions}>
           <div className={styles.langSwitch}>
@@ -73,7 +78,7 @@ export function SwiftuiNav() {
                 className={`${styles.link} ${active ? styles.active : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
-                {t(item.key)}
+                <span suppressHydrationWarning>{mounted ? t(item.key) : ''}</span>
               </Link>
             )
           })}
