@@ -12,7 +12,9 @@ export function useLanguage() {
 
   const changeLanguage = (lang: LanguageCode) => {
     i18n.changeLanguage(lang)
-    localStorage.setItem('language', lang)
+    if (typeof localStorage !== 'undefined' && typeof localStorage.setItem === 'function') {
+      localStorage.setItem('language', lang)
+    }
     document.documentElement.lang = lang
   }
 
@@ -24,7 +26,10 @@ export function useLanguage() {
   // 首次掛載後才載入 localStorage 設定，避免 SSR / CSR 語系不一致
   useEffect(() => {
     setMounted(true)
-    const saved = typeof window !== 'undefined' ? (localStorage.getItem('language') as LanguageCode | null) : null
+    const saved =
+      typeof window !== 'undefined' && typeof window.localStorage?.getItem === 'function'
+        ? (window.localStorage.getItem('language') as LanguageCode | null)
+        : null
     if (saved && saved !== currentLanguage) {
       changeLanguage(saved)
     }

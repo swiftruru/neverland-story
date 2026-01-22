@@ -472,15 +472,16 @@
     "avatarAria": "{{author}} 的照片放大檢視",
     "essays": {
       "title": "彼得潘和 iOS App 的那些年散文集",
-      "ctaLabel": "閱讀全文",
+      "ctaLabel": "閱讀散文集",
       "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98%E5%92%8C-ios-app-%E7%9A%84%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%95%A3%E6%96%87%E9%9B%86-4794cc6b753c",
+      "itemCta": "閱讀全文",
       "items": [
         { "title": "學習開發 Swift iOS App 前的準備", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%AD%B8%E7%BF%92%E9%96%8B%E7%99%BC-swift-ios-app-%E5%89%8D%E7%9A%84%E6%BA%96%E5%82%99-4f9e52debc16" },
         { "title": "關於 iOS App 開發的十個 Q & A", "url": "https://medium.com/@apppeterpan/%E9%97%9C%E6%96%BCios-app%E9%96%8B%E7%99%BC%E7%9A%84%E5%8D%81%E5%80%8Bq-a-65833f6eb993" },
         { "title": "如何變成 iOS App 開發魔法師", "url": "http://www.slideshare.net/deeplovepan/ios-app-59007867" },
         { "title": "App 怎麼學？上課還是自學？", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/app-%E6%80%8E%E9%BA%BC%E5%AD%B8-%E4%B8%8A%E8%AA%B2%E9%82%84%E6%98%AF%E8%87%AA%E5%AD%B8-db3d9314ac89" },
         { "title": "超過 30 歲，開始學程式還來得及嗎？", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B6%85%E9%81%8E-30-%E6%AD%B2-%E9%96%8B%E5%A7%8B%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BE%86%E5%BE%97%E5%8F%8A%E5%97%8E-cc7d3af772af" },
-        { "title": "掌握八個重點，讓你上課學程式更有效！", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8" },
+        { "title": "掌握九個重點，讓你上課學程式更有效！", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8" },
         { "title": "當你努力想學習 Swift 時，全世界都會來幫你", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%95%B6%E4%BD%A0%E5%8A%AA%E5%8A%9B%E6%83%B3%E5%AD%B8%E7%BF%92-swift-%E6%99%82-%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%9C%83%E4%BE%86%E5%B9%AB%E4%BD%A0-b11dca643686" },
         { "title": "那些年我們學不會的程式設計", "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E5%80%91%E5%AD%B8%E4%B8%8D%E6%9C%83%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-b647b2de5980" },
         { "title": "一步一腳印的 iOS App 上架和更新流程", "url": "http://www.appcoda.com.tw/ios-app-submission/" },

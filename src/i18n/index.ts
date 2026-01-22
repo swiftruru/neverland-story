@@ -13,13 +13,18 @@ export const LANGUAGES = [
 
 export type LanguageCode = (typeof LANGUAGES)[number]['code']
 
+const savedLanguage =
+  typeof window !== 'undefined' &&
+  typeof window.localStorage?.getItem === 'function' &&
+  window.localStorage.getItem('language')
+
 i18n.use(initReactI18next).init({
   resources: {
     'zh-TW': { translation: neverlandZhTW, swiftui: swiftuiZhTW },
     en: { translation: neverlandEn, swiftui: swiftuiEn },
   },
-  // 以中文作為 SSR 時的預設，避免伺服端與前端不同語系造成 hydration mismatch
-  lng: 'zh-TW',
+  // SSR 預設中文；若前端有儲存偏好則覆蓋
+  lng: savedLanguage || 'zh-TW',
   fallbackLng: 'zh-TW',
   interpolation: {
     escapeValue: false,

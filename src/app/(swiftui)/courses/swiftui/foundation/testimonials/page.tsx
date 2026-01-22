@@ -42,6 +42,7 @@ export default function TestimonialsPage() {
   const essaysTitle = t('testimonialsPage.essays.title')
   const essaysCtaLabel = t('testimonialsPage.essays.ctaLabel')
   const essaysCtaUrl = t('testimonialsPage.essays.ctaUrl')
+  const essaysItemLabel = t('testimonialsPage.essays.itemCta')
 
   // 首畫面避免 SSR / CSR 語系差異造成的 hydration 錯誤
   if (!isClient) {
@@ -132,7 +133,7 @@ export default function TestimonialsPage() {
               >
                 <span className={styles.essayTape} style={{ ['--essay-idx' as string]: idx }} />
                 <h3>{essay.title}</h3>
-                <span className={styles.essayLinkLabel}>{essaysCtaLabel}</span>
+                <span className={styles.essayLinkLabel}>{essaysItemLabel}</span>
               </a>
             ))}
           </div>
