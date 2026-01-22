@@ -35,6 +35,13 @@ export default function TestimonialsPage() {
   const heroCtaUrl = t('testimonialsPage.ctaUrl')
   const viewFullLabel = t('testimonialsPage.viewFull')
   const avatarAria = (author: string) => t('testimonialsPage.avatarAria', { author })
+  const essays = t('testimonialsPage.essays.items', { returnObjects: true }) as {
+    title: string
+    url: string
+  }[]
+  const essaysTitle = t('testimonialsPage.essays.title')
+  const essaysCtaLabel = t('testimonialsPage.essays.ctaLabel')
+  const essaysCtaUrl = t('testimonialsPage.essays.ctaUrl')
 
   // 首畫面避免 SSR / CSR 語系差異造成的 hydration 錯誤
   if (!isClient) {
@@ -96,6 +103,37 @@ export default function TestimonialsPage() {
                   </a>
                 )}
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.essaySection}>
+        <div className="container">
+          <div className={styles.essayHeader}>
+            <div>
+              <p className={styles.kicker}>{t('hero.kicker')}</p>
+              <h2 className={styles.essayTitle}>{essaysTitle}</h2>
+            </div>
+            {essaysCtaUrl && (
+              <a className={styles.essayCta} href={essaysCtaUrl} target="_blank" rel="noopener noreferrer">
+                {essaysCtaLabel}
+              </a>
+            )}
+          </div>
+          <div className={styles.essayGrid}>
+            {essays.map((essay, idx) => (
+              <a
+                key={`${essay.title}-${idx}`}
+                className={styles.essayCard}
+                href={essay.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className={styles.essayTape} style={{ ['--essay-idx' as string]: idx }} />
+                <h3>{essay.title}</h3>
+                <span className={styles.essayLinkLabel}>{essaysCtaLabel}</span>
+              </a>
             ))}
           </div>
         </div>
