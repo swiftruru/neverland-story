@@ -1893,14 +1893,13 @@
 }
 
 .essayGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--spacing-lg);
+  column-count: 3;
+  column-gap: var(--spacing-lg);
 }
 
 .essayCard {
   position: relative;
-  display: block;
+  display: inline-block;
   padding: 1.25rem;
   background: #fff;
   border: 1px solid var(--color-border-light);
@@ -1909,6 +1908,9 @@
   min-height: 160px;
   color: var(--color-text);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  width: 100%;
+  margin: 0 0 var(--spacing-lg);
+  break-inside: avoid;
 }
 
 .essayCard h3 {
@@ -1952,5 +1954,15 @@
 
   .essayHeader {
     align-items: flex-start;
+  }
+
+  .essayGrid {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .essayGrid {
+    column-count: 2;
   }
 }
