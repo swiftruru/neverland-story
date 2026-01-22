@@ -21,6 +21,9 @@ export default function SwiftuiTuitionPage() {
     <main className={styles.page}>
       <section className={styles.tuitionSection}>
         <div className="container">
+          <div className={styles.kickerRow}>
+            <p className={`${styles.kicker} ${styles.kickerLeft}`}>{t('hero.kicker')}</p>
+          </div>
           <div className={styles.sectionHeader}>
             <h1 className={styles.title}>{t('sections.tuition.title')}</h1>
             <p className={styles.subtitle}>{t('sections.tuition.desc')}</p>

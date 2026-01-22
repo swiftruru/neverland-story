@@ -53,14 +53,21 @@ export default function TestimonialsPage() {
     <main className={styles.page} suppressHydrationWarning>
       <section className={styles.testimonialHero}>
         <div className="container">
+          <div className={styles.kickerRowWrap}>
+            <div className={styles.kickerRow}>
+              <p className={`${styles.kicker} ${styles.kickerLeft}`}>{t('hero.kicker')}</p>
+            </div>
+          </div>
           <div className={styles.heroContent}>
-            <h1 className={styles.title}>{heroTitle}</h1>
-            <p className={styles.subtitle}>{heroSubtitle}</p>
-            {heroCtaUrl && heroCtaLabel && (
-              <a className={styles.primary} href={heroCtaUrl} target="_blank" rel="noopener noreferrer">
-                {heroCtaLabel}
-              </a>
-            )}
+            <div className={styles.sectionHeader}>
+              <h1 className={styles.title}>{heroTitle}</h1>
+              <p className={styles.subtitle}>{heroSubtitle}</p>
+              {heroCtaUrl && heroCtaLabel && (
+                <a className={styles.primary} href={heroCtaUrl} target="_blank" rel="noopener noreferrer">
+                  {heroCtaLabel}
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </section>

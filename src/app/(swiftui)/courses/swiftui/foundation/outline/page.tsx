@@ -16,6 +16,9 @@ export default function SwiftuiOutlinePage() {
     <main className={styles.page}>
       <section className={styles.outlineSection}>
         <div className="container">
+          <div className={styles.kickerRow}>
+            <p className={`${styles.kicker} ${styles.kickerLeft}`}>{t('hero.kicker')}</p>
+          </div>
           <div className={styles.sectionHeader}>
             <h1 className={styles.title}>{t('sections.outline.title')}</h1>
             <p className={styles.subtitle}>{t('sections.outline.desc')}</p>

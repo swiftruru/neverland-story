@@ -24,6 +24,23 @@
     "start": "Start exploring",
     "back": "Back to SwiftUI home"
   },
+  "pages": {
+    "contact": {
+      "mainTitle": "Contact Peter Pan",
+      "subtitle": "For any questions about iOS App development, feel free to reach out anytime.",
+      "note": "See",
+      "qaColumn": "Peter Pan's iOS Swift App Q&A Column",
+      "facebook": "Personal FB",
+      "fanpage": "Fan Page: Peter Pan for Apple",
+      "linePersonal": "LINE Personal",
+      "lineOfficial": "LINE Official",
+      "email": "Email",
+      "visit": "Visit",
+      "copy": "Copy",
+      "sendEmail": "Send",
+      "copied": "Copied"
+    }
+  },
   "sections": {
     "intro": {
       "title": "Introduction",
