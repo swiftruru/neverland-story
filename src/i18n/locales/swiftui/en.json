@@ -115,6 +115,54 @@
       "desc": "Explore Peter Pan's other hands-on courses and choose the path that fits your learning goals."
     }
   },
+  "featuresPage": {
+    "items": {
+      "from-zero": {
+        "title": "Start from zero, learn step by step",
+        "desc": "Climb steadily like a <snail>snail</snail>, building your own apps one step at a time."
+      },
+      "live": {
+        "title": "Live sessions plus unlimited replays",
+        "desc": "Join clear live streams from home; rewatch recordings anytime with no expiry."
+      },
+      "ta": {
+        "title": "TA support: LINE DMs and pre/post-class help",
+        "desc": "<line>DM on LINE for questions and pre/post-class check-ins</line>; someone’s always there when you’re stuck."
+      },
+      "apps": {
+        "title": "Build 10 complete apps",
+        "desc": "Create 10+ engaging apps from scratch and see your progress."
+      },
+      "tech": {
+        "title": "Latest tech: Swift, Xcode, SwiftUI, iOS SDK",
+        "desc": "Stay current and avoid detours—see <swiftStory>Swift learning stories</swiftStory> for tips."
+      },
+      "funny": {
+        "title": "Humorous, engaging teaching",
+        "desc": "Light, story-driven lessons with jokes; read <studentNotes>student notes</studentNotes> for the vibe."
+      },
+      "assignments": {
+        "title": "Crafted exercises and homework",
+        "desc": "Polished exercises boost motivation—thanks to <designer>design partners</designer> and <alumni>alumni artwork</alumni> for inspiration."
+      },
+      "blog": {
+        "title": "Blog your learning journey",
+        "desc": "Document progress like 100 Days of Swift. See the <writerPlan>iOS App writer plan</writerPlan>."
+      },
+      "ai": {
+        "title": "Integrate AI for learning",
+        "desc": "Use Xcode, Claude, ChatGPT, Gemini, Copilot, Cursor, Grok, and more to explain, assign, debug, refactor, and annotate code."
+      },
+      "mentoring": {
+        "title": "Free 1:1 hour + weekly check-ins",
+        "desc": "One free hour for shipping/app/job/interview chat, plus weekly follow-ups—see <oneOnOne>1:1 time</oneOnOne> and <followUp>ongoing support</followUp>."
+      },
+      "tools": {
+        "title": "Learn collaboration tools",
+        "desc": "Use GitHub, Medium, GitHub Pages, and CakeResume to build an <portfolio>app portfolio</portfolio> and résumé; practice real-world workflows."
+      }
+    }
+  },
   "placeholder": "Full content coming soon: examples, assignments, FAQ, and application details.",
   "introPage": {
     "heroTitle": "iOS SwiftUI App Development for Liberal Arts Learners",
