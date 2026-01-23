@@ -172,19 +172,24 @@ export default function ContactPage() {
     event.preventDefault()
     setFormStatus('Sending...')
 
-    const formData = new FormData(event.currentTarget)
+    const form = event.currentTarget
+    const formData = new FormData(form)
     formData.append('access_key', 'cdf36c24-830b-4074-8f19-e7d3221fbd3b')
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData,
-    })
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      })
 
-    const data = await response.json()
-    if (data.success) {
-      setFormStatus('已送出，謝謝你的訊息！')
-      event.currentTarget.reset()
-    } else {
+      const data = await response.json()
+      if (data.success) {
+        setFormStatus('已送出，謝謝你的訊息！')
+        form.reset()
+      } else {
+        setFormStatus('送出時發生錯誤，請稍後再試。')
+      }
+    } catch {
       setFormStatus('送出時發生錯誤，請稍後再試。')
     }
   }

@@ -50,7 +50,7 @@
         "messagePlaceholder": "Tell me about your needs or ideas",
         "submit": "Send message",
         "sending": "Sending...",
-        "success": "Message sent successfully!",
+        "success": "Submitted! Thanks for your message.",
         "error": "Something went wrong. Please try again."
       }
     }

@@ -50,7 +50,7 @@
         "messagePlaceholder": "請描述你的需求或想法",
         "submit": "送出表單",
         "sending": "寄出中...",
-        "success": "送出成功！",
+        "success": "已送出，謝謝你的訊息！",
         "error": "送出失敗，請再試一次。"
       }
     }

@@ -102,15 +102,19 @@ export default function SwiftuiContactPage() {
     const formData = new FormData(event.currentTarget)
     formData.append('access_key', '45503dd2-63be-4ebb-b217-7321482f643b')
 
+    const form = event.currentTarget
+
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData,
       })
+
       const data = await response.json()
+
       if (data.success) {
         setFormStatus('success')
-        event.currentTarget.reset()
+        form.reset()
       } else {
         setFormStatus('error')
       }
@@ -225,7 +229,7 @@ export default function SwiftuiContactPage() {
                     />
                   </div>
                   <div className={styles.formActions}>
-                    <button type="submit" className={styles.actionButton} disabled={formStatus === 'sending'}>
+                    <button type="submit" className={styles.submitButton} disabled={formStatus === 'sending'}>
                       {formStatus === 'sending'
                         ? t('pages.contact.form.sending')
                         : t('pages.contact.form.submit')}
