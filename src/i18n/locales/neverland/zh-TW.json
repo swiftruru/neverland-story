@@ -24,7 +24,7 @@
   },
   "home": {
     "title": "愛瘋一切為蘋果的彼得潘小王子",
-    "subtitle": "iOS App 程式設計入門",
+    "subtitle": "作家 × App 開發 × 教學",
     "headshotAlt": "彼得潘老師大頭照",
     "rolesTitle": "關於我",
     "mainJob": "正職",
@@ -116,9 +116,18 @@
     "panelTitle": "服務概覽",
     "panelSubtitle": "一對一顧問與實作陪跑",
     "stats": {
-      "years": { "value": "10+ 年", "label": "iOS 開發與教學經驗" },
-      "apps": { "value": "50+ 件", "label": "實務 App 專案與作品" },
-      "cases": { "value": "100+ 次", "label": "協助診斷與解決案例" }
+      "years": {
+        "value": "10+ 年",
+        "label": "iOS 開發與教學經驗"
+      },
+      "apps": {
+        "value": "50+ 件",
+        "label": "實務 App 專案與作品"
+      },
+      "cases": {
+        "value": "100+ 次",
+        "label": "協助診斷與解決案例"
+      }
     },
     "learnMore": "了解更多",
     "highlightsTitle": "什麼是 iOS App 金牌擺渡人",
