@@ -13,7 +13,8 @@
     "tuition": "學費",
     "signup": "報名",
     "testimonials": "學生心得",
-    "contact": "聯絡"
+    "contact": "聯絡",
+    "more": "更多"
   },
   "hero": {
     "kicker": "SwiftUI Foundation · 文組生入門",
@@ -22,7 +23,8 @@
   },
   "cta": {
     "start": "開始瀏覽",
-    "back": "返回 SwiftUI 課程首頁"
+    "back": "返回 SwiftUI 課程首頁",
+    "learnMore": "了解更多"
   },
   "pages": {
     "contact": {
@@ -107,6 +109,10 @@
     "contact": {
       "title": "聯絡",
       "desc": "聯絡資訊與表單入口，包含社群與 email 渠道。"
+    },
+    "more": {
+      "title": "其它近期課程",
+      "desc": "探索彼得潘近期的課程，挑選最適合你的學習路徑。"
     }
   },
   "placeholder": "內容即將補完，將涵蓋範例、作業說明、常見問題與報名資訊。",
@@ -513,6 +519,45 @@
         "學校講師：海洋大學、臺北科大、台大共同教育中心、臺北教育大學 iOS 社團、政大、中央、臺北大學、淡江 iOS 社團、逢甲、文化、醒吾、弘光、正修、慈濟、勤益、中國科大、南崁高中、高雄美國學校",
         "企業內訓：Yahoo、聯陽半導體、世界先進、統一資訊、新光人壽、信義房屋、果思設計",
         "技術顧問：FUNTEK、點點數位、英諾奧茲、Brocas"
+      ]
+    },
+    "morePage": {
+      "items": [
+        {
+          "id": "swift-ios",
+          "title": "彼得潘的 Swift iOS App 程式設計入門",
+          "href": "https://swiftpeterpan.mystrikingly.com/",
+          "description": "只要 8 週，每週兩個晚上，掌握程式設計核心概念與最新 Swift / iOS / Xcode 技術，打造並上架自己的 App，開啟工作、接案、創業的第二人生。",
+          "image": "/swiftui/foundation/more/swiftui-ios-course.png"
+        },
+        {
+          "id": "flutter",
+          "title": "彼得潘的 Flutter 跨平台 App 程式設計入門",
+          "href": "https://flutterapp.mystrikingly.com/",
+          "description": "為文組生量身訂做，10 週每週一晚，從零開始學程式，開心寫出 iOS / Android 的 Flutter App。",
+          "image": "/swiftui/foundation/more/flutter-course.png"
+        },
+        {
+          "id": "swift-basics",
+          "title": "彼得潘的 Swift 程式設計入門",
+          "href": "http://learnswift.strikingly.com/",
+          "description": "以彼得潘暢銷書為本，搭配進化的 Swift 4，12 小時快速熟悉 Swift 語法與功能。",
+          "image": "/swiftui/foundation/more/swift-basics-course.png"
+        },
+        {
+          "id": "learn-zero",
+          "title": "從零開始慢慢學程式（免費）",
+          "href": "http://learncodefromzero.strikingly.com/",
+          "description": "免費友善的 Swift 入門課，老師一步一步慢慢教，透過有趣的實作練習，讓你第一次就愛上程式設計。",
+          "image": "/swiftui/foundation/more/learn-code-from-zero.png"
+        },
+        {
+          "id": "first-app",
+          "title": "第一次手做 iOS App（手做 App 價：990 元）",
+          "href": "http://firstiosapp.strikingly.com/",
+          "description": "把第一個 App 想法做出來：寵物、戀愛回憶或任何靈感，親手安裝到自己的 iPhone，體驗創作的成就感。",
+          "image": "/swiftui/foundation/more/first-ios-app.png"
+        }
       ]
     }
   },

@@ -19,6 +19,7 @@ const NAV_ITEMS = [
   { id: 'tuition', key: 'nav.tuition', href: '/courses/swiftui/foundation/tuition' },
   { id: 'signup', key: 'nav.signup', href: '/courses/swiftui/foundation/signup' },
   { id: 'testimonials', key: 'nav.testimonials', href: '/courses/swiftui/foundation/testimonials' },
+  { id: 'more', key: 'nav.more', href: '/courses/swiftui/foundation/more' },
   { id: 'contact', key: 'nav.contact', href: '/courses/swiftui/foundation/contact' },
 ]
 
