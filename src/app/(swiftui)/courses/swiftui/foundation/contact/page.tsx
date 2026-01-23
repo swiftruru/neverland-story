@@ -93,6 +93,31 @@ function CopyButton({ text, label, copiedLabel }: { text: string; label: string;
 
 export default function SwiftuiContactPage() {
   const { t } = useTranslation('swiftui')
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setFormStatus('sending')
+
+    const formData = new FormData(event.currentTarget)
+    formData.append('access_key', '45503dd2-63be-4ebb-b217-7321482f643b')
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      })
+      const data = await response.json()
+      if (data.success) {
+        setFormStatus('success')
+        event.currentTarget.reset()
+      } else {
+        setFormStatus('error')
+      }
+    } catch {
+      setFormStatus('error')
+    }
+  }
 
   return (
     <main className={styles.page}>
@@ -153,9 +178,69 @@ export default function SwiftuiContactPage() {
                   </div>
                 </div>
               </PaperCard>
-            </FadeInOnScroll>
-          ))}
+              </FadeInOnScroll>
+            ))}
           </section>
+        </div>
+      </section>
+
+      <section className={`${styles.contactSection} ${styles.contactFormSection}`}>
+        <div className="container">
+          <FadeInOnScroll direction="up" delay={120}>
+            <PaperCard tapeColor="green" tapePosition="top-left" tapeRotation={-2} hover={false}>
+              <div className={styles.contactFormCard}>
+                <div className={styles.contactFormHeader}>
+                  <h2>{t('pages.contact.form.title')}</h2>
+                  <p>{t('pages.contact.form.subtitle')}</p>
+                </div>
+                <form className={styles.contactForm} onSubmit={handleSubmit}>
+                  <div className={styles.formRow}>
+                    <label htmlFor="name">{t('pages.contact.form.name')}</label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder={t('pages.contact.form.namePlaceholder')}
+                      required
+                    />
+                  </div>
+                  <div className={styles.formRow}>
+                    <label htmlFor="email">{t('pages.contact.form.email')}</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder={t('pages.contact.form.emailPlaceholder')}
+                      required
+                    />
+                  </div>
+                  <div className={styles.formRowFull}>
+                    <label htmlFor="message">{t('pages.contact.form.message')}</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      placeholder={t('pages.contact.form.messagePlaceholder')}
+                      required
+                    />
+                  </div>
+                  <div className={styles.formActions}>
+                    <button type="submit" className={styles.actionButton} disabled={formStatus === 'sending'}>
+                      {formStatus === 'sending'
+                        ? t('pages.contact.form.sending')
+                        : t('pages.contact.form.submit')}
+                    </button>
+                    {formStatus === 'success' && (
+                      <span className={styles.formStatusSuccess}>{t('pages.contact.form.success')}</span>
+                    )}
+                    {formStatus === 'error' && (
+                      <span className={styles.formStatusError}>{t('pages.contact.form.error')}</span>
+                    )}
+                  </div>
+                </form>
+              </div>
+            </PaperCard>
+          </FadeInOnScroll>
         </div>
       </section>
     </main>

@@ -10,6 +10,9 @@ export default function SwiftuiQaPage() {
   const desc = t('introPage.qaPage.description')
   const cta = t('introPage.qaPage.cta')
   const url = t('introPage.qaPage.url')
+  const afterTitle = t('introPage.qaPage.afterLearn.title')
+  const afterItemsRaw = t('introPage.qaPage.afterLearn.items', { returnObjects: true })
+  const afterItems = Array.isArray(afterItemsRaw) ? (afterItemsRaw as { title: string; body: string }[]) : []
 
   return (
     <main className={styles.page}>
@@ -27,6 +30,27 @@ export default function SwiftuiQaPage() {
                 {cta}
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.afterLearnSection}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.afterLearnTitle}>{afterTitle}</h2>
+          </div>
+          <div className={styles.afterLearnGrid}>
+            {afterItems.map((item, idx) => (
+              <div
+                key={item.title}
+                className={styles.afterLearnCard}
+                style={{ ['--after-idx' as string]: idx }}
+              >
+                <span className={styles.afterLearnTape} />
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

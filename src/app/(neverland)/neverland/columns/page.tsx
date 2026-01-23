@@ -32,7 +32,6 @@ export default function ColumnsPage() {
         <FadeInOnScroll direction="up">
           <header className={styles.header}>
             <div className={styles.headerIntro}>
-              <span className={styles.kicker}>{t('columns.kicker')}</span>
               <h1 className={styles.title}>{t('columns.mainTitle')}</h1>
               <p className={styles.subtitle}>{t('columns.subtitle')}</p>
             </div>

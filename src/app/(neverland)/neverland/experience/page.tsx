@@ -106,7 +106,6 @@ export default function ExperiencePage() {
         <FadeInOnScroll direction="up">
           <header className={styles.header}>
             <div className={styles.headerContent}>
-              <span className={styles.kicker}>{t('experience.kicker')}</span>
               <h1 className={styles.title}>{t('experience.mainTitle')}</h1>
               <p className={styles.subtitle}>{t('experience.subtitle')}</p>
             </div>
