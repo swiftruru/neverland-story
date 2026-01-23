@@ -558,7 +558,42 @@
           "description": "把第一個 App 想法做出來：寵物、戀愛回憶或任何靈感，親手安裝到自己的 iPhone，體驗創作的成就感。",
           "image": "/swiftui/foundation/more/first-ios-app.png"
         }
-      ]
+      ],
+      "thanks": {
+        "title": "特別感謝",
+        "items": [
+          {
+            "id": "social-innovation-lab",
+            "name": "社會創新實驗中心",
+            "href": "http://socialinnovationlab.iiiedu.org.tw/",
+            "image": "/swiftui/foundation/thanks/social-innovation-lab.png"
+          },
+          {
+            "id": "cool3c",
+            "name": "癮科技",
+            "href": "https://www.cool3c.com/",
+            "image": "/swiftui/foundation/thanks/cool3c.png"
+          },
+          {
+            "id": "cid",
+            "name": "通推",
+            "href": "",
+            "image": "/swiftui/foundation/thanks/cid.png"
+          },
+          {
+            "id": "alphacamp",
+            "name": "ALPHA Camp",
+            "href": "https://www.alphacamp.co/",
+            "image": "/swiftui/foundation/thanks/alphacamp.png"
+          },
+          {
+            "id": "pearnature",
+            "name": "梨本企業",
+            "href": "",
+            "image": "/swiftui/foundation/thanks/pearnature.png"
+          }
+        ]
+      }
     }
   },
   "footer": {

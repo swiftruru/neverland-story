@@ -558,7 +558,42 @@
           "description": "Bring your first app idea to life—pets, memories, or anything you love—and install it on your iPhone. A guided workshop to unlock your creativity.",
           "image": "/swiftui/foundation/more/first-ios-app.png"
         }
-      ]
+      ],
+      "thanks": {
+        "title": "Special Thanks",
+        "items": [
+          {
+            "id": "social-innovation-lab",
+            "name": "Social Innovation Lab",
+            "href": "http://socialinnovationlab.iiiedu.org.tw/",
+            "image": "/swiftui/foundation/thanks/social-innovation-lab.png"
+          },
+          {
+            "id": "cool3c",
+            "name": "Cool3C",
+            "href": "https://www.cool3c.com/",
+            "image": "/swiftui/foundation/thanks/cool3c.png"
+          },
+          {
+            "id": "cid",
+            "name": "Committee of Communications Industry Development",
+            "href": "",
+            "image": "/swiftui/foundation/thanks/cid.png"
+          },
+          {
+            "id": "alphacamp",
+            "name": "ALPHA Camp",
+            "href": "https://www.alphacamp.co/",
+            "image": "/swiftui/foundation/thanks/alphacamp.png"
+          },
+          {
+            "id": "pearnature",
+            "name": "Pear Nature",
+            "href": "",
+            "image": "/swiftui/foundation/thanks/pearnature.png"
+          }
+        ]
+      }
     }
   },
   "footer": {

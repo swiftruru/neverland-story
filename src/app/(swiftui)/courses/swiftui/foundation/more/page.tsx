@@ -15,6 +15,13 @@ export default function SwiftuiMorePage() {
     href: string
     image: string
   }[]
+  const thanks = t('introPage.morePage.thanks.items', { returnObjects: true }) as {
+    id: string
+    name: string
+    href?: string
+    image: string
+  }[]
+  const thanksTitle = t('introPage.morePage.thanks.title')
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   return (
@@ -81,6 +88,47 @@ export default function SwiftuiMorePage() {
           </div>
         </div>
       )}
+
+      <section className={styles.thanksSection}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.title}>{thanksTitle}</h2>
+          </div>
+          <div className={styles.thanksGrid}>
+            {thanks.map((item, idx) => (
+              <FadeInOnScroll key={item.id} direction="up" delay={idx * 60}>
+                <PaperCard
+                  tapeColor={idx % 2 === 0 ? 'yellow' : 'green'}
+                  tapePosition="top-left"
+                  tapeRotation={-2}
+                  hover
+                >
+                  <div className={styles.thanksCard}>
+                    <div className={styles.thanksLogo}>
+                      {item.href ? (
+                        <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                          <img src={item.image} alt={item.name} />
+                        </Link>
+                      ) : (
+                        <img src={item.image} alt={item.name} />
+                      )}
+                    </div>
+                    <p className={styles.thanksName}>
+                      {item.href ? (
+                        <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                          {item.name}
+                        </Link>
+                      ) : (
+                        item.name
+                      )}
+                    </p>
+                  </div>
+                </PaperCard>
+              </FadeInOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
