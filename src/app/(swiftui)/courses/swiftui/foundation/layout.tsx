@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { buildAbsoluteUrl, buildMetadata } from '@/app/metadata'
+import { SITE_URL, buildMetadata } from '@/app/metadata'
 
 const baseMeta = buildMetadata({
   title: '文組生的 iOS SwiftUI App 程式設計入門',
@@ -8,12 +8,14 @@ const baseMeta = buildMetadata({
   path: '/courses/swiftui/foundation',
 })
 
-const ogImage = buildAbsoluteUrl('/swiftui/foundation/og.png')
+const pageUrl = new URL('/courses/swiftui/foundation', SITE_URL).toString()
+const ogImage = new URL('/swiftui/foundation/og.png', SITE_URL).toString()
 
 export const metadata: Metadata = {
   ...baseMeta,
   openGraph: {
     ...baseMeta.openGraph,
+    url: pageUrl,
     images: [
       {
         url: ogImage,
@@ -26,6 +28,12 @@ export const metadata: Metadata = {
   twitter: {
     ...baseMeta.twitter,
     images: [ogImage],
+  },
+  alternates: {
+    canonical: pageUrl,
+    languages: {
+      'zh-TW': pageUrl,
+    },
   },
 }
 
