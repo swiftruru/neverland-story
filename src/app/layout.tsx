@@ -4,7 +4,7 @@ import { I18nProvider } from '@i18n/I18nProvider'
 import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
-import { SITE_URL, buildMetadata, buildAbsoluteUrl, withBasePath } from './metadata'
+import { SITE_URL, buildAbsoluteUrl, withBasePath } from './metadata'
 import { LayoutChrome } from '@components/layout/LayoutChrome'
 
 const PageTransition = dynamic(
@@ -27,11 +27,34 @@ const ReadingProgress = dynamic(
   { ssr: false }
 )
 
-const baseMetadata = buildMetadata({
-  title: undefined,
-  description: '彼得潘的 iOS App 程式設計入門 - Neverland Story',
-  path: '/',
-})
+const ogImage = buildAbsoluteUrl('/og-cover.png')
+
+const baseMetadata: Metadata = {
+  title: '愛瘋一切為蘋果的彼得潘小王子｜App 開發・寫作・教學',
+  description: '作家、果粉、iOS / Flutter App 開發者與講師。從寫作到教學，從專案到陪跑，陪你把想法變成 App。',
+  openGraph: {
+    title: '彼得潘 Peter Pan｜App 開發・寫作・教學',
+    description: '作家、果粉、iOS / Flutter App 開發者與講師。從寫作到教學，從專案到陪跑，陪你把想法變成 App。',
+    url: buildAbsoluteUrl('/'),
+    siteName: '愛瘋一切為蘋果的彼得潘小王子',
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: '彼得潘 Peter Pan｜App 開發・寫作・教學',
+      },
+    ],
+    locale: 'zh_TW',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '彼得潘 Peter Pan｜App 開發・寫作・教學',
+    description: '作家、果粉、iOS / Flutter App 開發者與講師。從寫作到教學，從專案到陪跑，陪你把想法變成 App。',
+    images: [ogImage],
+  },
+}
 
 export const metadata: Metadata = {
   ...baseMetadata,
