@@ -2564,6 +2564,18 @@
 @media (max-width: 768px) {
   .essayGrid {
     column-count: 1 !important;
+    padding-top: 20px;
+  }
+
+  .essayCard {
+    margin-bottom: 2rem;
+  }
+
+  .essayTape {
+    top: -10px;
+    left: 12px;
+    width: 64px;
+    height: 16px;
   }
 }
 
