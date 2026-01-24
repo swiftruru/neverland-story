@@ -1042,6 +1042,22 @@
   --instructor-tape-rotation: 2deg;
 }
 
+@media (max-width: 768px) {
+  .instructorLayout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .instructorBio {
+    width: 100%;
+    text-align: left;
+  }
+
+  .linkChips {
+    justify-content: flex-start;
+  }
+}
+
 .instructorLightbox {
   position: fixed;
   inset: 0;
@@ -2148,6 +2164,7 @@
 .essayGrid {
   column-count: 3;
   column-gap: var(--spacing-lg);
+  padding-top: 30px;
 }
 
 .contactHero {

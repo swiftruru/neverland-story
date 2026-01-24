@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   icons: {
     icon: withBasePath('/icons/pwa-512.png'),
   },
+  appleWebApp: {
+    title: '彼得潘 Neverland',
+  },
 }
 
 export const viewport: Viewport = {
