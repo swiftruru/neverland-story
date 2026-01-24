@@ -1,0 +1,16 @@
+{
+  "name": "SwiftUI Advanced | Peter Pan",
+  "short_name": "SwiftUI Advanced",
+  "description": "SwiftUI 進階課程（預留設定）。",
+  "start_url": "/courses/swiftui/advanced/",
+  "display": "standalone",
+  "background_color": "#f7f4f0",
+  "theme_color": "#006850",
+  "icons": [
+    {
+      "src": "/swiftui/advanced/icons/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

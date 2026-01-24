@@ -10,6 +10,8 @@ const baseMeta = buildMetadata({
 
 const pageUrl = new URL('/courses/swiftui/foundation', SITE_URL).toString()
 const ogImage = new URL('/swiftui/foundation/og.png', SITE_URL).toString()
+const manifestUrl = new URL('/swiftui/foundation/manifest.json', SITE_URL).toString()
+const iconUrl = new URL('/swiftui/foundation/icons/pwa-512.png', SITE_URL).toString()
 
 export const metadata: Metadata = {
   ...baseMeta,
@@ -32,6 +34,10 @@ export const metadata: Metadata = {
     title: '文組生的 iOS SwiftUI App 程式設計入門 | 彼得潘',
     description:
       '專為文組與零基礎轉職者設計的 SwiftUI 入門課程，完整包含課程目標、內容大綱、作業設計、講師介紹、學費與報名資訊，以及學生心得與 Q&A。',
+  },
+  manifest: manifestUrl,
+  icons: {
+    icon: iconUrl,
   },
   alternates: {
     canonical: pageUrl,

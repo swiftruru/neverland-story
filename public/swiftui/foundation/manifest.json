@@ -1,0 +1,16 @@
+{
+  "name": "文組生的 iOS SwiftUI App 程式設計入門 | 彼得潘",
+  "short_name": "文組生 SwiftUI",
+  "description": "專為文組與零基礎轉職者設計的 SwiftUI 入門課程，完整介紹課程目標、內容大綱、作業、講師與報名資訊。",
+  "start_url": "/courses/swiftui/foundation/",
+  "display": "standalone",
+  "background_color": "#f7f4f0",
+  "theme_color": "#006850",
+  "icons": [
+    {
+      "src": "/swiftui/foundation/icons/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
