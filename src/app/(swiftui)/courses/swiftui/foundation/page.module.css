@@ -2562,6 +2562,12 @@
 }
 
 @media (max-width: 768px) {
+  .essayGrid {
+    column-count: 1 !important;
+  }
+}
+
+@media (max-width: 768px) {
   .contactForm {
     grid-template-columns: 1fr;
   }
