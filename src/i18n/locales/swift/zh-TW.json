@@ -52,6 +52,103 @@
       }
     ]
   },
+  "featuresPage": {
+    "heading": "特色",
+    "desc": "陪你把 Swift，慢慢寫成一個個完整、能上線的 App",
+    "items": [
+      {
+        "id": "tech",
+        "title": "學習最新版的 Swift，iOS，Xcode，UIKit，SwiftUI",
+        "body": [
+          "結合 Apple 的最新技術 Swift 6，iOS 26， Xcode 26。新的技術不只功能強大，學習上也更容易上手，現在開始學 App 比從前幸福多了，少走許多辛苦的冤枉路。關於 Swift 的介紹，可參閱 <link1>當你努力想學習 Swift 時，全世界都會來幫你</link1>。(ps: 目前工作的主流以 UIKit 為主，所以課程將以 UIKit 為主， SwiftUI 則是課程後期的補充內容)"
+        ]
+      },
+      {
+        "id": "live",
+        "title": "線上直播和無期限觀看錄影複習",
+        "body": [
+          "提供線上直播，在家裡也可以上課。在教室上課可不受座位前後排的影響，從電腦觀看直播清楚的螢幕畫面。另外搭配直播的錄影，課後隨時都能複習上課內容的每個細節。課程結束後，課程影片也可無期限地觀看複習。"
+        ]
+      },
+      {
+        "id": "apps",
+        "title": "開發十個以上完整的 App",
+        "body": [
+          "從無到有開發出電子書 App，訂飲料 App 和美食記錄 App 等。( <link1>訂飲料 App 作業完成後，彼得潘還會請喝飲料。</link1> )"
+        ]
+      },
+      {
+        "id": "ta",
+        "title": "課程助教: LINE 私訊問問題和課前課後解惑",
+        "body": [
+          "上課最大的好處是遇到問題卡關有人可以問。<link1>你們隨時可透過 LINE 和 FB 詢問彼得潘問題，上課前 1 小時也可以預約面對面討論</link1>。當課程結束後你們還是可以問，因為彼得潘會是你們一輩子的朋友跟 iOS App 助教 !"
+        ]
+      },
+      {
+        "id": "extra",
+        "title": "額外 12 小時的 iOS 和 Flutter 入門直播",
+        "body": [
+          "iOS App 開發技術博大精深，45 小時的正課時間只能講完開發 App 常用的技術。因此彼得潘決定額外加課，另外贈送 12 小時的 iOS 和 Flutter 入門直播。"
+        ]
+      },
+      {
+        "id": "humor",
+        "title": "幽默風趣的教學",
+        "body": [
+          "彼得潘將以生動有趣的教學加冷笑話幫助你領悟 App 開發之道。(可參考<link1>學生們關於上課幽默風趣的心得整理</link1>)"
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "精心設計的課堂練習和豐富的課後作業",
+        "body": [
+          "透過有趣的課堂練習和課後作業，提升學生上課學習的興趣和課後寫作業的動力，讓學生在課堂上和課後都能完成想分享到 FB 的美美 App，作業範例可參考<link1>彼得潘的 100 道 Swift iOS App 謎題</link1>。(特別感謝<link2>設計師朋友和彼得潘合作設計教材</link2>，以及<link3>畢業學生們的熱心分享</link3>，提供自己美麗的作業讓學弟妹模仿練習。)"
+        ]
+      },
+      {
+        "id": "blog",
+        "title": "Blog 分享記錄學習 App 開發的成長",
+        "body": [
+          "在 Blog 分享記錄學習 App 開發的成長。關於寫 Blog 學 App 的好處，可參考 <link1>iOS App 開發作家養成計畫</link1>。"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "結合 AI 教學和學習",
+        "body": [
+          "課程將結合超棒的 AI 程式助教，Xcode、Claude、ChatGPT、Gemini、GitHub Copilot、Antigravity、Codex、Windsurf、Cursor、Grok、Zed，它們將提供許多的協助，比方講解程式，出作業，回答問題，加快程式的開發速度，debug，重構程式，注解等。"
+        ]
+      },
+      {
+        "id": "ebook",
+        "title": "免費獲得彼得潘的 Swift 程式設計入門電子書",
+        "body": [
+          "以各種生動有趣的實例帶領讀者由淺入深認識 Swift，並在 Xcode 全新打造的練功樂園 playground 盡情敞佯，學習關於 Swift 的點點滴滴。"
+        ]
+      },
+      {
+        "id": "exam",
+        "title": "期中期末測驗 & 串接 REST API 的轉職作品",
+        "body": [
+          "想要驗證自己能力或找工作的朋友，可透過期中和期末測驗檢視能力，加強自己不足的地方。目標轉職 Swift iOS App 工程師的朋友也可以開發<link1>串接 REST API</link1>的轉職作品。"
+        ]
+      },
+      {
+        "id": "workshop",
+        "title": "免費參加進階 iOS App 工作坊和持續推出的作業練習",
+        "body": [
+          "課程結束後，<link1>我將繼續出作業</link1>，並且定時推出各式主題的<link2>進階 iOS App 工作坊</link2>，幫助大家持續練功精進，成為一生懸命的 App 魔法師 !"
+        ]
+      },
+      {
+        "id": "tools",
+        "title": "學習業界開發合作工具，製作 App 作品集和履歷。",
+        "body": [
+          "程式版本管理的 GitHub，利用 GitHub，Medium，<link1>GitHub Pages</link1> & CakeResume 製作 <link2>App 作品集</link2>和履歷。"
+        ]
+      }
+    ]
+  },
   "hero": {
     "kicker": "Swift 進階 · 彼得潘",
     "title": "彼得潘的 Swift iOS App 程式設計入門",

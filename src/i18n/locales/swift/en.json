@@ -52,6 +52,103 @@
       }
     ]
   },
+  "featuresPage": {
+    "heading": "Highlights",
+    "desc": "Guiding you to craft Swift into multiple complete, launch-ready apps",
+    "items": [
+      {
+        "id": "tech",
+        "title": "Learn the latest Swift, iOS, Xcode, UIKit, SwiftUI",
+        "body": [
+          "Powered by Apple’s newest tech: Swift 6, iOS 26, Xcode 26. Modern tools are stronger and easier to learn, so you skip the old pain. For Swift basics, see <link1>When you strive to learn Swift, the world helps you</link1>. (We focus on UIKit for today’s jobs; SwiftUI is covered later.)"
+        ]
+      },
+      {
+        "id": "live",
+        "title": "Live streaming with unlimited replays",
+        "body": [
+          "Join live from home or in-class with clear screens; recordings let you revisit every detail anytime, even after the course ends."
+        ]
+      },
+      {
+        "id": "apps",
+        "title": "Build 10+ complete apps",
+        "body": [
+          "Create e-book, drink-ordering, and food-log apps from scratch. (<link1>After finishing the drink-ordering app, Peter even buys you a drink.</link1>)"
+        ]
+      },
+      {
+        "id": "ta",
+        "title": "TA support: LINE DM for questions before/after class",
+        "body": [
+          "Stuck? <link1>Message Peter via LINE/FB or book a chat an hour before class</link1>. Even after the course, he remains your lifelong iOS TA."
+        ]
+      },
+      {
+        "id": "extra",
+        "title": "Extra 12 hours of iOS & Flutter intro live sessions",
+        "body": [
+          "Core 45 hours aren’t enough, so we gift 12 more hours covering iOS and Flutter fundamentals."
+        ]
+      },
+      {
+        "id": "humor",
+        "title": "Humorous, engaging teaching",
+        "body": [
+          "Peter mixes lively examples with jokes to help you absorb concepts. (See <link1>students’ notes on the fun vibe</link1>.)"
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Thoughtful exercises and rich assignments",
+        "body": [
+          "Fun in-class drills and homework keep you motivated; make share-worthy apps. See <link1>100 Swift iOS App puzzles</link1>. Thanks to <link2>designer partners</link2> and <link3>alumni who share their beautiful work</link3>."
+        ]
+      },
+      {
+        "id": "blog",
+        "title": "Blog your learning journey",
+        "body": [
+          "Reflect and grow by blogging your app-building path. Read <link1>iOS App writer training plan</link1> for the benefits."
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "AI-assisted learning",
+        "body": [
+          "Use Xcode, Claude, ChatGPT, Gemini, GitHub Copilot, Antigravity, Codex, Windsurf, Cursor, Grok, Zed for explanations, assignments, debugging, refactoring, and annotation boosts."
+        ]
+      },
+      {
+        "id": "ebook",
+        "title": "Free Swift intro e-book",
+        "body": [
+          "Discover Swift through playful examples and Xcode playgrounds, learning every corner of the language."
+        ]
+      },
+      {
+        "id": "exam",
+        "title": "Midterm/final tests & REST API portfolio",
+        "body": [
+          "Assess your skills with exams; career changers can build a <link1>REST API-integrated project</link1> for interviews."
+        ]
+      },
+      {
+        "id": "workshop",
+        "title": "Free advanced workshops & ongoing assignments",
+        "body": [
+          "Post-course, <link1>we keep sending assignments</link1> and host <link2>advanced iOS workshops</link2> to sharpen your craft."
+        ]
+      },
+      {
+        "id": "tools",
+        "title": "Master industry tools for portfolios and resumes",
+        "body": [
+          "Use GitHub for version control; with GitHub, Medium, <link1>GitHub Pages</link1>, and CakeResume to build <link2>app portfolios</link2> and resumes."
+        ]
+      }
+    ]
+  },
   "hero": {
     "kicker": "Swift Advanced · Peter Pan",
     "title": "Peter Pan's Swift iOS App Bootcamp",
