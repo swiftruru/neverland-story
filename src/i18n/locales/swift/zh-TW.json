@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Swift 進階",
+    "intro": "簡介",
+    "goals": "目標",
+    "info": "課程資訊",
+    "features": "特色",
+    "assignments": "作業",
+    "audience": "對象",
+    "instructor": "講師",
+    "qa": "Q & A",
+    "outline": "大綱",
+    "tuition": "學費",
+    "signup": "報名",
+    "testimonials": "學生心得",
+    "contact": "聯絡"
+  },
+  "hero": {
+    "kicker": "Swift 進階 · 彼得潘",
+    "title": "彼得潘的 Swift iOS App 程式設計入門",
+    "subtitle": "這是 Swift 進階站的骨架，之後會逐步補上完整內容，維持與 SwiftUI 站相同的版型與體驗。"
+  },
+  "cta": {
+    "start": "開始瀏覽"
+  },
+  "placeholders": {
+    "comingSoon": "內容即將上線，Swift 進階站正在建置中，請稍候。"
+  },
+  "sections": {
+    "intro": { "title": "簡介", "desc": "課程概覽、適合的學員，以及與其他課程的差異。" },
+    "goals": { "title": "目標", "desc": "學習成果與將要完成的 Swift App。" },
+    "info": { "title": "課程資訊", "desc": "時間、工具與環境需求，讓你準備好上課。" },
+    "features": { "title": "特色", "desc": "教學風格、學習支援與這門課的優勢。" },
+    "assignments": { "title": "作業", "desc": "每週作業、繳交方式與回饋節奏。" },
+    "audience": { "title": "對象", "desc": "適合的學員輪廓與建議的先備知識。" },
+    "instructor": { "title": "講師", "desc": "彼得潘的背景、經驗與代表作品。" },
+    "qa": { "title": "Q & A", "desc": "常見問題：時間投入、設備需求、課程支援。" },
+    "outline": { "title": "大綱", "desc": "章節與實作專題，從基礎到進階的路線。" },
+    "tuition": { "title": "學費", "desc": "收費、方案與付款方式。" },
+    "signup": { "title": "報名", "desc": "如何報名、重要日期與連結。" },
+    "testimonials": { "title": "學生心得", "desc": "學生的學習經驗與成果分享。" },
+    "contact": { "title": "聯絡", "desc": "聯絡彼得潘以了解 Swift 課程相關問題的方式。" }
+  }
+}

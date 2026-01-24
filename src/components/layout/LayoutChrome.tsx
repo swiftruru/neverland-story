@@ -5,11 +5,13 @@ import { usePathname } from 'next/navigation'
 import { Header, Navigation, Footer, FooterSwiftui } from './index'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
+import { SwiftNav } from './SwiftNav'
 import styles from './LayoutChrome.module.css'
 
 export function LayoutChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const isSwiftuiSite = useMemo(() => pathname?.startsWith('/courses/swiftui'), [pathname])
+  const isSwiftSite = useMemo(() => pathname?.startsWith('/courses/swift'), [pathname])
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -22,6 +24,8 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
     <div className={styles.layout}>
       {isSwiftuiSite ? (
         <SwiftuiNav />
+      ) : isSwiftSite ? (
+        <SwiftNav />
       ) : (
         <>
           <Header />
@@ -31,7 +35,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
 
       <main className={styles.main}>{children}</main>
 
-      {isSwiftuiSite ? <FooterSwiftui /> : <Footer />}
+      {isSwiftuiSite || isSwiftSite ? <FooterSwiftui /> : <Footer />}
       <FloatingContact />
       <BackToTop />
     </div>

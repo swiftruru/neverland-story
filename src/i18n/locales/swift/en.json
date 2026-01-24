@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Swift Advanced",
+    "intro": "Introduction",
+    "goals": "Goals",
+    "info": "Course Info",
+    "features": "Highlights",
+    "assignments": "Assignments",
+    "audience": "Who it's for",
+    "instructor": "Instructor",
+    "qa": "Q & A",
+    "outline": "Outline",
+    "tuition": "Tuition",
+    "signup": "Apply",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Swift Advanced · Peter Pan",
+    "title": "Peter Pan's Swift iOS App Bootcamp",
+    "subtitle": "A dedicated Swift track for building iOS apps. Pages will be filled in next—this scaffold keeps navigation and layout consistent."
+  },
+  "cta": {
+    "start": "Start exploring"
+  },
+  "placeholders": {
+    "comingSoon": "Content coming soon. We're setting up the Swift Advanced site; detailed sections will follow."
+  },
+  "sections": {
+    "intro": { "title": "Introduction", "desc": "Course overview, who it's for, and what sets this track apart." },
+    "goals": { "title": "Goals", "desc": "Learning outcomes and the first apps you'll ship with Swift." },
+    "info": { "title": "Course Info", "desc": "Schedule, tools, and environment needed for the Swift track." },
+    "features": { "title": "Highlights", "desc": "Teaching style, learning support, and reasons learners succeed here." },
+    "assignments": { "title": "Assignments", "desc": "Weekly tasks, submission flow, and feedback cadence." },
+    "audience": { "title": "Who it's for", "desc": "Ideal learner profiles and suggested prerequisites." },
+    "instructor": { "title": "Instructor", "desc": "About Peter Pan—author, developer, and instructor background." },
+    "qa": { "title": "Q & A", "desc": "Common questions about workload, devices, and support." },
+    "outline": { "title": "Outline", "desc": "Chapters and practice projects from foundations to advanced topics." },
+    "tuition": { "title": "Tuition", "desc": "Pricing, packages, and payment options." },
+    "signup": { "title": "Apply", "desc": "How to enroll, important dates, and links." },
+    "testimonials": { "title": "Testimonials", "desc": "Student experiences and outcomes from the Swift track." },
+    "contact": { "title": "Contact", "desc": "Ways to reach Peter Pan for questions about the Swift course." }
+  }
+}

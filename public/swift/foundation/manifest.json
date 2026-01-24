@@ -1,0 +1,15 @@
+{
+  "name": "彼得潘的 Swift iOS App 程式設計入門 | 彼得潘（基礎）",
+  "short_name": "Swift Foundation",
+  "start_url": "/courses/swift/foundation/intro/",
+  "display": "standalone",
+  "background_color": "#f5f6f4",
+  "theme_color": "#006850",
+  "icons": [
+    {
+      "src": "/swift/advanced/icons/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
