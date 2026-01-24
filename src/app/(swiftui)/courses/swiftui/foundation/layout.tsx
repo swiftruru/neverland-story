@@ -10,8 +10,9 @@ const baseMeta = buildMetadata({
 
 const pageUrl = new URL('/courses/swiftui/foundation', SITE_URL).toString()
 const ogImage = new URL('/swiftui/foundation/og.png', SITE_URL).toString()
-const manifestUrl = new URL('/swiftui/foundation/manifest.json', SITE_URL).toString()
-const iconUrl = new URL('/swiftui/foundation/icons/pwa-512.png', SITE_URL).toString()
+// Static assets in /public are served from root, don't use withBasePath
+const manifestUrl = '/swiftui/foundation/manifest.json'
+const iconUrl = '/swiftui/foundation/icons/pwa-512.png'
 
 export const metadata: Metadata = {
   ...baseMeta,
@@ -38,6 +39,14 @@ export const metadata: Metadata = {
   manifest: manifestUrl,
   icons: {
     icon: iconUrl,
+  },
+  appleWebApp: {
+    capable: true,
+    title: '文組生 SwiftUI',
+    statusBarStyle: 'default',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
   },
   alternates: {
     canonical: pageUrl,

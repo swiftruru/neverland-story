@@ -155,12 +155,7 @@ export default function SwiftuiSignupPage() {
           >
             ‹
           </button>
-          <div
-            className={styles.lightboxContent}
-            onClick={(e) => {
-              e.stopPropagation()
-            }}
-          >
+          <div className={styles.lightboxContent}>
             <img
               className={styles.lightboxImg}
               src={photos[activePhoto].src}

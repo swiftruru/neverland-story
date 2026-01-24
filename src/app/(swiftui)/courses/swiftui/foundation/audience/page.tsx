@@ -69,7 +69,7 @@ export default function SwiftuiAudiencePage() {
                   {Array.isArray(item.links)
                     ? item.links.map((lnk, i) => (
                         <span key={lnk.url}>
-                          {i > 0 ? '、' : ' '}
+                          {i > 0 ? '、' : ''}
                           <Link href={lnk.url} target="_blank" className={styles.inlineLink}>
                             {lnk.label}
                           </Link>
@@ -77,14 +77,6 @@ export default function SwiftuiAudiencePage() {
                       ))
                     : null}
                   {item.descSuffix ? item.descSuffix : ''}
-                  {item.link ? (
-                    <>
-                      {' '}
-                      <Link href={item.link} target="_blank" className={styles.inlineLink}>
-                        詳細
-                      </Link>
-                    </>
-                  ) : null}
                 </p>
               </article>
             ))}

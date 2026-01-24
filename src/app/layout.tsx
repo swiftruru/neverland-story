@@ -4,7 +4,7 @@ import { I18nProvider } from '@i18n/I18nProvider'
 import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
-import { SITE_URL, buildAbsoluteUrl, withBasePath } from './metadata'
+import { buildAbsoluteUrl } from './metadata'
 import { LayoutChrome } from '@components/layout/LayoutChrome'
 
 const PageTransition = dynamic(
@@ -59,12 +59,17 @@ const baseMetadata: Metadata = {
 export const metadata: Metadata = {
   ...baseMetadata,
   metadataBase: new URL(buildAbsoluteUrl('/')),
-  manifest: withBasePath('/manifest.json'),
+  manifest: '/manifest.json',
   icons: {
-    icon: withBasePath('/icons/pwa-512.png'),
+    icon: '/icons/pwa-512.png',
   },
   appleWebApp: {
+    capable: true,
     title: '彼得潘 Neverland',
+    statusBarStyle: 'default',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
   },
 }
 
