@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { SITE_URL, buildMetadata } from '@/app/metadata'
 
 const baseMeta = buildMetadata({
-  title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
+  title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘 | 彼得潘的 App 程式設計入門',
   description:
     '彼得潘專為 Swift 學習者設計的 iOS App 課程站點骨架，將陸續補齊課程簡介、目標、作業、學費與聯絡等內容。',
   path: '/courses/swift/advanced',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     ...baseMeta.twitter,
     images: [ogImage],
-    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
+    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘 | 彼得潘的 App 程式設計入門',
     description:
       '彼得潘專為 Swift 學習者設計的 iOS App 課程站點骨架，將陸續補齊課程簡介、目標、作業、學費與聯絡等內容。',
   },
