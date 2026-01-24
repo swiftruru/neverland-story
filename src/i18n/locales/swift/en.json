@@ -23,6 +23,16 @@
   "cta": {
     "start": "Start exploring"
   },
+  "introPage": {
+    "heroTitle": "Peter Pan's Swift iOS App Bootcamp",
+    "heroLines": [
+      "Learn the latest iOS App tech:",
+      "Swift, iOS SDK, Xcode, UIKit & SwiftUI,",
+      "Become a Swift App wizard,",
+      "Unlock jobs, freelancing, or your own startup!"
+    ],
+    "cta": "Apply"
+  },
   "placeholders": {
     "comingSoon": "Content coming soon. We're setting up the Swift Advanced site; detailed sections will follow."
   },

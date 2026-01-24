@@ -1,5 +1,37 @@
-import { SectionPage } from '../_components/SectionPage'
+'use client'
+
+import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
+import styles from '../page.module.css'
 
 export default function SwiftIntroPage() {
-  return <SectionPage sectionKey="intro" />
+  const { t } = useTranslation('swift')
+  const heroLines = t('introPage.heroLines', { returnObjects: true }) as string[]
+
+  return (
+    <main className={styles.page}>
+      <section
+        className={styles.introHero}
+        style={{ backgroundImage: 'url(/swift/advanced/intro-bg.jpg)' }}
+      >
+        <div className={styles.heroOverlay} />
+        <div className="container">
+          <div className={styles.heroContent}>
+            <p className={styles.kicker}>{t('hero.kicker')}</p>
+            <h1 className={styles.title}>{t('introPage.heroTitle')}</h1>
+            <ul className={styles.heroList}>
+              {heroLines.map((line, idx) => (
+                <li key={idx}>{line}</li>
+              ))}
+            </ul>
+            <div className={styles.heroActions}>
+              <Link href="/courses/swift/advanced/signup" className={styles.primary}>
+                {t('introPage.cta')}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
 }

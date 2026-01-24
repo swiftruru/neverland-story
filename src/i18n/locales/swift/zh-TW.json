@@ -23,6 +23,16 @@
   "cta": {
     "start": "開始瀏覽"
   },
+  "introPage": {
+    "heroTitle": "彼得潘的 Swift iOS App 程式設計入門",
+    "heroLines": [
+      "學習 iOS App 開發的最新技術，",
+      "Swift，iOS SDK，Xcode，UIKit & SwiftUI，",
+      "成為酷炫的 iOS App 開發魔法師 ，",
+      "實現未來 App 工作、接案、創業的第二人生!"
+    ],
+    "cta": "報名"
+  },
   "placeholders": {
     "comingSoon": "內容即將上線，Swift 進階站正在建置中，請稍候。"
   },
