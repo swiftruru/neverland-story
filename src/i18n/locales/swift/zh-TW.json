@@ -31,7 +31,18 @@
       "成為酷炫的 iOS App 開發魔法師 ，",
       "實現未來 App 工作、接案、創業的第二人生!"
     ],
-    "cta": "報名"
+    "cta": "報名",
+    "learnTitle": "你將會學到",
+    "learnItems": [
+      "獨力開發 iOS App，上架 App Store。",
+      "學習最新版的 Swift，iOS SDK，Xcode。",
+      "學習 Apple 最新技術。",
+      "開發十個以上生動有趣的 App，運用各種常見技術，比方串接網路 RESTful API，資料儲存，動畫。",
+      "開發自己感興趣的 App。",
+      "熟悉開發工具 Xcode。",
+      "利用 Storyboard、xib、UIKit、SwiftUI 程式製作精美的 App 畫面。",
+      "打造滿足各種 iPhone 和 iPad 螢幕的 App 畫面。"
+    ]
   },
   "placeholders": {
     "comingSoon": "內容即將上線，Swift 進階站正在建置中，請稍候。"

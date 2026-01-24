@@ -31,7 +31,18 @@
       "Become a Swift App wizard,",
       "Unlock jobs, freelancing, or your own startup!"
     ],
-    "cta": "Apply"
+    "cta": "Apply",
+    "learnTitle": "What you'll learn",
+    "learnItems": [
+      "Build iOS apps on your own and ship to the App Store.",
+      "Learn the latest Swift, iOS SDK, and Xcode.",
+      "Adopt Apple's newest technologies.",
+      "Build 10+ engaging apps using RESTful APIs, data storage, animations, and other common techniques.",
+      "Create apps that match your own interests.",
+      "Get fluent with the Xcode toolchain.",
+      "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
+      "Lay out apps that fit every iPhone and iPad screen."
+    ]
   },
   "placeholders": {
     "comingSoon": "Content coming soon. We're setting up the Swift Advanced site; detailed sections will follow."
