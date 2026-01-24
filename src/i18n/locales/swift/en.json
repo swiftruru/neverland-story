@@ -15,6 +15,43 @@
     "testimonials": "Testimonials",
     "contact": "Contact"
   },
+  "infoPage": {
+    "heading": "Course Info",
+    "desc": "Schedule, location, online/recording details, and class size.",
+    "cards": [
+      {
+        "id": "time",
+        "title": "Schedule",
+        "lines": [
+          "2026/3/12 ~ 2026/5/4",
+          "Mon & Thu, 19:00 ~ 22:00",
+          "45 hours (class + live) plus 12 hours extra live sessions",
+          "57 hours total, includes iOS/Flutter intro live streams; 4/6 holiday"
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Location",
+        "lines": [
+          "7F., No. 131, Songjiang Rd., Zhongshan Dist., Taipei",
+          "MRT: Songjiang Nanjing Station, Exit 7"
+        ]
+      },
+      {
+        "id": "live",
+        "title": "Live & Recording",
+        "lines": [
+          "Live streaming and recordings provided",
+          "Join in-class or from home and review anytime"
+        ]
+      },
+      {
+        "id": "size",
+        "title": "Class size",
+        "lines": ["Up to 30 students"]
+      }
+    ]
+  },
   "hero": {
     "kicker": "Swift Advanced · Peter Pan",
     "title": "Peter Pan's Swift iOS App Bootcamp",
