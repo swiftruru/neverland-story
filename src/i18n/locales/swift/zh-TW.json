@@ -149,6 +149,37 @@
       }
     ]
   },
+  "qaPage": {
+    "heading": "iOS App 開發的十個 Q & A",
+    "description": "常見的 iOS App 開發與學習疑問，彼得潘一次解答。",
+    "cta": "閱讀 Q &A",
+    "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993",
+    "afterLearn": {
+      "title": "學成後",
+      "items": [
+        {
+          "title": "持續地精進學習",
+          "body": "10 週的學習只是起點，養成自學能力才是關鍵。每年新的 iOS SDK 都讓我們甜蜜忙碌，有興趣就持續練功；有問題也歡迎隨時 FB 找彼得潘討論。"
+        },
+        {
+          "title": "工作",
+          "body": "台灣有大量 iOS App 職缺，彼得潘認識許多 App 團隊與老闆，未來可以協助推薦。"
+        },
+        {
+          "title": "接案",
+          "body": "透過接案磨練，累積作品集與收入，也能持續提升開發實力。"
+        },
+        {
+          "title": "創業",
+          "body": "上架自己的 App，累積下載與廣告收入；幾個作品就能成為亮眼的履歷與起點。"
+        },
+        {
+          "title": "八折優待的 App 進階課程",
+          "body": "彼得潘開設的進階課程皆可享八折（不含與第三方合作的課程）。學習沒有終點，Apple 每年都有新技術值得精進。"
+        }
+      ]
+    }
+  },
   "hero": {
     "kicker": "Swift 進階 · 彼得潘",
     "title": "彼得潘的 Swift iOS App 程式設計入門",

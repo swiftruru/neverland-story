@@ -149,6 +149,37 @@
       }
     ]
   },
+  "qaPage": {
+    "heading": "Top 10 iOS App Development Q&A",
+    "description": "Peter Pan answers the most common questions about learning and building iOS apps.",
+    "cta": "Read Q&A",
+    "url": "https://medium.com/@apppeterpan/關於ios-app開發的十個q-a-65833f6eb993",
+    "afterLearn": {
+      "title": "After you finish",
+      "items": [
+        {
+          "title": "Keep leveling up",
+          "body": "Ten weeks is just the start—self-learning is key. Each year’s iOS SDK keeps us happily busy. Keep practicing, and ping Peter on FB anytime if you’re stuck."
+        },
+        {
+          "title": "Jobs",
+          "body": "Plenty of iOS roles in Taiwan; Peter knows many founders and can recommend you."
+        },
+        {
+          "title": "Freelance",
+          "body": "Take on projects to sharpen your skills, grow your portfolio, and earn along the way."
+        },
+        {
+          "title": "Start a business",
+          "body": "Publish your own apps, build downloads and ad revenue; a few launches make a standout resume."
+        },
+        {
+          "title": "20% off advanced courses",
+          "body": "Enjoy 20% off Peter’s advanced courses (excludes third-party collaborations). Learning never stops, and Apple ships new tech every year."
+        }
+      ]
+    }
+  },
   "hero": {
     "kicker": "Swift Advanced · Peter Pan",
     "title": "Peter Pan's Swift iOS App Bootcamp",
