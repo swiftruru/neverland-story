@@ -180,6 +180,62 @@
       ]
     }
   },
+  "audiencePage": {
+    "heading": "招生對象",
+    "description": "適合有程式底子、想進階 iOS 開發的你。",
+    "targets": [
+      "學過其它程式語言或略懂 App 開發，想學習完整的 iOS App 開發技術。",
+      "想利用下班時間發展第二專長，實現未來 iOS App 工作，接案，創業的第二人生。",
+      "想製作學校 iOS App 專題作業的大學生。",
+      "想申請大學，在學習歷程裡包含 App 作品的高中生。"
+    ],
+    "psPrefix": "ps: 完全沒程式背景的同學可參考另一門適合初學者的課程",
+    "psLinkLabel": "文組生的 iOS SwiftUI App 程式設計入門",
+    "psLinkUrl": "/courses/swiftui/foundation/intro/",
+    "psSuffix": "。",
+    "promisesTitle": "iOS App 教學的六個承諾",
+    "promisesLinkLabel": "閱讀完整六大承諾",
+    "promisesLink": "https://medium.com/@apppeterpan/彼得潘ios-app開發教學的五個承諾-5bc29a7c08a5",
+    "promises": [
+      {
+        "title": "一輩子的朋友",
+        "descPrefix": "歡迎你們隨時透過彼得潘的",
+        "descSuffix": "、LINE、手機聯絡彼得潘，討論 App 開發的相關問題。",
+        "links": [
+          { "label": "粉絲團", "url": "https://www.facebook.com/iphone.peterpan/" },
+          { "label": "FB", "url": "https://www.facebook.com/deeplove.pan" },
+          { "label": "Email", "url": "mailto:apppeterpan@gmail.com" }
+        ]
+      },
+      {
+        "title": "免費獲得未來每一屆課程的最新教材",
+        "desc": "Swift、Xcode 版本更新也不用擔心，長期課程學生可免費取得新版教材。"
+      },
+      {
+        "title": "免費重聽課程",
+        "desc": "想再複習或再見彼得潘，教室有空位就歡迎回來，一生會有很多次相遇。"
+      },
+      {
+        "title": "作業全交的一對一家教獎勵",
+        "desc": "每次作業都有交，課後即可獲得 3 小時一對一家教指導（價值 3000 元）。"
+      },
+      {
+        "title": "提供在學學生超值優惠價",
+        "descPrefix": "學生有經濟壓力？提供優惠與分期。（",
+        "descSuffix": "）",
+        "links": [
+          {
+            "label": "含畢業或退伍未滿一年的學生",
+            "url": "https://medium.com/@apppeterpan/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a"
+          }
+        ]
+      },
+      {
+        "title": "提供特別優惠給持低收入證明，生活困難或失業的朋友",
+        "desc": "需要幫助的朋友可申請特別優惠價，一起完成學習目標。"
+      }
+    ]
+  },
   "hero": {
     "kicker": "Swift 進階 · 彼得潘",
     "title": "彼得潘的 Swift iOS App 程式設計入門",
