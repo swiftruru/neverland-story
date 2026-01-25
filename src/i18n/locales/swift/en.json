@@ -261,16 +261,56 @@
     ],
     "cta": "Apply",
     "learnTitle": "What you'll learn",
-    "learnItems": [
-      "Build iOS apps on your own and ship to the App Store.",
-      "Learn the latest Swift, iOS SDK, and Xcode.",
-      "Adopt Apple's newest technologies.",
-      "Build 10+ engaging apps using RESTful APIs, data storage, animations, and other common techniques.",
-      "Create apps that match your own interests.",
-      "Get fluent with the Xcode toolchain.",
-      "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
-      "Lay out apps that fit every iPhone and iPad screen."
-    ],
+  "learnItems": [
+    "Build iOS apps on your own and ship to the App Store.",
+    "Learn the latest Swift, iOS SDK, and Xcode.",
+    "Adopt Apple's newest technologies.",
+    "Build 10+ engaging apps using RESTful APIs, data storage, animations, and other common techniques.",
+    "Create apps that match your own interests.",
+    "Get fluent with the Xcode toolchain.",
+    "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
+    "Lay out apps that fit every iPhone and iPad screen."
+  ],
+  "outlinePage": {
+    "items": [
+      {
+        "id": "xcode26",
+        "title": "Getting close to Xcode 26",
+        "description": "Learn the all-in-one app development tool, Xcode.",
+        "image": "/swift/advanced/outline/outline-xcode-26.png"
+      },
+      {
+        "id": "swift6",
+        "title": "Modern app language Swift 6",
+        "description": "Learn Swift fundamentals and advanced topics: optionals, type casting, computed properties, closures, protocols, extensions, and generics.",
+        "image": "/swift/advanced/outline/outline-swift6.png"
+      },
+      {
+        "id": "storyboard",
+        "title": "Storyboard, the UI wizard",
+        "description": "Build stunning app screens with Storyboard—no code required.",
+        "image": "/swift/advanced/outline/outline-storyboard.png"
+      },
+      {
+        "id": "playground",
+        "title": "Playground practice ground",
+        "description": "A sandbox to practice Swift and experiment quickly.",
+        "image": "/swift/advanced/outline/outline-playground.png"
+      },
+      {
+        "id": "ebook",
+        "title": "E-book App",
+        "description": "Create e-book style apps like The Little Prince or Tang Poems.",
+        "image": "/swift/advanced/outline/outline-ebook.png"
+      },
+      {
+        "id": "autolayout",
+        "title": "Auto Layout, Stack View, xib, SwiftUI, and code-driven UIs",
+        "description": "Craft interfaces that fit every iPhone and iPad size with Auto Layout, Stack Views, xibs, SwiftUI, and programmatic views.",
+        "image": "/swift/advanced/outline/outline-autolayout.png"
+      }
+    ]
+  },
     "instructorPage": {
       "heading": "Peter Pan, iOS-obsessed",
       "subheading": "More about Peter",

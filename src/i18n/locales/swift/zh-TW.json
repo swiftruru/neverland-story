@@ -261,16 +261,56 @@
     ],
     "cta": "報名",
     "learnTitle": "你將會學到",
-    "learnItems": [
-      "獨力開發 iOS App，上架 App Store。",
-      "學習最新版的 Swift，iOS SDK，Xcode。",
-      "學習 Apple 最新技術。",
-      "開發十個以上生動有趣的 App，運用各種常見技術，比方串接網路 RESTful API，資料儲存，動畫。",
-      "開發自己感興趣的 App。",
-      "熟悉開發工具 Xcode。",
-      "利用 Storyboard、xib、UIKit、SwiftUI 程式製作精美的 App 畫面。",
-      "打造滿足各種 iPhone 和 iPad 螢幕的 App 畫面。"
-    ],
+  "learnItems": [
+    "獨力開發 iOS App，上架 App Store。",
+    "學習最新版的 Swift，iOS SDK，Xcode。",
+    "學習 Apple 最新技術。",
+    "開發十個以上生動有趣的 App，運用各種常見技術，比方串接網路 RESTful API，資料儲存，動畫。",
+    "開發自己感興趣的 App。",
+    "熟悉開發工具 Xcode。",
+    "利用 Storyboard、xib、UIKit、SwiftUI 程式製作精美的 App 畫面。",
+    "打造滿足各種 iPhone 和 iPad 螢幕的 App 畫面。"
+  ],
+  "outlinePage": {
+    "items": [
+      {
+        "id": "xcode26",
+        "title": "Xcode 26 的親密接觸",
+        "description": "學習十項全能的 App 開發工具 Xcode。",
+        "image": "/swift/advanced/outline/outline-xcode-26.png"
+      },
+      {
+        "id": "swift6",
+        "title": "新時代的 App 開發語言 Swift 6",
+        "description": "學習 Swift 的基礎語法和進階語法，比方 optional，type casting，computed property，closure，protocol，extension & generic。",
+        "image": "/swift/advanced/outline/outline-swift6.png"
+      },
+      {
+        "id": "storyboard",
+        "title": "打造 App 畫面的魔法師 Storyboard",
+        "description": "利用 Storyboard，無需任何程式碼，製作一頁頁酷炫的 App 畫面。",
+        "image": "/swift/advanced/outline/outline-storyboard.png"
+      },
+      {
+        "id": "playground",
+        "title": "練功遊樂園 Playground",
+        "description": "學習 Swift 程式的練功場。",
+        "image": "/swift/advanced/outline/outline-playground.png"
+      },
+      {
+        "id": "ebook",
+        "title": "電子書 App",
+        "description": "學會製作電子書 App 的技巧，輕鬆打造小王子，唐詩三百首 App。",
+        "image": "/swift/advanced/outline/outline-ebook.png"
+      },
+      {
+        "id": "autolayout",
+        "title": "Auto Layout，Stack View，xib，SwiftUI 和從程式製作畫面",
+        "description": "打造滿足各種 iPhone 和 iPad 尺寸的 App 畫面。",
+        "image": "/swift/advanced/outline/outline-autolayout.png"
+      }
+    ]
+  },
     "instructorPage": {
       "heading": "愛瘋一切為蘋果的彼得潘",
       "subheading": "更多關於彼得潘的故事",

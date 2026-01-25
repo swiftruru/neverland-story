@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import { Trans, useTranslation } from 'react-i18next'
 import styles from '../page.module.css'
