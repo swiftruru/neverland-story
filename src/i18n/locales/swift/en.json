@@ -344,6 +344,42 @@
         "title": "Table view design",
         "description": "Learn table view patterns and UITableViewDiffableDataSource.",
         "image": "/swift/advanced/outline/outline-tableview.png"
+      },
+      {
+        "id": "camera",
+        "title": "Camera and photo library",
+        "description": "Implement camera capture and access photos from the device library.",
+        "image": "/swift/advanced/outline/outline-camera.png"
+      },
+      {
+        "id": "persistence",
+        "title": "Persistent data that lasts",
+        "description": "Explore storage options: UserDefaults, file read/write, Codable for custom types, and Core Data.",
+        "image": "/swift/advanced/outline/outline-persistence.png"
+      },
+      {
+        "id": "networking",
+        "title": "Networking deep dive",
+        "description": "Display web pages, call backend RESTful APIs with JSON parsing, upload data, use GCD, Result, async/await, and handle multithreading.",
+        "image": "/swift/advanced/outline/outline-network.png"
+      },
+      {
+        "id": "collection",
+        "title": "Grid photo wall",
+        "description": "Master collection view techniques and UICollectionViewCompositionalLayout.",
+        "image": "/swift/advanced/outline/outline-collection.png"
+      },
+      {
+        "id": "animation",
+        "title": "Animation basics",
+        "description": "Animate movement, scale, fade, flip, rotation, and more eye-catching effects.",
+        "image": "/swift/advanced/outline/outline-animation.png"
+      },
+      {
+        "id": "map",
+        "title": "Maps and location",
+        "description": "Show maps, get user location, and build share-worthy check-in features.",
+        "image": "/swift/advanced/outline/outline-map.png"
       }
     ]
   },

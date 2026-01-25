@@ -344,6 +344,42 @@
         "title": "表格設計",
         "description": "學習 table view 的相關技巧與 UITableViewDiffableDataSource。",
         "image": "/swift/advanced/outline/outline-tableview.png"
+      },
+      {
+        "id": "camera",
+        "title": "拍照和相簿",
+        "description": "實作拍照功能和存取手機相簿裡的照片。",
+        "image": "/swift/advanced/outline/outline-camera.png"
+      },
+      {
+        "id": "persistence",
+        "title": "天長地久的資料保存",
+        "description": "學習多種儲存資料的方法，比方 UserDefaults，寫檔 & 讀檔，利用 Codable 儲存自訂型別的資料，Core Data ",
+        "image": "/swift/advanced/outline/outline-persistence.png"
+      },
+      {
+        "id": "networking",
+        "title": "網路功能探究",
+        "description": "顯示網頁，串接後台 RESTful API 解析 JSON 資料，上傳資料， multithread 技術 GCD，Result type，async & await",
+        "image": "/swift/advanced/outline/outline-network.png"
+      },
+      {
+        "id": "collection",
+        "title": "格子狀排列的照片牆",
+        "description": "學習 collection view 的相關技術 & UICollectionViewCompositionalLayout",
+        "image": "/swift/advanced/outline/outline-collection.png"
+      },
+      {
+        "id": "animation",
+        "title": "酷炫動畫入門",
+        "description": "位移，放大縮小，淡入淡出，翻轉，旋轉等五花八門的動畫。",
+        "image": "/swift/advanced/outline/outline-animation.png"
+      },
+      {
+        "id": "map",
+        "title": "地圖和定位",
+        "description": "顯示地圖，取得使用者位置，炫耀的吃大餐打卡功能。",
+        "image": "/swift/advanced/outline/outline-map.png"
       }
     ]
   },
