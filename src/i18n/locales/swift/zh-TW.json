@@ -149,6 +149,13 @@
       }
     ]
   },
+  "assignmentsPage": {
+    "heading": "學生們精心創作的作業",
+    "subtitle": "欣賞進階班同學的設計成果，感受多樣的 App 作品靈感。",
+    "ctaLabel": "彼得潘的 Swift iOS App 開發教室",
+    "ctaLink": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4",
+    "imageAlt": "學生作業設計圖"
+  },
   "qaPage": {
     "heading": "iOS App 開發的十個 Q & A",
     "description": "常見的 iOS App 開發與學習疑問，彼得潘一次解答。",

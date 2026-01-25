@@ -149,6 +149,13 @@
       }
     ]
   },
+  "assignmentsPage": {
+    "heading": "Students’ showcase projects",
+    "subtitle": "See the design work from the advanced track.",
+    "ctaLabel": "Peter Pan Swift iOS App Classroom",
+    "ctaLink": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4",
+    "imageAlt": "Student assignment design board"
+  },
   "audiencePage": {
     "heading": "Who it's for",
     "description": "Built for developers with coding background who want to level up iOS skills.",
