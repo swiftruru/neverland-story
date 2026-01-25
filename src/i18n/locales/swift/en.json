@@ -261,21 +261,58 @@
     ],
     "cta": "Apply",
     "learnTitle": "What you'll learn",
-  "learnItems": [
-    "Build iOS apps on your own and ship to the App Store.",
-    "Learn the latest Swift, iOS SDK, and Xcode.",
-    "Adopt Apple's newest technologies.",
-    "Build 10+ engaging apps using RESTful APIs, data storage, animations, and other common techniques.",
-    "Create apps that match your own interests.",
-    "Get fluent with the Xcode toolchain.",
-    "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
-    "Lay out apps that fit every iPhone and iPad screen."
-  ],
-  "outlinePage": {
-    "items": [
-      {
-        "id": "xcode26",
-        "title": "Getting close to Xcode 26",
+    "learnItems": [
+      "Build iOS apps on your own and ship to the App Store.",
+      "Learn the latest Swift, iOS SDK, and Xcode.",
+      "Adopt Apple's newest technologies.",
+      "Build 10+ engaging apps using RESTful APIs, data storage, animations, and other common techniques.",
+      "Create apps that match your own interests.",
+      "Get fluent with the Xcode toolchain.",
+      "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
+      "Lay out apps that fit every iPhone and iPad screen."
+    ],
+    "tuitionPage": {
+      "plans": [
+        {
+          "id": "discount",
+          "title": "Discount",
+          "price": "$ 16,000",
+          "original": "Original $20,000",
+          "image": "/swift/advanced/tuition/tuition-discount.png"
+        },
+        {
+          "id": "group",
+          "title": "Group Rate",
+          "subtitle": "2 or more people",
+          "price": "$ 14,000 / person",
+          "original": "Original $20,000 / person",
+          "image": "/swift/advanced/tuition/tuition-group.png"
+        },
+        {
+          "id": "student",
+          "title": "Student Rate",
+          "subtitle": "Students and graduates within one year",
+          "price": "$ 9,000",
+          "note": "Installment plan: 3,000 x3, every three weeks",
+          "linkLabel": "Student rate details",
+          "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
+          "image": "/swift/advanced/tuition/tuition-student.png"
+        },
+        {
+          "id": "support",
+          "title": "Job-Seeker Support",
+          "subtitle": "3 slots, unemployed 3+ months",
+          "price": "$ 8,000",
+          "note": "Warm pack rate (2 slots, low-income or hardship): 100",
+          "image": "/swift/advanced/tuition/tuition-support.png"
+        }
+      ]
+    },
+    "outlinePage": {
+      "items": [
+        {
+          "id": "xcode26",
+          "title": "Getting close to Xcode 26",
         "description": "Learn the all-in-one app development tool, Xcode.",
         "image": "/swift/advanced/outline/outline-xcode-26.png"
       },

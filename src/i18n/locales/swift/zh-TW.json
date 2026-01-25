@@ -271,6 +271,43 @@
     "利用 Storyboard、xib、UIKit、SwiftUI 程式製作精美的 App 畫面。",
     "打造滿足各種 iPhone 和 iPad 螢幕的 App 畫面。"
   ],
+  "tuitionPage": {
+    "plans": [
+      {
+        "id": "discount",
+        "title": "優惠價",
+        "price": "$ 16,000",
+        "original": "原價 $ 20,000",
+        "image": "/swift/advanced/tuition/tuition-discount.png"
+      },
+      {
+        "id": "group",
+        "title": "團報價",
+        "subtitle": "2 人以上，包含 2 人",
+        "price": "$ 14,000 / 人",
+        "original": "原價 $ 20,000 / 人",
+        "image": "/swift/advanced/tuition/tuition-group.png"
+      },
+        {
+          "id": "student",
+          "title": "學生價",
+          "subtitle": "含在學生和畢業或退伍未滿一年的學生",
+          "price": "$ 9,000",
+          "note": "另有學生分期方案: 一期 3,000 元，分三期，每三個星期付款",
+          "linkLabel": "學生價說明",
+          "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
+          "image": "/swift/advanced/tuition/tuition-student.png"
+        },
+      {
+        "id": "support",
+        "title": "失業加油價",
+        "subtitle": "3 個名額，連續失業三個月以上",
+        "price": "$ 8,000",
+        "note": "另有暖暖包價 (2 個名額，持低收入證明或生活困難的朋友): 100 元",
+        "image": "/swift/advanced/tuition/tuition-support.png"
+      }
+    ]
+  },
   "outlinePage": {
     "items": [
       {
