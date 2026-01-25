@@ -380,6 +380,36 @@
         "title": "地圖和定位",
         "description": "顯示地圖，取得使用者位置，炫耀的吃大餐打卡功能。",
         "image": "/swift/advanced/outline/outline-map.png"
+      },
+      {
+        "id": "spm-pods",
+        "title": "搭配 SPM & CocoaPods 管理套件",
+        "description": "學習 Swift Package Manager (SPM) & CocoaPods",
+        "image": "/swift/advanced/outline/outline-spm.png"
+      },
+      {
+        "id": "swiftui-tech",
+        "title": "Apple 最新技術 SwiftUI",
+        "description": "學習 Apple 最新技術，比方 SwiftUI & Widget",
+        "image": "/swift/advanced/outline/outline-swiftui.png"
+      },
+      {
+        "id": "app-store",
+        "title": "App 測試和上架",
+        "description": "上架 App Store。",
+        "image": "/swift/advanced/outline/outline-appstore.png"
+      },
+      {
+        "id": "firebase",
+        "title": "Firebase App 開發 (補充)",
+        "description": "搭配 Firebase 製作存取雲端資料庫的 App",
+        "image": "/swift/advanced/outline/outline-firebase.png"
+      },
+      {
+        "id": "flutter",
+        "title": "Flutter 入門",
+        "description": "介紹用 Dart 開發基礎的 Flutter App",
+        "image": "/swift/advanced/outline/outline-flutter.png"
       }
     ]
   },

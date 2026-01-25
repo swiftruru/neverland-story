@@ -380,6 +380,36 @@
         "title": "Maps and location",
         "description": "Show maps, get user location, and build share-worthy check-in features.",
         "image": "/swift/advanced/outline/outline-map.png"
+      },
+      {
+        "id": "spm-pods",
+        "title": "Package management with SPM & CocoaPods",
+        "description": "Learn Swift Package Manager (SPM) & CocoaPods.",
+        "image": "/swift/advanced/outline/outline-spm.png"
+      },
+      {
+        "id": "swiftui-tech",
+        "title": "Apple’s latest tech: SwiftUI",
+        "description": "Learn Apple’s latest capabilities such as SwiftUI & Widgets.",
+        "image": "/swift/advanced/outline/outline-swiftui.png"
+      },
+      {
+        "id": "app-store",
+        "title": "Testing and publishing your app",
+        "description": "Ship to the App Store.",
+        "image": "/swift/advanced/outline/outline-appstore.png"
+      },
+      {
+        "id": "firebase",
+        "title": "Firebase app development (bonus)",
+        "description": "Use Firebase to build apps that access cloud databases.",
+        "image": "/swift/advanced/outline/outline-firebase.png"
+      },
+      {
+        "id": "flutter",
+        "title": "Flutter basics",
+        "description": "Introduce building foundational Flutter apps with Dart.",
+        "image": "/swift/advanced/outline/outline-flutter.png"
       }
     ]
   },
