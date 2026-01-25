@@ -263,7 +263,36 @@
       "Get fluent with the Xcode toolchain.",
       "Design polished UIs with Storyboard, xib, UIKit, and SwiftUI.",
       "Lay out apps that fit every iPhone and iPad screen."
-    ]
+    ],
+    "instructorPage": {
+      "heading": "Peter Pan, iOS-obsessed",
+      "subheading": "More about Peter",
+      "bioLink": "/neverland",
+      "heroTitle": "Start with SwiftUI, learn faster and more enjoyably",
+      "heroSubtitle": "Instructor, author, consultant. From zero code to the App Store—Peter walks with you step by step.",
+      "avatarAlt": "Peter Pan instructor photo",
+      "links": [
+        { "label": "Peter’s App Neverland", "url": "https://medium.com/@apppeterpan" },
+        { "label": "Fan page", "url": "https://www.facebook.com/iphone.peterpan/" },
+        { "label": "Your personal iOS mentor", "url": "http://yourappmentor.strikingly.com/" },
+        { "label": "Peter’s Swift book", "url": "http://swiftbook.strikingly.com/" },
+        { "label": "AppCoda column", "url": "http://www.appcoda.com.tw/" },
+        { "label": "iOS App Ferryman", "url": "http://iosappferryman.strikingly.com/" }
+      ],
+      "details": [
+        "Author of bestsellers “[Peter Pan’s Swift Programming 101](http://swiftbook.strikingly.com/)” and “[App Programming 101 – iPhone, iPad](https://www.eslite.com/product/1001113631994712)” (Top 1 computer book on multiple stores)",
+        "FB fan page: [Peter Pan](https://www.facebook.com/iphone.peterpan/)",
+        "Apps: Wealthy, LOCOMO, Penny’s Homecoming, 20+ more (Wealthy hit TW Finance #1, Overall #2, CN Finance #2)",
+        "Instructor for Swift iOS / Flutter / Python: NTU IS Training, [ALPHA Camp](https://www.alphacamp.co/), [ICH](http://www.ichih.com/), [III](http://www.iii.org.tw/), Workforce programs, [TibaMe](https://www.tibame.com/), Studio A, iPlayground, MOPCON, DreamSeed, CHT Academy, New Taipei Youth",
+        "University instructor: NTOU, NTUT, NTU GE, NTUE iOS club, NCCU, NCU, NTU, TKU iOS club, FCU, CPU, UST, NKUHT, NTCU, NTCU, CTUST, China Tech, NKHS, KAS, and more",
+        "Tutor: [Your iOS app mentor](http://yourappmentor.strikingly.com/)",
+        "Corporate training: Yahoo, UMC, VIS, CoreTech, Shin Kong Life, Sinyi Realty, Gos Design",
+        "WWDC Swift Student Challenge coach",
+        "Blog: [Peter Pan’s App Neverland](https://medium.com/@apppeterpan)",
+        "Consultant: [iOS App Ferryman](http://iosappferryman.strikingly.com/), FUNTEK, DotDot, Enno, Brocas",
+        "Columns: [AppCoda](http://www.appcoda.com.tw/), MacToday App dev, PChome Mac Basics"
+      ]
+    }
   },
   "placeholders": {
     "comingSoon": "Content coming soon. We're setting up the Swift Advanced site; detailed sections will follow."
