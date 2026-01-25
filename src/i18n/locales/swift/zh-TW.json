@@ -307,6 +307,13 @@
         "image": "/swift/advanced/tuition/tuition-support.png"
       }
     ]
+  ,
+    "noticeTitle": "注意事項",
+    "noticeItems": [
+      "自備 Mac 電腦，作業系統 macOS 15.6 以上。不一定要有 iPhone，開發工具 Xcode 提供方便我們測試 App 的模擬器。需要購買 Mac 的同學也歡迎跟彼得潘聯絡，<link1>本課程跟 Studio A 合作，享有購機特別優惠</link1>，另外也有提供租借 Mac 的方案。",
+      "安裝 Xcode 26。"
+    ],
+    "noticePs": "ps: 無法升級 Mac 到 macOS 15.6 的同學可安裝舊版的 Xcode。"
   },
   "outlinePage": {
     "items": [

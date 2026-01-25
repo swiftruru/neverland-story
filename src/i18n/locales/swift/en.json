@@ -307,6 +307,13 @@
           "image": "/swift/advanced/tuition/tuition-support.png"
         }
       ]
+    ,
+      "noticeTitle": "Notes",
+      "noticeItems": [
+        "Bring a Mac running macOS 15.6 or later. You don’t need an iPhone—Xcode provides simulators. If you need to buy a Mac, feel free to contact Peter; <link1>this course partners with Studio A for special pricing</link1>, and Mac rental options are available.",
+        "Install Xcode 26."
+      ],
+      "noticePs": "If your Mac can’t upgrade to macOS 15.6, install an older Xcode instead."
     },
     "outlinePage": {
       "items": [
