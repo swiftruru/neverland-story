@@ -1,7 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from '../page.module.css'
+
+type LightboxState = {
+  src: string
+  alt: string
+} | null
 
 export default function SwiftuiOutlinePage() {
   const { t } = useTranslation('swiftui')
@@ -11,6 +17,11 @@ export default function SwiftuiOutlinePage() {
     description: string
     image: string
   }[]
+
+  const [lightbox, setLightbox] = useState<LightboxState>(null)
+
+  const handleOpen = (src: string, alt: string) => setLightbox({ src, alt })
+  const handleClose = () => setLightbox(null)
 
   return (
     <main className={styles.page}>
@@ -27,7 +38,19 @@ export default function SwiftuiOutlinePage() {
             {items.map((item, index) => (
               <article key={item.id} className={styles.outlineCard} style={{ '--outline-index': index } as React.CSSProperties}>
                 <span className={styles.outlineTape} />
-                <div className={styles.outlineImage}>
+                <div
+                  className={styles.outlineImage}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={item.title}
+                  onClick={() => handleOpen(item.image, item.title)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      handleOpen(item.image, item.title)
+                    }
+                  }}
+                >
                   <img src={item.image} alt={item.title} />
                 </div>
                 <div className={styles.outlineBody}>
@@ -39,6 +62,15 @@ export default function SwiftuiOutlinePage() {
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div className={`${styles.lightbox} ${styles.moreLightbox}`} onClick={handleClose}>
+          <div className={styles.lightboxContent}>
+            <img className={styles.lightboxImg} src={lightbox.src} alt={lightbox.alt} />
+            <p className={styles.lightboxCaption}>{lightbox.alt}</p>
+          </div>
+        </div>
+      )}
     </main>
   )
 }

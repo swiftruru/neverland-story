@@ -1,11 +1,12 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from '../page.module.css'
 
 export default function SwiftOutlinePage() {
   const { t } = useTranslation('swift')
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
   const items = t('introPage.outlinePage.items', { returnObjects: true }) as {
     id: string
     title: string
@@ -28,7 +29,19 @@ export default function SwiftOutlinePage() {
             {items.map((item, index) => (
               <article key={item.id} className={styles.outlineCard} style={{ '--outline-index': index } as React.CSSProperties}>
                 <span className={styles.outlineTape} />
-                <div className={styles.outlineImage}>
+                <div
+                  className={styles.outlineImage}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={item.title}
+                  onClick={() => setLightbox({ src: item.image, alt: item.title })}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      setLightbox({ src: item.image, alt: item.title })
+                    }
+                  }}
+                >
                   <img src={item.image} alt={item.title} />
                 </div>
                 <div className={styles.outlineBody}>
@@ -40,6 +53,14 @@ export default function SwiftOutlinePage() {
           </div>
         </div>
       </section>
+      {lightbox && (
+        <div className={`${styles.lightbox} ${styles.moreLightbox}`} onClick={() => setLightbox(null)}>
+          <div className={styles.lightboxContent}>
+            <img className={styles.lightboxImg} src={lightbox.src} alt={lightbox.alt} />
+            <p className={styles.lightboxCaption}>{lightbox.alt}</p>
+          </div>
+        </div>
+      )}
     </main>
   )
 }
