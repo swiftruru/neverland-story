@@ -308,6 +308,42 @@
         "title": "Auto Layout，Stack View，xib，SwiftUI 和從程式製作畫面",
         "description": "打造滿足各種 iPhone 和 iPad 尺寸的 App 畫面。",
         "image": "/swift/advanced/outline/outline-autolayout.png"
+      },
+      {
+        "id": "mvc-mvvm",
+        "title": "App 的 MVC & MVVM 架構",
+        "description": "認識 App 組成的三大元素 Model, View 和 Controller (MVC)，串接程式和 Storyboard 的 IBAction 和 IBOutlet，利用 Controller 控制 Storyboard 裡的元件，另外也會介紹 MVVM (model view viewmodel)",
+        "image": "/swift/advanced/outline/outline-mvc.png"
+      },
+      {
+        "id": "multipage",
+        "title": "多頁面 App 程式設計和頁面間的資料傳遞",
+        "description": "搭配 navigation controller 和 tab bar controller 實作多頁面 App，實現 App 常見的新增，讀取，修改，刪除 (CRUD) 功能，學習多種頁面切換和頁面間傳資料的方法 (比方 prepare，delegate，notification，closure，IBSegueAction)。",
+        "image": "/swift/advanced/outline/outline-multipage.png"
+      },
+      {
+        "id": "protocol-delegate",
+        "title": "protocol，delegate & data source",
+        "description": "掌握並應用最重要的 protocol、delegate 與 data source 概念，熟練多種 iOS SDK 內建的 delegate & data source。",
+        "image": "/swift/advanced/outline/outline-protocol.png"
+      },
+      {
+        "id": "arc",
+        "title": "ARC 記憶體管理",
+        "description": "控制物件生命週期與記憶體用量，運用 weak、unowned 和 capture list 解決 Strong Reference Cycle。",
+        "image": "/swift/advanced/outline/outline-arc.png"
+      },
+      {
+        "id": "lifecycle",
+        "title": "App 的生命週期和多工",
+        "description": "理解 App 的誕生、前景背景切換與結束的多工概念。",
+        "image": "/swift/advanced/outline/outline-lifecycle.png"
+      },
+      {
+        "id": "tableview",
+        "title": "表格設計",
+        "description": "學習 table view 的相關技巧與 UITableViewDiffableDataSource。",
+        "image": "/swift/advanced/outline/outline-tableview.png"
       }
     ]
   },

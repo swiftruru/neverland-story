@@ -308,6 +308,42 @@
         "title": "Auto Layout, Stack View, xib, SwiftUI, and code-driven UIs",
         "description": "Craft interfaces that fit every iPhone and iPad size with Auto Layout, Stack Views, xibs, SwiftUI, and programmatic views.",
         "image": "/swift/advanced/outline/outline-autolayout.png"
+      },
+      {
+        "id": "mvc-mvvm",
+        "title": "App architecture with MVC & MVVM",
+        "description": "Understand the three pillars Model, View, and Controller (MVC), wire code to Storyboard with IBAction and IBOutlet, control Storyboard elements via controllers, and explore MVVM (model view viewmodel).",
+        "image": "/swift/advanced/outline/outline-mvc.png"
+      },
+      {
+        "id": "multipage",
+        "title": "Multi-screen apps and data passing",
+        "description": "Build multi-screen apps with navigation controllers and tab bars, implement common CRUD flows, and learn multiple navigation and data-passing methods (prepare, delegate, notification, closure, IBSegueAction).",
+        "image": "/swift/advanced/outline/outline-multipage.png"
+      },
+      {
+        "id": "protocol-delegate",
+        "title": "Protocols, delegates, and data sources",
+        "description": "Master the most important iOS patterns: protocol, delegate, and data source—across multiple SDK components.",
+        "image": "/swift/advanced/outline/outline-protocol.png"
+      },
+      {
+        "id": "arc",
+        "title": "ARC memory management",
+        "description": "Manage object lifecycles and memory. Solve strong reference cycles with weak, unowned, and capture lists.",
+        "image": "/swift/advanced/outline/outline-arc.png"
+      },
+      {
+        "id": "lifecycle",
+        "title": "App lifecycle and multitasking",
+        "description": "Grasp how an app is born, moves between foreground and background, and terminates.",
+        "image": "/swift/advanced/outline/outline-lifecycle.png"
+      },
+      {
+        "id": "tableview",
+        "title": "Table view design",
+        "description": "Learn table view patterns and UITableViewDiffableDataSource.",
+        "image": "/swift/advanced/outline/outline-tableview.png"
       }
     ]
   },
