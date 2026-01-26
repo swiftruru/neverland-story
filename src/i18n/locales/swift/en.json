@@ -550,6 +550,34 @@
           "description": "A gentle introduction to Swift—perfect for those seeking a solid programming foundation.",
           "href": "http://learnswift.strikingly.com/",
           "image": "/swift/advanced/more/swift-basics.png"
+        },
+        {
+          "id": "auto-layout",
+          "title": "Mastering Auto Layout & Adaptive Layout",
+          "href": "http://autolayout.strikingly.com/",
+          "description": "Peter Pan shares all the secrets of Auto Layout and Adaptive Layout through lectures and hands-on practice. Building app interfaces that fit every screen size has never been easier!",
+          "image": "/swift/advanced/more/auto-layout.png"
+        },
+        {
+          "id": "first-ios-app",
+          "title": "Your First Handmade iOS App ($990)",
+          "href": "http://firstiosapp.strikingly.com/",
+          "description": "Everyone has the talent to create apps—it's time to unlock it! This hands-on iOS app course teaches you to build apps you actually want to use (like one for your beloved pet or to record sweet memories), installed on your own iPhone to enjoy anytime.",
+          "image": "/swift/advanced/more/first-ios-app.png"
+        },
+        {
+          "id": "college-ios",
+          "title": "iOS App Magic Course for College Students",
+          "href": "http://collegelearnios.strikingly.com/",
+          "description": "Tailored for college students—whether you're a tech enthusiast or an arts major, in just 12 weeks with one evening per week, you'll master core programming concepts and become a cool iOS app wizard!",
+          "image": "/swift/advanced/more/college-ios.png"
+        },
+        {
+          "id": "first-swift-code",
+          "title": "First Touch with Programming ($990)",
+          "href": "http://firstswiftcode.strikingly.com/",
+          "description": "With 10,000 hours of practice, I could build an app better than LINE. Is 10,000 hours possible? Yes! Start with just 7 hours on a weekend for your first touch with programming. This course introduces basic programming concepts using the intuitive Swift language—fall in love with coding from day one!",
+          "image": "/swift/advanced/more/first-swift-code.png"
         }
       ],
       "thanks": {

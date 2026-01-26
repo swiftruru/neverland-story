@@ -550,6 +550,34 @@
           "href": "http://learnswift.strikingly.com/",
           "description": "本課程將以彼得潘生動有趣的著作「彼得潘的 Swift 程式設計入門」為主，輔以全面進化的 Swift 4，帶領學員 12 小時熟悉 Swift 的各項語法和功能！",
           "image": "/swift/advanced/more/swift-basics.png"
+        },
+        {
+          "id": "auto-layout",
+          "title": "深入淺出 Auto Layout 和 Adaptive Layout",
+          "href": "http://autolayout.strikingly.com/",
+          "description": "彼得潘將經由課程講解和課堂操作練習，傳授關於 Auto Layout 和 Adaptive Layout 的一切機密。透過它們，打造滿足各種尺寸的 App 畫面再也不是難事！",
+          "image": "/swift/advanced/more/auto-layout.png"
+        },
+        {
+          "id": "first-ios-app",
+          "title": "第一次手做 iOS App (手做 App 價 $990)",
+          "href": "http://firstiosapp.strikingly.com/",
+          "description": "每個人都有著創作 App 的天份，是時候將它開啟了！專屬於你們的手做 iOS App 課程，教你親手打造自己喜歡想用的 App (比方心愛寵物的 App，記錄甜蜜戀情的 App)，安裝在自己或家人朋友的 iPhone 上，隨時打開享用。",
+          "image": "/swift/advanced/more/first-ios-app.png"
+        },
+        {
+          "id": "college-ios",
+          "title": "大學生的 iOS App 開發入門魔法課",
+          "href": "http://collegelearnios.strikingly.com/",
+          "description": "專為大學生量身訂做，不管你是陽光宅男還是文藝少女，只要 12 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！",
+          "image": "/swift/advanced/more/college-ios.png"
+        },
+        {
+          "id": "first-swift-code",
+          "title": "第一次程式親密接觸 (程式推廣價 $990)",
+          "href": "http://firstswiftcode.strikingly.com/",
+          "description": "如果有一萬個小時的程式練習，我就能開發比 LINE 還棒的 App。一萬個小時的練習有可能嗎？可以！就從周末的 7 個小時，開始第一次程式親密接觸。本課程將以淺顯易懂的 Swift 語言介紹程式設計的基本概念，讓你第一次就愛上程式設計！",
+          "image": "/swift/advanced/more/first-swift-code.png"
         }
       ],
       "thanks": {
