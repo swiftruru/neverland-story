@@ -16,6 +16,37 @@
     "more": "更多",
     "contact": "聯絡"
   },
+  "pages": {
+    "contact": {
+      "mainTitle": "聯絡彼得潘",
+      "subtitle": "任何關於 iOS App 開發的相關問題，歡迎隨時聯絡彼得潘。",
+      "note": "詳情可參考",
+      "qaColumn": "彼得潘的 iOS Swift App 問題解答專欄",
+      "facebook": "私人 FB",
+      "fanpage": "粉絲團：愛瘋一切為蘋果的彼得潘",
+      "linePersonal": "LINE 私人帳號",
+      "lineOfficial": "LINE 官方帳號",
+      "email": "Email",
+      "visit": "前往",
+      "copy": "複製",
+      "sendEmail": "寄信",
+      "copied": "已複製",
+      "form": {
+        "title": "寫信給彼得潘",
+        "subtitle": "有任何合作、課程或 App 開發需求，歡迎留言，會盡快回覆。",
+        "name": "姓名",
+        "namePlaceholder": "你的名字",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "想說的話",
+        "messagePlaceholder": "請描述你的需求或想法",
+        "submit": "送出表單",
+        "sending": "寄出中...",
+        "success": "已送出，謝謝你的訊息！",
+        "error": "送出失敗，請再試一次。"
+      }
+    }
+  },
   "infoPage": {
     "heading": "課程資訊",
     "desc": "時間、地點、線上與錄影資訊，還有人數規劃。",

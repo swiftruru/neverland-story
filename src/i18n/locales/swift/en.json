@@ -16,6 +16,37 @@
     "more": "More",
     "contact": "Contact"
   },
+  "pages": {
+    "contact": {
+      "mainTitle": "Contact Peter Pan",
+      "subtitle": "For any questions about iOS App development, feel free to reach out anytime.",
+      "note": "See",
+      "qaColumn": "Peter Pan's iOS Swift App Q&A Column",
+      "facebook": "Personal FB",
+      "fanpage": "Fan Page: Peter Pan for Apple",
+      "linePersonal": "LINE Personal",
+      "lineOfficial": "LINE Official",
+      "email": "Email",
+      "visit": "Visit",
+      "copy": "Copy",
+      "sendEmail": "Send",
+      "copied": "Copied",
+      "form": {
+        "title": "Write to Peter Pan",
+        "subtitle": "Share your collaboration needs or app ideas and I'll get back to you soon.",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Tell me about your needs or ideas",
+        "submit": "Send message",
+        "sending": "Sending...",
+        "success": "Submitted! Thanks for your message.",
+        "error": "Something went wrong. Please try again."
+      }
+    }
+  },
   "infoPage": {
     "heading": "Course Info",
     "desc": "Schedule, location, online/recording details, and class size.",
