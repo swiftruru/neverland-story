@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { SITE_URL, buildMetadata } from '@/app/metadata'
 
 const baseMeta = buildMetadata({
-  title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘 | 彼得潘的 App 程式設計入門',
+  title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
   description:
-    '彼得潘專為 Swift 學習者設計的 iOS App 課程站點骨架，將陸續補齊課程簡介、目標、作業、學費與聯絡等內容。',
+    '彼得潘為已有程式基礎的你準備的 iOS App 進階課程，用最新的 Swift、UIKit 與 SwiftUI，一起做出真正酷炫又能用的 App。',
   path: '/courses/swift/advanced',
 })
 
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: '彼得潘的 Swift iOS App 程式設計入門',
+        alt: '彼得潘的 Swift iOS App 程式設計（進階）',
       },
     ],
   },
   twitter: {
     ...baseMeta.twitter,
     images: [ogImage],
-    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘 | 彼得潘的 App 程式設計入門',
+    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
     description:
-      '彼得潘專為 Swift 學習者設計的 iOS App 課程站點骨架，將陸續補齊課程簡介、目標、作業、學費與聯絡等內容。',
+      '彼得潘為已有程式基礎的你準備的 iOS App 進階課程，用最新的 Swift、UIKit 與 SwiftUI，一起做出真正酷炫又能用的 App。',
   },
   manifest: manifestUrl,
   icons: {
