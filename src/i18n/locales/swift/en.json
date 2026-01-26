@@ -527,6 +527,117 @@
       ]
     }
   },
+  "testimonialsPage": {
+    "title": "Testimonials",
+    "subtitle": "Real voices from learners—unfiltered stories that walk alongside you through each step of the journey.",
+    "ctaLabel": "Peter Pan iOS App Course Testimonials",
+    "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%AD%B8%E7%94%9F%E5%BF%83%E5%BE%97-7fa930d5df66",
+    "viewFull": "Read full testimonial",
+    "avatarAria": "View {{author}}'s photo",
+    "items": [
+      {
+        "title": "Thanks to Peter Pan for Flying Me into the World of Swift",
+        "author": "0+",
+        "course": "Peter Pan's iOS App Programming",
+        "photo": "/swift/advanced/testimonials/0plus.png",
+        "link": "https://medium.com/@z1235678/%E6%84%9F%E8%AC%9D%E5%BD%BC%E5%BE%97%E6%BD%98%E5%B8%B6%E6%88%91%E9%A3%9B%E9%80%B2swift-%E7%9A%84%E4%B8%96%E7%95%8C-%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-bdc404105469",
+        "paragraphs": [
+          "\"I will do my best to take care of you all\"—that was the promise Peter made in our class group after one session, and it stuck with me. He truly delivered: whenever I got stuck on homework, he'd help me through it. Once, after he taught delegates in class and I still didn't fully understand, he patiently explained it again on LINE in a different way.",
+          "Peter's course builds step by step. The first few lessons boost your confidence—teaching you how to create an ebook app without writing code, using Storyboard to design beautiful interfaces.",
+          "Then comes the main event: Swift syntax. Although programming can feel dry, Peter always sprinkles in jokes and great music to keep us relaxed. My focus tends to wander, but his warm humor always pulls me back.",
+          "Over those two months I followed Peter's course almost stress-free. On day one he said, \"This course is only 45 hours—if you want to master Swift, you'll need two to three times that.\" I agreed, and I really wanted to learn well, so between classes I'd set aside a full day to review, practice, and do homework. Even when I understood the lecture, problems would pop up at home. I'd Google first; if that failed, I'd ping Peter on LINE—he usually solved in one sentence what I'd struggled with for hours. He says he's on call 24/7, but I only message him during the day…"
+        ]
+      },
+      {
+        "title": "Peter Pan iOS App Programming Course Review",
+        "author": "Kiki",
+        "course": "Peter Pan's iOS App Programming",
+        "photo": "/swift/advanced/testimonials/kiki.png",
+        "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-f46bd1ca7287",
+        "paragraphs": [
+          "In Peter's class, his style is nothing like other cram-school teachers who lecture until you fall asleep and call it a win. Peter interacts with students, asking questions to reinforce memory. It makes me think—I was always afraid of being called on, yet answering wrong was no big deal, and the questions he asked me stuck. He's also kind of magical: he explains tough programming concepts so simply that sometimes it doesn't feel like learning code at all—once he finishes, you just absorb it.",
+          "\"A lifelong friend\"",
+          "Peter truly lives up to this. Beyond being a teacher, he's a friend—there's zero distance. Whenever you LINE him, he replies fast. I sometimes wonder if he sleeps only three hours a day and drinks SK-II.",
+          "Fifteen lessons! I not only learned to build apps but also unexpectedly made a group of classmates. We chat in a LINE group, help each other debug, suggest improvements, and talk about everything—even baking bread and honeymoons. It's amazing; the friendships don't end when the course does."
+        ]
+      },
+      {
+        "title": "iOS App Programming: The Us That Came After",
+        "author": "Sky",
+        "course": "Peter Pan's iOS App Programming",
+        "photo": "/swift/advanced/testimonials/sky.png",
+        "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
+        "paragraphs": [
+          "By chance I signed up for Peter's Swift course, and an unforgettable story began… On day one I could feel Peter's unwavering dedication to Swift—his passionate energy infused the room. That must be the magic Peter casts on students! His teaching is approachable yet deep, mixing multimedia into the materials so learning feels lively, not rigid. Students let their guard down and dare to ask questions, breaking traditional education norms—many issues get solved through communication. Peter's motto: no problem he can't solve. After each class I'd already look forward to the next. Although homework got progressively harder, I held on to the mindset of not giving up once I'd committed. Completing assignments helped me review; when stuck I'd ask in the group or go directly to Peter. Making friends in class was also fun—everyone's level is different, so you can learn from those strong in logic, absorb new info, and level up. Thanks to technology, connecting is easier than ever.",
+          "The story nears its end. All good things must part. After 2,700 minutes of class we go our separate ways, hoping parallel lines cross again someday. The us that came after will carry Peter's magic forward. If I had to put an expiration date on this magic, I'd wish for 10,000 years. As the saying goes: you don't have to be great to start, but you have to start to be great. Just do it."
+        ]
+      }
+    ],
+    "essays": {
+      "title": "Peter Pan & iOS App: Essays from Those Years",
+      "ctaLabel": "Read essay collection",
+      "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98%E5%92%8C-ios-app-%E7%9A%84%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%95%A3%E6%96%87%E9%9B%86-4794cc6b753c",
+      "itemCta": "Read more",
+      "items": [
+        {
+          "title": "Preparing to Learn Swift iOS App Development",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%AD%B8%E7%BF%92%E9%96%8B%E7%99%BC-swift-ios-app-%E5%89%8D%E7%9A%84%E6%BA%96%E5%82%99-4f9e52debc16"
+        },
+        {
+          "title": "Top 10 Q&A about iOS App Development",
+          "url": "https://medium.com/@apppeterpan/%E9%97%9C%E6%96%BCios-app%E9%96%8B%E7%99%BC%E7%9A%84%E5%8D%81%E5%80%8Bq-a-65833f6eb993"
+        },
+        {
+          "title": "How to Become an iOS App Wizard",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-59007867"
+        },
+        {
+          "title": "How to Learn App Dev: Class or Self-Study?",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/app-%E6%80%8E%E9%BA%BC%E5%AD%B8-%E4%B8%8A%E8%AA%B2%E9%82%84%E6%98%AF%E8%87%AA%E5%AD%B8-db3d9314ac89"
+        },
+        {
+          "title": "Over 30—Is It Too Late to Learn Programming?",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B6%85%E9%81%8E-30-%E6%AD%B2-%E9%96%8B%E5%A7%8B%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BE%86%E5%BE%97%E5%8F%8A%E5%97%8E-cc7d3af772af"
+        },
+        {
+          "title": "9 Tips to Learn Programming More Effectively in Class",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8"
+        },
+        {
+          "title": "When You Strive to Learn Swift, the World Helps You",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%95%B6%E4%BD%A0%E5%8A%AA%E5%8A%9B%E6%83%B3%E5%AD%B8%E7%BF%92-swift-%E6%99%82-%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%9C%83%E4%BE%86%E5%B9%AB%E4%BD%A0-b11dca643686"
+        },
+        {
+          "title": "The Programming We Never Learned in Those Years",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E5%80%91%E5%AD%B8%E4%B8%8D%E6%9C%83%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-b647b2de5980"
+        },
+        {
+          "title": "Step-by-Step iOS App Submission and Update",
+          "url": "http://www.appcoda.com.tw/ios-app-submission/"
+        },
+        {
+          "title": "Swift Programming 101",
+          "url": "http://swiftbook.strikingly.com/"
+        },
+        {
+          "title": "13 Ways to Start a Business with iOS App Skills",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-13"
+        },
+        {
+          "title": "iOS App Development FAQ Collection (Part 1)",
+          "url": "https://blog.alphacamp.co/2017/01/24/ios-app-development-faq1/"
+        },
+        {
+          "title": "Learn from Apple's Examples to Write Better Swift",
+          "url": "https://www.appcoda.com.tw/write-better-swift/"
+        },
+        {
+          "title": "How Non-CS Majors Switch to Engineering in Months: 40 Hours a Week",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%9D%9E%E6%9C%AC%E7%A7%91%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B9%BE%E5%80%8B%E6%9C%88%E5%85%A7%E8%BD%89%E8%81%B7%E5%B7%A5%E7%A8%8B%E5%B8%AB-%E4%B8%80%E9%80%B1-40-%E5%B0%8F%E6%99%82%E7%9A%84%E7%B7%B4%E7%BF%92-ebacb8b704af"
+        }
+      ]
+    }
+  },
   "placeholders": {
     "comingSoon": "Content coming soon. We're setting up the Swift Advanced site; detailed sections will follow."
   },

@@ -527,6 +527,117 @@
       ]
     }
   },
+  "testimonialsPage": {
+    "title": "學生心得",
+    "subtitle": "真實的學習心聲，沒有修飾的心得分享，陪你慢慢走過每一段學習旅程。",
+    "ctaLabel": "彼得潘 iOS App 課程學生心得連結",
+    "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%AD%B8%E7%94%9F%E5%BF%83%E5%BE%97-7fa930d5df66",
+    "viewFull": "觀看完整心得",
+    "avatarAria": "{{author}} 的照片放大檢視",
+    "items": [
+      {
+        "title": "感謝彼得潘帶我飛進 swift 的世界",
+        "author": "0+",
+        "course": "彼得潘的 iOS App 程式設計入門",
+        "photo": "/swift/advanced/testimonials/0plus.png",
+        "link": "https://medium.com/@z1235678/%E6%84%9F%E8%AC%9D%E5%BD%BC%E5%BE%97%E6%BD%98%E5%B8%B6%E6%88%91%E9%A3%9B%E9%80%B2swift-%E7%9A%84%E4%B8%96%E7%95%8C-%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-bdc404105469",
+        "paragraphs": [
+          "「我會努力對你們好的」，這是某次上完課，Peter 在班上的群組裡發出的承諾，我一直印象深刻。而他也真的對我們超好的，不管什麼時候，寫作業遇到問題，問他他一定幫你解答。還記得有一次，他上課教的是代理人 (delegate) 的概念，我聽完了還是沒有很懂，課後他很有耐心的在 line 上面，換個方式又講解了一次給我聽呢！",
+          "彼得潘的課程由淺入深，前幾堂課先是提升我們的成就感，教我們如何不寫程式就做出電子書的 APP，就算是不寫程式，也能透過 storyboard 來設計出精美的畫面。",
+          "接著是重頭戲 swift 語法的部份，雖然程式語言本身無趣，但彼得潘在課堂上總是會穿插一些冷笑話和好聽的歌曲，讓我們盡可能輕鬆的學習程式，專注力一向不好的我，總會有突然被外星人抓走的時候，好在他溫暖的冷笑話總是能把我拉回來。",
+          "我在這兩個月裡，幾乎是沒什麼壓力的跟著 Peter 的課程走著，因為他第一堂課時說了：「我們這個課程總共只有 45 個小時，如果想要把 swift 學好，至少要再多花個 2~3 倍的時間吧！」我覺得非常有道理，而且我也真心想把 swift 學好，所以我每個課堂跟課堂中間，至少安排一個整天的時間來複習、練習、做作業。有時候就算上課聽懂了，回家練習的時候，還是會遇到一些問題。遇到問題我第一個會先問 google 大神，找不到答案的話，就會敲敲彼得潘的 line，而他通常一句話就可以解決我想了很久的問題！雖然他說他 24 小時 on call，但我還是白天才會找他啦…"
+        ]
+      },
+      {
+        "title": "彼得潘 iOS App 程式設計課程心得",
+        "author": "Kiki",
+        "course": "彼得潘的 iOS App 程式設計入門",
+        "photo": "/swift/advanced/testimonials/kiki.png",
+        "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-f46bd1ca7287",
+        "paragraphs": [
+          "在彼得潘課程中，Peter 上課的方式，不像其它補習班的老師，一直在台上說，說到你睡著為止，他就勝利了，Peter 他會與台下的同學互動，利用問問題的方式，加深我們的記憶，好處是可以讓我思考，因為我每次都很怕被點到，其實被點到，答不出來也不會怎樣，但他問過我的問題，都很容易讓我記得，再來他真的很神，可以把很難的程式原理，說明的很簡單清楚，搞的有時厚，好像不是在學程式，因為他一講完，就很容易吸收。",
+          "「一輩子的朋友」",
+          "Peter 真的做到了，他跟大家的關係，除了是師生關係，其實也是朋友，因為他完全沒有距離感，而且不管何時 LINE 他，他都會很快回覆，我有時真的覺得，他一天只睡 3 小時嗎，然後 sk2 用喝的。",
+          "15 堂課! 我不僅學會了如何做 app，意外的收穫還認識了一群同班同學，我們會在 line 群組一起討論，有問題也會有大大同學幫你解答，你的 app 需要改進，也會有好心同學告訴你，該怎麼處理，在那裡面什麼都可以聊，連做麵包、渡蜜月都可以聊，只能說真的很讚，不會因為課程結束了，同學關係也結束了。"
+        ]
+      },
+      {
+        "title": "iOS App 程式設計之後來的我們",
+        "author": "Sky",
+        "course": "彼得潘的 iOS App 程式設計入門",
+        "photo": "/swift/advanced/testimonials/sky.png",
+        "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
+        "paragraphs": [
+          "因緣際會下報名了 Peter 的 Swift 程式設計課程，然而開啟了一段刻骨銘心的故事…….第一次上課，深深記得 Peter 對 Swift 的忠貞不二，那股執著的熱情渲染了整個氛圍，我想這就是 Peter 為學員撒下的神奇魔法吧！由淺入深加上幽默的教學方式，教學文件內總會穿插著多媒體訊息，讓學習更加輕鬆活潑，讓學習不再死板板，讓學生放下心防，更敢發問問題，打破了傳統的教育觀念，許多的問題都是透過溝通解決的，Peter 名言：沒有問題是他解不了。每次下課就開始期待下次的上課，雖然作業一次比一次難，抱持著選擇了，就不輕易放棄的念頭，盡力完成作業，透過作業可以複習上課內容，不懂的地方就在群組發問或是直接請教 Peter，上課中多結交朋友也是很有趣的事情，每個人程度不同，有的同學程式邏輯概念好，可以多發問請教他們，接收新的訊息，多吸收別人的經驗，提升自我能力，拜方便的科技所賜，讓人們交流更簡單了。",
+          "故事接近尾聲了，天下無不散的宴席，結束了這二千七百分鐘的課程，我們將各自分飛，希望平行線未來會有再交錯的一天，後來的我們將 Peter 的魔法繼續延續下去，如果要為這魔法加上個期限，我希望是一萬年。套句名言：你不需要很厲害，才能開始；但你需要開始，才會很厲害。Just do it."
+        ]
+      }
+    ],
+    "essays": {
+      "title": "彼得潘和 iOS App 的那些年散文集",
+      "ctaLabel": "閱讀散文集",
+      "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98%E5%92%8C-ios-app-%E7%9A%84%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%95%A3%E6%96%87%E9%9B%86-4794cc6b753c",
+      "itemCta": "閱讀全文",
+      "items": [
+        {
+          "title": "學習開發 Swift iOS App 前的準備",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%AD%B8%E7%BF%92%E9%96%8B%E7%99%BC-swift-ios-app-%E5%89%8D%E7%9A%84%E6%BA%96%E5%82%99-4f9e52debc16"
+        },
+        {
+          "title": "關於 iOS App 開發的十個 Q & A",
+          "url": "https://medium.com/@apppeterpan/%E9%97%9C%E6%96%BCios-app%E9%96%8B%E7%99%BC%E7%9A%84%E5%8D%81%E5%80%8Bq-a-65833f6eb993"
+        },
+        {
+          "title": "如何變成 iOS App 開發魔法師",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-59007867"
+        },
+        {
+          "title": "App 怎麼學？上課還是自學？",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/app-%E6%80%8E%E9%BA%BC%E5%AD%B8-%E4%B8%8A%E8%AA%B2%E9%82%84%E6%98%AF%E8%87%AA%E5%AD%B8-db3d9314ac89"
+        },
+        {
+          "title": "超過 30 歲，開始學程式還來得及嗎？",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B6%85%E9%81%8E-30-%E6%AD%B2-%E9%96%8B%E5%A7%8B%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BE%86%E5%BE%97%E5%8F%8A%E5%97%8E-cc7d3af772af"
+        },
+        {
+          "title": "掌握九個重點，讓你上課學程式更有效！",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8"
+        },
+        {
+          "title": "當你努力想學習 Swift 時，全世界都會來幫你",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%95%B6%E4%BD%A0%E5%8A%AA%E5%8A%9B%E6%83%B3%E5%AD%B8%E7%BF%92-swift-%E6%99%82-%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%9C%83%E4%BE%86%E5%B9%AB%E4%BD%A0-b11dca643686"
+        },
+        {
+          "title": "那些年我們學不會的程式設計",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E5%80%91%E5%AD%B8%E4%B8%8D%E6%9C%83%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-b647b2de5980"
+        },
+        {
+          "title": "一步一腳印的 iOS App 上架和更新流程",
+          "url": "http://www.appcoda.com.tw/ios-app-submission/"
+        },
+        {
+          "title": "Swift 程式設計入門",
+          "url": "http://swiftbook.strikingly.com/"
+        },
+        {
+          "title": "利用 iOS App 技術創業的 13 個方法",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-13"
+        },
+        {
+          "title": "iOS App 開發常見技術問題精選集（一）",
+          "url": "https://blog.alphacamp.co/2017/01/24/ios-app-development-faq1/"
+        },
+        {
+          "title": "模仿 Apple 教學範例，寫出一手好 Swift",
+          "url": "https://www.appcoda.com.tw/write-better-swift/"
+        },
+        {
+          "title": "非本科如何在幾個月內轉職工程師：一週 40 小時的練習",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%9D%9E%E6%9C%AC%E7%A7%91%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B9%BE%E5%80%8B%E6%9C%88%E5%85%A7%E8%BD%89%E8%81%B7%E5%B7%A5%E7%A8%8B%E5%B8%AB-%E4%B8%80%E9%80%B1-40-%E5%B0%8F%E6%99%82%E7%9A%84%E7%B7%B4%E7%BF%92-ebacb8b704af"
+        }
+      ]
+    }
+  },
   "placeholders": {
     "comingSoon": "內容即將上線，Swift 進階站正在建置中，請稍候。"
   },
