@@ -13,6 +13,7 @@
     "tuition": "學費",
     "signup": "報名",
     "testimonials": "學生心得",
+    "more": "更多",
     "contact": "聯絡"
   },
   "infoPage": {
@@ -249,7 +250,8 @@
     "subtitle": "這是 Swift 進階站的骨架，之後會逐步補上完整內容，維持與 SwiftUI 站相同的版型與體驗。"
   },
   "cta": {
-    "start": "開始瀏覽"
+    "start": "開始瀏覽",
+    "learnMore": "了解更多"
   },
   "introPage": {
     "heroTitle": "彼得潘的 Swift iOS App 程式設計入門",
@@ -525,6 +527,66 @@
         "技術顧問：[iOS APP 金牌擺渡人](http://iosappferryman.strikingly.com/)、FUNTEK、點點數位、英諾奧茲、Brocas",
         "雜誌專欄：[AppCoda](http://www.appcoda.com.tw/)、MacToday App 開發，PChome Mac 基礎教室"
       ]
+    },
+    "morePage": {
+      "items": [
+        {
+          "id": "swiftui-foundation",
+          "title": "文組生的 Swift iOS SwiftUI App 程式設計入門",
+          "href": "/courses/swiftui/foundation/",
+          "description": "專為文組生量身訂做，從零開始學程式，一步一步慢慢教！只要 10 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！",
+          "image": "/swift/advanced/more/swiftui-foundation.png"
+        },
+        {
+          "id": "flutter",
+          "title": "彼得潘的 Flutter 跨平台 App 程式設計入門",
+          "href": "https://flutterapp.mystrikingly.com/",
+          "description": "學習 Flutter 跨平台 App 開發的最新技術，Dart，Flutter SDK，VS Code，成為酷炫的 Flutter App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！",
+          "image": "/swift/advanced/more/flutter-course.png"
+        },
+        {
+          "id": "swift-basics",
+          "title": "彼得潘的 Swift 程式設計入門",
+          "href": "http://learnswift.strikingly.com/",
+          "description": "本課程將以彼得潘生動有趣的著作「彼得潘的 Swift 程式設計入門」為主，輔以全面進化的 Swift 4，帶領學員 12 小時熟悉 Swift 的各項語法和功能！",
+          "image": "/swift/advanced/more/swift-basics.png"
+        }
+      ],
+      "thanks": {
+        "title": "特別感謝",
+        "items": [
+          {
+            "id": "social-innovation-lab",
+            "name": "社會創新實驗中心",
+            "href": "http://socialinnovationlab.iiiedu.org.tw/",
+            "image": "/swift/advanced/thanks/social-innovation-lab.png"
+          },
+          {
+            "id": "cool3c",
+            "name": "癮科技",
+            "href": "https://www.cool3c.com/",
+            "image": "/swift/advanced/thanks/cool3c.png"
+          },
+          {
+            "id": "cid",
+            "name": "通推",
+            "href": "",
+            "image": "/swift/advanced/thanks/cid.png"
+          },
+          {
+            "id": "alphacamp",
+            "name": "ALPHA Camp",
+            "href": "https://www.alphacamp.co/",
+            "image": "/swift/advanced/thanks/alphacamp.png"
+          },
+          {
+            "id": "pearnature",
+            "name": "梨本企業",
+            "href": "",
+            "image": "/swift/advanced/thanks/pearnature.png"
+          }
+        ]
+      }
     }
   },
   "testimonialsPage": {
@@ -728,6 +790,7 @@
     "tuition": { "title": "學費", "desc": "收費、方案與付款方式。" },
     "signup": { "title": "報名", "desc": "如何報名、重要日期與連結。" },
     "testimonials": { "title": "學生心得", "desc": "學生的學習經驗與成果分享。" },
+    "more": { "title": "其它近期課程", "desc": "探索彼得潘的其它實作課程，找到最適合你的學習路徑。" },
     "contact": { "title": "聯絡", "desc": "聯絡彼得潘以了解 Swift 課程相關問題的方式。" }
   }
 }

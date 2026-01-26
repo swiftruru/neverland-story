@@ -13,6 +13,7 @@
     "tuition": "Tuition",
     "signup": "Apply",
     "testimonials": "Testimonials",
+    "more": "More",
     "contact": "Contact"
   },
   "infoPage": {
@@ -249,7 +250,8 @@
     "subtitle": "A dedicated Swift track for building iOS apps. Pages will be filled in next—this scaffold keeps navigation and layout consistent."
   },
   "cta": {
-    "start": "Start exploring"
+    "start": "Start exploring",
+    "learnMore": "Learn more"
   },
   "introPage": {
     "heroTitle": "Peter Pan's Swift iOS App Bootcamp",
@@ -525,6 +527,66 @@
         "Consultant: [iOS App Ferryman](http://iosappferryman.strikingly.com/), FUNTEK, DotDot, Enno, Brocas",
         "Columns: [AppCoda](http://www.appcoda.com.tw/), MacToday App dev, PChome Mac Basics"
       ]
+    },
+    "morePage": {
+      "items": [
+        {
+          "id": "swiftui-foundation",
+          "title": "SwiftUI Foundation for Liberal Arts Learners",
+          "description": "Master iOS app development with SwiftUI from scratch—designed for absolute beginners.",
+          "href": "/courses/swiftui/foundation/",
+          "image": "/swift/advanced/more/swiftui-foundation.png"
+        },
+        {
+          "id": "flutter",
+          "title": "Peter Pan's Flutter Cross-Platform App Course",
+          "description": "Build Android and iOS apps simultaneously with Google's powerful Flutter framework.",
+          "href": "https://flutterapp.mystrikingly.com/",
+          "image": "/swift/advanced/more/flutter-course.png"
+        },
+        {
+          "id": "swift-basics",
+          "title": "Peter Pan's Swift Programming 101",
+          "description": "A gentle introduction to Swift—perfect for those seeking a solid programming foundation.",
+          "href": "http://learnswift.strikingly.com/",
+          "image": "/swift/advanced/more/swift-basics.png"
+        }
+      ],
+      "thanks": {
+        "title": "Special Thanks",
+        "items": [
+          {
+            "id": "social-innovation-lab",
+            "name": "Social Innovation Lab",
+            "href": "http://socialinnovationlab.iiiedu.org.tw/",
+            "image": "/swift/advanced/thanks/social-innovation-lab.png"
+          },
+          {
+            "id": "cool3c",
+            "name": "Cool3C",
+            "href": "https://www.cool3c.com/",
+            "image": "/swift/advanced/thanks/cool3c.png"
+          },
+          {
+            "id": "cid",
+            "name": "CID",
+            "href": "",
+            "image": "/swift/advanced/thanks/cid.png"
+          },
+          {
+            "id": "alphacamp",
+            "name": "ALPHA Camp",
+            "href": "https://www.alphacamp.co/",
+            "image": "/swift/advanced/thanks/alphacamp.png"
+          },
+          {
+            "id": "pearnature",
+            "name": "Pearnature",
+            "href": "",
+            "image": "/swift/advanced/thanks/pearnature.png"
+          }
+        ]
+      }
     }
   },
   "testimonialsPage": {
@@ -728,6 +790,7 @@
     "tuition": { "title": "Tuition", "desc": "Pricing, packages, and payment options." },
     "signup": { "title": "Apply", "desc": "How to enroll, important dates, and links." },
     "testimonials": { "title": "Testimonials", "desc": "Student experiences and outcomes from the Swift track." },
+    "more": { "title": "More Recent Courses", "desc": "Explore Peter Pan's other programming courses and resources." },
     "contact": { "title": "Contact", "desc": "Ways to reach Peter Pan for questions about the Swift course." }
   }
 }

@@ -19,6 +19,7 @@ const NAV_ITEMS = [
   { id: 'tuition', key: 'nav.tuition', href: '/courses/swift/advanced/tuition' },
   { id: 'signup', key: 'nav.signup', href: '/courses/swift/advanced/signup' },
   { id: 'testimonials', key: 'nav.testimonials', href: '/courses/swift/advanced/testimonials' },
+  { id: 'more', key: 'nav.more', href: '/courses/swift/advanced/more' },
   { id: 'contact', key: 'nav.contact', href: '/courses/swift/advanced/contact' },
 ]
 
