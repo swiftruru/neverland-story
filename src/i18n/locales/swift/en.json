@@ -611,6 +611,51 @@
           "image": "/swift/advanced/more/first-swift-code.png"
         }
       ],
+      "references": {
+        "title": "Course Reference Books",
+        "items": [
+          {
+            "id": "swift-book",
+            "title": "彼得潘的 Swift 程式設計入門",
+            "href": "https://swiftbook.mystrikingly.com/",
+            "note": "by Peter Pan"
+          },
+          {
+            "id": "apple-fundamentals",
+            "title": "Develop in Swift Fundamentals",
+            "href": "https://books.apple.com/tw/book/develop-in-swift-fundamentals/id6468967906?l=en-GB",
+            "note": "Apple Official eBook"
+          },
+          {
+            "id": "apple-data-collections",
+            "title": "Develop in Swift Data Collections",
+            "href": "https://books.apple.com/tw/book/develop-in-swift-data-collections/id6468968766?l=en-GB",
+            "note": "Apple Official eBook"
+          },
+          {
+            "id": "100-days-swift",
+            "title": "100 Days of Swift & Hacking with iOS UIKit",
+            "href": "https://medium.com/彼得潘的-swift-ios-app-開發教室/100-days-of-swift-hacking-with-ios-uikit-版關鍵字重點整理-b19d1fd42269"
+          },
+          {
+            "id": "swift-language",
+            "title": "The Swift Programming Language",
+            "href": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/"
+          },
+          {
+            "id": "uikit-apprentice",
+            "title": "UIKit Apprentice",
+            "href": "https://www.raywenderlich.com/books/uikit-apprentice",
+            "note": "Ray Wenderlich - Popular App Dev Tutorial Site"
+          },
+          {
+            "id": "appcoda",
+            "title": "Beginning iOS 26 Programming with Swift",
+            "href": "https://www.appcoda.com.tw/swift/",
+            "note": "APPCODA - Popular App Dev Tutorial Site"
+          }
+        ]
+      },
       "thanks": {
         "title": "Special Thanks",
         "items": [

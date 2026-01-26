@@ -22,6 +22,13 @@ export default function SwiftMorePage() {
     image: string
   }[]
   const thanksTitle = t('introPage.morePage.thanks.title')
+  const references = t('introPage.morePage.references.items', { returnObjects: true }) as {
+    id: string
+    title: string
+    href: string
+    note?: string
+  }[]
+  const referencesTitle = t('introPage.morePage.references.title')
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   return (
@@ -88,6 +95,45 @@ export default function SwiftMorePage() {
           </div>
         </div>
       )}
+
+      <section className={styles.referencesSection}>
+        <div className="container">
+          <FadeInOnScroll direction="up">
+            <div className={styles.sectionHeader}>
+              <h2 className={styles.title}>{referencesTitle}</h2>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll direction="up" delay={80}>
+            <PaperCard tapeColor="yellow" tapePosition="top-left" tapeRotation={-2} hover={false}>
+              <div className={styles.referencesCard}>
+                <ul className={styles.referencesList}>
+                  {references.map((ref, idx) => (
+                    <li key={ref.id} className={styles.referenceItem}>
+                      <span className={styles.referenceIcon}>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <div className={styles.referenceContent}>
+                        <Link
+                          href={ref.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.referenceLink}
+                        >
+                          {ref.title}
+                        </Link>
+                        {ref.note && <span className={styles.referenceNote}>{ref.note}</span>}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </PaperCard>
+          </FadeInOnScroll>
+        </div>
+      </section>
 
       <section className={styles.thanksSection}>
         <div className="container">
