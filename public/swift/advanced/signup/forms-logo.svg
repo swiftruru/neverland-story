@@ -1,0 +1,19 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title>Google Forms Icon</title>
+  <desc>Stylized Google Forms sheet</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a4de6"/>
+      <stop offset="100%" stop-color="#9f79ff"/>
+    </linearGradient>
+  </defs>
+  <rect rx="36" ry="36" width="256" height="256" fill="url(#bg)"/>
+  <path d="M88 56c-4.4 0-8 3.6-8 8v128c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V92.7L156.3 56H88z" fill="#fff" fill-opacity=".9"/>
+  <path d="M156 56v36h36" fill="#fff" fill-opacity=".85"/>
+  <rect x="104" y="118" width="64" height="10" rx="5" fill="#6a4de6"/>
+  <rect x="104" y="142" width="48" height="10" rx="5" fill="#6a4de6" opacity=".9"/>
+  <rect x="104" y="166" width="56" height="10" rx="5" fill="#6a4de6" opacity=".85"/>
+  <circle cx="126" cy="118" r="5" fill="#6a4de6"/>
+  <circle cx="126" cy="142" r="5" fill="#6a4de6" opacity=".9"/>
+  <circle cx="126" cy="166" r="5" fill="#6a4de6" opacity=".85"/>
+</svg>
