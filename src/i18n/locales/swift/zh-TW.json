@@ -297,21 +297,16 @@
         "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
         "items": [
           {
-            "src": "/swiftui/foundation/signup/photos/photo-01.png",
+            "src": "/swift/advanced/signup/photos/photo-01.png",
             "alt": "上課合照 1"
           },
           {
-            "src": "/swiftui/foundation/signup/photos/photo-02.png",
+            "src": "/swift/advanced/signup/photos/photo-02.png",
             "alt": "上課合照 2"
           },
           {
-            "src": "/swiftui/foundation/signup/photos/photo-03.png",
+            "src": "/swift/advanced/signup/photos/photo-03.png",
             "alt": "上課合照 3"
-          },
-          {
-            "src": "/swiftui/foundation/signup/photos/photo-04.png",
-            "alt": "學生們的暖心卡片",
-            "caption": "學生們的暖心卡片"
           }
         ]
       }
