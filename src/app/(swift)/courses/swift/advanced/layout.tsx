@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ...baseMeta,
   openGraph: {
     ...baseMeta.openGraph,
+    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
     url: pageUrl,
     type: 'article',
     images: [

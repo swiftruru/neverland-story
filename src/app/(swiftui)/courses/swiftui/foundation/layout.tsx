@@ -4,7 +4,7 @@ import { SITE_URL, buildMetadata } from '@/app/metadata'
 const baseMeta = buildMetadata({
   title: '文組生的 iOS SwiftUI App 程式設計入門 | 彼得潘',
   description:
-    '專為文組與零基礎轉職者設計的 SwiftUI 入門課程，完整包含課程目標、內容大綱、作業設計、講師介紹、學費與報名資訊，以及學生心得與 Q&A。',
+    '給文組與零基礎的你，彼得潘用 SwiftUI 帶你走進 iOS App 的世界，從零開始也能做出漂亮的 App。',
   path: '/courses/swiftui/foundation',
 })
 
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   ...baseMeta,
   openGraph: {
     ...baseMeta.openGraph,
+    title: '文組生的 iOS SwiftUI App 程式設計入門 | 彼得潘',
     url: pageUrl,
     type: 'article',
     images: [
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     images: [ogImage],
     title: '文組生的 iOS SwiftUI App 程式設計入門 | 彼得潘',
     description:
-      '專為文組與零基礎轉職者設計的 SwiftUI 入門課程，完整包含課程目標、內容大綱、作業設計、講師介紹、學費與報名資訊，以及學生心得與 Q&A。',
+      '給文組與零基礎的你，彼得潘用 SwiftUI 帶你走進 iOS App 的世界，從零開始也能做出漂亮的 App。',
   },
   manifest: manifestUrl,
   icons: {
