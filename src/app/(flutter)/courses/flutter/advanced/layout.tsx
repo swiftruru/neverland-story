@@ -4,7 +4,7 @@ import { SITE_URL, buildMetadata } from '@/app/metadata'
 const baseMeta = buildMetadata({
   title: '彼得潘的 Flutter 跨平台 App 程式設計入門 | 彼得潘',
   description:
-    '為文組生量身訂做，10 週每週一晚，從零開始學程式，開心寫出 iOS / Android 的 Flutter App。',
+    '彼得潘帶你學 Flutter 跨平台 App 開發，用一套程式做出 iOS 與 Android App，成為酷炫的 App 開發魔法師。',
   path: '/courses/flutter/advanced',
 })
 
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     images: [ogImage],
     title: '彼得潘的 Flutter 跨平台 App 程式設計入門 | 彼得潘',
     description:
-      '為文組生量身訂做，10 週每週一晚，從零開始學程式，開心寫出 iOS / Android 的 Flutter App。',
+      '彼得潘帶你學 Flutter 跨平台 App 開發，用一套程式做出 iOS 與 Android App，成為酷炫的 App 開發魔法師。',
   },
   manifest: manifestUrl,
   icons: {
