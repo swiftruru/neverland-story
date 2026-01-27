@@ -37,6 +37,6 @@ Common scripts:
 - **PWA**: ensure `manifest.json`, `sw.js`, and icons are served from `public/`.
 
 ## Notes
-- Main site URL (current): `https://neverland.swift.moe/`.
+- Main site URL (current): `https://p207.app/`.
 - Adjust translations/content under `src/app/.../appWorks.ts`, `i18n` resources, and page data files.
 - Update SEO/social assets in `public/og-cover.png` and metadata helpers in `src/app/metadata.ts`.

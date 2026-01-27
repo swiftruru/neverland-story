@@ -4,7 +4,7 @@ export const SITE_NAME = '彼得潘的 iOS App 程式設計入門'
 export const SITE_DESCRIPTION = '彼得潘的 iOS App 程式設計入門 - Neverland Story'
 
 // 站點來源與子路徑，可透過環境變數覆蓋，方便同一份程式部署到不同子站
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://neverland.swift.moe'
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://p207.app'
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '/neverland'
 export const ASSET_BASE = BASE_PATH
 
