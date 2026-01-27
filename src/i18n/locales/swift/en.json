@@ -896,5 +896,8 @@
     "testimonials": { "title": "Testimonials", "desc": "Student experiences and outcomes from the Swift track." },
     "more": { "title": "More Recent Courses", "desc": "Explore Peter Pan's other programming courses and resources." },
     "contact": { "title": "Contact", "desc": "Ways to reach Peter Pan for questions about the Swift course." }
+  },
+  "footer": {
+    "copyright": "© {{year}} Peter Pan's Swift iOS App Bootcamp. All rights reserved."
   }
 }

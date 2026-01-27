@@ -980,6 +980,6 @@
     "label": "回到頂部"
   },
   "footer": {
-    "copyright": "© {{year}} 彼得潘的 iOS App 程式設計入門. All rights reserved."
+    "copyright": "© {{year}} 彼得潘的 App 程式設計入門. All rights reserved."
   }
 }

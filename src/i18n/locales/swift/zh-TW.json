@@ -896,5 +896,8 @@
     "testimonials": { "title": "學生心得", "desc": "學生的學習經驗與成果分享。" },
     "more": { "title": "其它近期課程", "desc": "探索彼得潘的其它實作課程，找到最適合你的學習路徑。" },
     "contact": { "title": "聯絡", "desc": "聯絡彼得潘以了解 Swift 課程相關問題的方式。" }
+  },
+  "footer": {
+    "copyright": "© {{year}} 彼得潘的 Swift iOS App 程式設計入門. All rights reserved."
   }
 }

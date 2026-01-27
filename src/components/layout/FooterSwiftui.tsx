@@ -1,11 +1,19 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import styles from './Footer.module.css'
 
 export function FooterSwiftui() {
-  const { t } = useTranslation('swiftui')
+  const pathname = usePathname()
+  const namespace = useMemo(() => {
+    if (pathname?.startsWith('/courses/flutter')) return 'flutter'
+    if (pathname?.startsWith('/courses/swift/')) return 'swift'
+    return 'swiftui'
+  }, [pathname])
+
+  const { t } = useTranslation(namespace)
   const currentYear = new Date().getFullYear()
   const [mounted, setMounted] = useState(false)
 
