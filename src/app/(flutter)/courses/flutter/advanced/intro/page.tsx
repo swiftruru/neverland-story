@@ -11,13 +11,15 @@ export default function FlutterIntroPage() {
 
   return (
     <main className={styles.page}>
-      <section className={styles.introHero}>
+      <section
+        className={styles.introHero}
+        style={{ backgroundImage: 'url(/flutter/advanced/intro-bg.jpg)' }}
+      >
         <div className={styles.heroOverlay} />
         <div className="container">
           <div className={styles.heroContent}>
             <p className={styles.kicker}>{t('hero.kicker')}</p>
             <h1 className={styles.title}>{t('introPage.heroTitle')}</h1>
-            <p className={styles.heroLead}>{t('introPage.heroLead')}</p>
             <ul className={styles.heroList}>
               {heroLines.map((line, idx) => (
                 <li key={idx}>{line}</li>

@@ -9,7 +9,6 @@ import styles from './FlutterNav.module.css'
 
 const NAV_ITEMS = [
   { id: 'intro', key: 'nav.intro', href: '/courses/flutter/advanced/intro' },
-  { id: 'goals', key: 'nav.goals', href: '/courses/flutter/advanced/goals' },
   { id: 'info', key: 'nav.info', href: '/courses/flutter/advanced/info' },
   { id: 'features', key: 'nav.features', href: '/courses/flutter/advanced/features' },
   { id: 'assignments', key: 'nav.assignments', href: '/courses/flutter/advanced/assignments' },

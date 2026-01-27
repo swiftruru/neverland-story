@@ -114,19 +114,20 @@
     "heroTitle": "彼得潘的 Flutter 跨平台 App 程式設計入門",
     "heroLead": "為文組生量身訂做，從零開始學程式，開心寫 App！",
     "heroLines": [
-      "只要 10 個星期，每週一個晚上，",
-      "即可學會程式設計的核心概念，",
-      "成為酷炫的 Flutter 跨平台 App 開發魔法師！"
+      "學習 Flutter 跨平台 App 開發的最新技術，",
+      "Dart，Flutter SDK，VS Code，",
+      "成為酷炫的 Flutter App 開發魔法師，",
+      "實現未來 App 工作、接案、創業的第二人生！"
     ],
     "cta": "報名",
     "learnTitle": "你將會學到",
     "learnItems": [
-      "獨力開發 Flutter App，同時上架 App Store 和 Google Play。",
-      "學會 Dart 程式語言，了解程式設計的核心概念，包含變數、函式、if else、迴圈、類別。",
-      "開發多個有趣的 Flutter App，累積跨平台開發經驗。",
-      "學習最新版的 Flutter、Dart、Material Design。",
-      "開發自己感興趣的 App。",
-      "一次開發，iOS 和 Android 兩個平台同時擁有。"
+      "獨力開發 Flutter 跨平台 App，上架 App Store / Google Play。",
+      "學習最新版的 Dart 和 Flutter SDK。",
+      "使用 Flutter 設計 iOS / Android App 畫面。",
+      "開發十個以上生動有趣的 App，運用各種常見技術，比方串接網路 RESTful API，資料儲存，動畫，狀態管理。",
+      "熟悉開發工具 VS Code、Android Studio、Firebase Studio。",
+      "開發自己感興趣的 App。"
     ]
   },
   "placeholder": "內容即將補完，將涵蓋範例、作業說明、常見問題與報名資訊。",

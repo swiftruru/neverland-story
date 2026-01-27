@@ -114,19 +114,20 @@
     "heroTitle": "Peter Pan's Flutter Cross-Platform App Development",
     "heroLead": "Tailored for liberal arts students, learn programming from scratch and happily build Apps!",
     "heroLines": [
-      "In just 10 weeks, one evening per week,",
-      "you can learn the core concepts of programming,",
-      "and become a cool Flutter cross-platform App development wizard!"
+      "Learn the latest technologies in Flutter cross-platform App development,",
+      "Dart, Flutter SDK, VS Code,",
+      "become a cool Flutter App development wizard,",
+      "and achieve your second life in App work, freelancing, and entrepreneurship!"
     ],
     "cta": "Sign Up",
     "learnTitle": "What You'll Learn",
     "learnItems": [
-      "Independently develop Flutter Apps, publish to both App Store and Google Play.",
-      "Master the Dart programming language, understand core programming concepts including variables, functions, if else, loops, classes.",
-      "Develop multiple interesting Flutter Apps, accumulate cross-platform development experience.",
-      "Learn the latest Flutter, Dart, and Material Design.",
-      "Develop Apps that interest you.",
-      "One development, available on both iOS and Android platforms."
+      "Independently develop Flutter cross-platform Apps, publish to App Store / Google Play.",
+      "Learn the latest Dart and Flutter SDK.",
+      "Design iOS / Android App interfaces using Flutter.",
+      "Develop over ten engaging Apps, applying common technologies such as RESTful API integration, data storage, animations, and state management.",
+      "Master development tools: VS Code, Android Studio, Firebase Studio.",
+      "Develop Apps that interest you."
     ]
   },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",

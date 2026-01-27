@@ -27,6 +27,6 @@ describe('Static assets', () => {
     expect(robots).toMatch(/Allow:\s*\//)
 
     const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf-8')
-    expect(sitemap).toMatch(/https:\/\/neverland\.swift\.moe\//)
+    expect(sitemap).toMatch(/https:\/\/p207\.app\//)
   })
 })
