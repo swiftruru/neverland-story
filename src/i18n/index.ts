@@ -7,6 +7,8 @@ import swiftuiZhTW from './locales/swiftui/zh-TW.json'
 import swiftuiEn from './locales/swiftui/en.json'
 import swiftZhTW from './locales/swift/zh-TW.json'
 import swiftEn from './locales/swift/en.json'
+import flutterZhTW from './locales/flutter/zh-TW.json'
+import flutterEn from './locales/flutter/en.json'
 
 export const LANGUAGES = [
   { code: 'zh-TW', label: '中文', shortLabel: '中' },
@@ -22,8 +24,8 @@ const savedLanguage =
 
 i18n.use(initReactI18next).init({
   resources: {
-    'zh-TW': { translation: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW },
-    en: { translation: neverlandEn, swiftui: swiftuiEn, swift: swiftEn },
+    'zh-TW': { translation: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW, flutter: flutterZhTW },
+    en: { translation: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
   },
   // SSR 預設中文；若前端有儲存偏好則覆蓋
   lng: savedLanguage || 'zh-TW',

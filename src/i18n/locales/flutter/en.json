@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Flutter Advanced",
+    "intro": "Intro",
+    "goals": "Goals",
+    "info": "Info",
+    "features": "Features",
+    "assignments": "Assignments",
+    "audience": "Audience",
+    "instructor": "Instructor",
+    "outline": "Outline",
+    "tuition": "Tuition",
+    "signup": "Sign Up",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "more": "More"
+  },
+  "hero": {
+    "kicker": "Flutter Advanced · Cross-Platform App Development",
+    "title": "Peter Pan's Flutter Cross-Platform App Development",
+    "subtitle": "Tailored for liberal arts students, 10 weeks with one evening per week, learn programming from scratch and happily build iOS / Android Flutter Apps."
+  },
+  "cta": {
+    "start": "Get Started",
+    "back": "Back to Flutter Courses",
+    "learnMore": "Learn More"
+  },
+  "pages": {
+    "contact": {
+      "mainTitle": "Contact Peter Pan",
+      "subtitle": "Any questions about Flutter App development? Feel free to reach out to Peter Pan.",
+      "note": "For more details, refer to",
+      "qaColumn": "Peter Pan's Flutter App Q&A Column",
+      "facebook": "Personal FB",
+      "fanpage": "Fan Page: Peter Pan's Apple Fan",
+      "linePersonal": "LINE Personal",
+      "lineOfficial": "LINE Official",
+      "email": "Email",
+      "visit": "Visit",
+      "copy": "Copy",
+      "sendEmail": "Send Email",
+      "copied": "Copied",
+      "form": {
+        "title": "Write to Peter Pan",
+        "subtitle": "For collaboration, courses, or App development inquiries, leave a message and we'll reply soon.",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Describe your needs or ideas",
+        "submit": "Submit",
+        "sending": "Sending...",
+        "success": "Sent! Thank you for your message.",
+        "error": "Failed to send. Please try again."
+      }
+    }
+  },
+  "sections": {
+    "intro": {
+      "title": "Introduction",
+      "desc": "Course overview, who should take it, and how it differs from other courses."
+    },
+    "goals": {
+      "title": "Goals",
+      "desc": "Learning objectives and examples of outcomes, including skills needed for your first Flutter App."
+    },
+    "info": {
+      "title": "Course Info",
+      "desc": "Course format, duration, tools, and environment requirements."
+    },
+    "features": {
+      "title": "Features",
+      "desc": "Liberal arts-friendly, scenario-driven course design and learning advantages."
+    },
+    "assignments": {
+      "title": "Assignments",
+      "desc": "Weekly assignments and practice requirements, submission methods and evaluation criteria."
+    },
+    "audience": {
+      "title": "Audience",
+      "desc": "Student profiles and prerequisites to help determine course fit."
+    },
+    "instructor": {
+      "title": "Instructor",
+      "desc": "Instructor background, teaching experience, and representative works."
+    },
+    "outline": {
+      "title": "Outline",
+      "desc": "Course chapters and practice projects, a roadmap from basics to advanced."
+    },
+    "tuition": {
+      "title": "Tuition",
+      "desc": "Pricing, early bird/group discounts, and payment information."
+    },
+    "signup": {
+      "title": "Sign Up",
+      "desc": "Registration process and form entry, including notes and schedule."
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "desc": "Student feedback, project showcases, and testimonials for prospective students."
+    },
+    "contact": {
+      "title": "Contact",
+      "desc": "Contact information and form entry, including social media and email channels."
+    },
+    "more": {
+      "title": "Other Courses",
+      "desc": "Explore Peter Pan's recent courses and find the best learning path for you."
+    }
+  },
+  "introPage": {
+    "heroTitle": "Peter Pan's Flutter Cross-Platform App Development",
+    "heroLead": "Tailored for liberal arts students, learn programming from scratch and happily build Apps!",
+    "heroLines": [
+      "In just 10 weeks, one evening per week,",
+      "you can learn the core concepts of programming,",
+      "and become a cool Flutter cross-platform App development wizard!"
+    ],
+    "cta": "Sign Up",
+    "learnTitle": "What You'll Learn",
+    "learnItems": [
+      "Independently develop Flutter Apps, publish to both App Store and Google Play.",
+      "Master the Dart programming language, understand core programming concepts including variables, functions, if else, loops, classes.",
+      "Develop multiple interesting Flutter Apps, accumulate cross-platform development experience.",
+      "Learn the latest Flutter, Dart, and Material Design.",
+      "Develop Apps that interest you.",
+      "One development, available on both iOS and Android platforms."
+    ]
+  },
+  "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
+  "footer": {
+    "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."
+  }
+}

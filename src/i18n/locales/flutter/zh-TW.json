@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Flutter Advanced",
+    "intro": "簡介",
+    "goals": "目標",
+    "info": "課程資訊",
+    "features": "特色",
+    "assignments": "作業",
+    "audience": "對象",
+    "instructor": "講師",
+    "outline": "大綱",
+    "tuition": "學費",
+    "signup": "報名",
+    "testimonials": "學生心得",
+    "contact": "聯絡",
+    "more": "更多"
+  },
+  "hero": {
+    "kicker": "Flutter Advanced · 跨平台 App 開發",
+    "title": "彼得潘的 Flutter 跨平台 App 程式設計入門",
+    "subtitle": "為文組生量身訂做，10 週每週一晚，從零開始學程式，開心寫出 iOS / Android 的 Flutter App。"
+  },
+  "cta": {
+    "start": "開始瀏覽",
+    "back": "返回 Flutter 課程首頁",
+    "learnMore": "了解更多"
+  },
+  "pages": {
+    "contact": {
+      "mainTitle": "聯絡彼得潘",
+      "subtitle": "任何關於 Flutter App 開發的相關問題，歡迎隨時聯絡彼得潘。",
+      "note": "詳情可參考",
+      "qaColumn": "彼得潘的 Flutter App 問題解答專欄",
+      "facebook": "私人 FB",
+      "fanpage": "粉絲團：愛瘋一切為蘋果的彼得潘",
+      "linePersonal": "LINE 私人帳號",
+      "lineOfficial": "LINE 官方帳號",
+      "email": "Email",
+      "visit": "前往",
+      "copy": "複製",
+      "sendEmail": "寄信",
+      "copied": "已複製",
+      "form": {
+        "title": "寫信給彼得潘",
+        "subtitle": "有任何合作、課程或 App 開發需求，歡迎留言，會盡快回覆。",
+        "name": "姓名",
+        "namePlaceholder": "你的名字",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "想說的話",
+        "messagePlaceholder": "請描述你的需求或想法",
+        "submit": "送出表單",
+        "sending": "寄出中...",
+        "success": "已送出，謝謝你的訊息！",
+        "error": "送出失敗，請再試一次。"
+      }
+    }
+  },
+  "sections": {
+    "intro": {
+      "title": "簡介",
+      "desc": "本頁將放入課程的整體介紹、誰適合學、與其他課程的差異。"
+    },
+    "goals": {
+      "title": "目標",
+      "desc": "列出學習目標與成果範例，包含完成第一個 Flutter App 所需的能力。"
+    },
+    "info": {
+      "title": "課程資訊",
+      "desc": "課程形式、時數、上課工具與環境需求。"
+    },
+    "features": {
+      "title": "特色",
+      "desc": "文組友善、情境導向的課程設計與學習優勢。"
+    },
+    "assignments": {
+      "title": "作業",
+      "desc": "每週作業與實作要求，提交方式與評估標準。"
+    },
+    "audience": {
+      "title": "對象",
+      "desc": "適合的學員輪廓與先備條件，協助判斷課程適配度。"
+    },
+    "instructor": {
+      "title": "講師",
+      "desc": "講師背景、教學經驗與代表作品。"
+    },
+    "outline": {
+      "title": "大綱",
+      "desc": "課程章節與實作專題列表，基礎到進階的學習路線圖。"
+    },
+    "tuition": {
+      "title": "學費",
+      "desc": "收費方式、早鳥/團報方案與付款資訊。"
+    },
+    "signup": {
+      "title": "報名",
+      "desc": "報名流程與表單入口，包含注意事項與時間表。"
+    },
+    "testimonials": {
+      "title": "學生心得",
+      "desc": "學員回饋、作品展示與心得，供新學員參考。"
+    },
+    "contact": {
+      "title": "聯絡",
+      "desc": "聯絡資訊與表單入口，包含社群與 email 渠道。"
+    },
+    "more": {
+      "title": "其它近期課程",
+      "desc": "探索彼得潘近期的課程，挑選最適合你的學習路徑。"
+    }
+  },
+  "introPage": {
+    "heroTitle": "彼得潘的 Flutter 跨平台 App 程式設計入門",
+    "heroLead": "為文組生量身訂做，從零開始學程式，開心寫 App！",
+    "heroLines": [
+      "只要 10 個星期，每週一個晚上，",
+      "即可學會程式設計的核心概念，",
+      "成為酷炫的 Flutter 跨平台 App 開發魔法師！"
+    ],
+    "cta": "報名",
+    "learnTitle": "你將會學到",
+    "learnItems": [
+      "獨力開發 Flutter App，同時上架 App Store 和 Google Play。",
+      "學會 Dart 程式語言，了解程式設計的核心概念，包含變數、函式、if else、迴圈、類別。",
+      "開發多個有趣的 Flutter App，累積跨平台開發經驗。",
+      "學習最新版的 Flutter、Dart、Material Design。",
+      "開發自己感興趣的 App。",
+      "一次開發，iOS 和 Android 兩個平台同時擁有。"
+    ]
+  },
+  "placeholder": "內容即將補完，將涵蓋範例、作業說明、常見問題與報名資訊。",
+  "footer": {
+    "copyright": "© {{year}} 彼得潘的 Flutter 跨平台 App 程式設計入門. All rights reserved."
+  }
+}

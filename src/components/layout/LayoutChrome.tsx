@@ -6,12 +6,14 @@ import { Header, Navigation, Footer, FooterSwiftui } from './index'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import { SwiftNav } from './SwiftNav'
+import { FlutterNav } from './FlutterNav'
 import styles from './LayoutChrome.module.css'
 
 export function LayoutChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const isSwiftuiSite = useMemo(() => pathname?.startsWith('/courses/swiftui'), [pathname])
   const isSwiftSite = useMemo(() => pathname?.startsWith('/courses/swift'), [pathname])
+  const isFlutterSite = useMemo(() => pathname?.startsWith('/courses/flutter'), [pathname])
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -24,6 +26,8 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
     <div className={styles.layout}>
       {isSwiftuiSite ? (
         <SwiftuiNav />
+      ) : isFlutterSite ? (
+        <FlutterNav />
       ) : isSwiftSite ? (
         <SwiftNav />
       ) : (
@@ -35,7 +39,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
 
       <main className={styles.main}>{children}</main>
 
-      {isSwiftuiSite || isSwiftSite ? <FooterSwiftui /> : <Footer />}
+      {isSwiftuiSite || isSwiftSite || isFlutterSite ? <FooterSwiftui /> : <Footer />}
       <FloatingContact />
       <BackToTop />
     </div>

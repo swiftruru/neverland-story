@@ -75,9 +75,11 @@ export function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false)
   const contactHref = pathname?.startsWith('/courses/swiftui')
     ? '/courses/swiftui/foundation/contact'
-    : pathname?.startsWith('/courses/swift')
-      ? '/courses/swift/advanced/contact'
-      : '/neverland/contact'
+    : pathname?.startsWith('/courses/flutter')
+      ? '/courses/flutter/advanced/contact'
+      : pathname?.startsWith('/courses/swift')
+        ? '/courses/swift/advanced/contact'
+        : '/neverland/contact'
 
   const toggleOpen = useCallback(() => {
     setIsOpen((prev) => !prev)
