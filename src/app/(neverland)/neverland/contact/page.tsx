@@ -165,12 +165,12 @@ function CopyButton({ text, label, copiedLabel }: { text: string; label: string;
 }
 
 export default function ContactPage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation('neverland')
   const [formStatus, setFormStatus] = useState('')
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setFormStatus('Sending...')
+    setFormStatus(t('pages.contact.form.sending'))
 
     const form = event.currentTarget
     const formData = new FormData(form)
@@ -184,13 +184,13 @@ export default function ContactPage() {
 
       const data = await response.json()
       if (data.success) {
-        setFormStatus('已送出，謝謝你的訊息！')
+        setFormStatus(t('pages.contact.form.success'))
         form.reset()
       } else {
-        setFormStatus('送出時發生錯誤，請稍後再試。')
+        setFormStatus(t('pages.contact.form.error'))
       }
     } catch {
-      setFormStatus('送出時發生錯誤，請稍後再試。')
+      setFormStatus(t('pages.contact.form.error'))
     }
   }
 
@@ -264,27 +264,27 @@ export default function ContactPage() {
           <PaperCard tapeColor="green" tapePosition="top-left" tapeRotation={-2}>
             <div className={styles.formCard}>
               <div className={styles.formIntro}>
-                <h2 className={styles.formTitle}>寫信給彼得潘</h2>
-                <p className={styles.formDescription}>有任何合作、課程或 App 開發需求，歡迎留言，會盡快回覆。</p>
+                <h2 className={styles.formTitle}>{t('pages.contact.form.title')}</h2>
+                <p className={styles.formDescription}>{t('pages.contact.form.subtitle')}</p>
               </div>
               <form className={styles.web3Form} onSubmit={onSubmit}>
                 <div className={styles.formRow}>
                   <label className={styles.label}>
-                    姓名
-                    <input name="name" type="text" required placeholder="你的名字" />
+                    {t('pages.contact.form.name')}
+                    <input name="name" type="text" required placeholder={t('pages.contact.form.namePlaceholder')} />
                   </label>
                   <label className={styles.label}>
-                    Email
-                    <input name="email" type="email" required placeholder="you@example.com" />
+                    {t('pages.contact.form.email')}
+                    <input name="email" type="email" required placeholder={t('pages.contact.form.emailPlaceholder')} />
                   </label>
                 </div>
                 <label className={styles.label}>
-                  想說的話
-                  <textarea name="message" rows={4} required placeholder="請描述你的需求或想法" />
+                  {t('pages.contact.form.message')}
+                  <textarea name="message" rows={4} required placeholder={t('pages.contact.form.messagePlaceholder')} />
                 </label>
                 <div className={styles.formActions}>
                   <button type="submit" className={styles.submitButton}>
-                    送出表單
+                    {t('pages.contact.form.submit')}
                   </button>
                   {formStatus && <span className={styles.formStatus}>{formStatus}</span>}
                 </div>

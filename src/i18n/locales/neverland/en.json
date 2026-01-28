@@ -66,7 +66,21 @@
       "visit": "Visit",
       "copy": "Copy",
       "sendEmail": "Send",
-      "copied": "Copied"
+      "copied": "Copied",
+      "form": {
+        "title": "Write to Peter Pan",
+        "subtitle": "For collaboration, courses, or App development inquiries, leave a message and we'll reply soon.",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Describe your needs or ideas",
+        "submit": "Submit",
+        "sending": "Sending...",
+        "success": "Sent! Thank you for your message.",
+        "error": "Failed to send. Please try again."
+      }
     },
     "books": {
       "title": "Books",

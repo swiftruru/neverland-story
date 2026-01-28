@@ -355,6 +355,18 @@
   line-height: 1.6;
 }
 
+.infoLink {
+  color: #0f7c66;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.infoLink:hover {
+  color: #0a5a4a;
+}
+
 @media (max-width: 768px) {
   .infoSection {
     padding: 2.5rem 0 3rem;

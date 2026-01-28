@@ -130,6 +130,131 @@
       "Develop Apps that interest you."
     ]
   },
+  "infoPage": {
+    "heading": "Course Information",
+    "desc": "Peter Pan's latest Flutter App course collaborates with ",
+    "descLink": "NTU Information Systems Training",
+    "descLinkUrl": "https://train.csie.ntu.edu.tw/train/course.php?id=5116",
+    "descEnd": ", starting February 2025. Interested? Check it out!",
+    "cards": [
+      {
+        "id": "time",
+        "title": "Schedule",
+        "lines": [
+          "2024/11/12 ~ 2025/1/21",
+          "Every Tuesday 19:00 ~ 22:00",
+          "30 hours (classroom + live stream) plus 6 extra hours online",
+          "Total 36 hours, 12/31 holiday"
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Location",
+        "lines": [
+          "7F, No. 131, Songjiang Rd., Zhongshan Dist., Taipei",
+          "MRT: Songjiang Nanjing Station Exit 7"
+        ]
+      },
+      {
+        "id": "live",
+        "title": "Live Stream & Recording",
+        "lines": [
+          "Live streaming and recordings provided",
+          "Attend in-class or study from home and review anytime"
+        ]
+      },
+      {
+        "id": "size",
+        "title": "Class Size",
+        "lines": [
+          "Up to 30 students"
+        ]
+      }
+    ]
+  },
+  "featuresPage": {
+    "heading": "Features",
+    "desc": "Building complete, production-ready Flutter Apps step by step",
+    "items": [
+      {
+        "id": "tech",
+        "title": "Learn the Latest Dart and Flutter SDK",
+        "body": [
+          "New technologies are not only powerful but also easier to learn. Starting App development now is much easier than before, saving you from many detours."
+        ]
+      },
+      {
+        "id": "live",
+        "title": "Live Streaming and Unlimited Recording Review",
+        "body": [
+          "Live streaming is provided so you can attend class from home. In-class students can also enjoy clear screen views via live stream regardless of seating position. Combined with recordings, you can review every detail of the course anytime after class. After the course ends, recordings remain available indefinitely."
+        ]
+      },
+      {
+        "id": "apps",
+        "title": "Develop Ten Complete Apps",
+        "body": [
+          "Build e-book Apps, drink ordering Apps, and food journal Apps from scratch. ( <link1>Peter Pan treats you to drinks after completing the drink ordering App assignment.</link1>)"
+        ]
+      },
+      {
+        "id": "ta",
+        "title": "Course TA: LINE Messages and Pre/Post-Class Consultations",
+        "body": [
+          "The biggest benefit of taking a course is having someone to ask when you're stuck. <link1>You can ask Peter Pan questions via LINE and FB anytime, and book face-to-face discussions 1 hour before class</link1>. Even after the course ends, you can still ask because Peter Pan will be your lifelong friend and TA!"
+        ]
+      },
+      {
+        "id": "humor",
+        "title": "Fun and Engaging Teaching",
+        "body": [
+          "Peter Pan will help you understand App development through lively teaching and dad jokes. (See <link1>student testimonials about the fun classroom experience</link1>)"
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Well-Designed Exercises and Assignments",
+        "body": [
+          "Through beautifully designed in-class exercises and homework, students stay motivated during and after class, creating beautiful Apps worth sharing on IG. (Special thanks to <link1>designer friends who collaborated on teaching materials</link1>, and <link2>alumni who generously shared</link2> their beautiful assignments for juniors to learn from.)"
+        ]
+      },
+      {
+        "id": "blog",
+        "title": "Blog: Document 10 Weeks of App Development Growth",
+        "body": [
+          "Share and document your App development growth on a blog. For the benefits of blogging while learning App development, see <link1>iOS App Developer Writer Program</link1>."
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "AI-Integrated Teaching and Learning",
+        "body": [
+          "The course integrates amazing AI programming assistants: ChatGPT, Firebase Studio, Claude, Gemini, Zed AI, GitHub Copilot, Windsurf, Cursor. They provide assistance with explaining code, creating assignments, answering questions, speeding up development, debugging, refactoring, and commenting."
+        ]
+      },
+      {
+        "id": "consult",
+        "title": "Free 1-Hour One-on-One Consultation & Weekly Post-Course Support",
+        "body": [
+          "Free 1-hour consultation topics include development issues, app store publishing, job hunting, and mock interviews. To help students continue developing Apps after the course, Peter Pan welcomes weekly submissions of App projects for discussion. See <link1>Free 1-Hour One-on-One App Development Consultation</link1> and <link2>Neverland Course: Supporting Your App Development Journey for Life</link2>."
+        ]
+      },
+      {
+        "id": "workshop",
+        "title": "Free Advanced App Workshops and Ongoing Assignments",
+        "body": [
+          "After the course ends, <link1>assignments continue</link1>, and various themed <link2>advanced App workshops</link2> are regularly offered to help everyone keep practicing and improving, becoming lifelong App wizards!"
+        ]
+      },
+      {
+        "id": "tools",
+        "title": "Learn Industry Collaboration Tools",
+        "body": [
+          "Version control with GitHub, using GitHub, Medium, <link1>GitHub Pages</link1> & CakeResume to create <link2>App portfolios</link2> and resumes."
+        ]
+      }
+    ]
+  },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
   "footer": {
     "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."

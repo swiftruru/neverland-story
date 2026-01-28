@@ -24,9 +24,10 @@ const savedLanguage =
 
 i18n.use(initReactI18next).init({
   resources: {
-    'zh-TW': { translation: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW, flutter: flutterZhTW },
-    en: { translation: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
+    'zh-TW': { neverland: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW, flutter: flutterZhTW },
+    en: { neverland: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
   },
+  defaultNS: 'neverland',
   // SSR 預設中文；若前端有儲存偏好則覆蓋
   lng: savedLanguage || 'zh-TW',
   fallbackLng: 'zh-TW',

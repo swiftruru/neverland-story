@@ -66,7 +66,21 @@
       "visit": "前往",
       "copy": "複製",
       "sendEmail": "寄信",
-      "copied": "已複製"
+      "copied": "已複製",
+      "form": {
+        "title": "寫信給彼得潘",
+        "subtitle": "有任何合作、課程或 App 開發需求，歡迎留言，會盡快回覆。",
+        "name": "姓名",
+        "namePlaceholder": "你的名字",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "message": "想說的話",
+        "messagePlaceholder": "請描述你的需求或想法",
+        "submit": "送出表單",
+        "sending": "寄出中...",
+        "success": "已送出，謝謝你的訊息！",
+        "error": "送出失敗，請再試一次。"
+      }
     },
     "books": {
       "title": "著作",
