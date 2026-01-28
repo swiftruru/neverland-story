@@ -1492,6 +1492,112 @@
   line-height: 1.6;
 }
 
+/* Simplified outline card (title-only) */
+.outlineCardSimple {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-paper);
+  padding: 1.4rem 1.2rem 1.5rem 1.2rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.outlineCardSimple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 104, 80, 0.12);
+}
+
+.outlineCardSimple::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.outlineNumber {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border: 2px solid #a5d6a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.outlineCardSimple:nth-child(2n) .outlineNumber {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border-color: #ffd54f;
+  color: #f57f17;
+}
+
+.outlineCardSimple .outlineTapeSimple {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(calc(-3deg + (var(--outline-index, 0) % 2) * 5deg));
+  background: linear-gradient(
+    180deg,
+    var(--tape-top, #f4e5aa) 0%,
+    var(--tape-bottom, #f1d778) 100%
+  );
+  border-radius: 0;
+  opacity: 0.7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  clip-path: polygon(
+    /* 左側鋸齒撕痕 */
+    0% 0%,
+    2px 3px,
+    0% 6px,
+    3px 9px,
+    1px 12px,
+    2px 15px,
+    0% 18px,
+    1px 100%,
+    /* 底部 */
+    calc(100% - 1px) 100%,
+    /* 右側鋸齒撕痕 */
+    100% 17px,
+    calc(100% - 2px) 14px,
+    100% 11px,
+    calc(100% - 3px) 8px,
+    100% 5px,
+    calc(100% - 2px) 2px,
+    100% 0%
+  );
+}
+
+.outlineCardSimple:nth-child(2n) .outlineTapeSimple {
+  --tape-top: #cbe7d6;
+  --tape-bottom: rgba(160, 200, 160, 0.88);
+}
+
+.outlineCardSimple h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
 .tuitionSection {
   padding: 3rem 0 3.5rem;
   background: #f7faf7;
@@ -2624,4 +2730,202 @@
 
 .testimonialHero .kickerRow {
   align-self: flex-start;
+}
+
+/* ============================================
+   Tuition / Pricing Section
+   ============================================ */
+
+.tuitionSection {
+  padding: 3rem 0 3.5rem;
+  background: #f7faf7;
+}
+
+.tuitionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.tuitionCard {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-paper);
+  padding: 1.2rem 1.15rem 1.35rem;
+  display: grid;
+  gap: 0.7rem;
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tuitionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 104, 80, 0.12);
+}
+
+.tuitionTape {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(calc(-3deg + (var(--tuition-idx, 0) % 2) * 5deg));
+  background: linear-gradient(180deg, var(--tape-top, #f4e5aa) 0%, var(--tape-bottom, #f1d778) 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  opacity: 0.7;
+  clip-path: polygon(
+    0% 0%, 2px 3px, 0% 6px, 3px 9px, 1px 12px, 2px 15px, 0% 18px, 1px 100%,
+    calc(100% - 1px) 100%,
+    100% 17px, calc(100% - 2px) 14px, 100% 11px, calc(100% - 3px) 8px, 100% 5px, calc(100% - 2px) 2px, 100% 0%
+  );
+}
+
+.tuitionCard:nth-child(2n) .tuitionTape {
+  --tape-top: #cbe7d6;
+  --tape-bottom: rgba(160, 200, 160, 0.88);
+}
+
+.tuitionCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tuitionIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background: #f7faf7;
+  border: 1px solid var(--color-border-light);
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+
+.tuitionIcon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.tuitionBody h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.planSubtitle {
+  margin: 0.1rem 0 0.2rem;
+  color: #0c6a55;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.priceBlock {
+  display: grid;
+  gap: 0.1rem;
+  justify-items: center;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.original {
+  font-size: 0.95rem;
+  color: #767676;
+  text-decoration: line-through;
+}
+
+.planNote {
+  margin: 0.15rem 0 0.25rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.planLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #cfe4de;
+  background: #e9f5ef;
+  color: #0c6a55;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.2rem;
+  transition: background 0.15s ease;
+}
+
+.planLink:hover {
+  background: #d9efe5;
+}
+
+.tuitionSection .sectionHeader {
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .tuitionSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .tuitionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tuition Notes Section */
+.tuitionNotesSection {
+  padding: 2.5rem 0 3rem;
+  background: var(--color-bg);
+}
+
+.tuitionNotesSection .sectionHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tuitionNotesList {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.tuitionNotesList li {
+  position: relative;
+  padding: 1rem 1.2rem 1rem 2.5rem;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-paper);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.tuitionNotesList li::before {
+  content: '•';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #0c6a55;
+  font-size: 1.2rem;
+  font-weight: 800;
 }

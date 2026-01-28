@@ -367,6 +367,71 @@
       "Magazine Columns: [AppCoda](http://www.appcoda.com.tw/), MacToday App Development, PChome Mac Basics"
     ]
   },
+  "outlinePage": {
+    "heading": "Course Outline",
+    "description": "From development environment to advanced techniques, master the core skills of Flutter App development step by step.",
+    "items": [
+      "Learn IDE: VS Code / Firebase Studio / Android Studio",
+      "Dart Programming Syntax",
+      "Design UI with Flutter Widgets",
+      "Page Navigation and Data Passing",
+      "Stateless & Stateful Widgets",
+      "Data Input",
+      "RESTful API Integration",
+      "Data Storage",
+      "Animations",
+      "State Management",
+      "Responsive App Layouts for Different Screen Sizes",
+      "Dart and Swift Code Integration",
+      "App Publishing"
+    ]
+  },
+  "tuitionPage": {
+    "plans": [
+      {
+        "id": "discount",
+        "title": "Special Price",
+        "price": "$ 9,500",
+        "image": "/flutter/advanced/tuition/Flutter.png"
+      },
+      {
+        "id": "group",
+        "title": "Group Price",
+        "subtitle": "2+ learners (including 2)",
+        "price": "$ 8,000",
+        "image": "/flutter/advanced/tuition/Flutter.png"
+      },
+      {
+        "id": "student",
+        "title": "Student Price",
+        "subtitle": "Students and grads within 1 year of graduation/discharge",
+        "price": "$ 7,000",
+        "note": "Installments available: 3,000 NT each, 3 installments, every 3 weeks",
+        "linkLabel": "Student pricing details",
+        "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
+        "image": "/flutter/advanced/tuition/Flutter.png"
+      },
+      {
+        "id": "support",
+        "title": "Unemployment Support Price",
+        "subtitle": "3 slots, 3+ months unemployed",
+        "price": "$ 6,000",
+        "note": "Warm-heart price (2 slots, low income or hardship): 100 NT",
+        "image": "/flutter/advanced/tuition/Flutter.png"
+      },
+      {
+        "id": "alumni",
+        "title": "Alumni Price",
+        "subtitle": "Previous Peter Pan course students",
+        "price": "$ 7,000",
+        "image": "/flutter/advanced/tuition/Flutter.png"
+      }
+    ],
+    "notesTitle": "Notes",
+    "notes": [
+      "Bring your own Mac or Windows computer"
+    ]
+  },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
   "footer": {
     "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."
