@@ -255,6 +255,118 @@
       }
     ]
   },
+  "assignmentsPage": {
+    "heading": "Student Assignments Showcase",
+    "blogLabel": "Peter Pan's iOS App Course Student Assignment Blog",
+    "blogUrl": "https://medium.com/彼得潘的-swift-ios-app-開發教室",
+    "items": [
+      {
+        "title": "Assignment 1",
+        "alt": "Student assignment example 1",
+        "src": "/swiftui/foundation/assignments/hw-01.gif"
+      },
+      {
+        "title": "Assignment 2",
+        "alt": "Student assignment example 2",
+        "src": "/swiftui/foundation/assignments/hw-02.gif"
+      },
+      {
+        "title": "Assignment 3",
+        "alt": "Student assignment example 3",
+        "src": "/swiftui/foundation/assignments/hw-03.gif"
+      },
+      {
+        "title": "Assignment 4",
+        "alt": "Student assignment example 4",
+        "src": "/swiftui/foundation/assignments/hw-04.gif"
+      }
+    ]
+  },
+  "audiencePage": {
+    "heading": "Target Audience",
+    "description": "For those with programming background who want to advance in Flutter development.",
+    "targets": [
+      "Have experience with other programming languages or basic App development knowledge, and want to learn complete Flutter App development.",
+      "Want to develop a second career during after-work hours, achieving a second life in Flutter App work, freelancing, and entrepreneurship.",
+      "University students who want to create App projects for school assignments.",
+      "High school students who want to include App works in their university application portfolio."
+    ],
+    "psPrefix": "ps: Students with no programming background are advised to self-learn basic programming concepts first—understanding if/else, loops, functions—and be able to complete the four exercises mentioned in this ",
+    "psLinkLabel": "article",
+    "psLinkUrl": "https://medium.com/彼得潘的-swift-ios-app-開發教室/該報名文組生班還是彼得潘班-f8726b7e8c5d",
+    "psSuffix": " before enrolling.",
+    "promisesTitle": "Six Promises of Flutter App Teaching",
+    "promisesLinkLabel": "Read the Full Six Promises",
+    "promisesLink": "https://medium.com/@apppeterpan/彼得潘ios-app開發教學的五個承諾-5bc29a7c08a5",
+    "promises": [
+      {
+        "title": "Lifelong Friends",
+        "descPrefix": "Feel free to contact Peter Pan anytime via ",
+        "descSuffix": ", LINE, or phone to discuss App development questions.",
+        "links": [
+          { "label": "Fan Page", "url": "https://www.facebook.com/iphone.peterpan/" },
+          { "label": "FB", "url": "https://www.facebook.com/deeplove.pan" },
+          { "label": "Email", "url": "mailto:apppeterpan@gmail.com" }
+        ]
+      },
+      {
+        "title": "Free Access to Future Course Materials",
+        "desc": "Don't worry about Dart or Flutter version updates—long-term course students can get new materials for free."
+      },
+      {
+        "title": "Free Course Re-attendance",
+        "desc": "Want to review or see Peter Pan again? If there's space in the classroom, you're welcome back. Life brings many reunions."
+      },
+      {
+        "title": "One-on-One Tutoring Reward for Completing All Assignments",
+        "desc": "Submit every assignment and receive 3 hours of one-on-one tutoring (worth NT$3,000)."
+      },
+      {
+        "title": "Special Student Discount",
+        "descPrefix": "Financial pressure as a student? Discounts and installment plans available. (",
+        "descSuffix": ")",
+        "links": [
+          {
+            "label": "Including students within one year of graduation or military discharge",
+            "url": "https://medium.com/@apppeterpan/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a"
+          }
+        ]
+      },
+      {
+        "title": "Special Discounts for Low-Income, Financially Struggling, or Unemployed Friends",
+        "desc": "Friends in need can apply for special discounted pricing to achieve their learning goals together."
+      }
+    ]
+  },
+  "instructorPage": {
+    "heading": "Peter Pan: Crazy About All Things Apple",
+    "subheading": "More About Peter Pan's Story",
+    "bioLink": "/neverland",
+    "heroTitle": "Starting with Flutter, Making Learning Easier and More Fun",
+    "heroSubtitle": "Instructor, author, consultant—from zero programming to App Store publishing, Peter Pan guides you every step of the way.",
+    "avatarAlt": "Peter Pan instructor photo",
+    "links": [
+      { "label": "Peter Pan's App Neverland", "url": "https://medium.com/@apppeterpan" },
+      { "label": "Fan Page", "url": "https://www.facebook.com/iphone.peterpan/" },
+      { "label": "Your iOS App Development Mentor", "url": "http://yourappmentor.strikingly.com/" },
+      { "label": "Peter Pan's Swift Programming", "url": "http://swiftbook.strikingly.com/" },
+      { "label": "AppCoda Column", "url": "http://www.appcoda.com.tw/" },
+      { "label": "iOS App Gold Ferryman", "url": "http://iosappferryman.strikingly.com/" }
+    ],
+    "details": [
+      "Bestselling author of \"[Peter Pan's Swift Programming](http://swiftbook.strikingly.com/)\" and \"[App Programming for iPhone, iPad](https://www.eslite.com/product/1001113631994712)\" (Books.com.tw Computer Category Top 1, Tenlong Top 1, PC Home Computer/Photography Top 1, Kingstone Top 3)",
+      "FB Fan Page: [Peter Pan's Apple Fan](https://www.facebook.com/iphone.peterpan/)",
+      "App Works: Wealthy, LOCOMO Exercise Log, Penny Tai's Way Home, and over 20 other Apps (Wealthy App ranked Taiwan Finance Top 1, Taiwan Overall Top 2, China Finance Top 2)",
+      "Swift iOS / Flutter / Python Development Instructor: NTU Information Systems Training, [ALPHA Camp](https://www.alphacamp.co/), [Yi-Chih Training](http://www.ichih.com/), [III](http://www.iii.org.tw/), Vocational Training Bureau, [TibaMe](https://www.tibame.com/), Studio A, iPlayground, MOPCON, Dream Seed, Chunghwa Telecom Academy, New Taipei City Youth Bureau",
+      "University Instructor: Ocean University CS, NTUT CS, NTU General Education Center, NTUE iOS Club, NCCU, NCU, NTPU, Tamkang iOS Club, Feng Chia, Chinese Culture, Hsing Wu, Hungkuang, Cheng Shiu, Tzu Chi, Chin-Yi, China U, Nankan High School, Kaohsiung American School",
+      "Private Tutoring: [Your iOS App Development Mentor](http://yourappmentor.strikingly.com/)",
+      "Corporate Training: Yahoo, ULi Semiconductor, Vanguard, Uni-President Information, Shin Kong Life, Sinyi Realty, Gosai Design",
+      "Mentor of WWDC Swift Student Challenge winners",
+      "Blog: [Peter Pan's App Neverland](https://medium.com/@apppeterpan)",
+      "Technical Consultant: [iOS App Gold Ferryman](http://iosappferryman.strikingly.com/), FUNTEK, Dot Dot Digital, Innooze, Brocas",
+      "Magazine Columns: [AppCoda](http://www.appcoda.com.tw/), MacToday App Development, PChome Mac Basics"
+    ]
+  },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
   "footer": {
     "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."
