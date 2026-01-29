@@ -2929,3 +2929,296 @@
   font-size: 1.2rem;
   font-weight: 800;
 }
+
+/* ============================================
+   Signup Section
+   ============================================ */
+
+.signupSection {
+  padding: 3rem 0 3.5rem;
+  background: #ffffff;
+}
+
+.signupLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.signupHero {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.signupHint {
+  margin: 0;
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.signupCard {
+  position: relative;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: 1.3rem 1.2rem 1.45rem;
+  box-shadow: var(--shadow-paper);
+  display: grid;
+  gap: 0.6rem;
+  margin-top: var(--spacing-xl);
+}
+
+.signupTape {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(-3deg);
+  background: linear-gradient(180deg, #f4e5aa 0%, #f1d778 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  opacity: 0.7;
+  clip-path: polygon(
+    0% 0%, 2px 3px, 0% 6px, 3px 9px, 1px 12px, 2px 15px, 0% 18px, 1px 100%,
+    calc(100% - 1px) 100%,
+    100% 17px, calc(100% - 2px) 14px, 100% 11px, calc(100% - 3px) 8px, 100% 5px, calc(100% - 2px) 2px, 100% 0%
+  );
+}
+
+.signupCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-bg-paper-dark, #f1ede6) 50%);
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.signupIcon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  border: 1px solid var(--color-border-light);
+  background: linear-gradient(135deg, #6a4de6, #9f79ff);
+  display: grid;
+  place-items: center;
+}
+
+.signupIcon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.signupBody h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.signupDesc {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.signupSteps {
+  list-style: none;
+  padding: 0.1rem 0 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.signupSteps li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 1.55;
+}
+
+.signupSteps li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c6a55, #00a67d);
+  box-shadow: 0 8px 16px rgba(0, 136, 104, 0.2);
+}
+
+.formLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #cfe4de;
+  background: #e9f5ef;
+  color: #0c6a55;
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: 0.35rem;
+  width: fit-content;
+  transition: background 0.15s ease;
+}
+
+.formLink:hover {
+  background: #d9efe5;
+}
+
+.signupPs {
+  margin-top: 1.8rem;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background: #f7faf7;
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.signupPs h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+/* ============================================
+   Photo Section
+   ============================================ */
+
+.photoSection {
+  padding: 3rem 0 3.5rem;
+  background: #ffffff;
+}
+
+.photoHeader {
+  display: grid;
+  gap: 0.6rem;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.photoCard {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  padding: 0.75rem 0.75rem 3.3rem;
+  display: grid;
+  gap: 0.4rem;
+  margin-top: var(--spacing-xl);
+  transform: rotate(var(--photo-tilt, -1deg));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: zoom-in;
+}
+
+.photoCard:hover {
+  transform: rotate(var(--photo-tilt, -1deg)) translateY(-2px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
+}
+
+.photoTape {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 68px;
+  height: 20px;
+  transform: rotate(calc(-3deg + (var(--photo-idx, 0) % 2) * 5deg));
+  background: linear-gradient(180deg, #f4e5aa 0%, #f1d778 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 0 hsla(0, 0%, 100%, 0.3);
+  opacity: 0.7;
+  clip-path: polygon(
+    0% 0%, 2px 3px, 0% 6px, 3px 9px, 1px 12px, 2px 15px, 0% 18px, 1px 100%,
+    calc(100% - 1px) 100%,
+    100% 17px, calc(100% - 2px) 14px, 100% 11px, calc(100% - 3px) 8px, 100% 5px, calc(100% - 2px) 2px, 100% 0%
+  );
+}
+
+.photoCard:nth-child(2n) .photoTape {
+  background: linear-gradient(180deg, #cbe7d6 0%, rgba(160, 200, 160, 0.88) 100%);
+}
+
+.photoCard:nth-child(2n) {
+  --photo-tilt: 1.6deg;
+}
+
+.photoCard:nth-child(2n + 1) {
+  --photo-tilt: -1.6deg;
+}
+
+.photoImage {
+  background: #f9f9f9;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.photoImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photoCaption {
+  margin: 0;
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.blogLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid #cfe4de;
+  background: #e9f5ef;
+  color: #0c6a55;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.blogLink:hover {
+  background: #d9efe5;
+}
+
+@media (max-width: 768px) {
+  .signupSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .signupLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .photoSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+}

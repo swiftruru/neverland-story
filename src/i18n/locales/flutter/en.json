@@ -432,6 +432,215 @@
       "Bring your own Mac or Windows computer"
     ]
   },
+  "signupPage": {
+    "title": "Apply",
+    "description": "Sign up via Google Form. Payment is by bank transfer—we'll send account details by email, so be sure to enter a correct email address.",
+    "cta": "Fill out the Google Form",
+    "formHeading": "Google Form",
+    "formCopy": "Submit the form and we'll email you the bank details and next steps.",
+    "hint": "After submitting, please check your inbox.",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeyVMM8s14knuAGDfwLp7bOZf_22OGM0CLe0T7JcTadIOh4Cg/viewform",
+    "psText": "If this is your first time learning to code, or you'd prefer to start from a gentler foundation, consider Peter Pan's course designed for absolute beginners:",
+    "psLinkLabel": "SwiftUI Foundation for Liberal Arts Learners",
+    "psUrl": "/courses/swiftui/foundation/intro/",
+    "steps": [
+      "Fill out the Google Form to reserve your spot.",
+      "Watch your inbox—we'll send bank details and confirmation.",
+      "Complete the transfer to lock in your seat."
+    ],
+    "photos": {
+      "title": "Class photos",
+      "ctaLabel": "More class memories",
+      "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
+      "items": [
+        {
+          "src": "/flutter/advanced/signup/photos/photo-01.png",
+          "alt": "Class photo 1"
+        },
+        {
+          "src": "/flutter/advanced/signup/photos/photo-02.png",
+          "alt": "Class photo 2"
+        },
+        {
+          "src": "/flutter/advanced/signup/photos/photo-03.png",
+          "alt": "Class photo 3"
+        }
+      ]
+    }
+  },
+  "testimonialsPage": {
+    "title": "Student Testimonials",
+    "subtitle": "Real, unfiltered reflections from learners—walk through every step of the journey together.",
+    "ctaLabel": "Student reflections on Medium",
+    "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%AD%B8%E7%94%9F%E5%BF%83%E5%BE%97-7fa930d5df66",
+    "viewFull": "Read full story",
+    "avatarAria": "Enlarge photo of {{author}}",
+    "essays": {
+      "title": "Essays from Peter Pan on iOS App Learning",
+      "ctaLabel": "Read the essay collection",
+      "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98%E5%92%8C-ios-app-%E7%9A%84%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%95%A3%E6%96%87%E9%9B%86-4794cc6b753c",
+      "itemCta": "Read full article",
+      "items": [
+        {
+          "title": "Preparation Before Learning Swift iOS App Dev",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%AD%B8%E7%BF%92%E9%96%8B%E7%99%BC-swift-ios-app-%E5%89%8D%E7%9A%84%E6%BA%96%E5%82%99-4f9e52debc16"
+        },
+        {
+          "title": "Ten Q&A About iOS App Development",
+          "url": "https://medium.com/@apppeterpan/%E9%97%9C%E6%96%BCios-app%E9%96%8B%E7%99%BC%E7%9A%84%E5%8D%81%E5%80%8Bq-a-65833f6eb993"
+        },
+        {
+          "title": "How to Become an iOS App Wizard",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-59007867"
+        },
+        {
+          "title": "App Learning: Class or Self-Study?",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/app-%E6%80%8E%E9%BA%BC%E5%AD%B8-%E4%B8%8A%E8%AA%B2%E9%82%84%E6%98%AF%E8%87%AA%E5%AD%B8-db3d9314ac89"
+        },
+        {
+          "title": "Over 30—Is It Too Late to Learn Code?",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B6%85%E9%81%8E-30-%E6%AD%B2-%E9%96%8B%E5%A7%8B%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BE%86%E5%BE%97%E5%8F%8A%E5%97%8E-cc7d3af772af"
+        },
+        {
+          "title": "9 Tips to Learn Coding Better in Class",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8"
+        },
+        {
+          "title": "When You Strive to Learn Swift, the World Helps",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%95%B6%E4%BD%A0%E5%8A%AA%E5%8A%9B%E6%83%B3%E5%AD%B8%E7%BF%92-swift-%E6%99%82-%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%9C%83%E4%BE%86%E5%B9%AB%E4%BD%A0-b11dca643686"
+        },
+        {
+          "title": "Why We Couldn't Learn Programming Back Then",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E5%80%91%E5%AD%B8%E4%B8%8D%E6%9C%83%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-b647b2de5980"
+        },
+        {
+          "title": "Step-by-Step: iOS App Submission & Updates",
+          "url": "http://www.appcoda.com.tw/ios-app-submission/"
+        },
+        {
+          "title": "Swift Programming Intro",
+          "url": "http://swiftbook.strikingly.com/"
+        },
+        {
+          "title": "13 Ways to Start a Business with iOS Apps",
+          "url": "http://www.slideshare.net/deeplovepan/ios-app-13"
+        },
+        {
+          "title": "iOS App Dev FAQ (Part 1)",
+          "url": "https://blog.alphacamp.co/2017/01/24/ios-app-development-faq1/"
+        },
+        {
+          "title": "Write Better Swift by Mimicking Apple Examples",
+          "url": "https://www.appcoda.com.tw/write-better-swift/"
+        },
+        {
+          "title": "Switching Careers in Months: 40 Hours/Week Practice",
+          "url": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%9D%9E%E6%9C%AC%E7%A7%91%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B9%BE%E5%80%8B%E6%9C%88%E5%85%A7%E8%BD%89%E8%81%B7%E5%B7%A5%E7%A8%8B%E5%B8%AB-%E4%B8%80%E9%80%B1-40-%E5%B0%8F%E6%99%82%E7%9A%84%E7%B7%B4%E7%BF%92-ebacb8b704af"
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "A Duck Learning to Fly",
+        "author": "Yaya",
+        "course": "iOS App Development for Liberal Arts Learners",
+        "link": "https://medium.com/@yayachen/%E4%B8%80%E6%AE%B5%E9%B4%A8%E5%AD%90%E5%AD%B8%E9%A3%9B%E7%9A%84%E6%97%85%E7%A8%8B-cd3acf368c19#.hbi1oty5p",
+        "photo": "/flutter/advanced/testimonials/yaya.png",
+        "paragraphs": [
+          "I once doubted the raving comments about Peter's funny teaching. In class I ended up laughing nonstop—he drops 'non-important' Easter eggs, gets classmates to admit guilty answers, and uses playful examples to explain tough concepts. Highly recommended.",
+          "Peter replies at lightning speed, no matter how late. I once missed class while traveling; he even offered a makeup. Truly kind-hearted.",
+          "If you have zero background and weak logic, the pace gets harder later. But if you practice and finish every homework, the sense of achievement far outweighs the frustration.",
+          "Thanks to Peter for bringing me into the once 'duck-unreachable' Swift world. For liberal-arts learners who think code is impossible: step out, fly with him, and you'll gain more than imagined."
+        ]
+      },
+      {
+        "title": "My iOS Awakening with Peter Pan",
+        "author": "Helen",
+        "course": "iOS App Development for Liberal Arts Learners",
+        "link": "https://medium.com/@yunchuwang/%E3%84%9C%E5%BD%BC%E5%BE%97%E6%BD%98ios-%E9%96%8B%E5%85%89%E5%BF%83%E5%BE%97-42fe44e67ad0",
+        "photo": "/flutter/advanced/testimonials/helen.png",
+        "paragraphs": [
+          "Before Peter, I had no coder friends and online/camp courses felt impossible. His intro (in plain language) cleared my first mental barrier.",
+          "Class was nothing like I imagined—simple explanations plus cold jokes kept me awake 85% of the time. The course flew by!",
+          "Best part: his instant answers on LINE/FB. Learning only works if you practice, and he's always there when you're stuck.",
+          "Teaching, mentoring, answering—Peter forever!"
+        ]
+      },
+      {
+        "title": "Fly into the iOS World with Peter Pan",
+        "author": "Morris",
+        "course": "iOS App Development for Liberal Arts Learners",
+        "link": "https://medium.com/@morrismiki/%E5%B8%B6%E4%BD%A0%E9%A3%9B%E5%85%A5ios%E4%B8%96%E7%95%8C-%E6%89%BE%E5%BD%BC%E5%BE%97%E6%BD%98-64f45829dabc",
+        "photo": "/flutter/advanced/testimonials/morris.png",
+        "paragraphs": [
+          "Ten sessions flew by. If you want an iOS teacher who fits the bill, here's why:",
+          "1) More patience than anyone—ask anytime, he answers softly and clearly.\n2) Always up-to-date—he updates slides even the night before to match new SDK changes.\n3) 24/7 TA—stuck at midnight? Ping him on LINE/FB; if he's awake, you're saved.\n4) Low-pressure class—uses fun examples (Penny Tai, childhood toys, jokes) so you learn basics without fear."
+        ]
+      },
+      {
+        "title": "PPAP First Experience",
+        "author": "Buffy",
+        "course": "iOS App Development for Liberal Arts Learners",
+        "link": "https://medium.com/@cbcy0213/ppap%E5%88%9D%E9%AB%94%E9%A9%97-e7d547629eee#.qn7wxcfxq",
+        "photo": "/flutter/advanced/testimonials/buffy.png",
+        "paragraphs": [
+          "Wanted to learn something new, so I took Peter Pan's app class. He's super approachable (maybe because I sat front row asking nonstop XD). First lesson: 'Don't call me teacher, we're lifelong friends.' Also: bonus 90s hits sing-alongs.",
+          "After work I was tired, but building my first layout felt great. Peter gives huge confidence—always talking about shipping to the App Store (even if I hadn't finished homework…).",
+          "His IF/ELSE examples use everyday scenarios, even glimpses of his life. Later classes humbled me; real practice is needed.",
+          "He even bought drinks for everyone in the final class and lets alumni audit again. Truly a saint. If you're a liberal-arts learner scared by giant curriculums, take Peter's class to understand fundamentals and bridge gaps with engineers."
+        ]
+      },
+      {
+        "title": "Stepping In",
+        "author": "Shiny",
+        "course": "iOS App Development for Liberal Arts Learners",
+        "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B8%8F%E9%80%B2%E5%8E%BB-%E6%96%87%E7%B5%84%E7%8F%AD%E7%AC%AC%E4%BA%94%E5%B1%86%E5%BF%83%E5%BE%97-9db14810e8a5",
+        "photo": "/flutter/advanced/testimonials/shiny.png",
+        "paragraphs": [
+          "Peter's class made me realize I truly like programming. I used to be a 'three-minute passion' person, but after summer homework I stopped fearing code and kept digging.",
+          "At first I was scared and clueless; his course intro hooked me. Early classes were calm; the first code session had me happily practicing at home.",
+          "I used to rely on Peter for every answer—he replies like a computer. Eventually I learned to search and solve on my own, clearing many concepts.",
+          "Highlights: his cold jokes are actually funny; he even joins student chats. Also, Water-bearers are the best and Peter is full of strengths (his joke). Thanks, Peter!"
+        ]
+      },
+      {
+        "title": "After the iOS App Course",
+        "author": "Sky",
+        "course": "Peter Pan's iOS App Intro",
+        "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
+        "photo": "/flutter/advanced/testimonials/sky.png",
+        "paragraphs": [
+          "By chance I joined Peter's Swift course and it became unforgettable. His unwavering love for Swift fills the room—humor plus step-by-step teaching, with rich media in the slides.",
+          "He says: 'No question is unsolvable.' Homework gets harder, but finishing it reinforces class concepts. Ask in the group or Peter directly; also learn from classmates' strengths.",
+          "As class ended, we parted ways, hoping to cross paths again. If this magic needs a time limit, I wish for 10,000 years. You don't need to be great to start, but you need to start to be great. Just do it."
+        ]
+      },
+      {
+        "title": "",
+        "author": "Ming",
+        "course": "ICH Creative iOS App Class",
+        "courseLink": "http://www.ichih.com/",
+        "link": "",
+        "photo": "/flutter/advanced/testimonials/ming.png",
+        "paragraphs": [
+          "My company enrolled me for work. I was terrified I wouldn't understand, but app development wasn't as hard as imagined. Though slower than classmates with coding backgrounds, Peter patiently answered every question—even after class.",
+          "Seeing my own design become a real app was incredibly moving. Even though my job later didn't require coding, I'm grateful for the confidence and encouragement Peter gave me."
+        ]
+      },
+      {
+        "title": "",
+        "author": "小咪",
+        "course": "ALPHA Camp iOS Class",
+        "courseLink": "https://www.alphacamp.co/",
+        "link": "",
+        "photo": "/flutter/advanced/testimonials/xiaomi.png",
+        "paragraphs": [
+          "My background is design and I had no clue about code. Peter's clear teaching made app development approachable. When I hit bugs, he spotted the issue immediately and helped fix it. His warm, sincere teaching feels zero-distance.",
+          "With Peter's help, I can pursue becoming an iOS developer with confidence."
+        ]
+      }
+    ]
+  },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
   "footer": {
     "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."
