@@ -641,6 +641,80 @@
       }
     ]
   },
+  "morePage": {
+    "items": [
+      {
+        "id": "swift-ios",
+        "title": "Swift iOS App Development from Zero",
+        "href": "https://swiftpeterpan.mystrikingly.com/",
+        "description": "8 weeks, two nights per week. Master core programming concepts with Swift, iOS, and Xcode, then build and publish your own apps for career, freelance, or startup dreams.",
+        "image": "/flutter/advanced/more/swiftui-ios-course.png"
+      },
+      {
+        "id": "swiftui-foundation",
+        "title": "iOS App Development for Liberal Arts Learners",
+        "href": "/courses/swiftui/foundation/",
+        "description": "Designed for liberal arts learners: 10 weeks, one night per week. Learn to code from zero and build your first iOS App with joy.",
+        "image": "/flutter/advanced/more/swiftui-foundation-course.png"
+      },
+      {
+        "id": "swift-basics",
+        "title": "Swift Programming Basics",
+        "href": "http://learnswift.strikingly.com/",
+        "description": "A lively 12-hour sprint through Swift 4 syntax and features, based on Peter Pan's best-selling Swift primer.",
+        "image": "/flutter/advanced/more/swift-basics-course.png"
+      },
+      {
+        "id": "learn-zero",
+        "title": "Learn to Code from Zero (Free)",
+        "href": "http://learncodefromzero.strikingly.com/",
+        "description": "Friendly, free introduction to coding with Swift. Step-by-step guidance and playful exercises to help you fall in love with programming.",
+        "image": "/flutter/advanced/more/learn-code-from-zero.png"
+      },
+      {
+        "id": "first-app",
+        "title": "Build Your First iOS App (Hands-on)",
+        "href": "http://firstiosapp.strikingly.com/",
+        "description": "Bring your first app idea to life—pets, memories, or anything you love—and install it on your iPhone. A guided workshop to unlock your creativity.",
+        "image": "/flutter/advanced/more/first-ios-app.png"
+      }
+    ],
+    "thanks": {
+      "title": "Special Thanks",
+      "items": [
+        {
+          "id": "social-innovation-lab",
+          "name": "Social Innovation Lab",
+          "href": "http://socialinnovationlab.iiiedu.org.tw/",
+          "image": "/flutter/advanced/thanks/social-innovation-lab.png"
+        },
+        {
+          "id": "cool3c",
+          "name": "Cool3C",
+          "href": "https://www.cool3c.com/",
+          "image": "/flutter/advanced/thanks/cool3c.png"
+        },
+        {
+          "id": "cid",
+          "name": "Committee of Communications Industry Development",
+          "href": "",
+          "image": "/flutter/advanced/thanks/cid.png"
+        },
+        {
+          "id": "alphacamp",
+          "name": "ALPHA Camp",
+          "href": "https://www.alphacamp.co/",
+          "image": "/flutter/advanced/thanks/alphacamp.png"
+        },
+        {
+          "id": "pearnature",
+          "name": "Pear Nature",
+          "href": "",
+          "image": "/flutter/advanced/thanks/pearnature.png"
+        }
+      ]
+    }
+  },
   "placeholder": "Content coming soon, will include examples, assignment instructions, FAQs, and registration info.",
   "footer": {
     "copyright": "© {{year}} Peter Pan's Flutter Cross-Platform App Development. All rights reserved."
