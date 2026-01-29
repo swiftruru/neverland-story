@@ -19,10 +19,45 @@ export const LANGUAGES = [
 
 export type LanguageCode = (typeof LANGUAGES)[number]['code']
 
-const savedLanguage =
-  typeof window !== 'undefined' &&
-  typeof window.localStorage?.getItem === 'function' &&
-  window.localStorage.getItem('language')
+function detectBrowserLanguage(): LanguageCode {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+    return 'zh-TW'
+  }
+
+  // 取得瀏覽器語言列表（優先順序）
+  const browserLanguages = navigator.languages || [navigator.language]
+
+  for (const lang of browserLanguages) {
+    const lowerLang = lang.toLowerCase()
+    // 中文語系：zh, zh-tw, zh-cn, zh-hk, zh-sg 等
+    if (lowerLang.startsWith('zh')) {
+      return 'zh-TW'
+    }
+    // 英文語系：en, en-us, en-gb 等
+    if (lowerLang.startsWith('en')) {
+      return 'en'
+    }
+  }
+
+  // 預設繁體中文
+  return 'zh-TW'
+}
+
+function getInitialLanguage(): LanguageCode {
+  // 優先使用使用者儲存的偏好
+  if (
+    typeof window !== 'undefined' &&
+    typeof window.localStorage?.getItem === 'function'
+  ) {
+    const saved = window.localStorage.getItem('language')
+    if (saved === 'zh-TW' || saved === 'en') {
+      return saved
+    }
+  }
+
+  // 否則偵測瀏覽器語系
+  return detectBrowserLanguage()
+}
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -30,8 +65,7 @@ i18n.use(initReactI18next).init({
     en: { common: commonEn, neverland: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
   },
   defaultNS: 'neverland',
-  // SSR 預設中文；若前端有儲存偏好則覆蓋
-  lng: savedLanguage || 'zh-TW',
+  lng: getInitialLanguage(),
   fallbackLng: 'zh-TW',
   interpolation: {
     escapeValue: false,
