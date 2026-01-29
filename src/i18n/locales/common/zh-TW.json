@@ -1,0 +1,42 @@
+{
+  "notFound": {
+    "code": "404",
+    "title": "找不到頁面",
+    "description": "哎呀！你要找的頁面似乎迷路了。",
+    "descriptionSub": "可能是連結有誤，或是頁面已經不存在。",
+    "backHome": "回到首頁",
+    "exploreNeverland": "探索 Neverland"
+  },
+  "coursesPage": {
+    "kicker": "彼得潘的程式設計課程",
+    "title": "選擇你的學習旅程",
+    "subtitle": "從零開始學程式，成為 App 開發魔法師",
+    "viewCourse": "了解更多",
+    "courses": [
+      {
+        "id": "swift-ios",
+        "title": "彼得潘的 iOS App 程式設計入門",
+        "description": "只要 8 個星期，每週 2 個晚上，即可學會程式設計的核心概念，習得最新技術 Swift，iOS 和 Xcode，成為酷炫的 iOS App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！",
+        "href": "/courses/swift/advanced/",
+        "image": "/courses/swift-ios-app.png",
+        "tags": ["Swift", "iOS", "Xcode"]
+      },
+      {
+        "id": "swiftui-foundation",
+        "title": "文組生的 iOS App 程式設計入門",
+        "description": "專為文組生量身訂做，從零開始學程式，一步一步慢慢教！只要 10 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！",
+        "href": "/courses/swiftui/foundation/",
+        "image": "/courses/swiftui-foundation.png",
+        "tags": ["SwiftUI", "iOS", "文組友善"]
+      },
+      {
+        "id": "flutter-advanced",
+        "title": "彼得潘的 Flutter 跨平台 App 程式設計入門",
+        "description": "學習 Flutter 跨平台 App 開發的最新技術，Dart，Flutter SDK，VS Code，成為酷炫的 Flutter App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！",
+        "href": "/courses/flutter/advanced/",
+        "image": "/courses/flutter-advanced.png",
+        "tags": ["Flutter", "Dart", "跨平台"]
+      }
+    ]
+  }
+}

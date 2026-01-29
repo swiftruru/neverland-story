@@ -1,6 +1,8 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
+import commonZhTW from './locales/common/zh-TW.json'
+import commonEn from './locales/common/en.json'
 import neverlandZhTW from './locales/neverland/zh-TW.json'
 import neverlandEn from './locales/neverland/en.json'
 import swiftuiZhTW from './locales/swiftui/zh-TW.json'
@@ -24,8 +26,8 @@ const savedLanguage =
 
 i18n.use(initReactI18next).init({
   resources: {
-    'zh-TW': { neverland: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW, flutter: flutterZhTW },
-    en: { neverland: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
+    'zh-TW': { common: commonZhTW, neverland: neverlandZhTW, swiftui: swiftuiZhTW, swift: swiftZhTW, flutter: flutterZhTW },
+    en: { common: commonEn, neverland: neverlandEn, swiftui: swiftuiEn, swift: swiftEn, flutter: flutterEn },
   },
   defaultNS: 'neverland',
   // SSR 預設中文；若前端有儲存偏好則覆蓋

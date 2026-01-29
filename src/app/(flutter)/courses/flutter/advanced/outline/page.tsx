@@ -1,12 +1,23 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from '../page.module.css'
 
 export default function FlutterOutlinePage() {
   const { t } = useTranslation('flutter')
-  const items = t('outlinePage.items', { returnObjects: true }) as string[]
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  const rawItems = t('outlinePage.items', { returnObjects: true })
+  const items = Array.isArray(rawItems) ? rawItems : []
+
+  if (!isClient) {
+    return null
+  }
 
   return (
     <main className={styles.page}>
