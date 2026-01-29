@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from '@components/common'
 
-const GA_MEASUREMENT_ID = 'G-QMB0KWP5H4'
+const GA_MEASUREMENT_ID = 'G-QBT96TN0KR'
 
 export default function NeverlandLayout({
   children,
