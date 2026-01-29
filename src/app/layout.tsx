@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
-import { BreadcrumbJsonLd, PwaProvider } from '@components/common'
+import { BreadcrumbJsonLd, GoogleAnalytics, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 import { buildAbsoluteUrl } from './metadata'
@@ -85,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <body>
+        <GoogleAnalytics measurementId="G-QBT96TN0KR" />
         <I18nProvider>
           <PwaProvider />
           <ReadingProgress />
