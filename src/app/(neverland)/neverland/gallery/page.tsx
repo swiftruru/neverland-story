@@ -63,6 +63,8 @@ function Lightbox({
   const isInteractiveElement = useCallback((target: HTMLElement | null): boolean => {
     if (!target) return false
 
+    // 注意：不要使用 [class*="lightboxImage"] 因為會誤匹配 lightboxImageWrapper
+    // 直接使用 'img' 選擇器來保護圖片元素
     const interactiveSelectors = [
       'button',
       '[role="button"]',
@@ -71,7 +73,6 @@ function Lightbox({
       'img',
       '[class*="lightboxClose"]',
       '[class*="lightboxCounter"]',
-      '[class*="lightboxImage"]',
     ]
 
     for (const selector of interactiveSelectors) {
