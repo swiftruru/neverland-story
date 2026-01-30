@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
+import type { PointerEvent as ReactPointerEvent } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -46,16 +47,15 @@ function Lightbox({
   photos,
   initialIndex,
   onClose,
-  onSlideChange,
   t,
 }: {
   photos: typeof PHOTOS
   initialIndex: number
   onClose: () => void
-  onSlideChange: (index: number) => void
   t: (key: string) => string
 }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex)
+  const contentRef = useRef<HTMLDivElement | null>(null)
 
   // 處理 ESC 關閉和鎖定 body 滾動
   useEffect(() => {
@@ -73,17 +73,35 @@ function Lightbox({
   }, [onClose])
 
   const handleSlideChange = (swiper: SwiperType) => {
-    setCurrentIndex(swiper.activeIndex)
-    onSlideChange(swiper.activeIndex)
+    setCurrentIndex(swiper.realIndex ?? swiper.activeIndex)
   }
 
+  // 捕捉階段處理：只要點擊不在內容區就關閉（即使 Swiper 阻擋冒泡也能觸發）
+  const handleOverlayPointerCapture = (e: ReactPointerEvent<HTMLDivElement>) => {
+    const target = e.target as Node | null
+    if (contentRef.current && target && !contentRef.current.contains(target)) {
+      onClose()
+    }
+  }
+
+  const handleCloseButton = () => onClose()
+
   return (
-    <div className={styles.lightboxOverlay} onClick={onClose}>
-      <div className={styles.lightboxContent} onClick={(e) => e.stopPropagation()}>
+    <div
+      className={styles.lightboxOverlay}
+      onPointerDownCapture={handleOverlayPointerCapture}
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        ref={contentRef}
+        className={styles.lightboxContent}
+      >
         {/* 關閉按鈕 */}
         <button
           className={styles.lightboxClose}
-          onClick={onClose}
+          onClick={handleCloseButton}
+          type="button"
           aria-label={t('gallery.close')}
         >
           <CloseIcon />
@@ -135,10 +153,6 @@ export default function GalleryPage() {
 
   const closeLightbox = useCallback(() => {
     setLightboxIndex(null)
-  }, [])
-
-  const handleSlideChange = useCallback((index: number) => {
-    setLightboxIndex(index)
   }, [])
 
   return (
@@ -201,7 +215,6 @@ export default function GalleryPage() {
           photos={PHOTOS}
           initialIndex={lightboxIndex}
           onClose={closeLightbox}
-          onSlideChange={handleSlideChange}
           t={t}
         />
       )}
