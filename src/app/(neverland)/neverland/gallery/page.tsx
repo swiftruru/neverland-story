@@ -60,17 +60,16 @@ function Lightbox({
   const touchStartRef = useRef<{ x: number; y: number; target: EventTarget | null } | null>(null)
 
   // 判斷是否為可互動元素（不應關閉 lightbox 的元素）
+  // 注意：不包含 'img'，因為 Next.js Image 使用 fill 時會填滿整個容器
+  // 點擊圖片周圍的 letterbox 黑色區域實際上也是點擊 img 元素
   const isInteractiveElement = useCallback((target: HTMLElement | null): boolean => {
     if (!target) return false
 
-    // 注意：不要使用 [class*="lightboxImage"] 因為會誤匹配 lightboxImageWrapper
-    // 直接使用 'img' 選擇器來保護圖片元素
     const interactiveSelectors = [
       'button',
       '[role="button"]',
       '.swiper-button-prev',
       '.swiper-button-next',
-      'img',
       '[class*="lightboxClose"]',
       '[class*="lightboxCounter"]',
     ]
