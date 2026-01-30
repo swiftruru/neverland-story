@@ -43,7 +43,7 @@ function getSuggestion(pathname: string): { path: string; key: string } | null {
 }
 
 export default function NotFound() {
-  const { t } = useTranslation('common')
+  const { t, ready } = useTranslation('common')
   const [isClient, setIsClient] = useState(false)
   const [suggestion, setSuggestion] = useState<{ path: string; key: string } | null>(null)
 
@@ -55,7 +55,8 @@ export default function NotFound() {
     }
   }, [])
 
-  if (!isClient) {
+  // 等待 i18n 和客戶端準備好
+  if (!isClient || !ready) {
     return null
   }
 

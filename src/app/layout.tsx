@@ -20,16 +20,6 @@ const PageTransition = dynamic(
   { ssr: false }
 )
 
-const FloatingContact = dynamic(
-  () => import('@components/common/FloatingContact').then((mod) => mod.FloatingContact),
-  { ssr: false }
-)
-
-const BackToTop = dynamic(
-  () => import('@components/common/BackToTop').then((mod) => mod.BackToTop),
-  { ssr: false }
-)
-
 const ReadingProgress = dynamic(
   () => import('@components/common/ReadingProgress').then((mod) => mod.ReadingProgress),
   { ssr: false }

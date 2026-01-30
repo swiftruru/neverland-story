@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { Header, Navigation, Footer, FooterSwiftui, BottomNav } from './index'
+import { Header, Navigation, Footer, FooterSwiftui } from './index'
+import { BottomNav } from './BottomNav'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import { SwiftNav } from './SwiftNav'

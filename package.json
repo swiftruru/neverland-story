@@ -5,6 +5,7 @@
   "description": "彼得潘的 iOS App 程式設計入門網站",
   "scripts": {
     "dev": "next dev",
+    "dev:turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

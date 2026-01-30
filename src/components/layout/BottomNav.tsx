@@ -70,13 +70,16 @@ const NAV_ITEMS = [
 
 export function BottomNav() {
   const pathname = usePathname()
-  const { t } = useTranslation('common')
+  const { t, ready } = useTranslation('common')
 
   // 判斷是否為當前頁面
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'
     return pathname?.startsWith(href)
   }
+
+  // 等待 i18n 準備好
+  if (!ready) return null
 
   // 切換漢堡選單
   const toggleMenu = () => {
