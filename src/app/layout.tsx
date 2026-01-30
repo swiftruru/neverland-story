@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
-import { BreadcrumbJsonLd, GoogleAnalytics, PwaProvider } from '@components/common'
+import { BreadcrumbJsonLd, GoogleAnalytics, OrganizationJsonLd, PwaProvider } from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 import { buildAbsoluteUrl } from './metadata'
@@ -90,6 +90,21 @@ export default function RootLayout({
           <PwaProvider />
           <ReadingProgress />
           <BreadcrumbJsonLd />
+          <OrganizationJsonLd
+            name="彼得潘的 App Neverland"
+            url={buildAbsoluteUrl('/neverland')}
+            logo={buildAbsoluteUrl('/icons/pwa-512.png')}
+            description="作家、果粉、iOS / Flutter App 開發者與講師。從寫作到教學，從專案到陪跑，陪你把想法變成 App。"
+            sameAs={[
+              'https://medium.com/@apppeterpan',
+              'https://www.facebook.com/iphone.peterpan/',
+              'http://www.appcoda.com.tw/',
+            ]}
+            contactPoint={{
+              contactType: 'customer service',
+              url: buildAbsoluteUrl('/neverland/contact'),
+            }}
+          />
           <LayoutChrome>
             <div className={styles.layout}>
               <main className={styles.main}>

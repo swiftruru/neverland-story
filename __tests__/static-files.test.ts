@@ -15,9 +15,8 @@ describe('Static assets', () => {
     expect(has512).toBe(true)
   })
 
-  it('exposes SEO files (robots.txt, sitemap.xml, og-cover)', () => {
+  it('exposes SEO files (robots.txt, og-cover)', () => {
     expect(fs.existsSync(path.join(root, 'robots.txt'))).toBe(true)
-    expect(fs.existsSync(path.join(root, 'sitemap.xml'))).toBe(true)
     expect(fs.existsSync(path.join(root, 'og-cover.png'))).toBe(true)
     expect(fs.existsSync(path.join(root, 'offline.html'))).toBe(true)
     expect(fs.existsSync(path.join(root, 'sw.js'))).toBe(true)
@@ -25,8 +24,11 @@ describe('Static assets', () => {
     const robots = fs.readFileSync(path.join(root, 'robots.txt'), 'utf-8')
     expect(robots).toMatch(/User-agent:\s*\*/i)
     expect(robots).toMatch(/Allow:\s*\//)
+  })
 
-    const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf-8')
-    expect(sitemap).toMatch(/https:\/\/p207\.app\//)
+  it('has dynamic sitemap generator', () => {
+    // sitemap.xml is now dynamically generated via src/app/sitemap.ts
+    const sitemapPath = path.join(process.cwd(), 'src/app/sitemap.ts')
+    expect(fs.existsSync(sitemapPath)).toBe(true)
   })
 })
