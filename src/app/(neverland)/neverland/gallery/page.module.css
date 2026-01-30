@@ -239,27 +239,67 @@
 /* Swiper 導航按鈕樣式覆蓋 */
 .lightboxSwiper :global(.swiper-button-prev),
 .lightboxSwiper :global(.swiper-button-next) {
-  width: 52px !important;
-  height: 52px !important;
-  border-radius: 50% !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  backdrop-filter: blur(4px);
-  transition: all 0.2s ease !important;
+  --arrow-size: 14px;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 16px !important;
+  background:
+    linear-gradient(135deg, rgba(15, 124, 102, 0.28), rgba(15, 124, 102, 0.12)),
+    rgba(10, 12, 16, 0.78) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
   margin-top: 0 !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
 }
 
+.lightboxSwiper :global(.swiper-button-prev) svg,
+.lightboxSwiper :global(.swiper-button-next) svg {
+  display: none !important; /* hide Swiper's built-in SVG icon to avoid double arrow */
+}
+
 .lightboxSwiper :global(.swiper-button-prev):hover,
 .lightboxSwiper :global(.swiper-button-next):hover {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background:
+    linear-gradient(135deg, rgba(15, 124, 102, 0.4), rgba(15, 124, 102, 0.2)),
+    rgba(16, 18, 24, 0.9) !important;
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.26);
+  transform: translateY(-50%) scale(1.05) !important;
 }
 
 .lightboxSwiper :global(.swiper-button-prev)::after,
 .lightboxSwiper :global(.swiper-button-next)::after {
-  font-size: 20px !important;
-  font-weight: 600 !important;
-  color: white !important;
+  display: none !important; /* hide Swiper default glyph to avoid double arrow */
+  content: none !important;
+}
+
+.lightboxSwiper :global(.swiper-button-prev)::before,
+.lightboxSwiper :global(.swiper-button-next)::before {
+  content: '';
+  display: block;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  border-top: 2px solid #e8f4f0;
+  border-right: 2px solid #e8f4f0;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.lightboxSwiper :global(.swiper-button-prev)::before {
+  transform: rotate(-135deg);
+  margin-left: 2px;
+}
+
+.lightboxSwiper :global(.swiper-button-next)::before {
+  transform: rotate(45deg);
+  margin-right: 2px;
 }
 
 .lightboxSwiper :global(.swiper-button-disabled) {
@@ -291,13 +331,15 @@
 
   .lightboxSwiper :global(.swiper-button-prev),
   .lightboxSwiper :global(.swiper-button-next) {
-    width: 46px !important;
-    height: 46px !important;
+    width: 50px !important;
+    height: 50px !important;
+    --arrow-size: 13px;
   }
 
-  .lightboxSwiper :global(.swiper-button-prev)::after,
-  .lightboxSwiper :global(.swiper-button-next)::after {
-    font-size: 16px !important;
+  .lightboxSwiper :global(.swiper-button-prev)::before,
+  .lightboxSwiper :global(.swiper-button-next)::before {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
   }
 }
 
@@ -332,13 +374,15 @@
 
   .lightboxSwiper :global(.swiper-button-prev),
   .lightboxSwiper :global(.swiper-button-next) {
-    width: 40px !important;
-    height: 40px !important;
+    width: 46px !important;
+    height: 46px !important;
+    --arrow-size: 12px;
   }
 
-  .lightboxSwiper :global(.swiper-button-prev)::after,
-  .lightboxSwiper :global(.swiper-button-next)::after {
-    font-size: 14px !important;
+  .lightboxSwiper :global(.swiper-button-prev)::before,
+  .lightboxSwiper :global(.swiper-button-next)::before {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
   }
 
   .lightboxClose {
