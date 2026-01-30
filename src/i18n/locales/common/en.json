@@ -39,6 +39,19 @@
       "neverland": "About Us"
     }
   },
+  "pwaPrompt": {
+    "title": "Add to Home Screen",
+    "description": "Add this website to your home screen for a faster, smoother app experience!",
+    "close": "Close",
+    "later": "Maybe Later",
+    "ios": {
+      "step1": "Tap the Share button below",
+      "step2": "Select \"Add to Home Screen\""
+    },
+    "android": {
+      "install": "Install App"
+    }
+  },
   "coursesPage": {
     "kicker": "Peter Pan's Coding Courses",
     "title": "Choose Your Learning Journey",

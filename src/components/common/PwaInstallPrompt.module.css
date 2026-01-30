@@ -1,0 +1,291 @@
+/* 半透明背景遮罩 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.overlay.closing {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+/* 底部 Sheet */
+.sheet {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background: var(--color-surface, #fff);
+  border-radius: 20px 20px 0 0;
+  padding: 12px 24px 34px;
+  padding-bottom: calc(34px + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease-out;
+}
+
+.sheet.closing {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* 拖曳指示器 */
+.handle {
+  width: 36px;
+  height: 5px;
+  background: var(--color-border, #e0e0e0);
+  border-radius: 2.5px;
+  margin: 0 auto 16px;
+}
+
+/* 關閉按鈕 */
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--color-surface-elevated, #f5f5f5);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.closeButton:hover {
+  background: var(--color-border, #e0e0e0);
+}
+
+.closeButton svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-secondary, #666);
+}
+
+/* 內容區 */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px 0 16px;
+}
+
+/* App 圖示 */
+.appIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.appIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 標題 */
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text, #333);
+  margin: 0 0 8px;
+}
+
+/* 描述 */
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary, #666);
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+/* iOS 指引步驟 */
+.iosInstructions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  background: var(--color-surface-elevated, #f8f8f8);
+  border-radius: 12px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepNumber {
+  width: 28px;
+  height: 28px;
+  background: var(--color-primary, #006850);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.stepText {
+  font-size: 0.9rem;
+  color: var(--color-text, #333);
+  text-align: left;
+}
+
+.shareIcon,
+.addIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-primary, #006850);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.shareIcon svg,
+.addIcon svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.shareIconIos {
+  display: none;
+}
+
+/* iOS 分享圖示 - 更精確的版本 */
+.shareIcon {
+  position: relative;
+}
+
+.shareIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .9 2 2z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shareIcon svg {
+  display: none;
+}
+
+/* Android 安裝按鈕 */
+.installButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--color-primary, #006850);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.installButton:hover {
+  background: var(--color-primary-dark, #005540);
+}
+
+.installButton:active {
+  transform: scale(0.98);
+}
+
+.installButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 稍後按鈕 */
+.laterButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary, #666);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.laterButton:hover {
+  color: var(--color-text, #333);
+}
+
+/* 動畫 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* 桌面版調整 */
+@media (min-width: 768px) {
+  .sheet {
+    margin-bottom: 24px;
+    border-radius: 20px;
+    max-width: 420px;
+  }
+}

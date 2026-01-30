@@ -39,6 +39,19 @@
       "neverland": "關於我們"
     }
   },
+  "pwaPrompt": {
+    "title": "加入主畫面",
+    "description": "將此網站加入主畫面，享受更快速、更流暢的 App 體驗！",
+    "close": "關閉",
+    "later": "稍後再說",
+    "ios": {
+      "step1": "點擊底部的「分享」按鈕",
+      "step2": "選擇「加入主畫面」"
+    },
+    "android": {
+      "install": "安裝 App"
+    }
+  },
   "coursesPage": {
     "kicker": "彼得潘的程式設計課程",
     "title": "選擇你的學習旅程",

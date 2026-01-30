@@ -25,6 +25,11 @@ const ReadingProgress = dynamic(
   { ssr: false }
 )
 
+const PwaInstallPrompt = dynamic(
+  () => import('@components/common/PwaInstallPrompt').then((mod) => mod.PwaInstallPrompt),
+  { ssr: false }
+)
+
 const ogImage = buildAbsoluteUrl('/og-cover.png')
 
 const baseMetadata: Metadata = {
@@ -89,6 +94,7 @@ export default function RootLayout({
           <KeyboardShortcuts />
           <CookieConsent />
           <PwaProvider />
+          <PwaInstallPrompt />
           <ReadingProgress />
           <BreadcrumbJsonLd />
           <OrganizationJsonLd
