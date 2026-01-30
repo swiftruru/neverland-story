@@ -55,9 +55,18 @@ function Lightbox({
   t: (key: string) => string
 }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex)
-  const contentRef = useRef<HTMLDivElement | null>(null)
+  const [isClosing, setIsClosing] = useState(false)
   const overlayRef = useRef<HTMLDivElement | null>(null)
   const touchStartRef = useRef<{ x: number; y: number; target: EventTarget | null } | null>(null)
+
+  // 帶淡出動畫的關閉函數
+  const handleClose = useCallback(() => {
+    if (isClosing) return
+    setIsClosing(true)
+    setTimeout(() => {
+      onClose()
+    }, 200) // 與 CSS 動畫時間一致
+  }, [isClosing, onClose])
 
   // 判斷是否為可互動元素（不應關閉 lightbox 的元素）
   // 注意：不包含 'img'，因為 Next.js Image 使用 fill 時會填滿整個容器
@@ -85,7 +94,7 @@ function Lightbox({
   // 處理 ESC 關閉、鎖定 body 滾動、以及原生觸控事件
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+      if (e.key === 'Escape') handleClose()
     }
 
     // 記錄觸控開始位置
@@ -113,7 +122,7 @@ function Lightbox({
         const target = touchStartRef.current.target as HTMLElement
         // 確保點擊發生在 lightbox 內且不是互動元素
         if (overlayRef.current.contains(target) && !isInteractiveElement(target)) {
-          onClose()
+          handleClose()
         }
       }
 
@@ -131,7 +140,7 @@ function Lightbox({
       document.removeEventListener('touchend', handleTouchEnd)
       document.body.style.overflow = ''
     }
-  }, [onClose, isInteractiveElement])
+  }, [handleClose, isInteractiveElement])
 
   const handleSlideChange = (swiper: SwiperType) => {
     setCurrentIndex(swiper.realIndex ?? swiper.activeIndex)
@@ -141,26 +150,23 @@ function Lightbox({
   const handleContentClick = (e: ReactMouseEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement
     if (!isInteractiveElement(target)) {
-      onClose()
+      handleClose()
     }
   }
 
   return (
     <div
       ref={overlayRef}
-      className={styles.lightboxOverlay}
+      className={`${styles.lightboxOverlay} ${isClosing ? styles.lightboxClosing : ''}`}
       onClick={handleContentClick}
       role="dialog"
       aria-modal="true"
     >
-      <div
-        ref={contentRef}
-        className={styles.lightboxContent}
-      >
+      <div className={styles.lightboxContent}>
         {/* 關閉按鈕 */}
         <button
           className={styles.lightboxClose}
-          onClick={onClose}
+          onClick={handleClose}
           type="button"
           aria-label={t('gallery.close')}
         >

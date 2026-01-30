@@ -166,6 +166,20 @@
   }
 }
 
+/* 關閉動畫 */
+.lightboxClosing {
+  animation: fadeOut 0.2s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .lightboxContent {
   position: relative;
   width: min(96vw, 1200px);
