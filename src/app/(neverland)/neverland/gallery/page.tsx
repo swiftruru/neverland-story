@@ -92,6 +92,7 @@ function Lightbox({
       'img',
       '[class*="lightboxClose"]',
       '[class*="lightboxCounter"]',
+      '[class*="lightboxImage"]',
     ]
 
     for (const selector of interactiveSelectors) {
@@ -100,6 +101,14 @@ function Lightbox({
       }
     }
     return false
+  }
+
+  // Swiper 點擊事件處理（解決手機版觸控問題）
+  const handleSwiperClick = (_swiper: SwiperType, event: MouseEvent | TouchEvent | PointerEvent) => {
+    const target = event.target as HTMLElement
+    if (!isInteractiveElement(target)) {
+      onClose()
+    }
   }
 
   // 點擊非互動區域時關閉（包括 Swiper 的空白區域）
@@ -151,19 +160,13 @@ function Lightbox({
           loop={true}
           grabCursor={true}
           onSlideChange={handleSlideChange}
+          onClick={handleSwiperClick}
           className={styles.lightboxSwiper}
         >
           {photos.map((photo) => (
             <SwiperSlide
               key={photo.id}
               className={styles.lightboxSlide}
-              onClick={(e) => {
-                // 點擊圖片以外的區域（黑色遮罩）時關閉
-                const target = e.target as HTMLElement
-                if (!target.closest('img')) {
-                  onClose()
-                }
-              }}
             >
               <div className={styles.lightboxImageWrapper}>
                 <Image
