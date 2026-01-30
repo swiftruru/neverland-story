@@ -154,7 +154,17 @@ function Lightbox({
           className={styles.lightboxSwiper}
         >
           {photos.map((photo) => (
-            <SwiperSlide key={photo.id} className={styles.lightboxSlide}>
+            <SwiperSlide
+              key={photo.id}
+              className={styles.lightboxSlide}
+              onClick={(e) => {
+                // 點擊圖片以外的區域（黑色遮罩）時關閉
+                const target = e.target as HTMLElement
+                if (!target.closest('img')) {
+                  onClose()
+                }
+              }}
+            >
               <div className={styles.lightboxImageWrapper}>
                 <Image
                   src={photo.src}
