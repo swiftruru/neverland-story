@@ -90,6 +90,9 @@ function Lightbox({
     <div
       className={styles.lightboxOverlay}
       onPointerDownCapture={handleOverlayPointerCapture}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose()
+      }}
       role="dialog"
       aria-modal="true"
     >
