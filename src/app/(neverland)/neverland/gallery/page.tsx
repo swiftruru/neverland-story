@@ -1,7 +1,11 @@
 'use client'
 
 import { useState, useEffect, useCallback, useRef } from 'react'
-import type { PointerEvent as ReactPointerEvent, TouchEvent as ReactTouchEvent } from 'react'
+import type {
+  PointerEvent as ReactPointerEvent,
+  TouchEvent as ReactTouchEvent,
+  MouseEvent as ReactMouseEvent,
+} from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -87,6 +91,13 @@ function Lightbox({
   const handleOverlayTouchCapture = (e: ReactTouchEvent<HTMLDivElement>) => {
     const target = e.target as Node | null
     if (contentRef.current && target && !contentRef.current.contains(target)) {
+      onClose()
+    }
+  }
+
+  const handleOverlayClick = (e: ReactMouseEvent<HTMLDivElement>) => {
+    if (!contentRef.current) return
+    if (!contentRef.current.contains(e.target as Node)) {
       onClose()
     }
   }
