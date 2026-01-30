@@ -3228,3 +3228,263 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ========================================
+   Swiper Lightbox Styles
+   ======================================== */
+
+.swiperLightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.97);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: swiperFadeIn 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes swiperFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.swiperLightboxClosing {
+  animation: swiperFadeOut 0.2s ease forwards;
+}
+
+@keyframes swiperFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.swiperLightboxContent {
+  position: relative;
+  width: min(96vw, 1200px);
+  height: min(90vh, 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px 32px;
+  box-sizing: border-box;
+}
+
+.swiperLightboxClose {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.swiperLightboxClose:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.08);
+}
+
+.swiperLightboxClose svg {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+
+.swiperLightboxSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperLightboxSwiper :global(.swiper-wrapper) {
+  align-items: center;
+}
+
+.swiperLightboxSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.swiperLightboxImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.swiperLightboxImage {
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Swiper 導航按鈕樣式覆蓋 */
+.swiperLightboxSwiper :global(.swiper-button-prev),
+.swiperLightboxSwiper :global(.swiper-button-next) {
+  --arrow-size: 14px;
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  background:
+    linear-gradient(135deg, rgba(15, 124, 102, 0.18), rgba(15, 124, 102, 0.06)),
+    rgba(10, 12, 16, 0.55) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+  margin-top: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-prev) svg,
+.swiperLightboxSwiper :global(.swiper-button-next) svg {
+  display: none !important;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-prev):hover,
+.swiperLightboxSwiper :global(.swiper-button-next):hover {
+  background:
+    linear-gradient(135deg, rgba(15, 124, 102, 0.28), rgba(15, 124, 102, 0.14)),
+    rgba(16, 18, 24, 0.74) !important;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.05) !important;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-prev)::after,
+.swiperLightboxSwiper :global(.swiper-button-next)::after {
+  display: none !important;
+  content: none !important;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-prev)::before,
+.swiperLightboxSwiper :global(.swiper-button-next)::before {
+  content: '';
+  display: block;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  border-top: 2px solid #e8f4f0;
+  border-right: 2px solid #e8f4f0;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-prev)::before {
+  transform: rotate(-135deg);
+  margin-left: 2px;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-next)::before {
+  transform: rotate(45deg);
+  margin-right: 2px;
+}
+
+.swiperLightboxSwiper :global(.swiper-button-disabled) {
+  opacity: 0.3 !important;
+}
+
+.swiperLightboxCounter {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 24px;
+  z-index: 100;
+}
+
+/* Swiper Lightbox Responsive */
+@media (max-width: 1024px) {
+  .swiperLightboxSwiper :global(.swiper-button-prev),
+  .swiperLightboxSwiper :global(.swiper-button-next) {
+    width: 44px !important;
+    height: 44px !important;
+    --arrow-size: 12px;
+    background:
+      linear-gradient(135deg, rgba(15, 124, 102, 0.16), rgba(15, 124, 102, 0.06)),
+      rgba(10, 12, 16, 0.5) !important;
+  }
+
+  .swiperLightboxSwiper :global(.swiper-button-prev)::before,
+  .swiperLightboxSwiper :global(.swiper-button-next)::before {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+  }
+}
+
+@media (max-width: 768px) {
+  .swiperLightboxContent {
+    padding: 50px 16px 70px;
+  }
+
+  .swiperLightboxSwiper :global(.swiper-button-prev),
+  .swiperLightboxSwiper :global(.swiper-button-next) {
+    width: 40px !important;
+    height: 40px !important;
+    --arrow-size: 11px;
+    background:
+      linear-gradient(135deg, rgba(15, 124, 102, 0.14), rgba(15, 124, 102, 0.05)),
+      rgba(10, 12, 16, 0.48) !important;
+  }
+
+  .swiperLightboxSwiper :global(.swiper-button-prev)::before,
+  .swiperLightboxSwiper :global(.swiper-button-next)::before {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+  }
+
+  .swiperLightboxClose {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 38px;
+    height: 38px;
+  }
+
+  .swiperLightboxClose svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .swiperLightboxImageWrapper {
+    max-width: 100%;
+    max-height: 75vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiperLightboxCounter {
+    bottom: 1rem;
+    font-size: 0.875rem;
+    padding: 0.4rem 1rem;
+  }
+}
