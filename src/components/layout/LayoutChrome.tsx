@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { Header, Navigation, Footer, FooterSwiftui } from './index'
+import { Header, Navigation, Footer, FooterSwiftui, BottomNav } from './index'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import { SwiftNav } from './SwiftNav'
@@ -14,6 +14,9 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
   const isSwiftuiSite = useMemo(() => pathname?.startsWith('/courses/swiftui'), [pathname])
   const isSwiftSite = useMemo(() => pathname?.startsWith('/courses/swift'), [pathname])
   const isFlutterSite = useMemo(() => pathname?.startsWith('/courses/flutter'), [pathname])
+  // BottomNav 只在 neverland 路由顯示
+  const isNeverlandSite = pathname?.startsWith('/neverland')
+  const showBottomNav = isNeverlandSite
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -23,7 +26,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
   if (!mounted) return null
 
   return (
-    <div className={styles.layout}>
+    <div className={`${styles.layout} ${showBottomNav ? styles.hasBottomNav : ''}`}>
       {isSwiftuiSite ? (
         <SwiftuiNav />
       ) : isFlutterSite ? (
@@ -42,6 +45,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
       {isSwiftuiSite || isSwiftSite || isFlutterSite ? <FooterSwiftui /> : <Footer />}
       <FloatingContact />
       <BackToTop />
+      {showBottomNav && <BottomNav />}
     </div>
   )
 }

@@ -1,4 +1,11 @@
 {
+  "bottomNav": {
+    "ariaLabel": "Main navigation",
+    "home": "Home",
+    "works": "Works",
+    "lectures": "Lectures",
+    "contact": "Contact"
+  },
   "cookie": {
     "title": "We Use Cookies",
     "description": "We use cookies to analyze website traffic and improve your browsing experience. By clicking \"Accept\", you consent to our use of cookies.",

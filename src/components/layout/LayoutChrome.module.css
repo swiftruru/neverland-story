@@ -7,3 +7,14 @@
 .main {
   flex: 1 1 0%;
 }
+
+/* 當有 BottomNav 時，在手機版加上底部間距 */
+.hasBottomNav {
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .hasBottomNav {
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+  }
+}

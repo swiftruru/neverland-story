@@ -1,4 +1,11 @@
 {
+  "bottomNav": {
+    "ariaLabel": "主要導航",
+    "home": "首頁",
+    "works": "作品",
+    "lectures": "講座課程",
+    "contact": "聯絡"
+  },
   "cookie": {
     "title": "我們使用 Cookies",
     "description": "我們使用 cookies 來分析網站流量並改善您的瀏覽體驗。點擊「接受」即表示您同意我們使用 cookies。",
