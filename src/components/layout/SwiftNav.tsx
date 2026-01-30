@@ -37,6 +37,13 @@ export function SwiftNav() {
     setMounted(true)
   }, [])
 
+  // 監聽 BottomNav 的「更多」按鈕事件
+  useEffect(() => {
+    const handleToggleMenu = () => setMenuOpen((prev) => !prev)
+    window.addEventListener('toggleMobileMenu', handleToggleMenu)
+    return () => window.removeEventListener('toggleMobileMenu', handleToggleMenu)
+  }, [])
+
   return (
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>

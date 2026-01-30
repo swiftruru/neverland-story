@@ -1,4 +1,13 @@
 {
+  "bottomNav": {
+    "ariaLabel": "課程導航",
+    "intro": "介紹",
+    "instructor": "講師",
+    "outline": "大綱",
+    "tuition": "學費",
+    "signup": "報名",
+    "more": "更多"
+  },
   "nav": {
     "home": "SwiftUI Foundation",
     "intro": "簡介",

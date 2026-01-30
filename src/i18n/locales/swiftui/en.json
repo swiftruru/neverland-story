@@ -1,4 +1,13 @@
 {
+  "bottomNav": {
+    "ariaLabel": "Course Navigation",
+    "intro": "Intro",
+    "instructor": "Instructor",
+    "outline": "Outline",
+    "tuition": "Tuition",
+    "signup": "Apply",
+    "more": "More"
+  },
   "nav": {
     "home": "SwiftUI Foundation",
     "intro": "Introduction",

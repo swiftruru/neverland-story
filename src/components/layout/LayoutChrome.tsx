@@ -4,6 +4,9 @@ import { useEffect, useMemo, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { Header, Navigation, Footer, FooterSwiftui } from './index'
 import { BottomNav } from './BottomNav'
+import { SwiftBottomNav } from './SwiftBottomNav'
+import { SwiftuiBottomNav } from './SwiftuiBottomNav'
+import { FlutterBottomNav } from './FlutterBottomNav'
 import { BackToTop, FloatingContact } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import { SwiftNav } from './SwiftNav'
@@ -15,9 +18,13 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
   const isSwiftuiSite = useMemo(() => pathname?.startsWith('/courses/swiftui'), [pathname])
   const isSwiftSite = useMemo(() => pathname?.startsWith('/courses/swift'), [pathname])
   const isFlutterSite = useMemo(() => pathname?.startsWith('/courses/flutter'), [pathname])
-  // BottomNav 只在 neverland 路由顯示
+  // BottomNav 顯示邏輯
   const isNeverlandSite = pathname?.startsWith('/neverland')
-  const showBottomNav = isNeverlandSite
+  const showNeverlandBottomNav = isNeverlandSite
+  const showSwiftBottomNav = isSwiftSite && !isSwiftuiSite
+  const showSwiftuiBottomNav = isSwiftuiSite
+  const showFlutterBottomNav = isFlutterSite
+  const hasBottomNav = showNeverlandBottomNav || showSwiftBottomNav || showSwiftuiBottomNav || showFlutterBottomNav
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -27,7 +34,7 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
   if (!mounted) return null
 
   return (
-    <div className={`${styles.layout} ${showBottomNav ? styles.hasBottomNav : ''}`}>
+    <div className={`${styles.layout} ${hasBottomNav ? styles.hasBottomNav : ''}`}>
       {isSwiftuiSite ? (
         <SwiftuiNav />
       ) : isFlutterSite ? (
@@ -46,7 +53,10 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
       {isSwiftuiSite || isSwiftSite || isFlutterSite ? <FooterSwiftui /> : <Footer />}
       <FloatingContact />
       <BackToTop />
-      {showBottomNav && <BottomNav />}
+      {showNeverlandBottomNav && <BottomNav />}
+      {showSwiftBottomNav && <SwiftBottomNav />}
+      {showSwiftuiBottomNav && <SwiftuiBottomNav />}
+      {showFlutterBottomNav && <FlutterBottomNav />}
     </div>
   )
 }
