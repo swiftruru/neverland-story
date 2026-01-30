@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Keyboard } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
-import { LazyImage } from '@components/common'
 import styles from '../page.module.css'
 
 import 'swiper/css'
@@ -201,6 +200,7 @@ export default function SwiftuiSignupPage() {
   const photosCtaLabel = t('introPage.signupPage.photos.ctaLabel')
   const photosCtaUrl = t('introPage.signupPage.photos.ctaUrl')
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
 
   const openLightbox = (index: number) => {
     setLightboxIndex(index)
@@ -208,6 +208,10 @@ export default function SwiftuiSignupPage() {
 
   const closeLightbox = useCallback(() => {
     setLightboxIndex(null)
+  }, [])
+
+  const handleImageLoad = useCallback((index: number) => {
+    setLoadedImages((prev) => new Set(prev).add(index))
   }, [])
 
   return (
@@ -303,13 +307,10 @@ export default function SwiftuiSignupPage() {
               >
                 <span className={styles.photoTape} />
                 <div className={styles.photoImage}>
-                  <LazyImage
-                    src={item.src}
-                    alt={item.alt}
-                    width={400}
-                    height={300}
-                    placeholder="blur"
+                  <span
+                    className={`${styles.photoSkeleton} ${loadedImages.has(idx) ? styles.loaded : ''}`}
                   />
+                  <img src={item.src} alt={item.alt} onLoad={() => handleImageLoad(idx)} />
                 </div>
                 {item.caption && <figcaption className={styles.photoCaption}>{item.caption}</figcaption>}
               </figure>

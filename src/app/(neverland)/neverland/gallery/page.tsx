@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Keyboard } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
-import { FadeInOnScroll, LazyImage } from '@components/common'
+import { FadeInOnScroll } from '@components/common'
 import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
@@ -215,6 +215,7 @@ function Lightbox({
 export default function GalleryPage() {
   const { t } = useTranslation()
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
 
   const openLightbox = (index: number) => {
     setLightboxIndex(index)
@@ -222,6 +223,10 @@ export default function GalleryPage() {
 
   const closeLightbox = useCallback(() => {
     setLightboxIndex(null)
+  }, [])
+
+  const handleImageLoad = useCallback((photoId: number) => {
+    setLoadedImages((prev) => new Set(prev).add(photoId))
   }, [])
 
   return (
@@ -259,12 +264,16 @@ export default function GalleryPage() {
               >
                 <span className={styles.photoTape} />
                 <div className={styles.photoImage}>
-                  <LazyImage
+                  <span
+                    className={`${styles.photoSkeleton} ${loadedImages.has(photo.id) ? styles.loaded : ''}`}
+                  />
+                  <Image
                     src={photo.src}
                     alt={t(`gallery.${photo.alt}`)}
                     width={600}
                     height={400}
-                    placeholder="blur"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    onLoad={() => handleImageLoad(photo.id)}
                   />
                 </div>
               </figure>
