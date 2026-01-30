@@ -44,6 +44,13 @@
     "release": "Release to refresh",
     "refreshing": "Refreshing..."
   },
+  "swipeNav": {
+    "intro": "Intro",
+    "instructor": "Instructor",
+    "outline": "Outline",
+    "tuition": "Tuition",
+    "signup": "Sign Up"
+  },
   "pwaPrompt": {
     "title": "Add to Home Screen",
     "description": "Add this website to your home screen for a faster, smoother app experience!",

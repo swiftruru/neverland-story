@@ -7,7 +7,7 @@ import { BottomNav } from './BottomNav'
 import { SwiftBottomNav } from './SwiftBottomNav'
 import { SwiftuiBottomNav } from './SwiftuiBottomNav'
 import { FlutterBottomNav } from './FlutterBottomNav'
-import { BackToTop, FloatingContact } from '@components/common'
+import { BackToTop, FloatingContact, SwipeNavigation } from '@components/common'
 import { SwiftuiNav } from './SwiftuiNav'
 import { SwiftNav } from './SwiftNav'
 import { FlutterNav } from './FlutterNav'
@@ -54,9 +54,24 @@ export function LayoutChrome({ children }: { children: React.ReactNode }) {
       <FloatingContact />
       <BackToTop />
       {showNeverlandBottomNav && <BottomNav />}
-      {showSwiftBottomNav && <SwiftBottomNav />}
-      {showSwiftuiBottomNav && <SwiftuiBottomNav />}
-      {showFlutterBottomNav && <FlutterBottomNav />}
+      {showSwiftBottomNav && (
+        <>
+          <SwipeNavigation courseType="swift" />
+          <SwiftBottomNav />
+        </>
+      )}
+      {showSwiftuiBottomNav && (
+        <>
+          <SwipeNavigation courseType="swiftui" />
+          <SwiftuiBottomNav />
+        </>
+      )}
+      {showFlutterBottomNav && (
+        <>
+          <SwipeNavigation courseType="flutter" />
+          <FlutterBottomNav />
+        </>
+      )}
     </div>
   )
 }

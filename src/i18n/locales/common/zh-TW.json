@@ -44,6 +44,13 @@
     "release": "放開以重新整理",
     "refreshing": "重新整理中..."
   },
+  "swipeNav": {
+    "intro": "介紹",
+    "instructor": "講師",
+    "outline": "大綱",
+    "tuition": "學費",
+    "signup": "報名"
+  },
   "pwaPrompt": {
     "title": "加入主畫面",
     "description": "將此網站加入主畫面，享受更快速、更流暢的 App 體驗！",
