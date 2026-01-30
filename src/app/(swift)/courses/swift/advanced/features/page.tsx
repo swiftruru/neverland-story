@@ -47,8 +47,8 @@ export default function SwiftFeaturesPage() {
     <main className={styles.page}>
       <section className={styles.featuresSection}>
         <div className="container">
+          <p className={styles.kickerLeft}>{t('hero.kicker')}</p>
           <div className={styles.sectionHeader}>
-            <p className={styles.kicker}>{t('hero.kicker')}</p>
             <h1 className={styles.title}>{t('featuresPage.heading')}</h1>
             <p className={styles.subtitle}>{t('featuresPage.desc')}</p>
           </div>

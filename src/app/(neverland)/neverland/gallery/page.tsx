@@ -3,9 +3,21 @@
 import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Keyboard } from 'swiper/modules'
+import type { Swiper as SwiperType } from 'swiper'
 import { FadeInOnScroll } from '@components/common'
 import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+// 膠帶顏色調色盤
+const tapePalette = [
+  { top: '#f4e5aa', bottom: '#f1d778' }, // 黃色
+  { top: '#cbe7d6', bottom: 'rgba(160, 200, 160, 0.88)' }, // 綠色
+]
 
 // 相片資料
 const PHOTOS = [
@@ -29,60 +41,26 @@ function CloseIcon() {
   )
 }
 
-// 左箭頭圖標
-function ChevronLeftIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <polyline points="15 18 9 12 15 6" />
-    </svg>
-  )
-}
-
-// 右箭頭圖標
-function ChevronRightIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <polyline points="9 18 15 12 9 6" />
-    </svg>
-  )
-}
-
-// 放大圖標
-function ZoomIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="11" cy="11" r="8" />
-      <line x1="21" y1="21" x2="16.65" y2="16.65" />
-      <line x1="11" y1="8" x2="11" y2="14" />
-      <line x1="8" y1="11" x2="14" y2="11" />
-    </svg>
-  )
-}
-
-// Lightbox 組件
+// Lightbox 組件（使用 Swiper）
 function Lightbox({
   photos,
-  currentIndex,
+  initialIndex,
   onClose,
-  onPrev,
-  onNext,
+  onSlideChange,
   t,
 }: {
   photos: typeof PHOTOS
-  currentIndex: number
+  initialIndex: number
   onClose: () => void
-  onPrev: () => void
-  onNext: () => void
+  onSlideChange: (index: number) => void
   t: (key: string) => string
 }) {
-  const photo = photos[currentIndex]
+  const [currentIndex, setCurrentIndex] = useState(initialIndex)
 
-  // 處理鍵盤事件
+  // 處理 ESC 關閉和鎖定 body 滾動
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
-      if (e.key === 'ArrowLeft') onPrev()
-      if (e.key === 'ArrowRight') onNext()
     }
 
     document.addEventListener('keydown', handleKeyDown)
@@ -92,7 +70,12 @@ function Lightbox({
       document.removeEventListener('keydown', handleKeyDown)
       document.body.style.overflow = ''
     }
-  }, [onClose, onPrev, onNext])
+  }, [onClose])
+
+  const handleSlideChange = (swiper: SwiperType) => {
+    setCurrentIndex(swiper.activeIndex)
+    onSlideChange(swiper.activeIndex)
+  }
 
   return (
     <div className={styles.lightboxOverlay} onClick={onClose}>
@@ -106,35 +89,32 @@ function Lightbox({
           <CloseIcon />
         </button>
 
-        {/* 上一張 */}
-        <button
-          className={`${styles.lightboxNav} ${styles.lightboxPrev}`}
-          onClick={onPrev}
-          aria-label={t('gallery.prev')}
+        {/* Swiper 輪播 */}
+        <Swiper
+          modules={[Navigation, Keyboard]}
+          initialSlide={initialIndex}
+          navigation
+          keyboard={{ enabled: true }}
+          loop={true}
+          grabCursor={true}
+          onSlideChange={handleSlideChange}
+          className={styles.lightboxSwiper}
         >
-          <ChevronLeftIcon />
-        </button>
-
-        {/* 圖片 */}
-        <div className={styles.lightboxImageWrapper}>
-          <Image
-            src={photo.src}
-            alt={t(`gallery.${photo.alt}`)}
-            fill
-            className={styles.lightboxImage}
-            sizes="(max-width: 768px) 100vw, 90vw"
-            priority
-          />
-        </div>
-
-        {/* 下一張 */}
-        <button
-          className={`${styles.lightboxNav} ${styles.lightboxNext}`}
-          onClick={onNext}
-          aria-label={t('gallery.next')}
-        >
-          <ChevronRightIcon />
-        </button>
+          {photos.map((photo) => (
+            <SwiperSlide key={photo.id} className={styles.lightboxSlide}>
+              <div className={styles.lightboxImageWrapper}>
+                <Image
+                  src={photo.src}
+                  alt={t(`gallery.${photo.alt}`)}
+                  fill
+                  className={styles.lightboxImage}
+                  sizes="(max-width: 768px) 100vw, 90vw"
+                  priority
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
         {/* 計數器 */}
         <div className={styles.lightboxCounter}>
@@ -157,18 +137,8 @@ export default function GalleryPage() {
     setLightboxIndex(null)
   }, [])
 
-  const goToPrev = useCallback(() => {
-    setLightboxIndex((prev) => {
-      if (prev === null) return null
-      return prev === 0 ? PHOTOS.length - 1 : prev - 1
-    })
-  }, [])
-
-  const goToNext = useCallback(() => {
-    setLightboxIndex((prev) => {
-      if (prev === null) return null
-      return prev === PHOTOS.length - 1 ? 0 : prev + 1
-    })
+  const handleSlideChange = useCallback((index: number) => {
+    setLightboxIndex(index)
   }, [])
 
   return (
@@ -182,8 +152,8 @@ export default function GalleryPage() {
           </header>
         </FadeInOnScroll>
 
-        {/* 瀑布流網格 */}
-        <div className={styles.masonryGrid}>
+        {/* 拍立得風格照片牆 */}
+        <div className={styles.photoGrid}>
           {PHOTOS.map((photo, index) => (
             <FadeInOnScroll
               key={photo.id}
@@ -191,25 +161,30 @@ export default function GalleryPage() {
               delay={(index % 4) * 80}
               duration={500}
             >
-              <button
+              <figure
                 className={styles.photoCard}
+                style={{
+                  ['--photo-idx' as string]: index,
+                  ['--tape-top' as string]: tapePalette[index % 2].top,
+                  ['--tape-bottom' as string]: tapePalette[index % 2].bottom,
+                }}
                 onClick={() => openLightbox(index)}
+                role="button"
+                tabIndex={0}
                 aria-label={`${t('gallery.viewPhoto')} ${index + 1}`}
+                onKeyDown={(e) => e.key === 'Enter' && openLightbox(index)}
               >
-                <div className={styles.photoWrapper}>
+                <span className={styles.photoTape} />
+                <div className={styles.photoImage}>
                   <Image
                     src={photo.src}
                     alt={t(`gallery.${photo.alt}`)}
                     width={600}
                     height={400}
-                    className={styles.photo}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  <div className={styles.photoOverlay}>
-                    <ZoomIcon />
-                  </div>
                 </div>
-              </button>
+              </figure>
             </FadeInOnScroll>
           ))}
         </div>
@@ -224,10 +199,9 @@ export default function GalleryPage() {
       {lightboxIndex !== null && (
         <Lightbox
           photos={PHOTOS}
-          currentIndex={lightboxIndex}
+          initialIndex={lightboxIndex}
           onClose={closeLightbox}
-          onPrev={goToPrev}
-          onNext={goToNext}
+          onSlideChange={handleSlideChange}
           t={t}
         />
       )}
