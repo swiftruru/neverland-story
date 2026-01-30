@@ -7,27 +7,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 16px;
+  gap: 6px;
+  padding: 12px;
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
   z-index: 9999;
   pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
-.container.active {
-  pointer-events: auto;
+  will-change: transform, opacity;
 }
 
 .spinner {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--color-surface, #fff);
   border-radius: 50%;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.1s ease;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease-out, box-shadow 0.2s;
+  will-change: transform;
 }
 
 .spinner svg {
@@ -35,24 +33,31 @@
   height: 22px;
   color: var(--color-primary, #006850);
   stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.spinner.ready {
+  box-shadow: 0 2px 20px rgba(0, 104, 80, 0.3);
+}
+
+.spinner.ready svg {
+  color: var(--color-primary, #006850);
 }
 
 .spinner.refreshing {
-  animation: spin 1s linear infinite;
-}
-
-.spinner.refreshing svg {
-  animation: none;
+  animation: spin 0.8s linear infinite;
 }
 
 .text {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 500;
   color: var(--color-text-secondary, #666);
   background: var(--color-surface, #fff);
-  padding: 4px 12px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 4px 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 @keyframes spin {
@@ -64,16 +69,27 @@
   }
 }
 
-/* 安全區域適配 */
-@supports (padding-top: env(safe-area-inset-top)) {
-  .container {
-    padding-top: calc(16px + env(safe-area-inset-top));
-  }
-}
-
 /* 桌面版隱藏 */
 @media (min-width: 768px) {
   .container {
     display: none;
+  }
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+  .spinner {
+    background: var(--color-surface-elevated, #2a2a2a);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .spinner.ready {
+    box-shadow: 0 2px 20px rgba(0, 200, 150, 0.25);
+  }
+
+  .text {
+    background: var(--color-surface-elevated, #2a2a2a);
+    color: var(--color-text-secondary, #aaa);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
   }
 }
