@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
 import { SITE_URL, buildMetadata } from '@/app/metadata'
+import { CourseJsonLd, StaticBreadcrumbJsonLd, type BreadcrumbItem } from '@components/common'
+
+const courseName = '彼得潘的 Swift iOS App 程式設計入門'
+const courseDescription =
+  '彼得潘為已有程式基礎的你準備的 iOS App 進階課程，用最新的 Swift、UIKit 與 SwiftUI，一起做出真正酷炫又能用的 App。'
 
 const baseMeta = buildMetadata({
-  title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
-  description:
-    '彼得潘為已有程式基礎的你準備的 iOS App 進階課程，用最新的 Swift、UIKit 與 SwiftUI，一起做出真正酷炫又能用的 App。',
+  title: `${courseName} | 彼得潘`,
+  description: courseDescription,
   path: '/courses/swift/advanced',
 })
 
@@ -17,7 +21,7 @@ export const metadata: Metadata = {
   ...baseMeta,
   openGraph: {
     ...baseMeta.openGraph,
-    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
+    title: `${courseName} | 彼得潘`,
     url: pageUrl,
     type: 'article',
     images: [
@@ -32,9 +36,8 @@ export const metadata: Metadata = {
   twitter: {
     ...baseMeta.twitter,
     images: [ogImage],
-    title: '彼得潘的 Swift iOS App 程式設計入門 | 彼得潘',
-    description:
-      '彼得潘為已有程式基礎的你準備的 iOS App 進階課程，用最新的 Swift、UIKit 與 SwiftUI，一起做出真正酷炫又能用的 App。',
+    title: `${courseName} | 彼得潘`,
+    description: courseDescription,
   },
   manifest: manifestUrl,
   icons: {
@@ -52,10 +55,30 @@ export const metadata: Metadata = {
     canonical: pageUrl,
     languages: {
       'zh-TW': pageUrl,
+      en: pageUrl,
     },
   },
 }
 
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: '首頁', url: new URL('/neverland', SITE_URL).toString() },
+  { name: '課程總覽', url: new URL('/neverland/courses', SITE_URL).toString() },
+  { name: courseName, url: pageUrl },
+]
+
 export default function SwiftAdvancedLayout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <CourseJsonLd
+        name={courseName}
+        description={courseDescription}
+        provider="彼得潘 Peter Pan"
+        url={pageUrl}
+        image={ogImage}
+        duration="P8W"
+      />
+      <StaticBreadcrumbJsonLd items={breadcrumbItems} />
+      {children}
+    </>
+  )
 }
