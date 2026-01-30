@@ -11,7 +11,24 @@
     "description": "哎呀！你要找的頁面似乎迷路了。",
     "descriptionSub": "可能是連結有誤，或是頁面已經不存在。",
     "backHome": "回到首頁",
-    "exploreNeverland": "探索 Neverland"
+    "exploreNeverland": "探索 Neverland",
+    "didYouMean": "你是不是要找：",
+    "popularTitle": "熱門頁面",
+    "suggestions": {
+      "swift": "iOS App 程式設計課程",
+      "swiftui": "SwiftUI 入門課程",
+      "flutter": "Flutter 跨平台課程",
+      "courses": "所有課程",
+      "neverland": "關於彼得潘",
+      "contact": "聯絡我們",
+      "gallery": "相簿"
+    },
+    "popular": {
+      "swift": "iOS 課程",
+      "swiftui": "SwiftUI 課程",
+      "flutter": "Flutter 課程",
+      "neverland": "關於我們"
+    }
   },
   "coursesPage": {
     "kicker": "彼得潘的程式設計課程",

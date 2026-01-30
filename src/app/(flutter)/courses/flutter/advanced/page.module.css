@@ -580,11 +580,23 @@
   background: #f5f6f4;
 }
 
-.assignmentImage img {
+.assignmentImage img,
+.assignmentImage :global(img) {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
+  transition: transform 0.35s ease-out;
+  will-change: transform;
+}
+
+.assignmentImage:hover img,
+.assignmentImage:hover :global(img) {
+  transform: scale(1.08);
+}
+
+.assignmentImage:hover .imageOverlay {
+  opacity: 1;
 }
 
 .imageOverlay {
@@ -598,10 +610,7 @@
   color: #ffffff;
   font-weight: 700;
   transition: opacity 0.2s ease;
-}
-
-.assignmentImage:hover .imageOverlay {
-  opacity: 1;
+  pointer-events: none;
 }
 
 .assignmentBody {
@@ -3550,6 +3559,16 @@
 
   .photoImage img {
     transition: none;
+  }
+
+  .assignmentImage img,
+  .assignmentImage :global(img) {
+    transition: none;
+  }
+
+  .assignmentImage:hover img,
+  .assignmentImage:hover :global(img) {
+    transform: none;
   }
 
   .photoSkeleton {

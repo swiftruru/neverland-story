@@ -11,7 +11,24 @@
     "description": "Oops! The page you're looking for seems to have wandered off.",
     "descriptionSub": "The link might be broken, or the page may no longer exist.",
     "backHome": "Back to Home",
-    "exploreNeverland": "Explore Neverland"
+    "exploreNeverland": "Explore Neverland",
+    "didYouMean": "Did you mean:",
+    "popularTitle": "Popular Pages",
+    "suggestions": {
+      "swift": "iOS App Development Course",
+      "swiftui": "SwiftUI Foundation Course",
+      "flutter": "Flutter Cross-Platform Course",
+      "courses": "All Courses",
+      "neverland": "About Peter Pan",
+      "contact": "Contact Us",
+      "gallery": "Gallery"
+    },
+    "popular": {
+      "swift": "iOS Course",
+      "swiftui": "SwiftUI Course",
+      "flutter": "Flutter Course",
+      "neverland": "About Us"
+    }
   },
   "coursesPage": {
     "kicker": "Peter Pan's Coding Courses",

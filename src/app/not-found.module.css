@@ -133,10 +133,46 @@
   flex-wrap: wrap;
 }
 
+/* ===== 智慧建議區塊 ===== */
+.suggestion {
+  background: var(--color-primary-pale);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--color-primary);
+}
+
+.suggestionText {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0 0 0.5rem;
+}
+
+.suggestionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.suggestionLink:hover {
+  gap: 0.75rem;
+}
+
+.suggestionArrow {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ===== 主要按鈕（含脈衝動畫）===== */
 .primaryButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   padding: 0.85rem 1.75rem;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
@@ -148,6 +184,37 @@
     0 4px 14px rgba(0, 104, 80, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.primaryButton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  opacity: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.buttonIcon {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.primaryButton:hover .buttonIcon {
+  transform: translateX(-3px);
 }
 
 .primaryButton:hover {
@@ -191,6 +258,78 @@
   height: 120px;
   color: rgba(255, 255, 255, 0.15);
   transform: rotate(15deg);
+}
+
+/* ===== 熱門頁面連結 ===== */
+.popularSection {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.popularTitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.popularLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.popularLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.popularLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.popularIcon {
+  font-size: 1.1rem;
+}
+
+.popularText {
+  white-space: nowrap;
+}
+
+/* ===== Reduced Motion Support ===== */
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton::before {
+    animation: none;
+    opacity: 0;
+  }
+
+  .primaryButton:hover .buttonIcon {
+    transform: none;
+  }
+
+  .suggestionLink:hover {
+    gap: 0.5rem;
+  }
+
+  .popularLink:hover {
+    transform: none;
+  }
 }
 
 @media (max-width: 600px) {
