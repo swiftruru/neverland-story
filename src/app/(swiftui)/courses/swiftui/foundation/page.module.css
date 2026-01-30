@@ -2908,3 +2908,37 @@
     font-size: 0.9rem;
   }
 }
+
+/* Reduced Motion Support - 尊重使用者偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .photoCard {
+    transition: none;
+  }
+
+  .photoImage img {
+    transition: none;
+  }
+
+  .photoSkeleton {
+    animation: none;
+    background: #e8e8e8;
+  }
+
+  .swiperLightboxOverlay {
+    animation: none;
+  }
+
+  .swiperLightboxClosing {
+    animation: none;
+    opacity: 0;
+  }
+
+  .swiperLightboxClose {
+    transition: none;
+  }
+
+  .swiperLightboxSwiper :global(.swiper-button-prev),
+  .swiperLightboxSwiper :global(.swiper-button-next) {
+    transition: none !important;
+  }
+}

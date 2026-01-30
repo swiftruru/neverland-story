@@ -73,3 +73,25 @@
   opacity: 1;
   transform: scale(1);
 }
+
+/* Reduced Motion Support - 尊重使用者偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .image {
+    opacity: 1;
+    transition: none;
+  }
+
+  .zoomableImage {
+    transition: none;
+  }
+
+  .zoomableWrapper:hover .zoomableImage {
+    transform: none;
+  }
+
+  .zoomHint {
+    opacity: 1;
+    transform: scale(1);
+    transition: none;
+  }
+}

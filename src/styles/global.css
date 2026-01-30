@@ -84,3 +84,19 @@ button {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ===== Reduced Motion Support - 尊重使用者偏好 ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

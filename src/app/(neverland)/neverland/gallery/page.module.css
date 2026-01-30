@@ -483,3 +483,41 @@
     padding: 0.4rem 1rem;
   }
 }
+
+/* Reduced Motion Support - 尊重使用者偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .photoCard {
+    transition: none;
+  }
+
+  .photoCard:hover {
+    transform: rotate(var(--photo-tilt, -1deg));
+  }
+
+  .photoImage img {
+    transition: none;
+  }
+
+  .photoSkeleton {
+    animation: none;
+    background: #e8e8e8;
+  }
+
+  .lightboxOverlay {
+    animation: none;
+  }
+
+  .lightboxClosing {
+    animation: none;
+    opacity: 0;
+  }
+
+  .lightboxClose {
+    transition: none;
+  }
+
+  .lightboxSwiper :global(.swiper-button-prev),
+  .lightboxSwiper :global(.swiper-button-next) {
+    transition: none !important;
+  }
+}
