@@ -178,6 +178,10 @@ function PhotoLightbox({
         <div className={styles.swiperLightboxCounter}>
           {currentIndex + 1} / {photos.length}
         </div>
+
+        {photos[currentIndex]?.caption && (
+          <p className={styles.swiperLightboxCaption}>{photos[currentIndex].caption}</p>
+        )}
       </div>
     </div>
   )

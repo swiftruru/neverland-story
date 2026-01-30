@@ -2790,6 +2790,21 @@
   z-index: 100;
 }
 
+.swiperLightboxCaption {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  max-width: 80%;
+  margin: 0;
+  z-index: 100;
+}
+
 /* Swiper Lightbox Responsive */
 @media (max-width: 1024px) {
   .swiperLightboxSwiper :global(.swiper-button-prev),
@@ -2853,5 +2868,10 @@
     bottom: 1rem;
     font-size: 0.875rem;
     padding: 0.4rem 1rem;
+  }
+
+  .swiperLightboxCaption {
+    bottom: 3rem;
+    font-size: 0.9rem;
   }
 }
