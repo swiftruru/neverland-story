@@ -72,6 +72,23 @@ button {
   border-radius: 6px;
 }
 
+/* 增強焦點樣式 - 卡片和容器 */
+:where(figure, article, section, .card):focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* 主要內容區域 - 用於 Skip to Content */
+#main-content:focus {
+  outline: none;
+}
+
+#main-content:focus-visible {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: -2px;
+}
+
 /* ===== 無障礙隱藏 ===== */
 .sr-only {
   position: absolute;

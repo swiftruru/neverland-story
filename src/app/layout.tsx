@@ -1,7 +1,14 @@
 import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
-import { BreadcrumbJsonLd, GoogleAnalytics, OrganizationJsonLd, PwaProvider } from '@components/common'
+import {
+  BreadcrumbJsonLd,
+  GoogleAnalytics,
+  KeyboardShortcuts,
+  OrganizationJsonLd,
+  PwaProvider,
+  SkipToContent,
+} from '@components/common'
 import '@styles/global.css'
 import styles from './layout.module.css'
 import { buildAbsoluteUrl } from './metadata'
@@ -87,6 +94,8 @@ export default function RootLayout({
       <body>
         <GoogleAnalytics measurementId="G-QBT96TN0KR" />
         <I18nProvider>
+          <SkipToContent targetId="main-content" />
+          <KeyboardShortcuts />
           <PwaProvider />
           <ReadingProgress />
           <BreadcrumbJsonLd />
@@ -107,7 +116,7 @@ export default function RootLayout({
           />
           <LayoutChrome>
             <div className={styles.layout}>
-              <main className={styles.main}>
+              <main id="main-content" className={styles.main} tabIndex={-1}>
                 <PageTransition />
                 {children}
               </main>
