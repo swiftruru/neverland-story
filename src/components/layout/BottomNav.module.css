@@ -22,15 +22,6 @@
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 -4px 20px rgba(0, 104, 80, 0.08);
-    transition: transform 0.3s ease;
-  }
-
-  .bottomNav.visible {
-    transform: translateY(0);
-  }
-
-  .bottomNav.hidden {
-    transform: translateY(100%);
   }
 
   .navItem {

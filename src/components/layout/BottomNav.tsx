@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
-import { useEffect, useState } from 'react'
 import styles from './BottomNav.module.css'
 
 // SVG Icons as components
@@ -49,25 +48,6 @@ const NAV_ITEMS = [
 export function BottomNav() {
   const pathname = usePathname()
   const { t } = useTranslation('common')
-  const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-
-  // 滾動時隱藏/顯示
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      const scrollingDown = currentScrollY > lastScrollY
-      const scrolledEnough = Math.abs(currentScrollY - lastScrollY) > 10
-
-      if (scrolledEnough) {
-        setIsVisible(!scrollingDown || currentScrollY < 50)
-        setLastScrollY(currentScrollY)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
 
   // 判斷是否為當前頁面
   const isActive = (href: string) => {
@@ -77,7 +57,7 @@ export function BottomNav() {
 
   return (
     <nav
-      className={`${styles.bottomNav} ${isVisible ? styles.visible : styles.hidden}`}
+      className={styles.bottomNav}
       aria-label={t('bottomNav.ariaLabel')}
     >
       {NAV_ITEMS.map(({ href, icon: Icon, labelKey }) => {
