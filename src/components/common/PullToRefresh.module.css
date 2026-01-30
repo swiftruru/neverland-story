@@ -1,0 +1,79 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.container.active {
+  pointer-events: auto;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface, #fff);
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease;
+}
+
+.spinner svg {
+  width: 22px;
+  height: 22px;
+  color: var(--color-primary, #006850);
+  stroke-linecap: round;
+}
+
+.spinner.refreshing {
+  animation: spin 1s linear infinite;
+}
+
+.spinner.refreshing svg {
+  animation: none;
+}
+
+.text {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #666);
+  background: var(--color-surface, #fff);
+  padding: 4px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* 安全區域適配 */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .container {
+    padding-top: calc(16px + env(safe-area-inset-top));
+  }
+}
+
+/* 桌面版隱藏 */
+@media (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}

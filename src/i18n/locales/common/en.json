@@ -39,6 +39,11 @@
       "neverland": "About Us"
     }
   },
+  "pullToRefresh": {
+    "pull": "Pull to refresh",
+    "release": "Release to refresh",
+    "refreshing": "Refreshing..."
+  },
   "pwaPrompt": {
     "title": "Add to Home Screen",
     "description": "Add this website to your home screen for a faster, smoother app experience!",

@@ -30,6 +30,11 @@ const PwaInstallPrompt = dynamic(
   { ssr: false }
 )
 
+const PullToRefresh = dynamic(
+  () => import('@components/common/PullToRefresh').then((mod) => mod.PullToRefresh),
+  { ssr: false }
+)
+
 const ogImage = buildAbsoluteUrl('/og-cover.png')
 
 const baseMetadata: Metadata = {
@@ -95,6 +100,7 @@ export default function RootLayout({
           <CookieConsent />
           <PwaProvider />
           <PwaInstallPrompt />
+          <PullToRefresh />
           <ReadingProgress />
           <BreadcrumbJsonLd />
           <OrganizationJsonLd
