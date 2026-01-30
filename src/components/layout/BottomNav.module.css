@@ -30,13 +30,18 @@
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     text-decoration: none;
     color: var(--color-text-light, #666);
     transition: color 0.2s ease, transform 0.15s ease;
     -webkit-tap-highlight-color: transparent;
-    min-width: 64px;
+    min-width: 52px;
     position: relative;
+    /* Reset button styles */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
 
   .navItem:active {

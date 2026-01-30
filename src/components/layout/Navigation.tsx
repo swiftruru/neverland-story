@@ -25,6 +25,13 @@ export function Navigation() {
     closeMenu()
   }, [pathname, closeMenu])
 
+  // 監聽 BottomNav 的「更多」按鈕事件
+  useEffect(() => {
+    const handleToggleMenu = () => setIsOpen((prev) => !prev)
+    window.addEventListener('toggleMobileMenu', handleToggleMenu)
+    return () => window.removeEventListener('toggleMobileMenu', handleToggleMenu)
+  }, [])
+
   // 開啟選單時禁止背景滾動
   useEffect(() => {
     if (isOpen) {

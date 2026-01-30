@@ -44,7 +44,7 @@
 /* 手機版調整 */
 @media (max-width: 768px) {
   .button {
-    bottom: calc(var(--spacing-md) + var(--bottom-nav-offset, 0px));
+    bottom: calc(var(--spacing-md) + var(--bottom-nav-offset, 0px) + 8px);
     right: var(--spacing-md);
     width: 44px;
     height: 44px;

@@ -2,9 +2,11 @@
   "bottomNav": {
     "ariaLabel": "Main navigation",
     "home": "Home",
-    "works": "Works",
-    "lectures": "Lectures",
-    "contact": "Contact"
+    "tutoring": "Tutoring",
+    "courses": "Courses",
+    "essays": "Essays",
+    "experience": "Experience",
+    "more": "More"
   },
   "cookie": {
     "title": "We Use Cookies",

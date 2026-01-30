@@ -174,7 +174,7 @@
 /* 手機版調整 */
 @media (max-width: 768px) {
   .container {
-    bottom: calc(var(--spacing-md) + var(--bottom-nav-offset, 0px));
+    bottom: calc(var(--spacing-md) + var(--bottom-nav-offset, 0px) + 8px);
     left: var(--spacing-md);
   }
 

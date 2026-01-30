@@ -2,9 +2,11 @@
   "bottomNav": {
     "ariaLabel": "主要導航",
     "home": "首頁",
-    "works": "作品",
-    "lectures": "講座課程",
-    "contact": "聯絡"
+    "tutoring": "家教",
+    "courses": "講座課程",
+    "essays": "散文集",
+    "experience": "經歷",
+    "more": "更多"
   },
   "cookie": {
     "title": "我們使用 Cookies",

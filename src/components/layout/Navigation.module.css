@@ -196,3 +196,10 @@
     height: 8px;
   }
 }
+
+/* 手機版漢堡選單底部間距（避免被 BottomNav 擋住） */
+@media (max-width: 768px) {
+  .navList {
+    padding-bottom: calc(var(--spacing-xl) + var(--bottom-nav-offset, 0px) + 20px);
+  }
+}

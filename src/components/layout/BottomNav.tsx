@@ -13,6 +13,17 @@ const HomeIcon = () => (
   </svg>
 )
 
+// 家教 icon (人物+學習)
+const TutoringIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  </svg>
+)
+
+// 講座課程 icon
 const CoursesIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
@@ -22,27 +33,39 @@ const CoursesIcon = () => (
   </svg>
 )
 
-const ContactIcon = () => (
+// 散文集 icon (筆/寫作)
+const EssaysIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    <path d="M12 19l7-7 3 3-7 7-3-3z" />
+    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+    <path d="M2 2l7.586 7.586" />
+    <circle cx="11" cy="11" r="2" />
   </svg>
 )
 
-// 作品 icon
-const AppsIcon = () => (
+// 經歷 icon (公事包/履歷)
+const ExperienceIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="3" width="7" height="7" rx="1" />
-    <rect x="14" y="3" width="7" height="7" rx="1" />
-    <rect x="3" y="14" width="7" height="7" rx="1" />
-    <rect x="14" y="14" width="7" height="7" rx="1" />
+    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+  </svg>
+)
+
+// 更多 icon (三條橫線/漢堡)
+const MoreIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <line x1="3" y1="12" x2="21" y2="12" />
+    <line x1="3" y1="18" x2="21" y2="18" />
   </svg>
 )
 
 const NAV_ITEMS = [
   { href: '/', icon: HomeIcon, labelKey: 'home' },
-  { href: '/neverland/apps', icon: AppsIcon, labelKey: 'works' },
-  { href: '/neverland/courses', icon: CoursesIcon, labelKey: 'lectures' },
-  { href: '/neverland/contact', icon: ContactIcon, labelKey: 'contact' },
+  { href: '/neverland/tutoring', icon: TutoringIcon, labelKey: 'tutoring' },
+  { href: '/neverland/courses', icon: CoursesIcon, labelKey: 'courses' },
+  { href: '/neverland/essays', icon: EssaysIcon, labelKey: 'essays' },
+  { href: '/neverland/experience', icon: ExperienceIcon, labelKey: 'experience' },
 ]
 
 export function BottomNav() {
@@ -53,6 +76,11 @@ export function BottomNav() {
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'
     return pathname?.startsWith(href)
+  }
+
+  // 切換漢堡選單
+  const toggleMenu = () => {
+    window.dispatchEvent(new CustomEvent('toggleMobileMenu'))
   }
 
   return (
@@ -76,6 +104,18 @@ export function BottomNav() {
           </Link>
         )
       })}
+      {/* 更多按鈕 - 切換漢堡選單 */}
+      <button
+        type="button"
+        className={styles.navItem}
+        onClick={toggleMenu}
+        aria-label={t('bottomNav.more')}
+      >
+        <span className={styles.iconWrapper}>
+          <MoreIcon />
+        </span>
+        <span className={styles.label}>{t('bottomNav.more')}</span>
+      </button>
     </nav>
   )
 }
