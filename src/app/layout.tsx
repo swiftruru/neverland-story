@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
 import {
   BreadcrumbJsonLd,
+  CookieConsent,
   GoogleAnalytics,
   KeyboardShortcuts,
   OrganizationJsonLd,
@@ -96,6 +97,7 @@ export default function RootLayout({
         <I18nProvider>
           <SkipToContent targetId="main-content" />
           <KeyboardShortcuts />
+          <CookieConsent />
           <PwaProvider />
           <ReadingProgress />
           <BreadcrumbJsonLd />

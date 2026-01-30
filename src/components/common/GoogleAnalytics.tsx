@@ -14,6 +14,25 @@ declare global {
   }
 }
 
+const CONSENT_KEY = 'cookie-consent'
+
+/**
+ * 檢查是否已同意 cookies
+ */
+function getInitialConsentStatus(): boolean {
+  if (typeof window === 'undefined') return false
+  try {
+    const stored = localStorage.getItem(CONSENT_KEY)
+    if (stored) {
+      const data = JSON.parse(stored)
+      return data.status === 'accepted'
+    }
+  } catch {
+    // 解析失敗
+  }
+  return false
+}
+
 function getContentGroup(pathname: string): string {
   if (pathname.startsWith('/neverland')) return 'neverland'
   if (pathname.startsWith('/courses/swift/')) return 'swift'
@@ -36,6 +55,10 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
     }
   }, [pathname, measurementId])
 
+  // 根據已存的同意狀態決定初始值
+  const consentGranted = typeof window !== 'undefined' ? getInitialConsentStatus() : false
+  const consentDefault = consentGranted ? 'granted' : 'denied'
+
   return (
     <>
       <Script
@@ -46,6 +69,16 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+
+          // GDPR 同意模式 - 預設拒絕，等待用戶同意
+          gtag('consent', 'default', {
+            analytics_storage: '${consentDefault}',
+            ad_storage: '${consentDefault}',
+            ad_user_data: '${consentDefault}',
+            ad_personalization: '${consentDefault}',
+            wait_for_update: 500
+          });
+
           gtag('js', new Date());
           gtag('config', '${measurementId}');
         `}

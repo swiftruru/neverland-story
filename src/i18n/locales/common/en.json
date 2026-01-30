@@ -1,4 +1,10 @@
 {
+  "cookie": {
+    "title": "We Use Cookies",
+    "description": "We use cookies to analyze website traffic and improve your browsing experience. By clicking \"Accept\", you consent to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
   "notFound": {
     "code": "404",
     "title": "Page Not Found",

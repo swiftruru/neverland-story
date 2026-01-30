@@ -1,4 +1,10 @@
 {
+  "cookie": {
+    "title": "我們使用 Cookies",
+    "description": "我們使用 cookies 來分析網站流量並改善您的瀏覽體驗。點擊「接受」即表示您同意我們使用 cookies。",
+    "accept": "接受",
+    "decline": "拒絕"
+  },
   "notFound": {
     "code": "404",
     "title": "找不到頁面",

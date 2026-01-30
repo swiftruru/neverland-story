@@ -1,0 +1,236 @@
+/* ===== Cookie Consent Banner ===== */
+.container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  z-index: 9999;
+  width: calc(100% - var(--spacing-xl) * 2);
+  max-width: 600px;
+
+  /* 紙張效果 */
+  background-color: var(--color-bg-paper);
+  border-radius: var(--radius-md);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border-light);
+
+  /* 動畫 */
+  opacity: 0;
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.3s ease;
+}
+
+.container.visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* ===== 裝飾性膠帶 ===== */
+.tape {
+  position: absolute;
+  top: -12px;
+  width: 60px;
+  height: 24px;
+  background-color: var(--color-tape-yellow);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.tape::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 8px,
+    rgba(255, 255, 255, 0.3) 8px,
+    rgba(255, 255, 255, 0.3) 9px
+  );
+}
+
+.tapeLeft {
+  left: 24px;
+  transform: rotate(-8deg);
+}
+
+.tapeRight {
+  right: 24px;
+  transform: rotate(6deg);
+  background-color: var(--color-tape-green);
+}
+
+/* ===== 內容區域 ===== */
+.content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--font-family-handwriting);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+/* ===== 按鈕區域 ===== */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+.acceptButton,
+.declineButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  white-space: nowrap;
+}
+
+.acceptButton {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  box-shadow: 0 2px 8px rgba(0, 104, 80, 0.3);
+}
+
+.acceptButton:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 104, 80, 0.4);
+}
+
+.acceptButton:active {
+  transform: translateY(0);
+}
+
+.declineButton {
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.declineButton:hover {
+  background-color: var(--color-bg-paper-dark);
+  color: var(--color-text-light);
+  border-color: var(--color-border);
+}
+
+/* ===== 響應式設計 ===== */
+@media (max-width: 600px) {
+  .container {
+    bottom: var(--spacing-md);
+    width: calc(100% - var(--spacing-md) * 2);
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .acceptButton,
+  .declineButton {
+    flex: 1;
+  }
+
+  .tape {
+    width: 50px;
+    height: 20px;
+    top: -10px;
+  }
+
+  .tapeLeft {
+    left: 16px;
+  }
+
+  .tapeRight {
+    right: 16px;
+  }
+}
+
+/* ===== Reduced Motion Support ===== */
+@media (prefers-reduced-motion: reduce) {
+  .container {
+    transition: opacity 0.1s ease;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .container:not(.visible) {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .acceptButton:hover,
+  .declineButton:hover {
+    transform: none;
+  }
+}
+
+/* ===== 紙張摺角效果 ===== */
+.container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 16px 16px;
+  border-color: transparent transparent var(--color-bg) transparent;
+  border-radius: 0 0 var(--radius-md) 0;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(
+    135deg,
+    transparent 50%,
+    var(--color-bg-paper-dark) 50%
+  );
+  border-radius: 0 0 var(--radius-md) 0;
+}
