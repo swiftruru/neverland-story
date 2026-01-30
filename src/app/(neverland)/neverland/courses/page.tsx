@@ -27,7 +27,7 @@ const COURSES: Course[] = [
     dateKey: 'swiftIosApp.date',
     descriptionKey: 'swiftIosApp.description',
     image: img('swift-ios-app.png'),
-    url: 'https://swiftpeterpan.mystrikingly.com/',
+    url: '/courses/swift/advanced/',
   },
   {
     id: 'swiftui-beginner',
@@ -35,7 +35,7 @@ const COURSES: Course[] = [
     dateKey: 'swiftuiBeginner.date',
     descriptionKey: 'swiftuiBeginner.description',
     image: img('swiftui-beginner.png'),
-    url: 'https://learniosfromzero.mystrikingly.com/',
+    url: '/courses/swiftui/foundation/',
   },
   {
     id: 'ntou-swiftui',
