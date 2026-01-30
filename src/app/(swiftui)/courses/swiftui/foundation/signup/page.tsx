@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Keyboard } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
+import { LazyImage } from '@components/common'
 import styles from '../page.module.css'
 
 import 'swiper/css'
@@ -302,7 +303,13 @@ export default function SwiftuiSignupPage() {
               >
                 <span className={styles.photoTape} />
                 <div className={styles.photoImage}>
-                  <img src={item.src} alt={item.alt} />
+                  <LazyImage
+                    src={item.src}
+                    alt={item.alt}
+                    width={400}
+                    height={300}
+                    placeholder="blur"
+                  />
                 </div>
                 {item.caption && <figcaption className={styles.photoCaption}>{item.caption}</figcaption>}
               </figure>

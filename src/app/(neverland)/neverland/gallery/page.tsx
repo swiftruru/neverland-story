@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Keyboard } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
-import { FadeInOnScroll } from '@components/common'
+import { FadeInOnScroll, LazyImage } from '@components/common'
 import { assetPath } from '@/app/metadata'
 import styles from './page.module.css'
 
@@ -259,12 +259,12 @@ export default function GalleryPage() {
               >
                 <span className={styles.photoTape} />
                 <div className={styles.photoImage}>
-                  <Image
+                  <LazyImage
                     src={photo.src}
                     alt={t(`gallery.${photo.alt}`)}
                     width={600}
                     height={400}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
                   />
                 </div>
               </figure>
