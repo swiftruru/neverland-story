@@ -1,10 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback, useRef } from 'react'
-import type {
-  TouchEvent as ReactTouchEvent,
-  MouseEvent as ReactMouseEvent,
-} from 'react'
+import type { MouseEvent as ReactMouseEvent } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -59,31 +56,13 @@ function Lightbox({
 }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex)
   const contentRef = useRef<HTMLDivElement | null>(null)
-
-  // 處理 ESC 關閉和鎖定 body 滾動
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-
-    document.addEventListener('keydown', handleKeyDown)
-    document.body.style.overflow = 'hidden'
-
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown)
-      document.body.style.overflow = ''
-    }
-  }, [onClose])
-
-  const handleSlideChange = (swiper: SwiperType) => {
-    setCurrentIndex(swiper.realIndex ?? swiper.activeIndex)
-  }
+  const overlayRef = useRef<HTMLDivElement | null>(null)
+  const touchStartRef = useRef<{ x: number; y: number; target: EventTarget | null } | null>(null)
 
   // 判斷是否為可互動元素（不應關閉 lightbox 的元素）
-  const isInteractiveElement = (target: HTMLElement | null): boolean => {
+  const isInteractiveElement = useCallback((target: HTMLElement | null): boolean => {
     if (!target) return false
 
-    // 檢查是否為按鈕、導航、圖片等互動元素
     const interactiveSelectors = [
       'button',
       '[role="button"]',
@@ -101,17 +80,64 @@ function Lightbox({
       }
     }
     return false
-  }
+  }, [])
 
-  // Swiper 點擊事件處理（解決手機版觸控問題）
-  const handleSwiperClick = (_swiper: SwiperType, event: MouseEvent | TouchEvent | PointerEvent) => {
-    const target = event.target as HTMLElement
-    if (!isInteractiveElement(target)) {
-      onClose()
+  // 處理 ESC 關閉、鎖定 body 滾動、以及原生觸控事件
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
     }
+
+    // 記錄觸控開始位置
+    const handleTouchStart = (e: TouchEvent) => {
+      const touch = e.touches[0]
+      touchStartRef.current = {
+        x: touch.clientX,
+        y: touch.clientY,
+        target: e.target,
+      }
+    }
+
+    // 觸控結束時判斷是否為點擊（非滑動）
+    const handleTouchEnd = (e: TouchEvent) => {
+      if (!touchStartRef.current || !overlayRef.current) return
+
+      const touch = e.changedTouches[0]
+      const deltaX = Math.abs(touch.clientX - touchStartRef.current.x)
+      const deltaY = Math.abs(touch.clientY - touchStartRef.current.y)
+
+      // 如果移動距離小於 10px，視為點擊而非滑動
+      const isTap = deltaX < 10 && deltaY < 10
+
+      if (isTap) {
+        const target = touchStartRef.current.target as HTMLElement
+        // 確保點擊發生在 lightbox 內且不是互動元素
+        if (overlayRef.current.contains(target) && !isInteractiveElement(target)) {
+          onClose()
+        }
+      }
+
+      touchStartRef.current = null
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    document.addEventListener('touchstart', handleTouchStart, { passive: true })
+    document.addEventListener('touchend', handleTouchEnd, { passive: true })
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+      document.removeEventListener('touchstart', handleTouchStart)
+      document.removeEventListener('touchend', handleTouchEnd)
+      document.body.style.overflow = ''
+    }
+  }, [onClose, isInteractiveElement])
+
+  const handleSlideChange = (swiper: SwiperType) => {
+    setCurrentIndex(swiper.realIndex ?? swiper.activeIndex)
   }
 
-  // 點擊非互動區域時關閉（包括 Swiper 的空白區域）
+  // 點擊非互動區域時關閉（桌面版）
   const handleContentClick = (e: ReactMouseEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement
     if (!isInteractiveElement(target)) {
@@ -119,21 +145,11 @@ function Lightbox({
     }
   }
 
-  // 觸控非互動區域時關閉
-  const handleContentTouch = (e: ReactTouchEvent<HTMLDivElement>) => {
-    const target = e.target as HTMLElement
-    if (!isInteractiveElement(target)) {
-      onClose()
-    }
-  }
-
-  const handleCloseButton = () => onClose()
-
   return (
     <div
+      ref={overlayRef}
       className={styles.lightboxOverlay}
       onClick={handleContentClick}
-      onTouchEnd={handleContentTouch}
       role="dialog"
       aria-modal="true"
     >
@@ -144,7 +160,7 @@ function Lightbox({
         {/* 關閉按鈕 */}
         <button
           className={styles.lightboxClose}
-          onClick={handleCloseButton}
+          onClick={onClose}
           type="button"
           aria-label={t('gallery.close')}
         >
@@ -160,7 +176,6 @@ function Lightbox({
           loop={true}
           grabCursor={true}
           onSlideChange={handleSlideChange}
-          onClick={handleSwiperClick}
           className={styles.lightboxSwiper}
         >
           {photos.map((photo) => (
