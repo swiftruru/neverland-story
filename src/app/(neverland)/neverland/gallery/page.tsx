@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import type {
-  PointerEvent as ReactPointerEvent,
   TouchEvent as ReactTouchEvent,
   MouseEvent as ReactMouseEvent,
 } from 'react'
@@ -80,24 +79,41 @@ function Lightbox({
     setCurrentIndex(swiper.realIndex ?? swiper.activeIndex)
   }
 
-  // 捕捉階段處理：只要點擊不在內容區就關閉（即使 Swiper 阻擋冒泡也能觸發）
-  const handleOverlayPointerCapture = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const target = e.target as Node | null
-    if (contentRef.current && target && !contentRef.current.contains(target)) {
+  // 判斷是否為可互動元素（不應關閉 lightbox 的元素）
+  const isInteractiveElement = (target: HTMLElement | null): boolean => {
+    if (!target) return false
+
+    // 檢查是否為按鈕、導航、圖片等互動元素
+    const interactiveSelectors = [
+      'button',
+      '[role="button"]',
+      '.swiper-button-prev',
+      '.swiper-button-next',
+      'img',
+      '[class*="lightboxClose"]',
+      '[class*="lightboxCounter"]',
+    ]
+
+    for (const selector of interactiveSelectors) {
+      if (target.matches(selector) || target.closest(selector)) {
+        return true
+      }
+    }
+    return false
+  }
+
+  // 點擊非互動區域時關閉（包括 Swiper 的空白區域）
+  const handleContentClick = (e: ReactMouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement
+    if (!isInteractiveElement(target)) {
       onClose()
     }
   }
 
-  const handleOverlayTouchCapture = (e: ReactTouchEvent<HTMLDivElement>) => {
-    const target = e.target as Node | null
-    if (contentRef.current && target && !contentRef.current.contains(target)) {
-      onClose()
-    }
-  }
-
-  const handleOverlayClick = (e: ReactMouseEvent<HTMLDivElement>) => {
-    if (!contentRef.current) return
-    if (!contentRef.current.contains(e.target as Node)) {
+  // 觸控非互動區域時關閉
+  const handleContentTouch = (e: ReactTouchEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement
+    if (!isInteractiveElement(target)) {
       onClose()
     }
   }
@@ -107,11 +123,8 @@ function Lightbox({
   return (
     <div
       className={styles.lightboxOverlay}
-      onPointerDownCapture={handleOverlayPointerCapture}
-      onTouchStartCapture={handleOverlayTouchCapture}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose()
-      }}
+      onClick={handleContentClick}
+      onTouchEnd={handleContentTouch}
       role="dialog"
       aria-modal="true"
     >
