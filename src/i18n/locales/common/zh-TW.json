@@ -116,7 +116,7 @@
         "title": "彼得潘的 iOS App 程式設計入門",
         "description": "只要 8 個星期，每週 2 個晚上，即可學會程式設計的核心概念，習得最新技術 Swift，iOS 和 Xcode，成為酷炫的 iOS App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！",
         "href": "/courses/swift/advanced/",
-        "image": "/courses/swift-ios-app.png",
+        "image": "/courses/swift-ios-app.webp",
         "tags": ["Swift", "iOS", "Xcode"]
       },
       {
@@ -124,7 +124,7 @@
         "title": "文組生的 iOS App 程式設計入門",
         "description": "專為文組生量身訂做，從零開始學程式，一步一步慢慢教！只要 10 個星期，每週一個晚上，即可學會程式設計的核心概念，成為酷炫的 iOS App 開發魔法師！",
         "href": "/courses/swiftui/foundation/",
-        "image": "/courses/swiftui-foundation.png",
+        "image": "/courses/swiftui-foundation.webp",
         "tags": ["SwiftUI", "iOS", "文組友善"]
       },
       {
@@ -132,7 +132,7 @@
         "title": "彼得潘的 Flutter 跨平台 App 程式設計入門",
         "description": "學習 Flutter 跨平台 App 開發的最新技術，Dart，Flutter SDK，VS Code，成為酷炫的 Flutter App 開發魔法師，實現未來 App 工作、接案、創業的第二人生！",
         "href": "/courses/flutter/advanced/",
-        "image": "/courses/flutter-advanced.png",
+        "image": "/courses/flutter-advanced.webp",
         "tags": ["Flutter", "Dart", "跨平台"]
       }
     ]

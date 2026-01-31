@@ -20,7 +20,7 @@ export default function SwiftQaPage() {
         className={styles.qaHero}
         style={{
           backgroundImage:
-            "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.18)), url('/swift/advanced/qa/hero.jpg')",
+            "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.18)), url('/swift/advanced/qa/hero.webp')",
         }}
       >
         <div className="container">

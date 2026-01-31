@@ -6,7 +6,7 @@
 .heroBanner {
   position: relative;
   min-height: 400px;
-  background-image: url('/neverland/hero-banner.png');
+  background-image: url('/neverland/hero-banner.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

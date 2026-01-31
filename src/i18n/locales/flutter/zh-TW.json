@@ -401,14 +401,14 @@
         "id": "discount",
         "title": "優惠價",
         "price": "$ 9,500",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "group",
         "title": "團報價",
         "subtitle": "2 人以上，包含 2 人",
         "price": "$ 8,000",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "student",
@@ -418,7 +418,7 @@
         "note": "另有學生分期方案：一期 3,000 元，分三期，每三個星期付款",
         "linkLabel": "學生價說明",
         "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "support",
@@ -426,14 +426,14 @@
         "subtitle": "3 個名額，連續失業三個月以上",
         "price": "$ 6,000",
         "note": "另有暖暖包價（2 個名額，持低收入證明或生活困難的朋友）：100 元",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "alumni",
         "title": "舊生價",
         "subtitle": "上過彼得潘其它課程",
         "price": "$ 7,000",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       }
     ],
     "notesTitle": "注意事項",
@@ -463,15 +463,15 @@
       "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
       "items": [
         {
-          "src": "/flutter/advanced/signup/photos/photo-01.png",
+          "src": "/flutter/advanced/signup/photos/photo-01.webp",
           "alt": "上課合照 1"
         },
         {
-          "src": "/flutter/advanced/signup/photos/photo-02.png",
+          "src": "/flutter/advanced/signup/photos/photo-02.webp",
           "alt": "上課合照 2"
         },
         {
-          "src": "/flutter/advanced/signup/photos/photo-03.png",
+          "src": "/flutter/advanced/signup/photos/photo-03.webp",
           "alt": "上課合照 3"
         }
       ]
@@ -554,7 +554,7 @@
         "author": "Yaya",
         "course": "文組生的 iOS App 程式設計入門",
         "link": "https://medium.com/@yayachen/%E4%B8%80%E6%AE%B5%E9%B4%A8%E5%AD%90%E5%AD%B8%E9%A3%9B%E7%9A%84%E6%97%85%E7%A8%8B-cd3acf368c19#.hbi1oty5p",
-        "photo": "/flutter/advanced/testimonials/yaya.png",
+        "photo": "/flutter/advanced/testimonials/yaya.webp",
         "paragraphs": [
           "記得 peter 的課程宣傳下方，很多人留言推薦他的課程十足幽默風趣。當時我不信，覺得多半是工程師自我感覺良好的宅式笑話。結果上了課後，竟然不爭氣地笑惹！他的上課方式果真十分有趣，喜歡在投影片上放入一些不是重點的重點、逼別人當眾承認一堆有愧於心的答案、三不五時慫恿同學開喉歌唱，最重要的，他總是能用一些簡單風趣的例子，讓你理解難以消化的程式概念，這點不推不行。",
           "peter 回答問題的速度也是一整個驚人，不管多晚敲他，總是能立刻給你一個滿意的答案。有次我因為出國玩樂而缺課一堂，Peter 還說，如果有需要他隨時可以幫我補上，真是人美心善良 (疑!?)",
@@ -567,7 +567,7 @@
         "author": "Helen",
         "course": "文組生的 iOS App 程式設計入門",
         "link": "https://medium.com/@yunchuwang/%E3%84%9C%E5%BD%BC%E5%BE%97%E6%BD%98ios-%E9%96%8B%E5%85%89%E5%BF%83%E5%BE%97-42fe44e67ad0",
-        "photo": "/flutter/advanced/testimonials/helen.png",
+        "photo": "/flutter/advanced/testimonials/helen.webp",
         "paragraphs": [
           "在知道彼得潘之前, 身邊也沒什麼寫程式的人, 即使有大概也很難溝通… 透過文青高中朋友, 剛好得知資策會有推出寫程式的課程, 之前是也有看過一堆上網學習的, 或是參加 camp 方式, 簡介上明明寫的是中文, 組起來我一點都不明白上課內容要幹麻….好在, 彼得潘身為一個文青, 非常會用文青的語言行銷, 課程介紹讓我可以很放心去報名, 克服心理障礙第一關.",
           "沒想到去上課, 跟我想的不太一樣, 彼得用簡單的方式開光 iOS ,加上一些冷笑話, 上課期間至少有 85% 時間, 眼睛是開的狀態, 剩下 15% 嗜睡症難以完全治癒, 默默的課程也快結束, 覺得時間飛快啊, 何時才可以跟上這個飛快的 iOS 呢？！",
@@ -580,7 +580,7 @@
         "author": "Morris",
         "course": "文組生的 iOS App 程式設計入門",
         "link": "https://medium.com/@morrismiki/%E5%B8%B6%E4%BD%A0%E9%A3%9B%E5%85%A5ios%E4%B8%96%E7%95%8C-%E6%89%BE%E5%BD%BC%E5%BE%97%E6%BD%98-64f45829dabc",
-        "photo": "/flutter/advanced/testimonials/morris.png",
+        "photo": "/flutter/advanced/testimonials/morris.webp",
         "paragraphs": [
           "為期十堂的文組生 iOS 課程落幕了，在這裡推薦想要認識程式的你妳你你，如果你站在人生的十字路口，想找一個老師符合以下特徵，那就不要猶豫了！",
           "1. 耐心永遠比別人多\n彼得潘上課可以隨時舉手發問，聽不懂的、想知道的，都可以喊一聲 Peter 讓他輕聲細語來為您解答，課堂上的發問是很自然的，大家可以一起學習。\n2. 教材永遠最新\n上課最擔心的是學的東西已經跟不上改版，但本身就是蘋果迷的彼得潘，永遠追求最新。直到上課前一天，也堅持將新功能加入教材，保證上課內容是熱騰騰出爐的麵包。\n3. 24H 的個人家教\n課程聯絡使用 Line 跟 FB，當你半夜做到程式卡卡，不用孤軍奮戰，敲敲彼得潘的視窗儘管大聲求救，經實際測試只要彼得潘還醒著，就會馬上來解救您。\n4. 無壓力的上課方式\n上課方式是採用彼得潘喜歡的例子來說明，比如說戴佩妮、充滿回憶的猴子娃娃… 不時穿插一些轉移注意力的笑話（畢竟學程式還是很硬的課程），能讓大家在無壓力的環境裡慢慢熟練基本功。"
@@ -591,7 +591,7 @@
         "author": "Buffy",
         "course": "文組生的 iOS App 程式設計入門",
         "link": "https://medium.com/@cbcy0213/ppap%E5%88%9D%E9%AB%94%E9%A9%97-e7d547629eee#.qn7wxcfxq",
-        "photo": "/flutter/advanced/testimonials/buffy.png",
+        "photo": "/flutter/advanced/testimonials/buffy.webp",
         "paragraphs": [
           "七月想學個新東西，去上了 Peter Pan 的 app 課\n只能說 Peter 跟學生非常零距離 (也有可能因為我總坐第一桌一直發問 XD)\n第一堂就學了不要叫我老師和要當一輩子的朋友 (會不會半年後我只記得這個哈哈哈)\n而且每一堂還會順便幫你複習了各種六七年級勁歌金曲~ XD\n雖然說下班趕場常常有些精神不濟\n但當第一次了解原理，拉出自己的 APP LAYOUT 時，擁有小小的成就感\nPeter 會給學生很大的信心，動不動就要幫學生上架 APP (可是瑞凡我作業都沒寫ㄚㄚ)\n各種 IF..ELSE 例子也深入淺出以生活中常見的事件舉例，讓我們得以一起窺見 Peter 的私生活 (?!!) XDDD\n然而後面幾堂一起彙總也讓我也對 app 產生敬意，要找好好地複習才能真正運用自如\n但真的第一次遇到最後一堂老師還會自掏腰包請大家喝飲料的\n還有可以一直去複習課程的\n真是活佛轉世彼得，下來普渡眾生\n放心吧~ 下輩子我當鬼還是要找你的 (喂!)\n總之，如果有文組生想了解程式的世界，每次看到一整套的安麗課程都覺得壓力山大\n舉凡選錯不賺錢科系、遇到耳朵多硬工程屍、裝腔作勢豬管無法溝通…. \n建議都可以來上上 Peter 的 APP 課，多了解原理對跨領域溝通也是好的"
         ]
@@ -601,7 +601,7 @@
         "author": "Shiny",
         "course": "文組生的 iOS App 程式設計入門",
         "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B8%8F%E9%80%B2%E5%8E%BB-%E6%96%87%E7%B5%84%E7%8F%AD%E7%AC%AC%E4%BA%94%E5%B1%86%E5%BF%83%E5%BE%97-9db14810e8a5",
-        "photo": "/flutter/advanced/testimonials/shiny.png",
+        "photo": "/flutter/advanced/testimonials/shiny.webp",
         "paragraphs": [
           "因為上了彼得的課，我才確定了自己對程式是有熱情的。\n以前的我上完什麼課我就會喜歡什麼東西，覺得那會是我一輩子都喜歡的，但其實都只有三分鐘熱度就結束。\n碰到程式之後，起初也是熱情地想要學好，回家看卻都看不懂，上了老師這麼多堂的課感覺還是寫不出什麼東西，感到很挫折覺得自己是不是沒有天份學習程式設計。\n在對程式又有熱情又害怕的情況下，我看到文組班的招生簡介，對於當時挫折感很大的我來說，是一篇非常迷人的課程介紹！後來也爬了許多彼得寫過的文章，不猶豫的就去報名上課。\n剛開始上課時還沒有遇上程式碼，上得非常安心，到第三堂課第一次與程式親密接觸之後，我卻是開心的回家複習，期待下一次上課。\n到了後期我寫作業越來越有熱情，雖然碰壁的地方還很多，不過經過了暑假兩個月，我變得不害怕看到程式碼，也打破了自己以往三分鐘熱度的習慣，往裡面繼續鑽。\n另外一個想提的事是，我起初其實很懶得自己查資料，頂多查了上課講義，其他都問彼得，彼得也好像電腦一樣無時無刻都給你解答，當問多了之後，發現這些問題其實是可以自己解決的！雖然都說學習就是要發問，但是自己去查資料也算是一種發問，所以後面的作業我開始自己找解答，搭配講義，釐清了很多不通的概念！當然在一直解不出來的時候，彼得也隨時都在 XD\n至於上課狀況就是\n彼得的冷笑話雖然很冷但是還是好笑，跟同學聊天時他也要過來湊一腳。\n而上課重點是\n水瓶座是世界上最棒的星座、彼得潘全身上下都是優點 XD\n謝謝彼得潘啦～"
         ]
@@ -611,7 +611,7 @@
         "author": "Sky",
         "course": "彼得潘的 iOS App 程式設計入門",
         "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
-        "photo": "/flutter/advanced/testimonials/sky.png",
+        "photo": "/flutter/advanced/testimonials/sky.webp",
         "paragraphs": [
           "因緣際會下報名了 Peter 的 Swift 程式設計課程，然而開啟了一段刻骨銘心的故事…….第一次上課，深深記得 Peter 對 Swift 的忠貞不二，那股執著的熱情渲染了整個氛圍，我想這就是 Peter 為學員撒下的神奇魔法吧！由淺入深加上幽默的教學方式，教學文件內總會穿插著多媒體訊息，讓學習更加輕鬆活潑，讓學習不再死板板，讓學生放下心防，更敢發問問題，打破了傳統的教育觀念，許多的問題都是透過溝通解決的，Peter 名言：沒有問題是他解不了。每次下課就開始期待下次的上課，雖然作業一次比一次難，抱持著選擇了，就不輕易放棄的念頭，盡力完成作業，透過作業可以複習上課內容，不懂的地方就在群組發問或是直接請教 Peter，上課中多結交朋友也是很有趣的事情，每個人程度不同，有的同學程式邏輯概念好，可以多發問請教他們，接收新的訊息，多吸收別人的經驗，提升自我能力，拜方便的科技所賜，讓人們交流更簡單了。\n故事接近尾聲了，天下無不散的宴席，結束了這二千七百分鐘的課程，我們將各自分飛，希望平行線未來會有再交錯的一天，後來的我們將 Peter 的魔法繼續延續下去，如果要為這魔法加上個期限，我希望是一萬年。套句名言：你不需要很厲害，才能開始；但你需要開始，才會很厲害。Just do it."
         ]
@@ -622,7 +622,7 @@
         "course": "譯智教育訓練 iOS App 班",
         "courseLink": "http://www.ichih.com/",
         "link": "",
-        "photo": "/flutter/advanced/testimonials/ming.png",
+        "photo": "/flutter/advanced/testimonials/ming.webp",
         "paragraphs": [
           "公司因為工作需求，幫我報名彼得潘的課程，剛開始非常害怕自己聽不懂，幾堂課後才發現 App 開發沒有想像中困難，雖然學習的速度不像有程式背景的同學那麼快，但有任何不懂的地方，彼得潘都會耐心地幫我解答，甚至願意花下課的時間幫忙。最後當我將自己設計的畫面變成真正的 App 時，真的超感動，超有成就感。雖然後來實際工作不需要自己開發，但仍然感謝彼得潘給我的信心和鼓勵。"
         ]
@@ -633,7 +633,7 @@
         "course": "ALPHA Camp iOS 班",
         "courseLink": "https://www.alphacamp.co/",
         "link": "",
-        "photo": "/flutter/advanced/testimonials/xiaomi.png",
+        "photo": "/flutter/advanced/testimonials/xiaomi.webp",
         "paragraphs": [
           "我的專業背景是設計相關，對程式完全沒有任何頭緒，也不知怎麼開始， 直到遇見 Peter Pan 老師，淺顯易懂的程式教學方式，讓人輕易學習程式開發，而在學習上遇到問題他總是能立刻看出 bug 在哪，並且幫你解決，熱心真誠教學方式零距離，是一位難得的好老師。成為 ios develop 工程師的路上有潘棒幫忙，真的可以放心好好學！"
         ]
@@ -647,35 +647,35 @@
         "title": "彼得潘的 Swift iOS App 程式設計入門",
         "href": "https://swiftpeterpan.mystrikingly.com/",
         "description": "只要 8 週，每週兩個晚上，掌握程式設計核心概念與最新 Swift / iOS / Xcode 技術，打造並上架自己的 App，開啟工作、接案、創業的第二人生。",
-        "image": "/flutter/advanced/more/swiftui-ios-course.png"
+        "image": "/flutter/advanced/more/swiftui-ios-course.webp"
       },
       {
         "id": "swiftui-foundation",
         "title": "文組生的 iOS App 程式設計入門",
         "href": "/courses/swiftui/foundation/",
         "description": "為文組生量身訂做，10 週每週一晚，從零開始學程式，開心寫出你的第一個 iOS App。",
-        "image": "/flutter/advanced/more/swiftui-foundation-course.png"
+        "image": "/flutter/advanced/more/swiftui-foundation-course.webp"
       },
       {
         "id": "swift-basics",
         "title": "彼得潘的 Swift 程式設計入門",
         "href": "http://learnswift.strikingly.com/",
         "description": "以彼得潘暢銷書為本，搭配進化的 Swift 4，12 小時快速熟悉 Swift 語法與功能。",
-        "image": "/flutter/advanced/more/swift-basics-course.png"
+        "image": "/flutter/advanced/more/swift-basics-course.webp"
       },
       {
         "id": "learn-zero",
         "title": "從零開始慢慢學程式（免費）",
         "href": "http://learncodefromzero.strikingly.com/",
         "description": "免費友善的 Swift 入門課，老師一步一步慢慢教，透過有趣的實作練習，讓你第一次就愛上程式設計。",
-        "image": "/flutter/advanced/more/learn-code-from-zero.png"
+        "image": "/flutter/advanced/more/learn-code-from-zero.webp"
       },
       {
         "id": "first-app",
         "title": "第一次手做 iOS App（手做 App 價：990 元）",
         "href": "http://firstiosapp.strikingly.com/",
         "description": "把第一個 App 想法做出來：寵物、戀愛回憶或任何靈感，親手安裝到自己的 iPhone，體驗創作的成就感。",
-        "image": "/flutter/advanced/more/first-ios-app.png"
+        "image": "/flutter/advanced/more/first-ios-app.webp"
       }
     ],
     "thanks": {
@@ -685,31 +685,31 @@
           "id": "social-innovation-lab",
           "name": "社會創新實驗中心",
           "href": "http://socialinnovationlab.iiiedu.org.tw/",
-          "image": "/flutter/advanced/thanks/social-innovation-lab.png"
+          "image": "/flutter/advanced/thanks/social-innovation-lab.webp"
         },
         {
           "id": "cool3c",
           "name": "癮科技",
           "href": "https://www.cool3c.com/",
-          "image": "/flutter/advanced/thanks/cool3c.png"
+          "image": "/flutter/advanced/thanks/cool3c.webp"
         },
         {
           "id": "cid",
           "name": "通推",
           "href": "",
-          "image": "/flutter/advanced/thanks/cid.png"
+          "image": "/flutter/advanced/thanks/cid.webp"
         },
         {
           "id": "alphacamp",
           "name": "ALPHA Camp",
           "href": "https://www.alphacamp.co/",
-          "image": "/flutter/advanced/thanks/alphacamp.png"
+          "image": "/flutter/advanced/thanks/alphacamp.webp"
         },
         {
           "id": "pearnature",
           "name": "梨本企業",
           "href": "",
-          "image": "/flutter/advanced/thanks/pearnature.png"
+          "image": "/flutter/advanced/thanks/pearnature.webp"
         }
       ]
     }

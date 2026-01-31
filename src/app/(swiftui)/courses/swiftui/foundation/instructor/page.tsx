@@ -41,7 +41,7 @@ export default function SwiftuiInstructorPage() {
               <div className={styles.instructorPortrait}>
                 <button type="button" className={styles.portraitButton} onClick={() => setIsZoomOpen(true)} aria-label={t('introPage.instructorPage.avatarAlt')}>
                   <Image
-                    src="/swiftui/foundation/instructor/portrait.png"
+                    src="/swiftui/foundation/instructor/portrait.webp"
                     alt={t('introPage.instructorPage.avatarAlt')}
                     width={280}
                     height={280}
@@ -91,7 +91,7 @@ export default function SwiftuiInstructorPage() {
               ×
             </button>
             <Image
-              src="/swiftui/foundation/instructor/portrait.png"
+              src="/swiftui/foundation/instructor/portrait.webp"
               alt={t('introPage.instructorPage.avatarAlt')}
               width={560}
               height={560}

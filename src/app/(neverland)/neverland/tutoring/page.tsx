@@ -12,14 +12,14 @@ const SERVICES = [
     id: 'vibe-coding',
     titleKey: 'vibeCoding.title',
     descriptionKey: 'vibeCoding.description',
-    image: assetPath('tutoring/vibe-coding-coach.png'),
+    image: assetPath('tutoring/vibe-coding-coach.webp'),
     url: 'https://appvibecoding.mystrikingly.com/',
   },
   {
     id: 'app-mentor',
     titleKey: 'appMentor.title',
     descriptionKey: 'appMentor.description',
-    image: assetPath('tutoring/app-mentor.png'),
+    image: assetPath('tutoring/app-mentor.webp'),
     url: 'https://yourappmentor.mystrikingly.com/',
   },
 ]

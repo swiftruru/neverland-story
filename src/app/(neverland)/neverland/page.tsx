@@ -20,7 +20,7 @@ export default function Home() {
                 <div className={styles.profileInner}>
                   <div className={styles.headshotWrapper}>
                     <ZoomImage
-                      src={assetPath('peter-pan-headshot.png')}
+                      src={assetPath('peter-pan-headshot.webp')}
                       alt={t('home.headshotAlt')}
                       width={160}
                       height={160}

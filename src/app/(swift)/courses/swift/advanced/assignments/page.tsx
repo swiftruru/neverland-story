@@ -23,7 +23,7 @@ export default function SwiftAssignmentsPage() {
             <div className={styles.assignmentsTape} />
             <div className={styles.assignmentsImageWrap}>
               <Image
-                src="/swift/advanced/assignments/hero.png"
+                src="/swift/advanced/assignments/hero.webp"
                 alt={t('assignmentsPage.imageAlt')}
                 width={1280}
                 height={900}

@@ -15,10 +15,10 @@ export default function SwiftInfoPage() {
 
   const iconMap = useMemo<Record<string, string>>(
     () => ({
-      time: '/swift/advanced/info/info-time.png',
-      location: '/swift/advanced/info/info-location.png',
-      live: '/swift/advanced/info/info-live.png',
-      size: '/swift/advanced/info/info-size.png',
+      time: '/swift/advanced/info/info-time.webp',
+      location: '/swift/advanced/info/info-location.webp',
+      live: '/swift/advanced/info/info-live.webp',
+      size: '/swift/advanced/info/info-size.webp',
     }),
     []
   )

@@ -6,7 +6,7 @@
 .introHero {
   position: relative;
   padding: 3rem 0 2.75rem;
-  background: url('/swift/advanced/intro-bg.jpg') center/cover no-repeat;
+  background: url('/swift/advanced/intro-bg.webp') center/cover no-repeat;
   color: #ffffff;
   overflow: hidden;
 }

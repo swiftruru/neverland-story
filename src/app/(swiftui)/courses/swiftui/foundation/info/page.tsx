@@ -13,9 +13,9 @@ export default function SwiftuiInfoPage() {
 
   const iconMap = useMemo<Record<Card['id'], string>>(
     () => ({
-      time: '/swiftui/foundation/info/info-time.png',
-      live: '/swiftui/foundation/info/info-live.png',
-      size: '/swiftui/foundation/info/info-size.png',
+      time: '/swiftui/foundation/info/info-time.webp',
+      live: '/swiftui/foundation/info/info-live.webp',
+      size: '/swiftui/foundation/info/info-size.webp',
     }),
     []
   )

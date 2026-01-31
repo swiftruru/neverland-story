@@ -47,7 +47,7 @@ export function FlutterNav() {
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>
         <Link className={styles.brand} href="/courses/flutter/advanced">
-          <img src="/flutter/advanced/logo.png" alt="Flutter Advanced logo" className={styles.logo} />
+          <img src="/flutter/advanced/logo.webp" alt="Flutter Advanced logo" className={styles.logo} />
           <span suppressHydrationWarning>{mounted ? t('hero.title') : ''}</span>
         </Link>
         <div className={styles.actions}>

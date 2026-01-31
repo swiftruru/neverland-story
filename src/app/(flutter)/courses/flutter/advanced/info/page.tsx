@@ -15,10 +15,10 @@ export default function FlutterInfoPage() {
 
   const iconMap = useMemo<Record<string, string>>(
     () => ({
-      time: '/flutter/advanced/info/schedule.png',
-      location: '/flutter/advanced/info/location.png',
-      live: '/flutter/advanced/info/online.png',
-      size: '/flutter/advanced/info/capacity.png',
+      time: '/flutter/advanced/info/schedule.webp',
+      location: '/flutter/advanced/info/location.webp',
+      live: '/flutter/advanced/info/online.webp',
+      size: '/flutter/advanced/info/capacity.webp',
     }),
     []
   )

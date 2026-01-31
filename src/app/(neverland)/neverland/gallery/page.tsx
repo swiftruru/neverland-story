@@ -22,14 +22,14 @@ const tapePalette = [
 
 // 相片資料
 const PHOTOS = [
-  { id: 1, src: assetPath('gallery/class-photo-01.png'), alt: 'classPhoto1' },
-  { id: 2, src: assetPath('gallery/class-photo-02.png'), alt: 'classPhoto2' },
-  { id: 3, src: assetPath('gallery/class-photo-03.png'), alt: 'classPhoto3' },
-  { id: 4, src: assetPath('gallery/class-photo-04.png'), alt: 'classPhoto4' },
-  { id: 5, src: assetPath('gallery/class-photo-05.png'), alt: 'classPhoto5' },
-  { id: 6, src: assetPath('gallery/class-photo-06.png'), alt: 'classPhoto6' },
-  { id: 7, src: assetPath('gallery/class-photo-07.png'), alt: 'classPhoto7' },
-  { id: 8, src: assetPath('gallery/class-photo-08.png'), alt: 'classPhoto8' },
+  { id: 1, src: assetPath('gallery/class-photo-01.webp'), alt: 'classPhoto1' },
+  { id: 2, src: assetPath('gallery/class-photo-02.webp'), alt: 'classPhoto2' },
+  { id: 3, src: assetPath('gallery/class-photo-03.webp'), alt: 'classPhoto3' },
+  { id: 4, src: assetPath('gallery/class-photo-04.webp'), alt: 'classPhoto4' },
+  { id: 5, src: assetPath('gallery/class-photo-05.webp'), alt: 'classPhoto5' },
+  { id: 6, src: assetPath('gallery/class-photo-06.webp'), alt: 'classPhoto6' },
+  { id: 7, src: assetPath('gallery/class-photo-07.webp'), alt: 'classPhoto7' },
+  { id: 8, src: assetPath('gallery/class-photo-08.webp'), alt: 'classPhoto8' },
 ]
 
 // 關閉圖標

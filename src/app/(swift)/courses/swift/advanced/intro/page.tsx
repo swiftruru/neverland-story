@@ -13,7 +13,7 @@ export default function SwiftIntroPage() {
     <main className={styles.page}>
       <section
         className={styles.introHero}
-        style={{ backgroundImage: 'url(/swift/advanced/intro-bg.jpg)' }}
+        style={{ backgroundImage: 'url(/swift/advanced/intro-bg.webp)' }}
       >
         <div className={styles.heroOverlay} />
         <div className="container">

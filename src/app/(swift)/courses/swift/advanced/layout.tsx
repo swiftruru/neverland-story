@@ -13,7 +13,7 @@ const baseMeta = buildMetadata({
 })
 
 const pageUrl = new URL('/courses/swift/advanced', SITE_URL).toString()
-const ogImage = new URL('/swift/advanced/og.png', SITE_URL).toString()
+const ogImage = new URL('/swift/advanced/og.webp', SITE_URL).toString()
 const manifestUrl = '/swift/advanced/manifest.json'
 const iconUrl = '/swift/advanced/icons/pwa-512.png'
 

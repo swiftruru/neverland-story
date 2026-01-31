@@ -1,11 +1,16 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react'
 import ContactPage from '../src/app/(neverland)/neverland/contact/page'
+import { ToastProvider } from '../src/contexts/ToastContext'
 
 jest.useFakeTimers()
 
+const renderWithProviders = (ui: React.ReactElement) => {
+  return render(<ToastProvider>{ui}</ToastProvider>)
+}
+
 describe('Contact page', () => {
   it('renders all contact cards with links and copy buttons working', async () => {
-    render(<ContactPage />)
+    renderWithProviders(<ContactPage />)
 
     const cards = screen.getAllByRole('heading', { level: 3 })
     expect(cards).toHaveLength(10)

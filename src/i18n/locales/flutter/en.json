@@ -401,14 +401,14 @@
         "id": "discount",
         "title": "Special Price",
         "price": "$ 9,500",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "group",
         "title": "Group Price",
         "subtitle": "2+ learners (including 2)",
         "price": "$ 8,000",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "student",
@@ -418,7 +418,7 @@
         "note": "Installments available: 3,000 NT each, 3 installments, every 3 weeks",
         "linkLabel": "Student pricing details",
         "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "support",
@@ -426,14 +426,14 @@
         "subtitle": "3 slots, 3+ months unemployed",
         "price": "$ 6,000",
         "note": "Warm-heart price (2 slots, low income or hardship): 100 NT",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       },
       {
         "id": "alumni",
         "title": "Alumni Price",
         "subtitle": "Previous Peter Pan course students",
         "price": "$ 7,000",
-        "image": "/flutter/advanced/tuition/Flutter.png"
+        "image": "/flutter/advanced/tuition/Flutter.webp"
       }
     ],
     "notesTitle": "Notes",
@@ -463,15 +463,15 @@
       "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
       "items": [
         {
-          "src": "/flutter/advanced/signup/photos/photo-01.png",
+          "src": "/flutter/advanced/signup/photos/photo-01.webp",
           "alt": "Class photo 1"
         },
         {
-          "src": "/flutter/advanced/signup/photos/photo-02.png",
+          "src": "/flutter/advanced/signup/photos/photo-02.webp",
           "alt": "Class photo 2"
         },
         {
-          "src": "/flutter/advanced/signup/photos/photo-03.png",
+          "src": "/flutter/advanced/signup/photos/photo-03.webp",
           "alt": "Class photo 3"
         }
       ]
@@ -554,7 +554,7 @@
         "author": "Yaya",
         "course": "iOS App Development for Liberal Arts Learners",
         "link": "https://medium.com/@yayachen/%E4%B8%80%E6%AE%B5%E9%B4%A8%E5%AD%90%E5%AD%B8%E9%A3%9B%E7%9A%84%E6%97%85%E7%A8%8B-cd3acf368c19#.hbi1oty5p",
-        "photo": "/flutter/advanced/testimonials/yaya.png",
+        "photo": "/flutter/advanced/testimonials/yaya.webp",
         "paragraphs": [
           "I once doubted the raving comments about Peter's funny teaching. In class I ended up laughing nonstop—he drops 'non-important' Easter eggs, gets classmates to admit guilty answers, and uses playful examples to explain tough concepts. Highly recommended.",
           "Peter replies at lightning speed, no matter how late. I once missed class while traveling; he even offered a makeup. Truly kind-hearted.",
@@ -567,7 +567,7 @@
         "author": "Helen",
         "course": "iOS App Development for Liberal Arts Learners",
         "link": "https://medium.com/@yunchuwang/%E3%84%9C%E5%BD%BC%E5%BE%97%E6%BD%98ios-%E9%96%8B%E5%85%89%E5%BF%83%E5%BE%97-42fe44e67ad0",
-        "photo": "/flutter/advanced/testimonials/helen.png",
+        "photo": "/flutter/advanced/testimonials/helen.webp",
         "paragraphs": [
           "Before Peter, I had no coder friends and online/camp courses felt impossible. His intro (in plain language) cleared my first mental barrier.",
           "Class was nothing like I imagined—simple explanations plus cold jokes kept me awake 85% of the time. The course flew by!",
@@ -580,7 +580,7 @@
         "author": "Morris",
         "course": "iOS App Development for Liberal Arts Learners",
         "link": "https://medium.com/@morrismiki/%E5%B8%B6%E4%BD%A0%E9%A3%9B%E5%85%A5ios%E4%B8%96%E7%95%8C-%E6%89%BE%E5%BD%BC%E5%BE%97%E6%BD%98-64f45829dabc",
-        "photo": "/flutter/advanced/testimonials/morris.png",
+        "photo": "/flutter/advanced/testimonials/morris.webp",
         "paragraphs": [
           "Ten sessions flew by. If you want an iOS teacher who fits the bill, here's why:",
           "1) More patience than anyone—ask anytime, he answers softly and clearly.\n2) Always up-to-date—he updates slides even the night before to match new SDK changes.\n3) 24/7 TA—stuck at midnight? Ping him on LINE/FB; if he's awake, you're saved.\n4) Low-pressure class—uses fun examples (Penny Tai, childhood toys, jokes) so you learn basics without fear."
@@ -591,7 +591,7 @@
         "author": "Buffy",
         "course": "iOS App Development for Liberal Arts Learners",
         "link": "https://medium.com/@cbcy0213/ppap%E5%88%9D%E9%AB%94%E9%A9%97-e7d547629eee#.qn7wxcfxq",
-        "photo": "/flutter/advanced/testimonials/buffy.png",
+        "photo": "/flutter/advanced/testimonials/buffy.webp",
         "paragraphs": [
           "Wanted to learn something new, so I took Peter Pan's app class. He's super approachable (maybe because I sat front row asking nonstop XD). First lesson: 'Don't call me teacher, we're lifelong friends.' Also: bonus 90s hits sing-alongs.",
           "After work I was tired, but building my first layout felt great. Peter gives huge confidence—always talking about shipping to the App Store (even if I hadn't finished homework…).",
@@ -604,7 +604,7 @@
         "author": "Shiny",
         "course": "iOS App Development for Liberal Arts Learners",
         "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B8%8F%E9%80%B2%E5%8E%BB-%E6%96%87%E7%B5%84%E7%8F%AD%E7%AC%AC%E4%BA%94%E5%B1%86%E5%BF%83%E5%BE%97-9db14810e8a5",
-        "photo": "/flutter/advanced/testimonials/shiny.png",
+        "photo": "/flutter/advanced/testimonials/shiny.webp",
         "paragraphs": [
           "Peter's class made me realize I truly like programming. I used to be a 'three-minute passion' person, but after summer homework I stopped fearing code and kept digging.",
           "At first I was scared and clueless; his course intro hooked me. Early classes were calm; the first code session had me happily practicing at home.",
@@ -617,7 +617,7 @@
         "author": "Sky",
         "course": "Peter Pan's iOS App Intro",
         "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
-        "photo": "/flutter/advanced/testimonials/sky.png",
+        "photo": "/flutter/advanced/testimonials/sky.webp",
         "paragraphs": [
           "By chance I joined Peter's Swift course and it became unforgettable. His unwavering love for Swift fills the room—humor plus step-by-step teaching, with rich media in the slides.",
           "He says: 'No question is unsolvable.' Homework gets harder, but finishing it reinforces class concepts. Ask in the group or Peter directly; also learn from classmates' strengths.",
@@ -630,7 +630,7 @@
         "course": "ICH Creative iOS App Class",
         "courseLink": "http://www.ichih.com/",
         "link": "",
-        "photo": "/flutter/advanced/testimonials/ming.png",
+        "photo": "/flutter/advanced/testimonials/ming.webp",
         "paragraphs": [
           "My company enrolled me for work. I was terrified I wouldn't understand, but app development wasn't as hard as imagined. Though slower than classmates with coding backgrounds, Peter patiently answered every question—even after class.",
           "Seeing my own design become a real app was incredibly moving. Even though my job later didn't require coding, I'm grateful for the confidence and encouragement Peter gave me."
@@ -642,7 +642,7 @@
         "course": "ALPHA Camp iOS Class",
         "courseLink": "https://www.alphacamp.co/",
         "link": "",
-        "photo": "/flutter/advanced/testimonials/xiaomi.png",
+        "photo": "/flutter/advanced/testimonials/xiaomi.webp",
         "paragraphs": [
           "My background is design and I had no clue about code. Peter's clear teaching made app development approachable. When I hit bugs, he spotted the issue immediately and helped fix it. His warm, sincere teaching feels zero-distance.",
           "With Peter's help, I can pursue becoming an iOS developer with confidence."
@@ -657,35 +657,35 @@
         "title": "Swift iOS App Development from Zero",
         "href": "https://swiftpeterpan.mystrikingly.com/",
         "description": "8 weeks, two nights per week. Master core programming concepts with Swift, iOS, and Xcode, then build and publish your own apps for career, freelance, or startup dreams.",
-        "image": "/flutter/advanced/more/swiftui-ios-course.png"
+        "image": "/flutter/advanced/more/swiftui-ios-course.webp"
       },
       {
         "id": "swiftui-foundation",
         "title": "iOS App Development for Liberal Arts Learners",
         "href": "/courses/swiftui/foundation/",
         "description": "Designed for liberal arts learners: 10 weeks, one night per week. Learn to code from zero and build your first iOS App with joy.",
-        "image": "/flutter/advanced/more/swiftui-foundation-course.png"
+        "image": "/flutter/advanced/more/swiftui-foundation-course.webp"
       },
       {
         "id": "swift-basics",
         "title": "Swift Programming Basics",
         "href": "http://learnswift.strikingly.com/",
         "description": "A lively 12-hour sprint through Swift 4 syntax and features, based on Peter Pan's best-selling Swift primer.",
-        "image": "/flutter/advanced/more/swift-basics-course.png"
+        "image": "/flutter/advanced/more/swift-basics-course.webp"
       },
       {
         "id": "learn-zero",
         "title": "Learn to Code from Zero (Free)",
         "href": "http://learncodefromzero.strikingly.com/",
         "description": "Friendly, free introduction to coding with Swift. Step-by-step guidance and playful exercises to help you fall in love with programming.",
-        "image": "/flutter/advanced/more/learn-code-from-zero.png"
+        "image": "/flutter/advanced/more/learn-code-from-zero.webp"
       },
       {
         "id": "first-app",
         "title": "Build Your First iOS App (Hands-on)",
         "href": "http://firstiosapp.strikingly.com/",
         "description": "Bring your first app idea to life—pets, memories, or anything you love—and install it on your iPhone. A guided workshop to unlock your creativity.",
-        "image": "/flutter/advanced/more/first-ios-app.png"
+        "image": "/flutter/advanced/more/first-ios-app.webp"
       }
     ],
     "thanks": {
@@ -695,31 +695,31 @@
           "id": "social-innovation-lab",
           "name": "Social Innovation Lab",
           "href": "http://socialinnovationlab.iiiedu.org.tw/",
-          "image": "/flutter/advanced/thanks/social-innovation-lab.png"
+          "image": "/flutter/advanced/thanks/social-innovation-lab.webp"
         },
         {
           "id": "cool3c",
           "name": "Cool3C",
           "href": "https://www.cool3c.com/",
-          "image": "/flutter/advanced/thanks/cool3c.png"
+          "image": "/flutter/advanced/thanks/cool3c.webp"
         },
         {
           "id": "cid",
           "name": "Committee of Communications Industry Development",
           "href": "",
-          "image": "/flutter/advanced/thanks/cid.png"
+          "image": "/flutter/advanced/thanks/cid.webp"
         },
         {
           "id": "alphacamp",
           "name": "ALPHA Camp",
           "href": "https://www.alphacamp.co/",
-          "image": "/flutter/advanced/thanks/alphacamp.png"
+          "image": "/flutter/advanced/thanks/alphacamp.webp"
         },
         {
           "id": "pearnature",
           "name": "Pear Nature",
           "href": "",
-          "image": "/flutter/advanced/thanks/pearnature.png"
+          "image": "/flutter/advanced/thanks/pearnature.webp"
         }
       ]
     }

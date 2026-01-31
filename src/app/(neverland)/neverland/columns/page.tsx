@@ -52,7 +52,7 @@ export default function ColumnsPage() {
             <section className={styles.magazineSection}>
               <div className={styles.magazineFrame}>
                 <Image
-                  src={assetPath('columns/mactoday-magazine-collage.png')}
+                  src={assetPath('columns/mactoday-magazine-collage.webp')}
                   alt={t('columns.magazineAlt')}
                   width={1400}
                   height={900}

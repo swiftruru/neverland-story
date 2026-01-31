@@ -8,7 +8,7 @@ const baseMeta = buildMetadata({
 })
 
 const pageUrl = new URL('/courses/flutter', SITE_URL).toString()
-const ogImage = new URL('/flutter/advanced/og.png', SITE_URL).toString()
+const ogImage = new URL('/flutter/advanced/og.webp', SITE_URL).toString()
 
 export const metadata: Metadata = {
   ...baseMeta,

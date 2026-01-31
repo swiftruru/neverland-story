@@ -46,7 +46,7 @@ export default function FlutterInstructorPage() {
                 aria-label={t('instructorPage.avatarAlt')}
               >
                 <Image
-                  src="/swift/advanced/instructor/portrait.png"
+                  src="/swift/advanced/instructor/portrait.webp"
                   alt={t('instructorPage.avatarAlt')}
                   width={280}
                   height={280}
@@ -96,7 +96,7 @@ export default function FlutterInstructorPage() {
               ×
             </button>
             <Image
-              src="/swift/advanced/instructor/portrait.png"
+              src="/swift/advanced/instructor/portrait.webp"
               alt={t('instructorPage.avatarAlt')}
               width={560}
               height={560}

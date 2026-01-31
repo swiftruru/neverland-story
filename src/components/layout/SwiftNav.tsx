@@ -48,7 +48,7 @@ export function SwiftNav() {
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>
         <Link className={styles.brand} href="/courses/swift/advanced">
-          <img src="/swift/advanced/logo.png" alt="Swift Advanced logo" className={styles.logo} />
+          <img src="/swift/advanced/logo.webp" alt="Swift Advanced logo" className={styles.logo} />
           <span suppressHydrationWarning>{mounted ? t('hero.title') : ''}</span>
         </Link>
         <div className={styles.actions}>

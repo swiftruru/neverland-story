@@ -3,7 +3,7 @@ import { PersonJsonLd } from '@components/common'
 
 export const metadata = buildCoursePageMetadata('instructor', SWIFTUI_FOUNDATION_CONFIG)
 
-const instructorImage = new URL('/swiftui/foundation/instructor/portrait.png', SITE_URL).toString()
+const instructorImage = new URL('/swiftui/foundation/instructor/portrait.webp', SITE_URL).toString()
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

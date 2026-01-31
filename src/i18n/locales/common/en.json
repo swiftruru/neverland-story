@@ -116,7 +116,7 @@
         "title": "Peter Pan's iOS App Development",
         "description": "In just 8 weeks, 2 evenings per week, master core programming concepts and the latest Swift, iOS, and Xcode technologies. Become a cool iOS App development wizard and unlock your second career in app work, freelancing, or entrepreneurship!",
         "href": "/courses/swift/advanced/",
-        "image": "/courses/swift-ios-app.png",
+        "image": "/courses/swift-ios-app.webp",
         "tags": ["Swift", "iOS", "Xcode"]
       },
       {
@@ -124,7 +124,7 @@
         "title": "iOS App Development for Liberal Arts Learners",
         "description": "Tailored for liberal arts students, learn programming from zero with step-by-step guidance! In just 10 weeks, one evening per week, master core programming concepts and become a cool iOS App development wizard!",
         "href": "/courses/swiftui/foundation/",
-        "image": "/courses/swiftui-foundation.png",
+        "image": "/courses/swiftui-foundation.webp",
         "tags": ["SwiftUI", "iOS", "Beginner Friendly"]
       },
       {
@@ -132,7 +132,7 @@
         "title": "Peter Pan's Flutter Cross-Platform App Development",
         "description": "Learn the latest Flutter cross-platform app development technologies—Dart, Flutter SDK, VS Code—and become a cool Flutter App development wizard. Unlock your second career in app work, freelancing, or entrepreneurship!",
         "href": "/courses/flutter/advanced/",
-        "image": "/courses/flutter-advanced.png",
+        "image": "/courses/flutter-advanced.webp",
         "tags": ["Flutter", "Dart", "Cross-Platform"]
       }
     ]

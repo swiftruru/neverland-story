@@ -339,15 +339,15 @@
         "ctaUrl": "https://medium.com/@apppeterpan/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app-%E8%AA%B2%E7%A8%8B%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5-f45caea37061",
         "items": [
           {
-            "src": "/swift/advanced/signup/photos/photo-01.png",
+            "src": "/swift/advanced/signup/photos/photo-01.webp",
             "alt": "Class photo 1"
           },
           {
-            "src": "/swift/advanced/signup/photos/photo-02.png",
+            "src": "/swift/advanced/signup/photos/photo-02.webp",
             "alt": "Class photo 2"
           },
           {
-            "src": "/swift/advanced/signup/photos/photo-03.png",
+            "src": "/swift/advanced/signup/photos/photo-03.webp",
             "alt": "Class photo 3"
           }
         ]
@@ -360,7 +360,7 @@
           "title": "Discount",
           "price": "$ 16,000",
           "original": "Original $20,000",
-          "image": "/swift/advanced/tuition/tuition-discount.png"
+          "image": "/swift/advanced/tuition/tuition-discount.webp"
         },
         {
           "id": "group",
@@ -368,7 +368,7 @@
           "subtitle": "2 or more people",
           "price": "$ 14,000 / person",
           "original": "Original $20,000 / person",
-          "image": "/swift/advanced/tuition/tuition-group.png"
+          "image": "/swift/advanced/tuition/tuition-group.webp"
         },
         {
           "id": "student",
@@ -378,7 +378,7 @@
           "note": "Installment plan: 3,000 x3, every three weeks",
           "linkLabel": "Student rate details",
           "linkUrl": "https://apppeterpan.medium.com/%E7%95%A2%E6%A5%AD%E6%88%96%E9%80%80%E4%BC%8D%E6%9C%AA%E6%BB%BF%E4%B8%80%E5%B9%B4-%E4%B9%9F%E5%8F%AF%E4%BA%AB%E6%9C%89%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-ios-app-%E5%AD%B8%E7%94%9F%E5%83%B9-a106e99740a",
-          "image": "/swift/advanced/tuition/tuition-student.png"
+          "image": "/swift/advanced/tuition/tuition-student.webp"
         },
         {
           "id": "support",
@@ -386,7 +386,7 @@
           "subtitle": "3 slots, unemployed 3+ months",
           "price": "$ 8,000",
           "note": "Warm pack rate (2 slots, low-income or hardship): 100",
-          "image": "/swift/advanced/tuition/tuition-support.png"
+          "image": "/swift/advanced/tuition/tuition-support.webp"
         }
       ]
     ,
@@ -403,139 +403,139 @@
           "id": "xcode26",
           "title": "Getting close to Xcode 26",
         "description": "Learn the all-in-one app development tool, Xcode.",
-        "image": "/swift/advanced/outline/outline-xcode-26.png"
+        "image": "/swift/advanced/outline/outline-xcode-26.webp"
       },
       {
         "id": "swift6",
         "title": "Modern app language Swift 6",
         "description": "Learn Swift fundamentals and advanced topics: optionals, type casting, computed properties, closures, protocols, extensions, and generics.",
-        "image": "/swift/advanced/outline/outline-swift6.png"
+        "image": "/swift/advanced/outline/outline-swift6.webp"
       },
       {
         "id": "storyboard",
         "title": "Storyboard, the UI wizard",
         "description": "Build stunning app screens with Storyboard—no code required.",
-        "image": "/swift/advanced/outline/outline-storyboard.png"
+        "image": "/swift/advanced/outline/outline-storyboard.webp"
       },
       {
         "id": "playground",
         "title": "Playground practice ground",
         "description": "A sandbox to practice Swift and experiment quickly.",
-        "image": "/swift/advanced/outline/outline-playground.png"
+        "image": "/swift/advanced/outline/outline-playground.webp"
       },
       {
         "id": "ebook",
         "title": "E-book App",
         "description": "Create e-book style apps like The Little Prince or Tang Poems.",
-        "image": "/swift/advanced/outline/outline-ebook.png"
+        "image": "/swift/advanced/outline/outline-ebook.webp"
       },
       {
         "id": "autolayout",
         "title": "Auto Layout, Stack View, xib, SwiftUI, and code-driven UIs",
         "description": "Craft interfaces that fit every iPhone and iPad size with Auto Layout, Stack Views, xibs, SwiftUI, and programmatic views.",
-        "image": "/swift/advanced/outline/outline-autolayout.png"
+        "image": "/swift/advanced/outline/outline-autolayout.webp"
       },
       {
         "id": "mvc-mvvm",
         "title": "App architecture with MVC & MVVM",
         "description": "Understand the three pillars Model, View, and Controller (MVC), wire code to Storyboard with IBAction and IBOutlet, control Storyboard elements via controllers, and explore MVVM (model view viewmodel).",
-        "image": "/swift/advanced/outline/outline-mvc.png"
+        "image": "/swift/advanced/outline/outline-mvc.webp"
       },
       {
         "id": "multipage",
         "title": "Multi-screen apps and data passing",
         "description": "Build multi-screen apps with navigation controllers and tab bars, implement common CRUD flows, and learn multiple navigation and data-passing methods (prepare, delegate, notification, closure, IBSegueAction).",
-        "image": "/swift/advanced/outline/outline-multipage.png"
+        "image": "/swift/advanced/outline/outline-multipage.webp"
       },
       {
         "id": "protocol-delegate",
         "title": "Protocols, delegates, and data sources",
         "description": "Master the most important iOS patterns: protocol, delegate, and data source—across multiple SDK components.",
-        "image": "/swift/advanced/outline/outline-protocol.png"
+        "image": "/swift/advanced/outline/outline-protocol.webp"
       },
       {
         "id": "arc",
         "title": "ARC memory management",
         "description": "Manage object lifecycles and memory. Solve strong reference cycles with weak, unowned, and capture lists.",
-        "image": "/swift/advanced/outline/outline-arc.png"
+        "image": "/swift/advanced/outline/outline-arc.webp"
       },
       {
         "id": "lifecycle",
         "title": "App lifecycle and multitasking",
         "description": "Grasp how an app is born, moves between foreground and background, and terminates.",
-        "image": "/swift/advanced/outline/outline-lifecycle.png"
+        "image": "/swift/advanced/outline/outline-lifecycle.webp"
       },
       {
         "id": "tableview",
         "title": "Table view design",
         "description": "Learn table view patterns and UITableViewDiffableDataSource.",
-        "image": "/swift/advanced/outline/outline-tableview.png"
+        "image": "/swift/advanced/outline/outline-tableview.webp"
       },
       {
         "id": "camera",
         "title": "Camera and photo library",
         "description": "Implement camera capture and access photos from the device library.",
-        "image": "/swift/advanced/outline/outline-camera.png"
+        "image": "/swift/advanced/outline/outline-camera.webp"
       },
       {
         "id": "persistence",
         "title": "Persistent data that lasts",
         "description": "Explore storage options: UserDefaults, file read/write, Codable for custom types, and Core Data.",
-        "image": "/swift/advanced/outline/outline-persistence.png"
+        "image": "/swift/advanced/outline/outline-persistence.webp"
       },
       {
         "id": "networking",
         "title": "Networking deep dive",
         "description": "Display web pages, call backend RESTful APIs with JSON parsing, upload data, use GCD, Result, async/await, and handle multithreading.",
-        "image": "/swift/advanced/outline/outline-network.png"
+        "image": "/swift/advanced/outline/outline-network.webp"
       },
       {
         "id": "collection",
         "title": "Grid photo wall",
         "description": "Master collection view techniques and UICollectionViewCompositionalLayout.",
-        "image": "/swift/advanced/outline/outline-collection.png"
+        "image": "/swift/advanced/outline/outline-collection.webp"
       },
       {
         "id": "animation",
         "title": "Animation basics",
         "description": "Animate movement, scale, fade, flip, rotation, and more eye-catching effects.",
-        "image": "/swift/advanced/outline/outline-animation.png"
+        "image": "/swift/advanced/outline/outline-animation.webp"
       },
       {
         "id": "map",
         "title": "Maps and location",
         "description": "Show maps, get user location, and build share-worthy check-in features.",
-        "image": "/swift/advanced/outline/outline-map.png"
+        "image": "/swift/advanced/outline/outline-map.webp"
       },
       {
         "id": "spm-pods",
         "title": "Package management with SPM & CocoaPods",
         "description": "Learn Swift Package Manager (SPM) & CocoaPods.",
-        "image": "/swift/advanced/outline/outline-spm.png"
+        "image": "/swift/advanced/outline/outline-spm.webp"
       },
       {
         "id": "swiftui-tech",
         "title": "Apple’s latest tech: SwiftUI",
         "description": "Learn Apple’s latest capabilities such as SwiftUI & Widgets.",
-        "image": "/swift/advanced/outline/outline-swiftui.png"
+        "image": "/swift/advanced/outline/outline-swiftui.webp"
       },
       {
         "id": "app-store",
         "title": "Testing and publishing your app",
         "description": "Ship to the App Store.",
-        "image": "/swift/advanced/outline/outline-appstore.png"
+        "image": "/swift/advanced/outline/outline-appstore.webp"
       },
       {
         "id": "firebase",
         "title": "Firebase app development (bonus)",
         "description": "Use Firebase to build apps that access cloud databases.",
-        "image": "/swift/advanced/outline/outline-firebase.png"
+        "image": "/swift/advanced/outline/outline-firebase.webp"
       },
       {
         "id": "flutter",
         "title": "Flutter basics",
         "description": "Introduce building foundational Flutter apps with Dart.",
-        "image": "/swift/advanced/outline/outline-flutter.png"
+        "image": "/swift/advanced/outline/outline-flutter.webp"
       }
     ]
   },
@@ -575,49 +575,49 @@
           "title": "SwiftUI Foundation for Liberal Arts Learners",
           "description": "Master iOS app development with SwiftUI from scratch—designed for absolute beginners.",
           "href": "/courses/swiftui/foundation/",
-          "image": "/swift/advanced/more/swiftui-foundation.png"
+          "image": "/swift/advanced/more/swiftui-foundation.webp"
         },
         {
           "id": "flutter",
           "title": "Peter Pan's Flutter Cross-Platform App Course",
           "description": "Build Android and iOS apps simultaneously with Google's powerful Flutter framework.",
           "href": "https://flutterapp.mystrikingly.com/",
-          "image": "/swift/advanced/more/flutter-course.png"
+          "image": "/swift/advanced/more/flutter-course.webp"
         },
         {
           "id": "swift-basics",
           "title": "Peter Pan's Swift Programming 101",
           "description": "A gentle introduction to Swift—perfect for those seeking a solid programming foundation.",
           "href": "http://learnswift.strikingly.com/",
-          "image": "/swift/advanced/more/swift-basics.png"
+          "image": "/swift/advanced/more/swift-basics.webp"
         },
         {
           "id": "auto-layout",
           "title": "Mastering Auto Layout & Adaptive Layout",
           "href": "http://autolayout.strikingly.com/",
           "description": "Peter Pan shares all the secrets of Auto Layout and Adaptive Layout through lectures and hands-on practice. Building app interfaces that fit every screen size has never been easier!",
-          "image": "/swift/advanced/more/auto-layout.png"
+          "image": "/swift/advanced/more/auto-layout.webp"
         },
         {
           "id": "first-ios-app",
           "title": "Your First Handmade iOS App ($990)",
           "href": "http://firstiosapp.strikingly.com/",
           "description": "Everyone has the talent to create apps—it's time to unlock it! This hands-on iOS app course teaches you to build apps you actually want to use (like one for your beloved pet or to record sweet memories), installed on your own iPhone to enjoy anytime.",
-          "image": "/swift/advanced/more/first-ios-app.png"
+          "image": "/swift/advanced/more/first-ios-app.webp"
         },
         {
           "id": "college-ios",
           "title": "iOS App Magic Course for College Students",
           "href": "http://collegelearnios.strikingly.com/",
           "description": "Tailored for college students—whether you're a tech enthusiast or an arts major, in just 12 weeks with one evening per week, you'll master core programming concepts and become a cool iOS app wizard!",
-          "image": "/swift/advanced/more/college-ios.png"
+          "image": "/swift/advanced/more/college-ios.webp"
         },
         {
           "id": "first-swift-code",
           "title": "First Touch with Programming ($990)",
           "href": "http://firstswiftcode.strikingly.com/",
           "description": "With 10,000 hours of practice, I could build an app better than LINE. Is 10,000 hours possible? Yes! Start with just 7 hours on a weekend for your first touch with programming. This course introduces basic programming concepts using the intuitive Swift language—fall in love with coding from day one!",
-          "image": "/swift/advanced/more/first-swift-code.png"
+          "image": "/swift/advanced/more/first-swift-code.webp"
         }
       ],
       "references": {
@@ -672,31 +672,31 @@
             "id": "social-innovation-lab",
             "name": "Social Innovation Lab",
             "href": "http://socialinnovationlab.iiiedu.org.tw/",
-            "image": "/swift/advanced/thanks/social-innovation-lab.png"
+            "image": "/swift/advanced/thanks/social-innovation-lab.webp"
           },
           {
             "id": "cool3c",
             "name": "Cool3C",
             "href": "https://www.cool3c.com/",
-            "image": "/swift/advanced/thanks/cool3c.png"
+            "image": "/swift/advanced/thanks/cool3c.webp"
           },
           {
             "id": "cid",
             "name": "CID",
             "href": "",
-            "image": "/swift/advanced/thanks/cid.png"
+            "image": "/swift/advanced/thanks/cid.webp"
           },
           {
             "id": "alphacamp",
             "name": "ALPHA Camp",
             "href": "https://www.alphacamp.co/",
-            "image": "/swift/advanced/thanks/alphacamp.png"
+            "image": "/swift/advanced/thanks/alphacamp.webp"
           },
           {
             "id": "pearnature",
             "name": "Pearnature",
             "href": "",
-            "image": "/swift/advanced/thanks/pearnature.png"
+            "image": "/swift/advanced/thanks/pearnature.webp"
           }
         ]
       }
@@ -714,7 +714,7 @@
         "title": "Thanks to Peter Pan for Flying Me into the World of Swift",
         "author": "0+",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/0plus.png",
+        "photo": "/swift/advanced/testimonials/0plus.webp",
         "link": "https://medium.com/@z1235678/%E6%84%9F%E8%AC%9D%E5%BD%BC%E5%BE%97%E6%BD%98%E5%B8%B6%E6%88%91%E9%A3%9B%E9%80%B2swift-%E7%9A%84%E4%B8%96%E7%95%8C-%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-bdc404105469",
         "paragraphs": [
           "\"I will do my best to take care of you all\"—that was the promise Peter made in our class group after one session, and it stuck with me. He truly delivered: whenever I got stuck on homework, he'd help me through it. Once, after he taught delegates in class and I still didn't fully understand, he patiently explained it again on LINE in a different way.",
@@ -727,7 +727,7 @@
         "title": "Peter Pan iOS App Programming Course Review",
         "author": "Kiki",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/kiki.png",
+        "photo": "/swift/advanced/testimonials/kiki.webp",
         "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%BD%BC%E5%BE%97%E6%BD%98-ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-f46bd1ca7287",
         "paragraphs": [
           "In Peter's class, his style is nothing like other cram-school teachers who lecture until you fall asleep and call it a win. Peter interacts with students, asking questions to reinforce memory. It makes me think—I was always afraid of being called on, yet answering wrong was no big deal, and the questions he asked me stuck. He's also kind of magical: he explains tough programming concepts so simply that sometimes it doesn't feel like learning code at all—once he finishes, you just absorb it.",
@@ -740,7 +740,7 @@
         "title": "iOS App Programming: The Us That Came After",
         "author": "Sky",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/sky.png",
+        "photo": "/swift/advanced/testimonials/sky.webp",
         "link": "https://medium.com/skys-space/ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-f4add99aad76#.bvd1s0ewe",
         "paragraphs": [
           "By chance I signed up for Peter's Swift course, and an unforgettable story began… On day one I could feel Peter's unwavering dedication to Swift—his passionate energy infused the room. That must be the magic Peter casts on students! His teaching is approachable yet deep, mixing multimedia into the materials so learning feels lively, not rigid. Students let their guard down and dare to ask questions, breaking traditional education norms—many issues get solved through communication. Peter's motto: no problem he can't solve. After each class I'd already look forward to the next. Although homework got progressively harder, I held on to the mindset of not giving up once I'd committed. Completing assignments helped me review; when stuck I'd ask in the group or go directly to Peter. Making friends in class was also fun—everyone's level is different, so you can learn from those strong in logic, absorb new info, and level up. Thanks to technology, connecting is easier than ever.",
@@ -751,7 +751,7 @@
         "title": "Everyone Has a Peter Pan in Their Heart",
         "author": "Joy",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/joy.png",
+        "photo": "/swift/advanced/testimonials/joy.webp",
         "link": "https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%AF%8F%E5%80%8B%E4%BA%BA%E5%BF%83%E4%B8%AD%E9%83%BD%E4%BD%8F%E9%81%8E%E4%B8%80%E5%80%8B%E5%BD%BC%E5%BE%97%E6%BD%98-3377bf6e2525",
         "paragraphs": [
           "About class life: Peter hopes everyone can keep up because the iOS world is wonderful. If you like interacting with Peter, sit in the rock zone up front; if you prefer more personal interaction, sit in the back—he'll come check on you after class.",
@@ -764,7 +764,7 @@
         "title": "My Experience with Peter Pan's iOS App Programming",
         "author": "Edward",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/edward.png",
+        "photo": "/swift/advanced/testimonials/edward.webp",
         "link": "https://medium.com/@chengyang.wu/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84ios-app%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%85%A5%E9%96%80%E5%BF%83%E5%BE%97-12848c4315da",
         "paragraphs": [
           "I signed up for the group with programming experience, and right after registering I noticed the prep work was special—he's the most unique teacher I've ever met (though he tells us not to call him teacher). Maybe it's because he wants to stay forever young like Peter Pan from the story! Or perhaps it's his abundant passion for the iOS programming world that keeps his heart youthful, hoping we'll all keep improving and developing our own unique strengths. Through the prep work, I could feel that Peter isn't just passionate about code—he's passionate about people too, just as he says: once we've met, we're friends for life.",
@@ -775,7 +775,7 @@
         "title": "Becoming a Swallow, Flying with Peter Pan",
         "author": "Eric",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/eric.png",
+        "photo": "/swift/advanced/testimonials/eric.webp",
         "link": "https://medium.com/@eric78723/%E5%8C%96%E8%BA%AB%E7%87%95%E5%AD%90%E8%B7%9F%E8%91%97%E5%BD%BC%E5%BE%97%E6%BD%98%E4%B8%80%E8%B5%B7%E9%A3%9B%E7%BF%94-%E5%BD%BC%E5%BE%97%E6%BD%98ios%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97-102354526f3f",
         "paragraphs": [
           "Peter Pan wants to turn writing Swift and iOS code into something artistic. His teaching magic transforms rigid code into witty, romantic love songs. I never imagined that using if, else, var, print, and optional could write out a song like \"A Little Happiness,\" capturing the luck I most want to hold onto. When line after line of code becomes scene after scene of life, learning becomes both familiar and easy to understand.",
@@ -786,7 +786,7 @@
         "title": "Thanks to Peter Pan for Taking Us on a Swift Adventure",
         "author": "Zoey",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/zoey.png",
+        "photo": "/swift/advanced/testimonials/zoey.webp",
         "link": "https://medium.com/@zoeytsou/swift-xcode%E5%AD%B8%E7%BF%92%E9%81%8A%E8%A8%98-%E6%84%9F%E8%AC%9D%E5%B8%B6%E6%88%91%E5%80%91%E6%9A%A2%E9%81%8Aswift%E7%9A%84peter-pan-9e079bd57b16#.3ta887rti",
         "paragraphs": [
           "In Peter's class, I experienced something completely different. His first request: don't call me teacher—I'm Peter, your friend for life. Really?? At first it was hard to change, always starting with \"teach—\" before switching to \"Peter…\" But Peter is around my age, and his slides often feature songs from our era. By the end, we really did become like friends—a friend who teaches wholeheartedly, pours his heart out, and seriously replies to any LINE message with questions!",
@@ -798,7 +798,7 @@
         "title": "Flying into the iOS World with Peter Pan",
         "author": "Morris",
         "course": "SwiftUI Foundation for Liberal Arts Learners",
-        "photo": "/swift/advanced/testimonials/morris.png",
+        "photo": "/swift/advanced/testimonials/morris.webp",
         "link": "https://medium.com/@morrismiki/%E5%B8%B6%E4%BD%A0%E9%A3%9B%E5%85%A5ios%E4%B8%96%E7%95%8C-%E6%89%BE%E5%BD%BC%E5%BE%97%E6%BD%98-64f45829dabc",
         "paragraphs": [
           "The ten-session iOS course for liberal arts students has concluded. If you're at a crossroads and looking for a teacher with these traits, don't hesitate!",
@@ -812,7 +812,7 @@
         "title": "Let's Learn Swift: Peter Pan's Fantastic Journey",
         "author": "Max",
         "course": "Peter Pan's iOS App Programming",
-        "photo": "/swift/advanced/testimonials/xiaoqi.png",
+        "photo": "/swift/advanced/testimonials/xiaoqi.webp",
         "link": "https://www.maxlist.xyz/2019/09/29/swift-class-experience/",
         "paragraphs": [
           "Here's why I recommend Peter Pan's iOS App Programming course:\n1. Purpose-driven learning\n2. Tons of practice exercises\n3. Someone to ask when you're stuck",

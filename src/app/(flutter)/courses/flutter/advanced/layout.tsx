@@ -13,7 +13,7 @@ const baseMeta = buildMetadata({
 })
 
 const pageUrl = new URL('/courses/flutter/advanced', SITE_URL).toString()
-const ogImage = new URL('/flutter/advanced/flutter-og.png', SITE_URL).toString()
+const ogImage = new URL('/flutter/advanced/flutter-og.webp', SITE_URL).toString()
 const manifestUrl = '/flutter/advanced/manifest.json'
 const iconUrl = '/flutter/advanced/icons/pwa-512.png'
 

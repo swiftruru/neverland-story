@@ -147,7 +147,7 @@ export default function FerrymanPage() {
             <FadeInOnScroll direction="up" delay={100}>
               <div className={styles.scenariosImageWrapper}>
                 <Image
-                  src={assetPath('ferryman/help-scenarios.png')}
+                  src={assetPath('ferryman/help-scenarios.webp')}
                   alt={t('ferryman.scenariosAlt')}
                   width={800}
                   height={480}

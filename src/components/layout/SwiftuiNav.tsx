@@ -48,7 +48,7 @@ export function SwiftuiNav() {
     <header className={styles.wrapper}>
       <div className={styles.brandBar}>
         <Link className={styles.brand} href="/courses/swiftui/foundation">
-          <img src="/swiftui/foundation/logo.png" alt="SwiftUI Foundation logo" className={styles.logo} />
+          <img src="/swiftui/foundation/logo.webp" alt="SwiftUI Foundation logo" className={styles.logo} />
           <span suppressHydrationWarning>{mounted ? t('hero.title') : ''}</span>
         </Link>
         <div className={styles.actions}>

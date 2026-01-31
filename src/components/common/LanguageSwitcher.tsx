@@ -7,7 +7,7 @@ import styles from './LanguageSwitcher.module.css'
 
 export function LanguageSwitcher() {
   const { currentLanguage, toggleLanguage } = useLanguage()
-  const { info } = useToast()
+  const { success } = useToast()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -22,8 +22,8 @@ export function LanguageSwitcher() {
     // 切換後顯示新語言的訊息
     const newLang = currentLanguage === 'zh-TW' ? 'en' : 'zh-TW'
     const message = newLang === 'zh-TW' ? '已切換為正體中文' : 'Switched to English'
-    info(message)
-  }, [toggleLanguage, currentLanguage, info])
+    success(message)
+  }, [toggleLanguage, currentLanguage, success])
 
   if (!mounted) {
     return null

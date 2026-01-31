@@ -139,7 +139,7 @@ export const SWIFT_ADVANCED_CONFIG: CourseMetaConfig = {
   courseName: '彼得潘的 Swift iOS App 程式設計入門',
   courseDescription: '用最新的 Swift、UIKit 與 SwiftUI，做出真正酷炫的 iOS App',
   basePath: '/courses/swift/advanced',
-  ogImage: new URL('/swift/advanced/og.png', SITE_URL).toString(),
+  ogImage: new URL('/swift/advanced/og.webp', SITE_URL).toString(),
 }
 
 // SwiftUI Foundation 課程配置
@@ -147,7 +147,7 @@ export const SWIFTUI_FOUNDATION_CONFIG: CourseMetaConfig = {
   courseName: '文組生的 iOS SwiftUI App 程式設計入門',
   courseDescription: '專為文組生設計，從零開始學習 iOS App 開發',
   basePath: '/courses/swiftui/foundation',
-  ogImage: new URL('/swiftui/foundation/og.png', SITE_URL).toString(),
+  ogImage: new URL('/swiftui/foundation/og.webp', SITE_URL).toString(),
 }
 
 // Flutter Advanced 課程配置
@@ -155,7 +155,7 @@ export const FLUTTER_ADVANCED_CONFIG: CourseMetaConfig = {
   courseName: '彼得潘的 Flutter 跨平台 App 程式設計入門',
   courseDescription: '學習 Flutter 跨平台 App 開發，一次開發 iOS 與 Android',
   basePath: '/courses/flutter/advanced',
-  ogImage: new URL('/flutter/advanced/og.png', SITE_URL).toString(),
+  ogImage: new URL('/flutter/advanced/og.webp', SITE_URL).toString(),
 }
 
 export function buildMetadata({ title, description, path = '/' }: MetadataInput): Metadata {

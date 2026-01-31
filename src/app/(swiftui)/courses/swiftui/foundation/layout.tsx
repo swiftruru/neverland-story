@@ -13,7 +13,7 @@ const baseMeta = buildMetadata({
 })
 
 const pageUrl = new URL('/courses/swiftui/foundation', SITE_URL).toString()
-const ogImage = new URL('/swiftui/foundation/og.png', SITE_URL).toString()
+const ogImage = new URL('/swiftui/foundation/og.webp', SITE_URL).toString()
 // Static assets in /public are served from root, don't use withBasePath
 const manifestUrl = '/swiftui/foundation/manifest.json'
 const iconUrl = '/swiftui/foundation/icons/pwa-512.png'
