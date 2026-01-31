@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import { I18nProvider } from '@i18n/I18nProvider'
+import { ToastProvider } from '@/contexts/ToastContext'
 import {
   BreadcrumbJsonLd,
   CookieConsent,
@@ -42,6 +43,11 @@ const NetworkStatus = dynamic(
 
 const OnboardingTour = dynamic(
   () => import('@components/common/OnboardingTour').then((mod) => mod.OnboardingTour),
+  { ssr: false }
+)
+
+const ToastContainer = dynamic(
+  () => import('@components/common/Toast').then((mod) => mod.ToastContainer),
   { ssr: false }
 )
 
@@ -105,17 +111,19 @@ export default function RootLayout({
       <body>
         <GoogleAnalytics measurementId="G-QBT96TN0KR" />
         <I18nProvider>
-          <SkipToContent targetId="main-content" />
-          <KeyboardShortcuts />
-          <CookieConsent />
-          <PwaProvider />
-          <PwaInstallPrompt />
-          <PullToRefresh />
-          <NetworkStatus />
-          <OnboardingTour />
-          <ReadingProgress />
-          <BreadcrumbJsonLd />
-          <OrganizationJsonLd
+          <ToastProvider>
+            <SkipToContent targetId="main-content" />
+            <KeyboardShortcuts />
+            <CookieConsent />
+            <PwaProvider />
+            <PwaInstallPrompt />
+            <PullToRefresh />
+            <NetworkStatus />
+            <OnboardingTour />
+            <ToastContainer />
+            <ReadingProgress />
+            <BreadcrumbJsonLd />
+            <OrganizationJsonLd
             name="彼得潘的 App Neverland"
             url={buildAbsoluteUrl('/neverland')}
             logo={buildAbsoluteUrl('/icons/pwa-512.png')}
@@ -138,6 +146,7 @@ export default function RootLayout({
               </main>
             </div>
           </LayoutChrome>
+          </ToastProvider>
         </I18nProvider>
       </body>
     </html>

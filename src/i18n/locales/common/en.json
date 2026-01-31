@@ -101,6 +101,10 @@
       "skip": "Skip Tour"
     }
   },
+  "toast": {
+    "close": "Close notification",
+    "area": "Notification area"
+  },
   "coursesPage": {
     "kicker": "Peter Pan's Coding Courses",
     "title": "Choose Your Learning Journey",

@@ -1,0 +1,242 @@
+/* ===== Toast Container ===== */
+.container {
+  position: fixed;
+  bottom: 80px; /* BottomNav 上方 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  pointer-events: none;
+}
+
+/* ===== 單一 Toast ===== */
+.toast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  pointer-events: auto;
+  animation: slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  touch-action: pan-x;
+  cursor: grab;
+}
+
+.toast.exiting {
+  animation: slideOut 0.25s ease-out forwards;
+}
+
+/* ===== 動畫 ===== */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.toast.exitingLeft {
+  animation: slideOutLeft 0.25s ease-out forwards;
+}
+
+/* ===== 類型樣式 ===== */
+.success {
+  background: linear-gradient(135deg, #00c896 0%, #006850 100%);
+  color: #fff;
+}
+
+.error {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: #fff;
+}
+
+.warning {
+  background: linear-gradient(135deg, #ffc857 0%, #e6a700 100%);
+  color: #333;
+}
+
+.info {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  color: #fff;
+}
+
+/* ===== Icon ===== */
+.icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== 訊息文字 ===== */
+.message {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  min-width: 0;
+  word-break: break-word;
+}
+
+/* ===== 關閉按鈕 ===== */
+.closeButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  opacity: 0.8;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.closeButton:active {
+  transform: scale(0.95);
+}
+
+.closeButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Warning 類型的按鈕需要較暗的背景 */
+.warning .closeButton {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.warning .closeButton:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* ===== 進度條 ===== */
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0 0 0 12px;
+  animation: shrink linear forwards;
+}
+
+.warning .progressBar {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* ===== 滑動提示 ===== */
+.swipeHint {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.toast:active .swipeHint {
+  opacity: 1;
+}
+
+/* ===== 響應式 ===== */
+@media (max-width: 480px) {
+  .container {
+    bottom: 72px;
+    width: calc(100% - 24px);
+  }
+
+  .toast {
+    padding: 12px 14px;
+  }
+
+  .message {
+    font-size: 0.85rem;
+  }
+}
+
+/* 桌面版：底部導航不存在時 */
+@media (min-width: 769px) {
+  .container {
+    bottom: 24px;
+  }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: fadeIn 0.15s ease;
+  }
+
+  .toast.exiting,
+  .toast.exitingLeft {
+    animation: fadeOut 0.15s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+}
+
+/* ===== 深色模式微調 ===== */
+@media (prefers-color-scheme: dark) {
+  .toast {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+}

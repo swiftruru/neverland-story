@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { useToast } from '@/contexts/ToastContext'
 import styles from './page.module.css'
 
 // 聯絡方式資料
@@ -132,13 +133,24 @@ function Icon({ name, className }: { name: string; className?: string }) {
 }
 
 // 複製按鈕組件
-function CopyButton({ text, label, copiedLabel }: { text: string; label: string; copiedLabel: string }) {
+function CopyButton({
+  text,
+  label,
+  copiedLabel,
+  onCopied,
+}: {
+  text: string
+  label: string
+  copiedLabel: string
+  onCopied?: () => void
+}) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(text)
       setCopied(true)
+      onCopied?.()
       setTimeout(() => setCopied(false), 2000)
     } catch {
       // 靜默失敗
@@ -166,11 +178,17 @@ function CopyButton({ text, label, copiedLabel }: { text: string; label: string;
 
 export default function ContactPage() {
   const { t } = useTranslation('neverland')
-  const [formStatus, setFormStatus] = useState('')
+  const { success, error, info } = useToast()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleCopy = () => {
+    success(t('pages.contact.copied'))
+  }
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setFormStatus(t('pages.contact.form.sending'))
+    setIsSubmitting(true)
+    info(t('pages.contact.form.sending'))
 
     const form = event.currentTarget
     const formData = new FormData(form)
@@ -184,13 +202,15 @@ export default function ContactPage() {
 
       const data = await response.json()
       if (data.success) {
-        setFormStatus(t('pages.contact.form.success'))
+        success(t('pages.contact.form.success'))
         form.reset()
       } else {
-        setFormStatus(t('pages.contact.form.error'))
+        error(t('pages.contact.form.error'))
       }
     } catch {
-      setFormStatus(t('pages.contact.form.error'))
+      error(t('pages.contact.form.error'))
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -251,6 +271,7 @@ export default function ContactPage() {
                         text={contact.copyValue}
                         label={t('pages.contact.copy')}
                         copiedLabel={t('pages.contact.copied')}
+                        onCopied={handleCopy}
                       />
                     )}
                   </div>
@@ -283,10 +304,13 @@ export default function ContactPage() {
                   <textarea name="message" rows={4} required placeholder={t('pages.contact.form.messagePlaceholder')} />
                 </label>
                 <div className={styles.formActions}>
-                  <button type="submit" className={styles.submitButton}>
-                    {t('pages.contact.form.submit')}
+                  <button
+                    type="submit"
+                    className={styles.submitButton}
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? t('pages.contact.form.sending') : t('pages.contact.form.submit')}
                   </button>
-                  {formStatus && <span className={styles.formStatus}>{formStatus}</span>}
                 </div>
               </form>
             </div>

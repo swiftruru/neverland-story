@@ -101,6 +101,10 @@
       "skip": "跳過導覽"
     }
   },
+  "toast": {
+    "close": "關閉通知",
+    "area": "通知區域"
+  },
   "coursesPage": {
     "kicker": "彼得潘的程式設計課程",
     "title": "選擇你的學習旅程",
