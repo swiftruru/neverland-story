@@ -24,6 +24,7 @@ export function LanguageSwitcher() {
       className={styles.toggleButton}
       onClick={toggleLanguage}
       aria-label={`Switch to ${displayLabel}`}
+      data-tour="language-switcher"
     >
       {displayLabel}
     </button>

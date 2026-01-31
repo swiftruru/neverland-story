@@ -72,6 +72,35 @@
       "install": "安裝 App"
     }
   },
+  "onboarding": {
+    "welcome": {
+      "title": "歡迎來到彼得潘的 Neverland！",
+      "content": "讓我帶你快速認識這個網站，只需要幾秒鐘的時間。"
+    },
+    "navigation": {
+      "title": "底部導航列",
+      "content": "使用底部的導航列可以快速切換到不同的頁面，包括首頁、家教、課程、散文集和更多內容。"
+    },
+    "courses": {
+      "title": "探索課程",
+      "content": "點擊「講座課程」可以瀏覽所有的程式設計課程，包含 iOS Swift、SwiftUI 和 Flutter 跨平台開發。"
+    },
+    "language": {
+      "title": "語言切換",
+      "content": "網站支援中文和英文，點擊這裡可以隨時切換語言。"
+    },
+    "complete": {
+      "title": "準備好了！",
+      "content": "現在你已經了解基本功能了，開始探索吧！如果有任何問題，歡迎聯絡我們。"
+    },
+    "buttons": {
+      "back": "上一步",
+      "close": "關閉",
+      "finish": "開始探索",
+      "next": "下一步",
+      "skip": "跳過導覽"
+    }
+  },
   "coursesPage": {
     "kicker": "彼得潘的程式設計課程",
     "title": "選擇你的學習旅程",

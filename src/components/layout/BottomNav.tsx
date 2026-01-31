@@ -92,9 +92,11 @@ export function BottomNav() {
     <nav
       className={styles.bottomNav}
       aria-label={t('bottomNav.ariaLabel')}
+      data-tour="bottom-nav"
     >
       {NAV_ITEMS.map(({ href, icon: Icon, labelKey }) => {
         const active = isActive(href)
+        const isCourses = labelKey === 'courses'
         return (
           <Link
             key={href}
@@ -102,6 +104,7 @@ export function BottomNav() {
             className={`${styles.navItem} ${active ? styles.active : ''}`}
             aria-current={active ? 'page' : undefined}
             onClick={() => haptic('light')}
+            {...(isCourses && { 'data-tour': 'courses-link' })}
           >
             <span className={styles.iconWrapper}>
               <Icon />

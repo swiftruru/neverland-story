@@ -40,6 +40,11 @@ const NetworkStatus = dynamic(
   { ssr: false }
 )
 
+const OnboardingTour = dynamic(
+  () => import('@components/common/OnboardingTour').then((mod) => mod.OnboardingTour),
+  { ssr: false }
+)
+
 const ogImage = buildAbsoluteUrl('/og-cover.png')
 
 const baseMetadata: Metadata = {
@@ -107,6 +112,7 @@ export default function RootLayout({
           <PwaInstallPrompt />
           <PullToRefresh />
           <NetworkStatus />
+          <OnboardingTour />
           <ReadingProgress />
           <BreadcrumbJsonLd />
           <OrganizationJsonLd

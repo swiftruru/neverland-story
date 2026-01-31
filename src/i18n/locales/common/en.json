@@ -72,6 +72,35 @@
       "install": "Install App"
     }
   },
+  "onboarding": {
+    "welcome": {
+      "title": "Welcome to Peter Pan's Neverland!",
+      "content": "Let me show you around. This will only take a few seconds."
+    },
+    "navigation": {
+      "title": "Bottom Navigation",
+      "content": "Use the bottom navigation bar to quickly switch between pages, including Home, Tutoring, Courses, Essays, and more."
+    },
+    "courses": {
+      "title": "Explore Courses",
+      "content": "Tap \"Courses\" to browse all programming courses, including iOS Swift, SwiftUI, and Flutter cross-platform development."
+    },
+    "language": {
+      "title": "Language Switcher",
+      "content": "The website supports Chinese and English. Click here to switch languages anytime."
+    },
+    "complete": {
+      "title": "You're All Set!",
+      "content": "Now you know the basics. Start exploring! Feel free to contact us if you have any questions."
+    },
+    "buttons": {
+      "back": "Back",
+      "close": "Close",
+      "finish": "Start Exploring",
+      "next": "Next",
+      "skip": "Skip Tour"
+    }
+  },
   "coursesPage": {
     "kicker": "Peter Pan's Coding Courses",
     "title": "Choose Your Learning Journey",
