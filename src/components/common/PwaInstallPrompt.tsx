@@ -16,6 +16,7 @@ const SCROLL_THRESHOLD = 300
 export function PwaInstallPrompt() {
   const { t, ready } = useTranslation('common')
   const [isVisible, setIsVisible] = useState(false)
+  const [isSheetVisible, setIsSheetVisible] = useState(false)
   const [isClosing, setIsClosing] = useState(false)
   const [platform, setPlatform] = useState<'ios' | 'android' | 'unsupported'>('unsupported')
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
@@ -57,6 +58,7 @@ export function PwaInstallPrompt() {
     setIsClosing(true)
     setTimeout(() => {
       setIsVisible(false)
+      setIsSheetVisible(false)
       setIsClosing(false)
       localStorage.setItem(STORAGE_KEY, Date.now().toString())
     }, 300)
@@ -108,7 +110,12 @@ export function PwaInstallPrompt() {
       const scrollY = window.scrollY || document.documentElement.scrollTop
       if (scrollY > SCROLL_THRESHOLD) {
         hasTriggered = true
+        // 先顯示背景遮罩
         setIsVisible(true)
+        // 延遲後再顯示 sheet，讓動畫更有層次感
+        setTimeout(() => {
+          setIsSheetVisible(true)
+        }, 100)
         window.removeEventListener('scroll', handleScroll)
       }
     }
@@ -121,13 +128,14 @@ export function PwaInstallPrompt() {
 
   return (
     <div className={`${styles.overlay} ${isClosing ? styles.closing : ''}`} onClick={handleDismiss}>
-      <div
-        className={`${styles.sheet} ${isClosing ? styles.closing : ''}`}
-        onClick={(e) => e.stopPropagation()}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="pwa-prompt-title"
-      >
+      {isSheetVisible && (
+        <div
+          className={`${styles.sheet} ${isClosing ? styles.closing : ''}`}
+          onClick={(e) => e.stopPropagation()}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="pwa-prompt-title"
+        >
         {/* 拖曳指示器 */}
         <div className={styles.handle} />
 
@@ -215,7 +223,8 @@ export function PwaInstallPrompt() {
         >
           {t('pwaPrompt.later')}
         </button>
-      </div>
+        </div>
+      )}
     </div>
   )
 }
