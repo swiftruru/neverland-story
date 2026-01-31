@@ -12,19 +12,13 @@
   "categories": ["education", "developer tools"],
   "icons": [
     {
-      "src": "/icons/pwa-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
       "src": "/icons/pwa-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/pwa-maskable-512.png",
+      "src": "/icons/pwa-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -44,22 +38,25 @@
       "name": "課程總覽",
       "short_name": "課程",
       "description": "瀏覽所有課程",
-      "url": "/neverland/courses/",
-      "icons": [{ "src": "/icons/shortcut-courses.png", "sizes": "96x96" }]
+      "url": "/neverland/courses/"
     },
     {
       "name": "Swift 課程",
       "short_name": "Swift",
       "description": "iOS App 開發入門",
-      "url": "/courses/swift/advanced/intro/",
-      "icons": [{ "src": "/icons/shortcut-swift.png", "sizes": "96x96" }]
+      "url": "/courses/swift/advanced/intro/"
     },
     {
       "name": "SwiftUI 課程",
       "short_name": "SwiftUI",
       "description": "文組生的 iOS App 開發",
-      "url": "/courses/swiftui/foundation/intro/",
-      "icons": [{ "src": "/icons/shortcut-swiftui.png", "sizes": "96x96" }]
+      "url": "/courses/swiftui/foundation/intro/"
+    },
+    {
+      "name": "Flutter 課程",
+      "short_name": "Flutter",
+      "description": "跨平台 App 開發",
+      "url": "/courses/flutter/advanced/intro/"
     }
   ],
   "prefer_related_applications": false
