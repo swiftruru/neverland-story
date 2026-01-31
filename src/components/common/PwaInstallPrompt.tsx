@@ -12,6 +12,7 @@ interface BeforeInstallPromptEvent extends Event {
 const STORAGE_KEY = 'pwa-install-prompt-dismissed'
 const DISMISS_DURATION_DAYS = 7
 const SCROLL_THRESHOLD = 300
+const ONBOARDING_KEY = 'onboarding-tour-completed'
 
 export function PwaInstallPrompt() {
   const { t, ready } = useTranslation('common')
@@ -98,31 +99,61 @@ export function PwaInstallPrompt() {
     setPlatform(detectPlatform())
   }, [detectPlatform])
 
+  // 檢查新手導覽是否完成
+  const isOnboardingComplete = useCallback(() => {
+    if (typeof window === 'undefined') return true
+    return !!localStorage.getItem(ONBOARDING_KEY)
+  }, [])
+
   // 滾動觸發顯示
   useEffect(() => {
     if (platform === 'unsupported' || isDismissed()) return
 
     let hasTriggered = false
 
+    const showPrompt = () => {
+      if (hasTriggered) return
+      hasTriggered = true
+      // 先顯示背景遮罩
+      setIsVisible(true)
+      // 延遲後再顯示 sheet，讓動畫更有層次感
+      setTimeout(() => {
+        setIsSheetVisible(true)
+      }, 100)
+    }
+
     const handleScroll = () => {
       if (hasTriggered) return
 
       const scrollY = window.scrollY || document.documentElement.scrollTop
       if (scrollY > SCROLL_THRESHOLD) {
-        hasTriggered = true
-        // 先顯示背景遮罩
-        setIsVisible(true)
-        // 延遲後再顯示 sheet，讓動畫更有層次感
-        setTimeout(() => {
-          setIsSheetVisible(true)
-        }, 100)
+        // 檢查新手導覽是否完成
+        if (isOnboardingComplete()) {
+          showPrompt()
+        }
         window.removeEventListener('scroll', handleScroll)
       }
     }
 
+    // 監聽新手導覽完成事件
+    const handleOnboardingComplete = () => {
+      // 導覽完成後，延遲一下再檢查滾動位置
+      setTimeout(() => {
+        const scrollY = window.scrollY || document.documentElement.scrollTop
+        if (scrollY > SCROLL_THRESHOLD && !hasTriggered) {
+          showPrompt()
+        }
+      }, 1000)
+    }
+
     window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [platform, isDismissed])
+    window.addEventListener('onboarding-complete', handleOnboardingComplete)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('onboarding-complete', handleOnboardingComplete)
+    }
+  }, [platform, isDismissed, isOnboardingComplete])
 
   if (!ready || !isVisible || platform === 'unsupported') return null
 

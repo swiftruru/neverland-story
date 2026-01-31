@@ -6,6 +6,7 @@ import styles from './CookieConsent.module.css'
 
 const CONSENT_KEY = 'cookie-consent'
 const CONSENT_VERSION = '1'
+const ONBOARDING_KEY = 'onboarding-tour-completed'
 
 type ConsentStatus = 'pending' | 'accepted' | 'declined'
 
@@ -54,17 +55,65 @@ export function CookieConsent() {
         // 解析失敗，顯示橫幅
       }
     }
-    // 延遲顯示橫幅，讓頁面先載入
-    const timer = setTimeout(() => {
-      setIsVisible(true)
-      // 觸發進入動畫
-      requestAnimationFrame(() => {
-        setIsAnimating(true)
-      })
-    }, 1500)
 
-    return () => clearTimeout(timer)
-  }, [])
+    // 等待新手導覽完成後再顯示
+    const checkAndShow = () => {
+      const onboardingCompleted = localStorage.getItem(ONBOARDING_KEY)
+      if (onboardingCompleted) {
+        // 新手導覽已完成，顯示 Cookie 橫幅
+        setIsVisible(true)
+        requestAnimationFrame(() => {
+          setIsAnimating(true)
+        })
+        return true
+      }
+      return false
+    }
+
+    // 如果新手導覽已完成，延遲顯示
+    if (checkAndShow()) return
+
+    // 監聽 storage 變化，當新手導覽完成時顯示
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === ONBOARDING_KEY && e.newValue) {
+        setTimeout(() => {
+          setIsVisible(true)
+          requestAnimationFrame(() => {
+            setIsAnimating(true)
+          })
+        }, 500) // 導覽結束後稍等一下再顯示
+      }
+    }
+
+    // 也設定一個 fallback，如果用戶跳過導覽或導覽不顯示
+    const fallbackTimer = setTimeout(() => {
+      if (!isVisible) {
+        setIsVisible(true)
+        requestAnimationFrame(() => {
+          setIsAnimating(true)
+        })
+      }
+    }, 15000) // 15 秒後無論如何都顯示
+
+    window.addEventListener('storage', handleStorage)
+
+    // 也監聯自訂事件（用於同一視窗內的變化）
+    const handleOnboardingComplete = () => {
+      setTimeout(() => {
+        setIsVisible(true)
+        requestAnimationFrame(() => {
+          setIsAnimating(true)
+        })
+      }, 500)
+    }
+    window.addEventListener('onboarding-complete', handleOnboardingComplete)
+
+    return () => {
+      clearTimeout(fallbackTimer)
+      window.removeEventListener('storage', handleStorage)
+      window.removeEventListener('onboarding-complete', handleOnboardingComplete)
+    }
+  }, [isVisible])
 
   const saveConsent = useCallback((status: ConsentStatus) => {
     const data: ConsentData = {

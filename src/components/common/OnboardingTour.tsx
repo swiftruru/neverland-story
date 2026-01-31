@@ -73,6 +73,8 @@ export function OnboardingTour() {
   // 標記導覽完成
   const markTourCompleted = useCallback(() => {
     localStorage.setItem(STORAGE_KEY, TOUR_VERSION)
+    // 發送自訂事件通知其他元件
+    window.dispatchEvent(new CustomEvent('onboarding-complete'))
   }, [])
 
   // 導覽步驟
