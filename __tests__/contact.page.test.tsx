@@ -13,11 +13,13 @@ describe('Contact page', () => {
     renderWithProviders(<ContactPage />)
 
     const cards = screen.getAllByRole('heading', { level: 3 })
-    expect(cards).toHaveLength(10)
+    expect(cards).toHaveLength(11)
 
-    // email link uses mailto and is focusable
-    const emailLink = screen.getByRole('link', { name: /pages.contact.sendEmail/ })
-    expect(emailLink).toHaveAttribute('href', 'mailto:apppeterpan@gmail.com')
+    // email links use mailto (now there are two emails)
+    const emailLinks = screen.getAllByRole('link', { name: /pages.contact.sendEmail/ })
+    expect(emailLinks).toHaveLength(2)
+    expect(emailLinks[0]).toHaveAttribute('href', 'mailto:peterpan@p207.app')
+    expect(emailLinks[1]).toHaveAttribute('href', 'mailto:apppeterpan@gmail.com')
 
     // external links open in new tab (e.g., Medium)
     const visitLinks = screen.getAllByRole('link', { name: /pages.contact.visit/ })

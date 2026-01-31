@@ -46,6 +46,8 @@
       "linePersonal": "LINE Personal",
       "lineOfficial": "LINE Official",
       "email": "Email",
+      "emailPersonal": "Email (Personal)",
+      "emailBusiness": "Email (Business)",
       "visit": "Visit",
       "copy": "Copy",
       "sendEmail": "Send",

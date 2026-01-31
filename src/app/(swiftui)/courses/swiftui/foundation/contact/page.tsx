@@ -35,7 +35,13 @@ const CONTACT_LINKS: ContactLink[] = [
     copyValue: '@puy0405e',
   },
   {
-    id: 'email',
+    id: 'emailBusiness',
+    icon: 'email',
+    url: 'mailto:peterpan@p207.app',
+    copyValue: 'peterpan@p207.app',
+  },
+  {
+    id: 'emailPersonal',
     icon: 'email',
     url: 'mailto:apppeterpan@gmail.com',
     copyValue: 'apppeterpan@gmail.com',
@@ -189,7 +195,7 @@ export default function SwiftuiContactPage() {
                           ? {}
                           : { target: '_blank', rel: 'noopener noreferrer' })}
                       >
-                        {contact.id === 'email' ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
+                        {contact.url.startsWith('mailto:') ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
                       </a>
                     )}
                     {contact.copyValue && (

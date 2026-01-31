@@ -46,6 +46,8 @@
       "linePersonal": "LINE 私人帳號",
       "lineOfficial": "LINE 官方帳號",
       "email": "Email",
+      "emailPersonal": "Email（個人）",
+      "emailBusiness": "Email（公務）",
       "visit": "前往",
       "copy": "複製",
       "sendEmail": "寄信",

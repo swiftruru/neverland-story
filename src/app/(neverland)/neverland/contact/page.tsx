@@ -37,7 +37,13 @@ const CONTACT_LINKS: ContactLink[] = [
     copyValue: '@puy0405e',
   },
   {
-    id: 'email',
+    id: 'emailBusiness',
+    icon: 'email',
+    url: 'mailto:peterpan@p207.app',
+    copyValue: 'peterpan@p207.app',
+  },
+  {
+    id: 'emailPersonal',
     icon: 'email',
     url: 'mailto:apppeterpan@gmail.com',
     copyValue: 'apppeterpan@gmail.com',
@@ -243,7 +249,7 @@ export default function ContactPage() {
               delay={index * 80}
             >
               <PaperCard
-                tapeColor={contact.id === 'email' ? 'green' : contact.id.includes('line') ? 'green' : 'yellow'}
+                tapeColor={contact.id.includes('email') || contact.id.includes('line') ? 'green' : 'yellow'}
                 tapePosition="top-left"
                 tapeRotation={-3}
                 hover
@@ -263,7 +269,7 @@ export default function ContactPage() {
                         {...(contact.url.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
                         className={styles.actionButton}
                       >
-                        {contact.id === 'email' ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
+                        {contact.url.startsWith('mailto:') ? t('pages.contact.sendEmail') : t('pages.contact.visit')}
                       </a>
                     )}
                     {contact.copyValue && (
