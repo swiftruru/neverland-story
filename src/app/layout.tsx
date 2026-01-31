@@ -35,6 +35,11 @@ const PullToRefresh = dynamic(
   { ssr: false }
 )
 
+const NetworkStatus = dynamic(
+  () => import('@components/common/NetworkStatus').then((mod) => mod.NetworkStatus),
+  { ssr: false }
+)
+
 const ogImage = buildAbsoluteUrl('/og-cover.png')
 
 const baseMetadata: Metadata = {
@@ -101,6 +106,7 @@ export default function RootLayout({
           <PwaProvider />
           <PwaInstallPrompt />
           <PullToRefresh />
+          <NetworkStatus />
           <ReadingProgress />
           <BreadcrumbJsonLd />
           <OrganizationJsonLd

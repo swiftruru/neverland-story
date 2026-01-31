@@ -51,6 +51,14 @@
     "tuition": "Tuition",
     "signup": "Sign Up"
   },
+  "networkStatus": {
+    "offline": "You are offline",
+    "offlineHint": "Some features may not work",
+    "reconnected": "Back online",
+    "refreshing": "Refreshing page...",
+    "retry": "Retry",
+    "dismiss": "Dismiss"
+  },
   "pwaPrompt": {
     "title": "Add to Home Screen",
     "description": "Add this website to your home screen for a faster, smoother app experience!",

@@ -1,0 +1,184 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  padding: 12px 16px;
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 離線狀態 - 紅橙色 */
+.offline .content {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: #fff;
+}
+
+/* 恢復連線 - 綠色 */
+.reconnected .content {
+  background: linear-gradient(135deg, #00c896 0%, #006850 100%);
+  color: #fff;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.offline .icon {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.retryBtn,
+.dismissBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.retryBtn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.retryBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.retryBtn:active {
+  transform: scale(0.95);
+}
+
+.retryBtn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.dismissBtn {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dismissBtn:hover {
+  color: #fff;
+}
+
+.dismissBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 載入中 Spinner */
+.spinner {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 桌面版調整 */
+@media (min-width: 768px) {
+  .container {
+    padding: 16px 24px;
+    padding-top: calc(16px + env(safe-area-inset-top, 0px));
+  }
+
+  .content {
+    padding: 14px 20px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+/* 深色模式微調 */
+@media (prefers-color-scheme: dark) {
+  .content {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+}

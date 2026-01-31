@@ -51,6 +51,14 @@
     "tuition": "學費",
     "signup": "報名"
   },
+  "networkStatus": {
+    "offline": "目前沒有網路連線",
+    "offlineHint": "部分功能可能無法使用",
+    "reconnected": "網路已恢復連線",
+    "refreshing": "正在重新整理頁面...",
+    "retry": "重試",
+    "dismiss": "關閉"
+  },
   "pwaPrompt": {
     "title": "加入主畫面",
     "description": "將此網站加入主畫面，享受更快速、更流暢的 App 體驗！",
