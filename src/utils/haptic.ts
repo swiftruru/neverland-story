@@ -9,7 +9,9 @@ const isVibrationSupported = (): boolean => {
 }
 
 // 震動模式（毫秒）
-const PATTERNS = {
+type VibratePattern = number | number[]
+
+const PATTERNS: Record<string, VibratePattern> = {
   // 輕點 - 用於一般點擊
   light: 10,
   // 中等 - 用於確認動作
@@ -22,9 +24,9 @@ const PATTERNS = {
   warning: [20, 50, 20],
   // 錯誤 - 三連擊
   error: [30, 50, 30, 50, 30],
-} as const
+}
 
-export type HapticType = keyof typeof PATTERNS
+export type HapticType = 'light' | 'medium' | 'heavy' | 'success' | 'warning' | 'error'
 
 /**
  * 觸發觸覺回饋
