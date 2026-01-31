@@ -93,7 +93,7 @@ export function CookieConsent() {
           setIsAnimating(true)
         })
       }
-    }, 15000) // 15 秒後無論如何都顯示
+    }, 60000) // 60 秒後無論如何都顯示（給足夠時間完成導覽）
 
     window.addEventListener('storage', handleStorage)
 
