@@ -38,25 +38,29 @@
       "name": "課程總覽",
       "short_name": "課程",
       "description": "瀏覽所有課程",
-      "url": "/neverland/courses/"
+      "url": "/neverland/courses/",
+      "icons": [{ "src": "/icons/pwa-512.png", "sizes": "512x512", "type": "image/png" }]
     },
     {
       "name": "Swift 課程",
       "short_name": "Swift",
       "description": "iOS App 開發入門",
-      "url": "/courses/swift/advanced/intro/"
+      "url": "/courses/swift/advanced/intro/",
+      "icons": [{ "src": "/icons/pwa-512.png", "sizes": "512x512", "type": "image/png" }]
     },
     {
       "name": "SwiftUI 課程",
       "short_name": "SwiftUI",
       "description": "文組生的 iOS App 開發",
-      "url": "/courses/swiftui/foundation/intro/"
+      "url": "/courses/swiftui/foundation/intro/",
+      "icons": [{ "src": "/icons/pwa-512.png", "sizes": "512x512", "type": "image/png" }]
     },
     {
       "name": "Flutter 課程",
       "short_name": "Flutter",
       "description": "跨平台 App 開發",
-      "url": "/courses/flutter/advanced/intro/"
+      "url": "/courses/flutter/advanced/intro/",
+      "icons": [{ "src": "/icons/pwa-512.png", "sizes": "512x512", "type": "image/png" }]
     }
   ],
   "prefer_related_applications": false
