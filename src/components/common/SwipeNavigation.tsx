@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
+import { haptic } from '@/utils/haptic'
 import styles from './SwipeNavigation.module.css'
 
 // 課程子頁面的導航順序（與 BottomNav 一致）
@@ -66,6 +67,9 @@ export function SwipeNavigation({ courseType }: SwipeNavigationProps) {
   const navigateTo = useCallback((dir: 'prev' | 'next') => {
     const target = getTargetPage(dir)
     if (!target) return
+
+    // 觸發震動回饋
+    haptic('light')
 
     setIsTransitioning(true)
     setDirection(dir === 'prev' ? 'right' : 'left')

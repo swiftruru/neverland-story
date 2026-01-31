@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
+import { haptic } from '@/utils/haptic'
 import styles from './BottomNav.module.css'
 
 // SVG Icons as components
@@ -82,6 +83,7 @@ export function SwiftuiBottomNav() {
   if (!ready) return null
 
   const toggleMenu = () => {
+    haptic('light')
     window.dispatchEvent(new CustomEvent('toggleMobileMenu'))
   }
 
@@ -98,6 +100,7 @@ export function SwiftuiBottomNav() {
             href={href}
             className={`${styles.navItem} ${active ? styles.active : ''}`}
             aria-current={active ? 'page' : undefined}
+            onClick={() => haptic('light')}
           >
             <span className={styles.iconWrapper}>
               <Icon />

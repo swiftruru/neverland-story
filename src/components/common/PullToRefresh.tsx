@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
+import { haptic } from '@/utils/haptic'
 import styles from './PullToRefresh.module.css'
 
 const PULL_THRESHOLD = 60 // 觸發刷新的下拉距離（降低門檻）
@@ -16,6 +17,7 @@ export function PullToRefresh() {
   const startYRef = useRef(0)
   const isPullingRef = useRef(false)
   const canPullRef = useRef(false)
+  const hasHapticRef = useRef(false) // 追蹤是否已觸發震動
 
   // 檢測是否為 PWA 模式
   useEffect(() => {
@@ -67,6 +69,14 @@ export function PullToRefresh() {
       const rawDistance = deltaY / RESISTANCE
       const distance = Math.min(rawDistance, MAX_PULL)
 
+      // 當達到閾值時觸發震動
+      if (distance >= PULL_THRESHOLD && !hasHapticRef.current) {
+        haptic('medium')
+        hasHapticRef.current = true
+      } else if (distance < PULL_THRESHOLD && hasHapticRef.current) {
+        hasHapticRef.current = false
+      }
+
       setPullDistance(distance)
 
       // 防止頁面滾動和 overscroll 效果
@@ -85,7 +95,8 @@ export function PullToRefresh() {
     if (isRefreshing || !isPullingRef.current) return
 
     if (pullDistance >= PULL_THRESHOLD) {
-      // 觸發刷新
+      // 觸發刷新時震動
+      haptic('heavy')
       setIsRefreshing(true)
 
       // 執行刷新
@@ -100,6 +111,7 @@ export function PullToRefresh() {
     isPullingRef.current = false
     canPullRef.current = false
     startYRef.current = 0
+    hasHapticRef.current = false
   }, [pullDistance, isRefreshing])
 
   // 綁定事件監聽器
