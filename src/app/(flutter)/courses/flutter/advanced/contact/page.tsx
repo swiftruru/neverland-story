@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PaperCard, FadeInOnScroll } from '@components/common'
+import { useToast } from '@/contexts/ToastContext'
 import styles from '../page.module.css'
 
 type ContactLink = {
@@ -66,13 +67,24 @@ function Icon({ name, className }: { name: ContactLink['icon']; className?: stri
   }
 }
 
-function CopyButton({ text, label, copiedLabel }: { text: string; label: string; copiedLabel: string }) {
+function CopyButton({
+  text,
+  label,
+  copiedLabel,
+  onCopied,
+}: {
+  text: string
+  label: string
+  copiedLabel: string
+  onCopied?: () => void
+}) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(text)
       setCopied(true)
+      onCopied?.()
       setTimeout(() => setCopied(false), 2000)
     } catch {
       // ignore
@@ -93,11 +105,17 @@ function CopyButton({ text, label, copiedLabel }: { text: string; label: string;
 
 export default function FlutterContactPage() {
   const { t } = useTranslation('flutter')
-  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const { success, error } = useToast()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleCopy = () => {
+    success(t('pages.contact.copied'))
+  }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setFormStatus('sending')
+    setIsSubmitting(true)
+    success(t('pages.contact.form.sending'))
 
     const formData = new FormData(event.currentTarget)
     formData.append('access_key', '4b672674-8caa-4cde-8b6e-3994d032f333')
@@ -113,13 +131,15 @@ export default function FlutterContactPage() {
       const data = await response.json()
 
       if (data.success) {
-        setFormStatus('success')
+        success(t('pages.contact.form.success'))
         form.reset()
       } else {
-        setFormStatus('error')
+        error(t('pages.contact.form.error'))
       }
     } catch {
-      setFormStatus('error')
+      error(t('pages.contact.form.error'))
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -177,6 +197,7 @@ export default function FlutterContactPage() {
                           text={contact.copyValue}
                           label={t('pages.contact.copy')}
                           copiedLabel={t('pages.contact.copied')}
+                          onCopied={handleCopy}
                         />
                       )}
                     </div>
@@ -229,17 +250,9 @@ export default function FlutterContactPage() {
                     />
                   </div>
                   <div className={styles.formActions}>
-                    <button type="submit" className={styles.submitButton} disabled={formStatus === 'sending'}>
-                      {formStatus === 'sending'
-                        ? t('pages.contact.form.sending')
-                        : t('pages.contact.form.submit')}
+                    <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+                      {isSubmitting ? t('pages.contact.form.sending') : t('pages.contact.form.submit')}
                     </button>
-                    {formStatus === 'success' && (
-                      <span className={styles.formStatusSuccess}>{t('pages.contact.form.success')}</span>
-                    )}
-                    {formStatus === 'error' && (
-                      <span className={styles.formStatusError}>{t('pages.contact.form.error')}</span>
-                    )}
                   </div>
                 </form>
               </div>

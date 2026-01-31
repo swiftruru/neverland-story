@@ -178,7 +178,7 @@ function CopyButton({
 
 export default function ContactPage() {
   const { t } = useTranslation('neverland')
-  const { success, error, info } = useToast()
+  const { success, error } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleCopy = () => {
@@ -188,7 +188,7 @@ export default function ContactPage() {
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsSubmitting(true)
-    info(t('pages.contact.form.sending'))
+    success(t('pages.contact.form.sending'))
 
     const form = event.currentTarget
     const formData = new FormData(form)
