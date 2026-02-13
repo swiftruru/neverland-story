@@ -1,8 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
-import { PaperCard, FadeInOnScroll } from '@components/common'
+import { PaperCard, FadeInOnScroll, ZoomImage } from '@components/common'
 import styles from './page.module.css'
 
 interface EssayItem {
@@ -21,6 +20,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.macChoice.description',
     date: '2020/1/1',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%AD%B8%E7%BF%92%E9%96%8B%E7%99%BC-swift-ios-app-%E8%A9%B2%E8%B2%B7%E5%93%AA%E5%8F%B0-mac-%E5%91%A2-79b22c5d317a',
+    image: '/neverland/essays/essay-mac-choice.webp',
   },
   {
     id: 'medium-homework',
@@ -28,6 +28,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.mediumHomework.description',
     date: '2019/12/5',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%89%BE%E5%88%B0-ios-app-%E5%B7%A5%E4%BD%9C%E7%9A%84%E6%AD%A3%E7%9B%B8%E9%97%9C%E6%A2%9D%E4%BB%B6-medium-%E7%9A%84-app-%E4%BD%9C%E6%A5%AD%E6%96%87%E7%AB%A0-5a4a523966eb',
+    image: '/neverland/essays/essay-medium-homework.webp',
   },
   {
     id: 'tech-girlz',
@@ -35,6 +36,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.techGirlz.description',
     date: '2019/7/27',
     url: 'https://www.tech-girlz.com/2019/07/ios-developer-peter-pan.html',
+    image: '/neverland/essays/essay-tech-girlz.webp',
   },
   {
     id: 'career-switch',
@@ -42,6 +44,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.careerSwitch.description',
     date: '2019/4/25',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%9D%9E%E6%9C%AC%E7%A7%91%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B9%BE%E5%80%8B%E6%9C%88%E5%85%A7%E8%BD%89%E8%81%B7%E5%B7%A5%E7%A8%8B%E5%B8%AB-%E4%B8%80%E9%80%B1-40-%E5%B0%8F%E6%99%82%E7%9A%84%E7%B7%B4%E7%BF%92-ebacb8b704af',
+    image: '/neverland/essays/essay-career-switch.webp',
   },
   {
     id: 'after-get-job',
@@ -49,6 +52,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.afterGetJob.description',
     date: '2018/12/4',
     url: 'https://medium.com/%e5%bd%bc%e5%be%97%e6%bd%98%e7%9a%84-swift-ios-app-%e9%96%8b%e7%99%bc%e6%95%99%e5%ae%a4/%e5%ad%b8%e4%ba%86%e7%a8%8b%e5%bc%8f%e6%89%be%e5%88%b0%e5%b7%a5%e4%bd%9c%e5%be%8c-%e6%98%af%e5%90%a6%e5%b0%b1%e5%83%8f%e7%8e%8b%e5%ad%90%e5%85%ac%e4%b8%bb-%e5%be%9e%e6%ad%a4%e9%81%8e%e8%91%97%e5%b9%b8%e7%a6%8f%e5%bf%ab%e6%a8%82%e7%9a%84%e6%97%a5%e5%ad%90-adb56bf04289',
+    image: '/neverland/essays/essay-after-get-job.webp',
   },
   {
     id: 'app-store',
@@ -56,6 +60,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.appStore.description',
     date: '2018/10/15',
     url: 'https://www.appcoda.com.tw/ios-app-submission/',
+    image: '/neverland/essays/essay-app-store.webp',
   },
   {
     id: 'homework-speed',
@@ -63,6 +68,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.homeworkSpeed.description',
     date: '2018/8/19',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%82%BA%E4%BB%80%E9%BA%BC%E5%85%B6%E4%BB%96%E5%90%8C%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BD%9C%E6%A5%AD%E5%AF%AB%E9%82%A3%E9%BA%BC%E5%BF%AB-%E6%98%AF%E4%B8%8D%E6%98%AF%E6%88%91%E5%A4%AA%E5%BC%B1%E5%91%A2-269925a51a52',
+    image: '/neverland/essays/essay-homework-speed.webp',
   },
   {
     id: 'xcode-10-preview',
@@ -70,6 +76,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.xcode10.description',
     date: '2018/6/18',
     url: 'https://www.appcoda.com.tw/xcode-10/',
+    image: '/neverland/essays/essay-xcode-10-preview.webp',
   },
   {
     id: 'not-suited',
@@ -77,6 +84,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.notSuited.description',
     date: '2018/5/1',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%B8%B8%E5%B8%B8%E6%83%B3%E4%B8%8D%E5%87%BA%E4%BE%86-%E6%98%AF%E4%B8%8D%E6%98%AF%E8%87%AA%E5%B7%B1%E4%B8%8D%E9%81%A9%E5%90%88%E5%AF%AB%E7%A8%8B%E5%BC%8F%E5%91%A2-a7b4fbeba9e4',
+    image: '/neverland/essays/essay-not-suited.webp',
   },
   {
     id: 'push-notification',
@@ -84,6 +92,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.pushNotification.description',
     date: '2018/3/12',
     url: 'https://www.appcoda.com.tw/push-notification/',
+    image: '/neverland/essays/essay-push-notification.webp',
   },
   {
     id: 'better-swift',
@@ -91,6 +100,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.betterSwift.description',
     date: '2017/9/5',
     url: 'https://www.appcoda.com.tw/write-better-swift/',
+    image: '/neverland/essays/essay-better-swift.webp',
   },
   {
     id: 'learn-after-30',
@@ -98,6 +108,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.learnAfter30.description',
     date: '2017/8/19',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E8%B6%85%E9%81%8E-30-%E6%AD%B2-%E9%96%8B%E5%A7%8B%E5%AD%B8%E7%A8%8B%E5%BC%8F%E4%BE%86%E5%BE%97%E5%8F%8A%E5%97%8E-cc7d3af772af',
+    image: '/neverland/essays/essay-learn-after-30.webp',
   },
   {
     id: 'xcode-9',
@@ -105,6 +116,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.xcode9.description',
     date: '2017/6/9',
     url: 'https://www.appcoda.com.tw/xcode9/',
+    image: '/neverland/essays/essay-xcode-9.webp',
   },
   {
     id: 'appcoda-interview',
@@ -112,6 +124,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.appcodaInterview.description',
     date: '2017/5/14',
     url: 'http://www.appcoda.com.tw/peter-pan-ios-developer-interview/',
+    image: '/neverland/essays/essay-appcoda-interview.webp',
   },
   {
     id: 'swift-optional',
@@ -119,6 +132,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.swiftOptional.description',
     date: '2017/4/10',
     url: 'http://www.appcoda.com.tw/swift-optional-intro/',
+    image: '/neverland/essays/essay-swift-optional.webp',
   },
   {
     id: 'error-handling',
@@ -126,13 +140,15 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.errorHandling.description',
     date: '2017/2/23',
     url: 'http://www.appcoda.com.tw/swift-error-handling/',
+    image: '/neverland/essays/essay-error-handling.webp',
   },
   {
     id: 'ios-faq-1',
     titleKey: 'items.iosFaq1.title',
     descriptionKey: 'items.iosFaq1.description',
     date: '2017/1/24',
-    url: 'https://blog.alphacamp.co/2017/01/24/ios-app-development-faq1/',
+    url: 'https://tw.alphacamp.co/blog/2017-01-24-ios-app-development-faq1',
+    image: '/neverland/essays/essay-ios-faq-1.webp',
   },
   {
     id: 'ios-startup-13',
@@ -140,6 +156,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.iosStartup13.description',
     date: '2017/1/19',
     url: 'http://www.slideshare.net/deeplovepan/ios-app-13',
+    image: '/neverland/essays/essay-ios-startup-13.webp',
   },
   {
     id: 'learning-tips',
@@ -270,7 +287,7 @@ export default function EssaysPage() {
                   <div className={styles.essayContent}>
                     <div className={styles.imageWrapper}>
                       {essay.image ? (
-                        <Image
+                        <ZoomImage
                           src={essay.image}
                           alt={t(`essays.${essay.titleKey}`)}
                           width={320}
