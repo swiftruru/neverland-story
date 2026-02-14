@@ -164,6 +164,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.learningTips.description',
     date: '2016/11/17',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E6%8E%8C%E6%8F%A1%E5%85%AB%E5%80%8B%E9%87%8D%E9%BB%9E-%E8%AE%93%E4%BD%A0%E4%B8%8A%E8%AA%B2%E5%AD%B8%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%9C%89%E6%95%88-47ccdc793bc8',
+    image: '/neverland/essays/essay-learning-tips.webp',
   },
   {
     id: 'ios10-notifications',
@@ -171,6 +172,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.ios10Notifications.description',
     date: '2016/8/26',
     url: 'http://www.appcoda.com.tw/ios10-user-notifications/',
+    image: '/neverland/essays/essay-ios10-notifications.webp',
   },
   {
     id: 'learn-programming',
@@ -178,20 +180,23 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.learnProgramming.description',
     date: '2016/8/4',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E5%80%91%E5%AD%B8%E4%B8%8D%E6%9C%83%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-b647b2de5980',
+    image: '/neverland/essays/essay-learn-programming.webp',
   },
   {
     id: 'swift-without-mac',
     titleKey: 'items.swiftWithoutMac.title',
     descriptionKey: 'items.swiftWithoutMac.description',
     date: '2016/6/22',
-    url: 'https://blog.alphacamp.co/2016/06/22/how-to-learn-swift-without-mac/',
+    url: 'https://tw.alphacamp.co/blog/2016-06-22-how-to-learn-swift-without-mac',
+    image: '/neverland/essays/essay-swift-without-mac.webp',
   },
   {
     id: 'swift-3',
     titleKey: 'items.swift3.title',
     descriptionKey: 'items.swift3.description',
     date: '2016/5/26',
-    url: 'https://blog.alphacamp.co/2016/05/26/swift-3/',
+    url: 'https://tw.alphacamp.co/blog/2016-05-26-swift-3',
+    image: '/neverland/essays/essay-swift-3.webp',
   },
   {
     id: 'ios-qa-10',
@@ -199,20 +204,23 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.iosQa10.description',
     date: '2016/3/11',
     url: 'https://medium.com/@apppeterpan/%E9%97%9C%E6%96%BCios-app%E9%96%8B%E7%99%BC%E7%9A%84%E5%8D%81%E5%80%8Bq-a-65833f6eb993',
+    image: '/neverland/essays/essay-ios-qa-10.webp',
   },
   {
     id: 'teaching-benefits',
     titleKey: 'items.teachingBenefits.title',
     descriptionKey: 'items.teachingBenefits.description',
     date: '2015/12/11',
-    url: 'https://blog.alphacamp.co/2015/12/11/teaching-is-the-best-way-to-be-a-good-app-developer/',
+    url: 'https://tw.alphacamp.co/blog/2015-12-11-teaching-is-the-best-way-to-be-a-good-app-developer',
+    image: '/neverland/essays/essay-teaching-benefits.webp',
   },
   {
     id: 'little-prince-app',
     titleKey: 'items.littlePrince.title',
     descriptionKey: 'items.littlePrince.description',
     date: '2015/11/9',
-    url: 'https://blog.alphacamp.co/2015/11/09/the-little-prince-will-teach-you-how-to-develop-your-first-app/',
+    url: 'https://tw.alphacamp.co/blog/2015-11-09-the-little-prince-will-teach-you-how-to-develop-your-first-app',
+    image: '/neverland/essays/essay-little-prince-app.webp',
   },
   {
     id: 'class-or-self',
@@ -220,6 +228,7 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.classOrSelf.description',
     date: '2015/8/10',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/app-%E6%80%8E%E9%BA%BC%E5%AD%B8-%E4%B8%8A%E8%AA%B2%E9%82%84%E6%98%AF%E8%87%AA%E5%AD%B8-db3d9314ac89',
+    image: '/neverland/essays/essay-class-or-self.webp',
   },
   {
     id: 'world-helps',
@@ -227,13 +236,15 @@ const ESSAYS: EssayItem[] = [
     descriptionKey: 'items.worldHelps.description',
     date: '2015/7/27',
     url: 'https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%95%B6%E4%BD%A0%E5%8A%AA%E5%8A%9B%E6%83%B3%E5%AD%B8%E7%BF%92-swift-%E6%99%82-%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%9C%83%E4%BE%86%E5%B9%AB%E4%BD%A0-b11dca643686',
+    image: '/neverland/essays/essay-world-helps.webp',
   },
   {
     id: 'app-learning-tips',
     titleKey: 'items.appLearningTips.title',
     descriptionKey: 'items.appLearningTips.description',
     date: '2014/12/23',
-    url: 'https://blog.alphacamp.co/2014/12/23/beautiful-app-life/',
+    url: 'https://tw.alphacamp.co/blog/2016-05-11-10-questions-you-need-to-know-before-ios-app-development',
+    image: '/neverland/essays/essay-app-learning-tips.webp',
   },
 ]
 
