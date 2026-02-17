@@ -323,7 +323,7 @@
         {
           "id": "support",
           "title": "失業加油價",
-          "subtitle": "3 個名額，連續失業三個月以上",
+          "subtitle": "2 個名額，連續失業三個月以上",
           "price": "$ 6,000",
           "note": "長輩學到老價（60 歲以上，2 名額）：2,500 元；暖暖包價（持低收入證明或生活困難，2 名額）：100 元",
           "image": "/swiftui/foundation/tuition/tuition-support.webp"
