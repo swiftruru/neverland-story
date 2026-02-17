@@ -114,12 +114,12 @@ export default function RootLayout({
           <ToastProvider>
             <SkipToContent targetId="main-content" />
             <KeyboardShortcuts />
-            <CookieConsent />
+            {/* <CookieConsent /> — 暫時停用，未來有歐洲學生時再啟用 */}
             <PwaProvider />
             <PwaInstallPrompt />
             <PullToRefresh />
             <NetworkStatus />
-            <OnboardingTour />
+            {/* <OnboardingTour /> — 暫時停用，未來需要時再啟用 */}
             <ToastContainer />
             <ReadingProgress />
             <BreadcrumbJsonLd />
