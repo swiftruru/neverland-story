@@ -27,7 +27,7 @@ export default function SwiftuiInfoPage() {
           <p className={styles.kicker}>{t('hero.kicker')}</p>
           <div className={styles.infoHeader}>
             <h1 className={styles.title}>{t('introPage.courseInfo.heading')}</h1>
-            <p className={styles.subtitle}>{t('sections.info.desc')}</p>
+            {t('sections.info.desc') && <p className={styles.subtitle}>{t('sections.info.desc')}</p>}
           </div>
           <div className={styles.infoGrid}>
             {cards.map((card) => (
