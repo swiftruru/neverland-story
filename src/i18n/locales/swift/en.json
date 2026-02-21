@@ -60,7 +60,7 @@
   },
   "infoPage": {
     "heading": "Course Info",
-    "desc": "Schedule, location, online/recording details, and class size.",
+    "desc": "",
     "cards": [
       {
         "id": "time",
@@ -74,6 +74,7 @@
       },
       {
         "id": "location",
+        "hidden": true,
         "title": "Location",
         "lines": [
           "7F., No. 131, Songjiang Rd., Zhongshan Dist., Taipei",

@@ -7,11 +7,13 @@ import styles from '../page.module.css'
 
 export default function SwiftInfoPage() {
   const { t } = useTranslation('swift')
-  const cards = t('infoPage.cards', { returnObjects: true }) as {
+  const allCards = t('infoPage.cards', { returnObjects: true }) as {
     id: 'time' | 'location' | 'live' | 'size'
     title: string
     lines: string[]
+    hidden?: boolean
   }[]
+  const cards = allCards.filter((card) => !card.hidden)
 
   const iconMap = useMemo<Record<string, string>>(
     () => ({
@@ -30,7 +32,7 @@ export default function SwiftInfoPage() {
           <p className={styles.kicker}>{t('hero.kicker')}</p>
           <div className={styles.infoHeader}>
             <h1 className={styles.title}>{t('infoPage.heading')}</h1>
-            <p className={styles.subtitle}>{t('infoPage.desc')}</p>
+            {t('infoPage.desc') && <p className={styles.subtitle}>{t('infoPage.desc')}</p>}
           </div>
 
           <div className={styles.infoGrid}>

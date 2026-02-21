@@ -60,7 +60,7 @@
   },
   "infoPage": {
     "heading": "課程資訊",
-    "desc": "時間、地點、線上與錄影資訊，還有人數規劃。",
+    "desc": "",
     "cards": [
       {
         "id": "time",
@@ -74,6 +74,7 @@
       },
       {
         "id": "location",
+        "hidden": true,
         "title": "地點",
         "lines": [
           "台北市中山區松江路 131 號 7 樓",
