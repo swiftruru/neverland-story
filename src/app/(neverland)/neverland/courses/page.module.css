@@ -298,7 +298,7 @@
   max-height: 90vh;
   background: white;
   border-radius: 16px;
-  overflow: hidden;
+  overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.3s ease;
 }
@@ -372,8 +372,6 @@
 
 .modalBody {
   padding: 1.5rem;
-  max-height: calc(90vh - 300px);
-  overflow-y: auto;
 }
 
 .modalTitle {
